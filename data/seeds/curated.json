@@ -1,0 +1,397 @@
+[
+  {
+    "id": "seed_001",
+    "title": "Reflexivity of natural-number equality",
+    "split_group": "equality_reflexivity",
+    "method": "definition",
+    "formal_statement": "forall n : nat, n = n",
+    "informal_statement": "Every natural number n is equal to itself.",
+    "steps": [
+      {"text": "Let n be any natural number.", "code": "intros n."},
+      {"text": "Both sides are the same number, so the equality follows by reflexivity.", "code": "reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_002",
+    "title": "Zero on the left of addition",
+    "split_group": "definitional_addition",
+    "method": "definition",
+    "formal_statement": "forall n : nat, 0 + n = n",
+    "informal_statement": "For every natural number n, adding n to zero gives n.",
+    "steps": [
+      {"text": "Fix a natural number n.", "code": "intros n."},
+      {"text": "By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_003",
+    "title": "Addition with a successor on the left",
+    "split_group": "definitional_addition",
+    "method": "definition",
+    "formal_statement": "forall n m : nat, S n + m = S (n + m)",
+    "informal_statement": "For natural numbers n and m, the successor of n plus m equals the successor of n + m.",
+    "steps": [
+      {"text": "Take arbitrary natural numbers n and m.", "code": "intros n m."},
+      {"text": "The recursive clause defining addition rewrites S n + m as S (n + m), which is exactly the right-hand side.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_004",
+    "title": "Adding from one gives a successor",
+    "split_group": "definitional_addition",
+    "method": "definition",
+    "formal_statement": "forall n : nat, 1 + n = S n",
+    "informal_statement": "For every natural number n, 1 + n is the successor of n.",
+    "steps": [
+      {"text": "Let n be a natural number.", "code": "intros n."},
+      {"text": "Since 1 is S 0, the definition of addition reduces 1 + n to S (0 + n), and then to S n. This proves the equality.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_005",
+    "title": "Simplifying a zero inside the right summand",
+    "split_group": "definitional_addition",
+    "method": "definition",
+    "formal_statement": "forall n m : nat, n + (0 + m) = n + m",
+    "informal_statement": "For all natural numbers n and m, n + (0 + m) = n + m.",
+    "steps": [
+      {"text": "Fix n and m.", "code": "intros n m."},
+      {"text": "The inner expression 0 + m reduces to m by definition. Substituting this reduction leaves the same expression on both sides.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_006",
+    "title": "Simplifying a zero inside the left summand",
+    "split_group": "definitional_addition",
+    "method": "definition",
+    "formal_statement": "forall n m : nat, (0 + n) + m = n + m",
+    "informal_statement": "For all natural numbers n and m, (0 + n) + m = n + m.",
+    "steps": [
+      {"text": "Choose arbitrary natural numbers n and m.", "code": "intros n m."},
+      {"text": "First reduce 0 + n to n. Both sides now read n + m, so they are equal.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_007",
+    "title": "Using an equality assumption directly",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = m -> n = m",
+    "informal_statement": "If natural numbers n and m satisfy n = m, then n = m.",
+    "steps": [
+      {"text": "Fix n and m, and assume that n = m.", "code": "intros n m H."},
+      {"text": "The desired equality is precisely the assumption.", "code": "exact H."}
+    ]
+  },
+  {
+    "id": "seed_008",
+    "title": "Reversing an equality",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = m -> m = n",
+    "informal_statement": "If n and m are natural numbers and n = m, then m = n.",
+    "steps": [
+      {"text": "Let n and m be natural numbers with n = m.", "code": "intros n m H."},
+      {"text": "By symmetry, it is enough to show n = m, and that is our assumption.", "code": "symmetry.\nexact H."}
+    ]
+  },
+  {
+    "id": "seed_009",
+    "title": "Equality is preserved by successor",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = m -> S n = S m",
+    "informal_statement": "Equal natural numbers have equal successors: n = m implies S n = S m.",
+    "steps": [
+      {"text": "Take n and m and assume n = m.", "code": "intros n m H."},
+      {"text": "It suffices to prove that the arguments of the two successor expressions are equal.", "code": "f_equal."},
+      {"text": "That remaining equality is exactly the hypothesis n = m.", "code": "apply H."}
+    ]
+  },
+  {
+    "id": "seed_010",
+    "title": "Replacing the left argument of addition",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m p : nat, n = m -> n + p = m + p",
+    "informal_statement": "For natural numbers n, m, and p, if n = m then n + p = m + p.",
+    "steps": [
+      {"text": "Fix n, m, and p and suppose n = m.", "code": "intros n m p H."},
+      {"text": "Replace n by m in the left-hand side. Both sides become m + p.", "code": "rewrite H.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_011",
+    "title": "Replacing the right argument of addition",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m p : nat, n = m -> p + n = p + m",
+    "informal_statement": "For natural numbers n, m, and p, n = m implies p + n = p + m.",
+    "steps": [
+      {"text": "Let n, m, and p be natural numbers with n = m.", "code": "intros n m p H."},
+      {"text": "Use the assumed equality to replace n by m under addition. The resulting two sums are identical.", "code": "rewrite H.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_012",
+    "title": "Replacing repeated occurrences in reverse",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = m -> n + n = m + m",
+    "informal_statement": "If natural numbers n and m are equal, then n + n = m + m.",
+    "steps": [
+      {"text": "Fix n and m and assume n = m.", "code": "intros n m H."},
+      {"text": "Read the assumption from right to left and replace both occurrences of m by n. The conclusion becomes n + n = n + n.", "code": "rewrite <- H.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_013",
+    "title": "Swapping summands known to be equal",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = m -> n + m = m + n",
+    "informal_statement": "If n and m are equal natural numbers, then n + m = m + n.",
+    "steps": [
+      {"text": "Take n and m with n = m.", "code": "intros n m H."},
+      {"text": "Replace n by m throughout the conclusion. Both sides then equal m + m.", "code": "rewrite H.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_014",
+    "title": "Substitution followed by the zero clause",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m : nat, n = 0 -> n + m = m",
+    "informal_statement": "For natural numbers n and m, if n = 0 then n + m = m.",
+    "steps": [
+      {"text": "Fix n and m, and assume n is zero.", "code": "intros n m H."},
+      {"text": "Substitute zero for n. The goal is now 0 + m = m.", "code": "rewrite H."},
+      {"text": "The defining zero clause of addition reduces the left-hand side to m, proving the claim.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_015",
+    "title": "Substitution followed by the successor clause",
+    "split_group": "equality_transport",
+    "method": "equality_premise",
+    "formal_statement": "forall n m p : nat, n = S m -> n + p = S (m + p)",
+    "informal_statement": "For natural numbers n, m, and p, if n is the successor of m then n + p = S (m + p).",
+    "steps": [
+      {"text": "Take n, m, and p, and suppose n = S m.", "code": "intros n m p H."},
+      {"text": "Replace n by S m in the desired equality.", "code": "rewrite H."},
+      {"text": "By the successor clause of addition, S m + p reduces to S (m + p), as required.", "code": "simpl.\nreflexivity."}
+    ]
+  },
+  {
+    "id": "seed_016",
+    "title": "Zero on the right of addition",
+    "split_group": "right_identity_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "related_existing_example": "examples/add_zero_right.json",
+    "formal_statement": "forall n : nat, n + 0 = n",
+    "informal_statement": "For every natural number n, n + 0 = n.",
+    "steps": [
+      {"text": "Let n be arbitrary and proceed by induction on n.", "code": "intros n.\ninduction n as [| k IH]."},
+      {"text": "For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition.", "code": "- simpl.\n  reflexivity."},
+      {"text": "For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_017",
+    "title": "Adding one on the right",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n : nat, n + 1 = S n",
+    "informal_statement": "For every natural number n, n + 1 is the successor of n.",
+    "steps": [
+      {"text": "Fix n and use induction on it.", "code": "intros n.\ninduction n as [| k IH]."},
+      {"text": "When n is zero, both 0 + 1 and S 0 reduce to 1.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume k + 1 = S k. For S k, simplifying leaves S (k + 1) = S (S k). Equality of the arguments suffices, and it is exactly the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
+    ]
+  },
+  {
+    "id": "seed_018",
+    "title": "Moving a successor out of the right summand",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, n + S m = S (n + m)",
+    "informal_statement": "For all natural numbers n and m, n + S m = S (n + m).",
+    "steps": [
+      {"text": "Fix n and m. Induct on n while keeping m fixed.", "code": "intros n m.\ninduction n as [| k IH]."},
+      {"text": "At zero, both sides simplify to S m.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume k + S m = S (k + m). The successor goal simplifies to S (k + S m) = S (S (k + m)). Use the hypothesis from left to right inside the outer successor, obtaining identical sides.", "code": "- simpl.\n  rewrite -> IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_019",
+    "title": "Associativity of addition",
+    "split_group": "associativity_induction",
+    "method": "induction",
+    "induction_variable": "a",
+    "formal_statement": "forall a b c : nat, (a + b) + c = a + (b + c)",
+    "informal_statement": "For all natural numbers a, b, and c, (a + b) + c = a + (b + c).",
+    "steps": [
+      {"text": "Fix a, b, and c, and induct on a.", "code": "intros a b c.\ninduction a as [| k IH]."},
+      {"text": "If a = 0, both sides reduce to b + c.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume (k + b) + c = k + (b + c). For a = S k, the recursive definition reduces the goal to S ((k + b) + c) = S (k + (b + c)). Rewriting with the induction hypothesis proves this equality.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_020",
+    "title": "Removing two trailing zero additions",
+    "split_group": "right_identity_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n : nat, (n + 0) + 0 = n",
+    "informal_statement": "Adding zero twice on the right leaves any natural number n unchanged: (n + 0) + 0 = n.",
+    "steps": [
+      {"text": "Take an arbitrary n and induct on n.", "code": "intros n.\ninduction n as [| k IH]."},
+      {"text": "For zero, the left-hand side reduces to zero, so the claim holds.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Suppose (k + 0) + 0 = k. At S k, simplification gives S ((k + 0) + 0) = S k. Substitute the induction hypothesis inside the successor to finish.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_021",
+    "title": "Removing a zero from the first summand",
+    "split_group": "right_identity_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, (n + 0) + m = n + m",
+    "informal_statement": "For natural numbers n and m, (n + 0) + m = n + m.",
+    "steps": [
+      {"text": "Fix n and m and perform induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
+      {"text": "The zero case simplifies to m = m.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume (k + 0) + m = k + m. Simplifying the successor case produces S ((k + 0) + m) = S (k + m). It suffices to equate the arguments, which is the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
+    ]
+  },
+  {
+    "id": "seed_022",
+    "title": "Commuting addition with one",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n : nat, n + 1 = 1 + n",
+    "informal_statement": "For every natural number n, n + 1 = 1 + n.",
+    "steps": [
+      {"text": "Let n be a natural number and induct on it.", "code": "intros n.\ninduction n as [| k IH]."},
+      {"text": "For n = 0, both sums reduce to 1.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume k + 1 = 1 + k. At S k, simplification gives S (k + 1) = S (S k). It suffices to prove k + 1 = S k. This is the hypothesis, since 1 + k reduces to S k.", "code": "- simpl.\n  f_equal.\n  apply IH."}
+    ]
+  },
+  {
+    "id": "seed_023",
+    "title": "Moving two successors out of the right summand",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, n + S (S m) = S (S (n + m))",
+    "informal_statement": "For natural numbers n and m, n + S (S m) = S (S (n + m)).",
+    "steps": [
+      {"text": "Fix n and m, and use induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
+      {"text": "When n = 0, both sides reduce to S (S m).",
+       "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume k + S (S m) = S (S (k + m)). In the successor case, simplify the addition and remove the common outer successor. The remaining equality is the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
+    ]
+  },
+  {
+    "id": "seed_024",
+    "title": "Two successive increments on the right",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n : nat, (n + 1) + 1 = S (S n)",
+    "informal_statement": "For every natural number n, adding one twice gives its second successor: (n + 1) + 1 = S (S n).",
+    "steps": [
+      {"text": "Fix n and prove the statement by induction on n.", "code": "intros n.\ninduction n as [| k IH]."},
+      {"text": "For zero, each side computes to 2.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume (k + 1) + 1 = S (S k). The successor case reduces to S ((k + 1) + 1) = S (S (S k)). Rewrite the inner sum with the hypothesis, after which both sides coincide.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_025",
+    "title": "An increment inside the first summand",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, (n + 1) + m = S (n + m)",
+    "informal_statement": "For all natural numbers n and m, (n + 1) + m = S (n + m).",
+    "steps": [
+      {"text": "Take n and m and induct on n with m fixed.", "code": "intros n m.\ninduction n as [| k IH]."},
+      {"text": "At n = 0, both sides simplify to S m.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Suppose (k + 1) + m = S (k + m). Simplification at S k gives S ((k + 1) + m) = S (S (k + m)). Equality of the arguments is sufficient and follows directly from the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
+    ]
+  },
+  {
+    "id": "seed_026",
+    "title": "Moving a leading one across an outer summand",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, n + (1 + m) = 1 + (n + m)",
+    "informal_statement": "For natural numbers n and m, n + (1 + m) = 1 + (n + m).",
+    "steps": [
+      {"text": "Fix n and m and proceed by induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
+      {"text": "The base case has S m on both sides after simplification.", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume k + (1 + m) = 1 + (k + m). The successor case simplifies to S (k + S m) = S (S (k + m)). Equality of the arguments suffices. It follows from the hypothesis by reducing the additions whose first argument is 1.", "code": "- simpl.\n  f_equal.\n  exact IH."}
+    ]
+  },
+  {
+    "id": "seed_027",
+    "title": "Extending a right-zero equality along a prefix",
+    "split_group": "right_identity_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, m + 0 = m -> (n + m) + 0 = n + m",
+    "informal_statement": "Let n and m be natural numbers. Assuming m + 0 = m, prove (n + m) + 0 = n + m.",
+    "steps": [
+      {"text": "Fix n and m, retain the assumption m + 0 = m, and induct on n.", "code": "intros n m H.\ninduction n as [| k IH]."},
+      {"text": "For n = 0, simplification leaves m + 0 = m, which is the given assumption.", "code": "- simpl.\n  exact H."},
+      {"text": "Assume (k + m) + 0 = k + m. At S k the goal reduces to S ((k + m) + 0) = S (k + m). It suffices to show equality of the arguments, supplied by the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  apply IH."}
+    ]
+  },
+  {
+    "id": "seed_028",
+    "title": "Extending a right-one equality along a prefix",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m : nat, m + 1 = S m -> (n + m) + 1 = S (n + m)",
+    "informal_statement": "For natural numbers n and m, assume m + 1 = S m. Then (n + m) + 1 = S (n + m).",
+    "steps": [
+      {"text": "Fix n and m and assume m + 1 = S m. Induct on n.", "code": "intros n m H.\ninduction n as [| k IH]."},
+      {"text": "At zero, the goal reduces to the supplied equality m + 1 = S m.", "code": "- simpl.\n  exact H."},
+      {"text": "Assume (k + m) + 1 = S (k + m). For S k, simplification gives S ((k + m) + 1) = S (S (k + m)). Rewriting the argument on the left with the induction hypothesis proves the goal.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_029",
+    "title": "Lifting a commuting pair beneath a common prefix",
+    "split_group": "conditional_permutation_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m p : nat, m + p = p + m -> (n + m) + p = (n + p) + m",
+    "informal_statement": "Let n, m, and p be natural numbers. If m + p = p + m, then (n + m) + p = (n + p) + m.",
+    "steps": [
+      {"text": "Fix n, m, and p and assume m + p = p + m. Induct on n.", "code": "intros n m p H.\ninduction n as [| k IH]."},
+      {"text": "For n = 0, the required equality simplifies to m + p = p + m, exactly the assumption.", "code": "- simpl.\n  exact H."},
+      {"text": "Assume (k + m) + p = (k + p) + m. For S k the goal simplifies to S ((k + m) + p) = S ((k + p) + m). Replacing the left argument using the induction hypothesis makes the successors equal.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  },
+  {
+    "id": "seed_030",
+    "title": "Reassociating a sum with an inner successor",
+    "split_group": "successor_addition_induction",
+    "method": "induction",
+    "induction_variable": "n",
+    "formal_statement": "forall n m p : nat, (n + S m) + p = S (n + (m + p))",
+    "informal_statement": "For natural numbers n, m, and p, (n + S m) + p = S (n + (m + p)).",
+    "steps": [
+      {"text": "Fix n, m, and p and induct on n.", "code": "intros n m p.\ninduction n as [| k IH]."},
+      {"text": "At zero, both sides simplify to S (m + p).", "code": "- simpl.\n  reflexivity."},
+      {"text": "Assume (k + S m) + p = S (k + (m + p)). Simplifying the successor case gives S ((k + S m) + p) = S (S (k + (m + p))). Rewrite the inner expression with the induction hypothesis; the sides are now identical.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
+    ]
+  }
+]

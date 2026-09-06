@@ -1,0 +1,220 @@
+{
+  "dataset_id": "mini_nat_addition_seeds_v1",
+  "status": "PASS",
+  "verified_at_utc": "2026-09-06T19:46:42.546979+00:00",
+  "compiler_version": "9.2.0",
+  "stdlib_version": "9.1.0",
+  "fingerprints": {
+    "curated_source_sha256": "dad9355877b40fd84b8f44d3df2ea85e612a12d6280cc10a2c153a627ef0bde9",
+    "environment_lock_sha256": "72ed3a2f55a140f00c4460b89cf8bd8f63202b0b89f6f376d85feeef0e03a149",
+    "verifier_sha256": "2f71aabd2ebc9cf3dd6cd88af2bc1fa12be379788f7c42d3d22d31bf80c23688",
+    "build_script_sha256": "189f6eda661575e5622fb7360a9fb7d7c1d954ff5e1de50c5e8462041eba1eae"
+  },
+  "pairs_sha256": "7043cfbb3eb370d8f324f8bc83f62226c49ee232e3dc8fcc26ec9489a4dd5ed2",
+  "counts": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "unique_statements_modulo_binder_names": 30,
+    "by_method": {
+      "definition": 6,
+      "equality_premise": 9,
+      "induction": 15
+    },
+    "by_split_group": {
+      "equality_reflexivity": 1,
+      "definitional_addition": 5,
+      "equality_transport": 9,
+      "right_identity_induction": 4,
+      "successor_addition_induction": 9,
+      "associativity_induction": 1,
+      "conditional_permutation_induction": 1
+    }
+  },
+  "global_helpers_enabled": [],
+  "isolation": "Each pair compiled in a fresh verifier temporary directory.",
+  "human_reviewed": false,
+  "training_performed": false,
+  "results": [
+    {
+      "id": "seed_001",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "09e8d5ca51b7298d9f3d0c9f6c393512c4b0964a14ac17903559d7f716f7d043"
+    },
+    {
+      "id": "seed_002",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "be3f25cd17dfb5d1602345e7a9c05711a69f50ebd989a600def75f932d2317c1"
+    },
+    {
+      "id": "seed_003",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "7c8a914e4708a2d488c80a413b61ce81591bd71af667d3de38fb7194d91d1c57"
+    },
+    {
+      "id": "seed_004",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "f6336052ba7e3cecaaec2630c6eea0febcafc5a960eb5732008d7d538560e88f"
+    },
+    {
+      "id": "seed_005",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "3c84a6b07627ff9685f1255901d3a957e497e9bf3cce6167c252ec75381bea47"
+    },
+    {
+      "id": "seed_006",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "0ab2060388987d8f537e1dd8013c8f05f5b3e9155de3ea31726aac4ee1fe627a"
+    },
+    {
+      "id": "seed_007",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "e019530226e6faec3f524d3e8b66decccc05da28cb3f4bfb5574a0a81aeb966c"
+    },
+    {
+      "id": "seed_008",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "94548d24900ddb4f373bf62e78497bd01ed02a7a4c7c19e705ffc4194c5f378f"
+    },
+    {
+      "id": "seed_009",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "f8e328c9409c494235ff7aa8f426b124a6f824aa52eba43ff09e58f97b3863b0"
+    },
+    {
+      "id": "seed_010",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "3d3b46520ec36c0e1433b572360c631e6201de06ec6f6992affc17d355ec831b"
+    },
+    {
+      "id": "seed_011",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "d165aba7b24e6ac0f5eadff6756b9fd6595cf60375301e6298e9dd8570160009"
+    },
+    {
+      "id": "seed_012",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "dd17563c8d10a3bc055c05799fdc1679d0a1e7f98b38d217b78dcc9bab43c1f6"
+    },
+    {
+      "id": "seed_013",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "1b16942ad3c3c61a275ebb90b7f3f4e83eceefa7506cab383ffa92acf85a86c6"
+    },
+    {
+      "id": "seed_014",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "7258a730b22eda63a3700fdb504e9c9843469bc4fd9aeb09e931b01e7d7a6c3e"
+    },
+    {
+      "id": "seed_015",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "81a7e21fb9e0bf8e264c2648280ea04340679372347d5d284bce040aa59c00de"
+    },
+    {
+      "id": "seed_016",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "94f281e1cba52c1ac3c41128dc8ce4950a796faeecb6b91f43a8e6c387b17031"
+    },
+    {
+      "id": "seed_017",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "ce147914b653527df783ae9820fd273ee9b8c28cfddf16ced6ebb37d61393f96"
+    },
+    {
+      "id": "seed_018",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "0f40366366f867d7aa7f507912ac3b1d256b1f9b5f26b3c2010aece1d9b39c73"
+    },
+    {
+      "id": "seed_019",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "a4832e3020e0551a294b8709434abfe2b5b2fcf02f8fdc5ee26e12d554c54d29"
+    },
+    {
+      "id": "seed_020",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "7532f33417c64f0d3a3f4fb10e0f0e7a38c7a465bc55f0f776191fb7e1425be7"
+    },
+    {
+      "id": "seed_021",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "aa88dd82b895383c57a405621f28bde30b7b01c26d72050e4974d6c0b5405556"
+    },
+    {
+      "id": "seed_022",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "2704d89804ddd617ffd22763523b3c228954d4be4d290703d51af0eefbc04ab1"
+    },
+    {
+      "id": "seed_023",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "b20793c1eecf7c3d6c80b57fa642f81007a72bd242bca6ea3acc406a3d44cd5a"
+    },
+    {
+      "id": "seed_024",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "24a91194a456f498322fb332b276d9769c751139757cbf9132dfe13c9c4906ff"
+    },
+    {
+      "id": "seed_025",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "bd65ad3c4e676e9d2012b8e4d9c70c005b52dc87e26b858b3b845c1fb342c6be"
+    },
+    {
+      "id": "seed_026",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "120ed15c49d61bb586d785808963de45fdb20659da8a546f0f5896e54714b9e1"
+    },
+    {
+      "id": "seed_027",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "74270cd1a20b26ee88bf657e4b8320140babd603a4f41207b34874b9cfdfa2ee"
+    },
+    {
+      "id": "seed_028",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "c2f0f416f008fdc5d7618a52189a04124a0504f4354b9a982cab85b25fa25f26"
+    },
+    {
+      "id": "seed_029",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "48f6e67c6a3baced99512c688ff0cf07510b06659b6a69e34d68f6d9c1760202"
+    },
+    {
+      "id": "seed_030",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "1a03f569a1ddcdc86edd25235ef3f0d1ff11808bebc6f62e3480ac4578ee61f7"
+    }
+  ]
+}

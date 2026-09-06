@@ -1,6 +1,6 @@
 # Proof Bridge: initial research and pilot plan
 
-Prepared 2026-09-06. This document records the initial research proposal. Milestone 1 now has a pinned Rocq 9.2.0 / Stdlib 9.1.0 environment, a compiled example, and a restricted Python verifier with tests. See README.md for the implemented scope and reproduction commands. No model has been trained; training hardware is undecided.
+Prepared 2026-09-06. This document records the initial research proposal. The implemented project now has a pinned Rocq 9.2.0 / Stdlib 9.1.0 environment, a restricted Python verifier with tests, and the first 30 individually curated and checked seed proof pairs. See README.md and data/seeds/README.md for the implemented scope and reproduction commands. No model has been trained; training hardware is undecided.
 
 The proposed first experiment is a small pretrained language model that translates typed English proofs about natural-number equalities into short Rocq scripts. Start with addition and one structural induction; add multiplication once that pipeline works. Evaluate preservation of the user's argument as well as formal correctness. This is a bounded research hypothesis, not an established accuracy claim.
 
@@ -179,4 +179,4 @@ Compare a template-based translator, a prompted pretrained model, the fine-tuned
 | 4. First fine-tune | One small-model LoRA run and learning curves | Evaluate against the same baselines on locked splits, including argument fidelity |
 | 5. Targeted extension | Structured output or bounded repair, chosen from observed failures | Improvement is measured at a declared budget; multiplication expands only after addition performance is understood |
 
-The initial next task was Milestone 1. The implemented increment now covers the environment, verifier, one checked example, and regression tests; the larger proposed seed set and all training remain deferred. README.md describes the current implementation.
+The initial next task was Milestone 1. The implementation now covers the environment, verifier, regression tests, and the first 30 curated seed pairs. Dataset expansion and all training remain deferred. README.md describes the current implementation.

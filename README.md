@@ -1,6 +1,6 @@
 # Proof Bridge
 
-Milestone 1 provides a fixed natural-number addition environment, one compiled example, and a Python verifier for a deliberately small proof language. No model training or dataset generation is included.
+Proof Bridge provides a fixed natural-number addition environment, a restricted Python verifier, and the first 30 individually curated informal/formal seed pairs. No model has been trained.
 
 The tested environment is **Rocq 9.2.0, Stdlib 9.1.0, OCaml 5.5.0, and Python 3.13.7**, on Apple Silicon macOS 15.7.3 with Homebrew at `/opt/homebrew`. Rocq's version command abbreviates its package version to `9.2`. Python 3.11 or newer is required; there are no pip dependencies.
 
@@ -19,6 +19,23 @@ python3 scripts/verify_example.py
 ```
 
 The standalone compile must exit zero and print `Closed under the global context`. The verifier must return JSON with `"status": "PASS"`, `"category": "VERIFIED"`, and both check flags true. The final command rechecks both representations and updates the existing JSON record with timestamps, hashes, compiler diagnostics, and actual verification status. Generated Rocq artifacts and cached bottles are ignored by Git.
+
+The first seed release is documented in [data/seeds/README.md](data/seeds/README.md). Its editable source is `data/seeds/curated.json`; the exported pairs are in `data/seeds/pairs.jsonl`, with actual results in `data/seeds/verification_report.json`. The 30 pairs cover 6 definition proofs, 9 equality-premise proofs, and 15 single-induction proofs. Each proof is checked independently with the unchanged verifier and no global helpers. They were individually authored and reviewed by the assistant; they are not a human-authored evaluation corpus.
+
+Recheck the stored seed artifacts and recompile every proof:
+
+```sh
+python3 scripts/verify_seeds.py --check
+python3 -m unittest discover -s tests -v
+```
+
+After intentionally editing a curated pair, rebuild the records and compilation evidence:
+
+```sh
+python3 scripts/verify_seeds.py --write
+```
+
+All 30 records remain `split: unassigned`; related statements share a `split_group`. Keep these groups and the related original example together when designing future data splits. Stored PASS metadata is checked against source, environment, verifier, generated-code, and dataset hashes before revalidation. Full informal/formal fidelity still requires review; the kernel does not certify English.
 
 To independently exercise the locked downloads without changing installed packages:
 
