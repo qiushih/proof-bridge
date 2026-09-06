@@ -1,0 +1,12 @@
+Write a Rocq (Coq) proof for the fixed theorem below. If an informal proof is supplied, preserve its argument and induction variable.
+
+Return ONLY the proof body: tactic commands ending in periods. Do not include a theorem declaration, imports, Proof, Qed, Markdown, or explanation.
+
+The environment contains natural numbers, equality, 0, 1, 2, 3, successor S, and addition +. Addition reduces on its FIRST argument. No global lemmas may be referenced.
+
+The ONLY permitted commands are:
+intros followed by explicit local names;
+induction n as [| k IH]. (at most once, on an introduced natural-number variable, with exactly two - branches);
+simpl. reflexivity. symmetry. f_equal.
+rewrite H. rewrite -> H. rewrite <- H. exact H. apply H.
+Here n, k, IH, and H stand for local names. References may use only introduced equality premises or the induction hypothesis. Introduce every quantified variable and any premise before induction. Use one command per line. Do not use semicolons, brackets to combine tactics, auto, eauto, lia, nia, ring, admit, Admitted, Abort, Axiom, Parameter, or library helpers.

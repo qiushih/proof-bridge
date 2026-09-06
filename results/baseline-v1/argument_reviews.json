@@ -1,0 +1,177 @@
+{
+  "schema_version": "argument-review-0.1",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "results_sha256": "3680f370a186df234d968892f7e03899e07c8859813ce0c87e5b7e61308ce68b",
+  "rubric": "Assess fidelity of the generated formal argument to the supplied reference. FAITHFUL preserves essential steps; PARTIAL implements meaningful but incomplete steps; DIVERGENT implements a different argument; UNASSESSABLE provides no coherent formal proof. English echoes are described but are not credited as formal argument fidelity. The theorem-only condition is compared to the same reference, which was hidden from the model.",
+  "reviews": [
+    {
+      "key": "eval_001:theorem_and_informal",
+      "proof_body_sha256": "e4da0f0f660d1cab72dfa58a3c5f9c1698d554bc0e2133c2728c285d2bb437c9",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_001:theorem_only",
+      "proof_body_sha256": "a5d50c71b9945983feafec27c217c1147d9c570ee1f666256d6bdf154f8d1f31",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose assumes the conclusion, invokes an unintroduced induction hypothesis, and repeats false equalities adding an extra m; it supplies no Rocq proof."
+    },
+    {
+      "key": "eval_002:theorem_and_informal",
+      "proof_body_sha256": "a1df37d05f0186fa8793609b597b1207d3fa9bdf99d871ebdfeb466bef8fd288",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_002:theorem_only",
+      "proof_body_sha256": "6b024c0a04339d8b3599b6c0a0a86c1adb778d1538fe9b476b1d7f87d929e457",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose assumes the conclusion and repeats an unsupported chain that adds successors; no formal induction or proof body is provided."
+    },
+    {
+      "key": "eval_003:theorem_and_informal",
+      "proof_body_sha256": "7cfe0edfc578de078fac6252f1ee84099fdb63ce29d3a83e44569b3855b8dfe1",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_003:theorem_only",
+      "proof_body_sha256": "b9fb0fb427009cdb113e0b1828fbfac5eb5ff010b219a181da8cef1ced53577c",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose checks a few values of n and p and drops the arbitrary m in computations. It gives no general definitional argument in Rocq."
+    },
+    {
+      "key": "eval_004:theorem_and_informal",
+      "proof_body_sha256": "5def127f6c56d7c6048ccec2d02242957bb3c60a2875ec320d474f25d237f261",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_004:theorem_only",
+      "proof_body_sha256": "225b6337bc0bee3bd64f9bd9ab3557557095ff199f93c96fdf48347b6e5a4bb9",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose incorrectly infers S n = S m from S n = m and claims induction instead of implementing symmetry and premise reuse. There is no Rocq proof."
+    },
+    {
+      "key": "eval_005:theorem_and_informal",
+      "proof_body_sha256": "5b268f06e1a6a65fab0ca00c235d0ce8b12212b208e702cd9e9f97a062461234",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_005:theorem_only",
+      "proof_body_sha256": "4c0fbfae6677bbf5c2b3ffd14f4cc830654ab18c138a6c20b11cbddb1ed6dc72",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose names an induction hypothesis without introducing induction and restates the conclusion. It does not implement the two congruence steps in Rocq."
+    },
+    {
+      "key": "eval_006:theorem_and_informal",
+      "proof_body_sha256": "97def57e3c4e258563ae44add5a3049f600d2e6a20b0c9083b836a28831a883f",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_006:theorem_only",
+      "proof_body_sha256": "1f3bff49978b395b2217bd5ceb97b04cf0482b69b9d4cd1f2c4f25fdf3f83f4d",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose invokes the target as an induction hypothesis and repeats claims rather than implementing the assumed-sum rewrite. No Rocq proof is present."
+    },
+    {
+      "key": "eval_007:theorem_and_informal",
+      "proof_body_sha256": "09efede86c9d0062abf3b7af27397a28298c588c92da12157c08311ba757a649",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_007:theorem_only",
+      "proof_body_sha256": "5f19ccb46194edd0672d250bf47cb9a2cbc2f5ed4f2a7bde6bf3a7c296687a72",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose begins by assuming n = 0 and states simplified equalities. It provides no formal use of the supplied 0 = n premise and no Rocq tactic proof."
+    },
+    {
+      "key": "eval_008:theorem_and_informal",
+      "proof_body_sha256": "cefd65d3d59a97f58d02cec32e9fb369d8eddc70fbb7e51d83b22eae5fe83bc8",
+      "status": "UNASSESSABLE",
+      "output_kind": "prompt_contract_echo",
+      "rationale": "Echoes the permitted-tactic contract, including explanatory prose and a semicolon. It gives no introductions or complete base/successor branches, so no coherent formal argument can be assessed."
+    },
+    {
+      "key": "eval_008:theorem_only",
+      "proof_body_sha256": "6894aa821d3d34e8bc3dd6fadcd42c7a8da5285edbbf424ae51f624b13d7c308",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose assumes the conclusion and repeatedly asserts invalid successor equalities. It gives neither the base/step argument nor a Rocq proof."
+    },
+    {
+      "key": "eval_009:theorem_and_informal",
+      "proof_body_sha256": "24c67c4f69be68d8c23b6fb40de2c51da5201341ebb83ef8f8e3de68292e19ab",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_009:theorem_only",
+      "proof_body_sha256": "6346921849734f86e2278e0cfa0dee0b1429df9a16ea902639206263bf45a474",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose addresses only n = 0 and declares the theorem proved. It omits the arbitrary successor case and supplies no Rocq code."
+    },
+    {
+      "key": "eval_010:theorem_and_informal",
+      "proof_body_sha256": "41a716d8b8fd6a04c5f93bc725a6563964b1b25fb642013cac3702f8171b9cbe",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_010:theorem_only",
+      "proof_body_sha256": "b19446d4b06145fcd60e45dcf9fffd37c587fab5f10eec37c05b76a964ecf16b",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose mentions an induction hypothesis without constructing induction and repeatedly asserts the target from the premise. It contains no formal argument to compare."
+    },
+    {
+      "key": "eval_011:theorem_and_informal",
+      "proof_body_sha256": "b6d76596fde55455184a9f36089bd7b22290cc2e03314508df7c9b1252e31327",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_011:theorem_only",
+      "proof_body_sha256": "66aec0cb816fd89fba6b390130faa7a820962af1d7af996690fdeb6efd71ae49",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose assumes the theorem universally and repeatedly invokes an unintroduced induction hypothesis on compound expressions, rather than inducting on the second binder b. No Rocq proof is present."
+    },
+    {
+      "key": "eval_012:theorem_and_informal",
+      "proof_body_sha256": "d06cd8cc820bcbebb382c2e6f444e1ae652f3e98c38da79cd2d201901028085a",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_proof_echo",
+      "rationale": "Exactly echoes the supplied English argument after \"Proof:\". The English content is preserved, but no formal tactic proof is generated; copying the input cannot count as formal argument fidelity."
+    },
+    {
+      "key": "eval_012:theorem_only",
+      "proof_body_sha256": "a73e5c32d3edd094be4c0ef6144096f8f2233be19319a33b27b2047b1ce630fc",
+      "status": "UNASSESSABLE",
+      "output_kind": "informal_reasoning",
+      "rationale": "Prose assumes the conclusion and uses unsupported equalities with an extra p. It does not implement the base case or successor rewrite in Rocq."
+    }
+  ]
+}

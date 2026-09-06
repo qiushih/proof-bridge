@@ -1,5 +1,7 @@
 # First 30 arithmetic seed proof pairs
 
+These 30 records are now frozen as the baseline-v1 [development snapshot](../development/README.md). The original seed artifacts below are preserved; the snapshot assigns `split: development`. The new diagnostic evaluation is documented in [baseline/README.md](../../baseline/README.md).
+
 This release contains 30 individually selected and authored pairs: 6 proofs by definition, 9 using an equality premise, and 15 using one natural-number induction. They fit the existing addition-only grammar and use no global helper lemmas. Every proof passed the pinned Rocq 9.2.0 / Stdlib 9.1.0 verifier, including its axiom check, in an independent temporary environment. No model training or paraphrase expansion was performed.
 
 These are **assistant-curated examples, not independently human-authored proofs**. Each informal argument was reviewed against its formal steps by the authoring assistant. The recorded kernel checks establish the formal propositions; they do not certify English alignment. The corpus intentionally contains related exercises and common proof patterns, so 30 pairs should not be interpreted as 30 independent mathematical families.

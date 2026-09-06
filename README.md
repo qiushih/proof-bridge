@@ -2,7 +2,11 @@
 
 Proof Bridge provides a fixed natural-number addition environment, a restricted Python verifier, and the first 30 individually curated informal/formal seed pairs. No model has been trained.
 
-The tested environment is **Rocq 9.2.0, Stdlib 9.1.0, OCaml 5.5.0, and Python 3.13.7**, on Apple Silicon macOS 15.7.3 with Homebrew at `/opt/homebrew`. Rocq's version command abbreviates its package version to `9.2`. Python 3.11 or newer is required; there are no pip dependencies.
+The [first baseline evaluation](baseline/README.md) freezes those 30 seeds as development examples and adds 12 verified diagnostic evaluation proofs. It compares a pinned Qwen2.5-Coder-0.5B-Instruct model with and without the informal proof, using one greedy attempt and no repair. See [the report](results/baseline-v1/REPORT.md) and [machine-readable assessed results](results/baseline-v1/assessed_results.jsonl). No fine-tuning is performed.
+
+Baseline v1 is frozen at the annotated Git tag `proofbridge-baseline-v1`. The [freeze record](results/baseline-v1/FROZEN.md) describes the checkpoint and its integrity checks. Further experiments must preserve this release and use a new experiment version.
+
+The tested environment is **Rocq 9.2.0, Stdlib 9.1.0, OCaml 5.5.0, and Python 3.13.7**, on Apple Silicon macOS 15.7.3 with Homebrew at `/opt/homebrew`. Rocq's version command abbreviates its package version to `9.2`. The verifier requires Python 3.11 or newer and has no pip dependencies; the baseline inference dependencies are pinned separately in `baseline/requirements.lock`.
 
 The checked-in `environment.lock.json` records exact bottle URLs and SHA-256 digests for Rocq and all four runtime dependencies, the prelude hash, and selected installed runtime fingerprints. The installer prepares a named local Homebrew tap, `proof-bridge/locked`, whose five recipes select those official binary bottles and locked dependencies. It verifies downloads, installs in dependency order, and pins the packages. It refuses conflicting linked versions or modified local recipes instead of replacing them. Source builds are disabled in these recipes. This uses Homebrew's normal named-tap interface without enabling file-path package installation.
 

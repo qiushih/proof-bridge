@@ -1,0 +1,73 @@
+{
+  "conditions": {
+    "theorem_and_informal": {
+      "examples": 12,
+      "verified": 0,
+      "pass_at_1": 0.0,
+      "failures": {
+        "FORBIDDEN_COMMAND": 11,
+        "SYNTAX_ERROR": 1
+      },
+      "generation_errors": 0,
+      "verification_stages": {
+        "policy": 12
+      },
+      "structure_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "assistant_fidelity_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "reviewed_output_kinds": {
+        "informal_proof_echo": 11,
+        "prompt_contract_echo": 1
+      },
+      "prompt_tokens": 4264,
+      "completion_tokens": 743,
+      "median_generation_latency_seconds": 3.7415756044210866,
+      "total_generation_latency_seconds": 49.258553127292544,
+      "length_limited": 0
+    },
+    "theorem_only": {
+      "examples": 12,
+      "verified": 0,
+      "pass_at_1": 0.0,
+      "failures": {
+        "FORBIDDEN_COMMAND": 12
+      },
+      "generation_errors": 0,
+      "verification_stages": {
+        "policy": 12
+      },
+      "structure_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "assistant_fidelity_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "reviewed_output_kinds": {
+        "informal_reasoning": 12
+      },
+      "prompt_tokens": 3478,
+      "completion_tokens": 2284,
+      "median_generation_latency_seconds": 14.509664625045843,
+      "total_generation_latency_seconds": 133.86099724913947,
+      "length_limited": 8
+    }
+  },
+  "paired_verification_outcomes": {
+    "neither_pass": 12
+  },
+  "total_generation_attempts": 24,
+  "repair_attempts": 0,
+  "fine_tuning_performed": false,
+  "argument_reviews_complete": true,
+  "source_results_sha256": "3680f370a186df234d968892f7e03899e07c8859813ce0c87e5b7e61308ce68b",
+  "development_count": 30,
+  "evaluation_count": 12,
+  "leakage_note": "No exact/alpha/definitional duplicates with development; six generation families overlap. This is a within-fragment diagnostic, not held-out-family generalization.",
+  "report_inputs_sha256": {
+    "baseline/report.py": "7814ce88fa25e3ca95aa90c2e51405fd0bfff853bbf3a150b1b432156c1805e5",
+    "argument_reviews.json": "79ec341b8fde71bdef954df3acafa90abebad7866ac7f0fbfd596da75065075d"
+  }
+}

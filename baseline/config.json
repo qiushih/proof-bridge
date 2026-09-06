@@ -1,0 +1,23 @@
+{
+  "experiment_id": "proofbridge-baseline-v1",
+  "conditions": ["theorem_and_informal", "theorem_only"],
+  "development_demonstrations": 0,
+  "attempts_per_example_condition": 1,
+  "repair_attempts": 0,
+  "generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 256,
+    "use_cache": true,
+    "seed": 1729,
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "deterministic_algorithms": true,
+    "attention_implementation": "eager"
+  },
+  "verifier_timeout_seconds": 10.0,
+  "output_extraction": "strip whitespace and at most one complete outer coq/rocq code fence; no other edits",
+  "argument_fidelity": "structural rubric plus separately recorded assistant review; not kernel-certified"
+}
