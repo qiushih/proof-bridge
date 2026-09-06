@@ -1,16 +1,19 @@
 {
   "dataset_id": "mini_nat_addition_seeds_v1",
+  "schema_version": "seed-0.2",
   "status": "PASS",
-  "verified_at_utc": "2026-09-06T19:46:42.546979+00:00",
+  "verified_at_utc": "2026-09-06T20:53:26.081647+00:00",
   "compiler_version": "9.2.0",
   "stdlib_version": "9.1.0",
   "fingerprints": {
-    "curated_source_sha256": "dad9355877b40fd84b8f44d3df2ea85e612a12d6280cc10a2c153a627ef0bde9",
+    "curated_source_sha256": "3cc82ca7b5f5a70ef3c31ea74b57467d732086162d515a5710acc1b87366c579",
     "environment_lock_sha256": "72ed3a2f55a140f00c4460b89cf8bd8f63202b0b89f6f376d85feeef0e03a149",
     "verifier_sha256": "2f71aabd2ebc9cf3dd6cd88af2bc1fa12be379788f7c42d3d22d31bf80c23688",
-    "build_script_sha256": "189f6eda661575e5622fb7360a9fb7d7c1d954ff5e1de50c5e8462041eba1eae"
+    "build_script_sha256": "691eb6731b33b79fecc9ea7da2eaf6a47f1341c7eca47270bf38cf8201c5ad49",
+    "schema_script_sha256": "e4ebee8da7fee57630e399e129cd5e07ef55eb8a8a4eb017f22d4ab289fd7889",
+    "family_manifest_sha256": "75f7f0df5e392f76245bce19b86c91b66f0eb9b56dab8d270c39cbbad5f99fe0"
   },
-  "pairs_sha256": "7043cfbb3eb370d8f324f8bc83f62226c49ee232e3dc8fcc26ec9489a4dd5ed2",
+  "pairs_sha256": "023ed71b8cfcea3a2180ad516bb650b48cc481a4c9a749bc81e338ba35ab276d",
   "counts": {
     "total": 30,
     "passed": 30,
@@ -22,14 +25,50 @@
       "induction": 15
     },
     "by_split_group": {
-      "equality_reflexivity": 1,
-      "definitional_addition": 5,
+      "definitional_addition": 6,
       "equality_transport": 9,
       "right_identity_induction": 4,
-      "successor_addition_induction": 9,
-      "associativity_induction": 1,
+      "addition_structure_induction": 10,
       "conditional_permutation_induction": 1
-    }
+    },
+    "by_generation_family": {
+      "definitional_reflexivity": 6,
+      "premise_reuse": 2,
+      "premise_congruence": 5,
+      "premise_definitional_substitution": 2,
+      "right_zero_variants": 4,
+      "successor_reassociation_variants": 10,
+      "conditional_permutation": 1
+    },
+    "normalized_proof_bodies": 3,
+    "original_bodies_rechecked": 3,
+    "original_bodies_passed": 3
+  },
+  "family_audit": {
+    "status": "PASS",
+    "unique_definitional_statements": 26,
+    "definitional_equivalence_classes": [
+      [
+        "seed_001",
+        "seed_002"
+      ],
+      [
+        "seed_005",
+        "seed_006"
+      ],
+      [
+        "seed_017",
+        "seed_022"
+      ],
+      [
+        "seed_018",
+        "seed_026"
+      ]
+    ],
+    "generation_families": 7,
+    "split_groups": 5,
+    "family_manifest_checked": true,
+    "split_policy": "Keep each split_group intact; generation_family refines it and never licenses splitting it."
   },
   "global_helpers_enabled": [],
   "isolation": "Each pair compiled in a fresh verifier temporary directory.",
@@ -88,7 +127,7 @@
       "id": "seed_009",
       "status": "PASS",
       "category": "VERIFIED",
-      "source_sha256": "f8e328c9409c494235ff7aa8f426b124a6f824aa52eba43ff09e58f97b3863b0"
+      "source_sha256": "b209c8f1a4f22ae8404239e18b1986529c31c4502356a890921c8f41c65306b3"
     },
     {
       "id": "seed_010",
@@ -166,7 +205,7 @@
       "id": "seed_022",
       "status": "PASS",
       "category": "VERIFIED",
-      "source_sha256": "2704d89804ddd617ffd22763523b3c228954d4be4d290703d51af0eefbc04ab1"
+      "source_sha256": "db8fea9a35a63afe65dcbd5fd8dcaacbc6acc45b6eba4223311046bef52ef68d"
     },
     {
       "id": "seed_023",
@@ -196,7 +235,7 @@
       "id": "seed_027",
       "status": "PASS",
       "category": "VERIFIED",
-      "source_sha256": "74270cd1a20b26ee88bf657e4b8320140babd603a4f41207b34874b9cfdfa2ee"
+      "source_sha256": "f1098f82b7c3905c933803466aa9c3d8e0d41146d9c4f8825be1003267f15130"
     },
     {
       "id": "seed_028",
@@ -215,6 +254,26 @@
       "status": "PASS",
       "category": "VERIFIED",
       "source_sha256": "1a03f569a1ddcdc86edd25235ef3f0d1ff11808bebc6f62e3480ac4578ee61f7"
+    }
+  ],
+  "original_proof_results": [
+    {
+      "id": "seed_009",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "f8e328c9409c494235ff7aa8f426b124a6f824aa52eba43ff09e58f97b3863b0"
+    },
+    {
+      "id": "seed_022",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "2704d89804ddd617ffd22763523b3c228954d4be4d290703d51af0eefbc04ab1"
+    },
+    {
+      "id": "seed_027",
+      "status": "PASS",
+      "category": "VERIFIED",
+      "source_sha256": "74270cd1a20b26ee88bf657e4b8320140babd603a4f41207b34874b9cfdfa2ee"
     }
   ]
 }

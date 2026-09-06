@@ -1,0 +1,40 @@
+{
+  "schema_version": "seed-0.2",
+  "families": {
+    "definitional_reflexivity": {
+      "split_group": "definitional_addition",
+      "members": ["seed_001", "seed_002", "seed_003", "seed_004", "seed_005", "seed_006"],
+      "rationale": "All reduce to reflexivity using the left-recursive definition of addition; includes definitionally equal statements 001/002 and 005/006."
+    },
+    "premise_reuse": {
+      "split_group": "equality_transport",
+      "members": ["seed_007", "seed_008"],
+      "rationale": "Direct reuse of an equality premise, including reversing its orientation."
+    },
+    "premise_congruence": {
+      "split_group": "equality_transport",
+      "members": ["seed_009", "seed_010", "seed_011", "seed_012", "seed_013"],
+      "rationale": "Transport n = m through successor/addition contexts, including repeated occurrences and either rewrite direction."
+    },
+    "premise_definitional_substitution": {
+      "split_group": "equality_transport",
+      "members": ["seed_014", "seed_015"],
+      "rationale": "Substitute a constructor-headed equality premise to expose a defining clause of addition. Keep the entire equality_transport split group together, including congruence and direct-reuse relatives."
+    },
+    "right_zero_variants": {
+      "split_group": "right_identity_induction",
+      "members": ["seed_016", "seed_020", "seed_021", "seed_027"],
+      "rationale": "Right-zero induction and its repeated, contextual, and premise-conditioned variants. The existing examples/add_zero_right.json belongs with this family."
+    },
+    "successor_reassociation_variants": {
+      "split_group": "addition_structure_induction",
+      "members": ["seed_017", "seed_018", "seed_019", "seed_022", "seed_023", "seed_024", "seed_025", "seed_026", "seed_028", "seed_030"],
+      "rationale": "Right-successor, increment, contextual, and reassociation variants are linked by seed 030, which combines successor reasoning with associativity and specializes to 025 at m = 0. Keep their connected family together. Includes definitionally equal statements 017/022 and 018/026."
+    },
+    "conditional_permutation": {
+      "split_group": "conditional_permutation_induction",
+      "members": ["seed_029"],
+      "rationale": "Lift a given commuting equality under an arbitrary common prefix using induction."
+    }
+  }
+}

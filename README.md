@@ -26,6 +26,7 @@ Recheck the stored seed artifacts and recompile every proof:
 
 ```sh
 python3 scripts/verify_seeds.py --check
+python3 scripts/verify_seeds.py --audit
 python3 -m unittest discover -s tests -v
 ```
 
@@ -35,7 +36,7 @@ After intentionally editing a curated pair, rebuild the records and compilation 
 python3 scripts/verify_seeds.py --write
 ```
 
-All 30 records remain `split: unassigned`; related statements share a `split_group`. Keep these groups and the related original example together when designing future data splits. Stored PASS metadata is checked against source, environment, verifier, generated-code, and dataset hashes before revalidation. Full informal/formal fidelity still requires review; the kernel does not certify English.
+The refined [seed-0.2 schema](data/seeds/SCHEMA.md) adds a proof paragraph, canonical proof body, argument features, generation family, and explicit provenance to every record. All original statements and aligned steps are preserved; three canonical bodies normalize direct hypothesis use from `apply` to `exact`, with both versions verified and the edits recorded in metadata. All 30 records remain `split: unassigned`. Seven generation families refine five conservative split groups; four definitionally equivalent pairs are kept together. Keep entire split groups and the related original example together when designing future data splits. Stored PASS metadata is checked against source, environment, verifier, schema/family definitions, generated-code, and dataset hashes before revalidation. Full informal/formal fidelity still requires review; the kernel does not certify English.
 
 To independently exercise the locked downloads without changing installed packages:
 

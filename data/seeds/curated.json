@@ -2,14 +2,47 @@
   {
     "id": "seed_001",
     "title": "Reflexivity of natural-number equality",
-    "split_group": "equality_reflexivity",
+    "split_group": "definitional_addition",
     "method": "definition",
     "formal_statement": "forall n : nat, n = n",
     "informal_statement": "Every natural number n is equal to itself.",
     "steps": [
-      {"text": "Let n be any natural number.", "code": "intros n."},
-      {"text": "Both sides are the same number, so the equality follows by reflexivity.", "code": "reflexivity."}
-    ]
+      {
+        "text": "Let n be any natural number.",
+        "code": "intros n."
+      },
+      {
+        "text": "Both sides are the same number, so the equality follows by reflexivity.",
+        "code": "reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "3d9abab2bacfdcbc80969369f724ad632afd45c597f8a84f138169e05743c030",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "09e8d5ca51b7298d9f3d0c9f6c393512c4b0964a14ac17903559d7f716f7d043",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "equality_reflexivity"
+    },
+    "informal_proof": "Let n be any natural number. Both sides are the same number, so the equality follows by reflexivity.",
+    "proof_body": "intros n.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_002",
@@ -19,9 +52,41 @@
     "formal_statement": "forall n : nat, 0 + n = n",
     "informal_statement": "For every natural number n, adding n to zero gives n.",
     "steps": [
-      {"text": "Fix a natural number n.", "code": "intros n."},
-      {"text": "By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Fix a natural number n.",
+        "code": "intros n."
+      },
+      {
+        "text": "By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "1407b78c2bc72533ae524e12ead526df466567a3691933d535bd8fc0ecbf6b18",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "be3f25cd17dfb5d1602345e7a9c05711a69f50ebd989a600def75f932d2317c1",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix a natural number n. By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.",
+    "proof_body": "intros n.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_003",
@@ -31,9 +96,41 @@
     "formal_statement": "forall n m : nat, S n + m = S (n + m)",
     "informal_statement": "For natural numbers n and m, the successor of n plus m equals the successor of n + m.",
     "steps": [
-      {"text": "Take arbitrary natural numbers n and m.", "code": "intros n m."},
-      {"text": "The recursive clause defining addition rewrites S n + m as S (n + m), which is exactly the right-hand side.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Take arbitrary natural numbers n and m.",
+        "code": "intros n m."
+      },
+      {
+        "text": "The recursive clause defining addition rewrites S n + m as S (n + m), which is exactly the right-hand side.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "c83fad0f40a21f461096a795f0e46a79a4e2523973c52d338ea9fc2e990151fe",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "7c8a914e4708a2d488c80a413b61ce81591bd71af667d3de38fb7194d91d1c57",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Take arbitrary natural numbers n and m. The recursive clause defining addition rewrites S n + m as S (n + m), which is exactly the right-hand side.",
+    "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_004",
@@ -43,9 +140,41 @@
     "formal_statement": "forall n : nat, 1 + n = S n",
     "informal_statement": "For every natural number n, 1 + n is the successor of n.",
     "steps": [
-      {"text": "Let n be a natural number.", "code": "intros n."},
-      {"text": "Since 1 is S 0, the definition of addition reduces 1 + n to S (0 + n), and then to S n. This proves the equality.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Let n be a natural number.",
+        "code": "intros n."
+      },
+      {
+        "text": "Since 1 is S 0, the definition of addition reduces 1 + n to S (0 + n), and then to S n. This proves the equality.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "dd43cb78e76b69afda5f1d69e7fe3306aaf0d8c3f830ed96804e8c698f4ecd3d",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "f6336052ba7e3cecaaec2630c6eea0febcafc5a960eb5732008d7d538560e88f",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Let n be a natural number. Since 1 is S 0, the definition of addition reduces 1 + n to S (0 + n), and then to S n. This proves the equality.",
+    "proof_body": "intros n.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_005",
@@ -55,9 +184,41 @@
     "formal_statement": "forall n m : nat, n + (0 + m) = n + m",
     "informal_statement": "For all natural numbers n and m, n + (0 + m) = n + m.",
     "steps": [
-      {"text": "Fix n and m.", "code": "intros n m."},
-      {"text": "The inner expression 0 + m reduces to m by definition. Substituting this reduction leaves the same expression on both sides.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Fix n and m.",
+        "code": "intros n m."
+      },
+      {
+        "text": "The inner expression 0 + m reduces to m by definition. Substituting this reduction leaves the same expression on both sides.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "b9b17b09a70562de5bbe924793c80a26d5fc2cf478860de4a3de1bdecd81cec9",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "3c84a6b07627ff9685f1255901d3a957e497e9bf3cce6167c252ec75381bea47",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m. The inner expression 0 + m reduces to m by definition. Substituting this reduction leaves the same expression on both sides.",
+    "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_006",
@@ -67,9 +228,41 @@
     "formal_statement": "forall n m : nat, (0 + n) + m = n + m",
     "informal_statement": "For all natural numbers n and m, (0 + n) + m = n + m.",
     "steps": [
-      {"text": "Choose arbitrary natural numbers n and m.", "code": "intros n m."},
-      {"text": "First reduce 0 + n to n. Both sides now read n + m, so they are equal.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Choose arbitrary natural numbers n and m.",
+        "code": "intros n m."
+      },
+      {
+        "text": "First reduce 0 + n to n. Both sides now read n + m, so they are equal.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "definitional_reflexivity",
+    "metadata": {
+      "authored_steps_sha256": "36be7bc15ce349b9d8d31ea5795a23b4eb32adbf49909b1757977ef624620ae5",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "0ab2060388987d8f537e1dd8013c8f05f5b3e9155de3ea31726aac4ee1fe627a",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Choose arbitrary natural numbers n and m. First reduce 0 + n to n. Both sides now read n + m, so they are equal.",
+    "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_007",
@@ -79,9 +272,41 @@
     "formal_statement": "forall n m : nat, n = m -> n = m",
     "informal_statement": "If natural numbers n and m satisfy n = m, then n = m.",
     "steps": [
-      {"text": "Fix n and m, and assume that n = m.", "code": "intros n m H."},
-      {"text": "The desired equality is precisely the assumption.", "code": "exact H."}
-    ]
+      {
+        "text": "Fix n and m, and assume that n = m.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "The desired equality is precisely the assumption.",
+        "code": "exact H."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_reuse",
+    "metadata": {
+      "authored_steps_sha256": "c4e1fb7079ab0010eb0fe03760a561a11a825daba9f832fce88f917f40bef99d",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "e019530226e6faec3f524d3e8b66decccc05da28cb3f4bfb5574a0a81aeb966c",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m, and assume that n = m. The desired equality is precisely the assumption.",
+    "proof_body": "intros n m H.\nexact H.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": false
+    }
   },
   {
     "id": "seed_008",
@@ -91,9 +316,41 @@
     "formal_statement": "forall n m : nat, n = m -> m = n",
     "informal_statement": "If n and m are natural numbers and n = m, then m = n.",
     "steps": [
-      {"text": "Let n and m be natural numbers with n = m.", "code": "intros n m H."},
-      {"text": "By symmetry, it is enough to show n = m, and that is our assumption.", "code": "symmetry.\nexact H."}
-    ]
+      {
+        "text": "Let n and m be natural numbers with n = m.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "By symmetry, it is enough to show n = m, and that is our assumption.",
+        "code": "symmetry.\nexact H."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_reuse",
+    "metadata": {
+      "authored_steps_sha256": "c6d84befeaf5b9e95a606144be956283eb8574420eae6bb3f0a269d0a87caf05",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "94548d24900ddb4f373bf62e78497bd01ed02a7a4c7c19e705ffc4194c5f378f",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Let n and m be natural numbers with n = m. By symmetry, it is enough to show n = m, and that is our assumption.",
+    "proof_body": "intros n m H.\nsymmetry.\nexact H.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": false,
+      "uses_f_equal": false,
+      "uses_reflexivity": false
+    }
   },
   {
     "id": "seed_009",
@@ -103,10 +360,52 @@
     "formal_statement": "forall n m : nat, n = m -> S n = S m",
     "informal_statement": "Equal natural numbers have equal successors: n = m implies S n = S m.",
     "steps": [
-      {"text": "Take n and m and assume n = m.", "code": "intros n m H."},
-      {"text": "It suffices to prove that the arguments of the two successor expressions are equal.", "code": "f_equal."},
-      {"text": "That remaining equality is exactly the hypothesis n = m.", "code": "apply H."}
-    ]
+      {
+        "text": "Take n and m and assume n = m.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "It suffices to prove that the arguments of the two successor expressions are equal.",
+        "code": "f_equal."
+      },
+      {
+        "text": "That remaining equality is exactly the hypothesis n = m.",
+        "code": "apply H."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_congruence",
+    "metadata": {
+      "authored_steps_sha256": "83f05f38f2d6eda8fb099b62f5a618d5de440d54556d82998b870463886297e6",
+      "proof_normalizations": [
+        {
+          "proof_line": 3,
+          "from": "apply H.",
+          "to": "exact H.",
+          "reason": "The remaining goal matches this local hypothesis, modulo definitional reduction; check both authored and canonical bodies with Rocq."
+        }
+      ],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "b209c8f1a4f22ae8404239e18b1986529c31c4502356a890921c8f41c65306b3",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Take n and m and assume n = m. It suffices to prove that the arguments of the two successor expressions are equal. That remaining equality is exactly the hypothesis n = m.",
+    "proof_body": "intros n m H.\nf_equal.\nexact H.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": false
+    }
   },
   {
     "id": "seed_010",
@@ -116,9 +415,41 @@
     "formal_statement": "forall n m p : nat, n = m -> n + p = m + p",
     "informal_statement": "For natural numbers n, m, and p, if n = m then n + p = m + p.",
     "steps": [
-      {"text": "Fix n, m, and p and suppose n = m.", "code": "intros n m p H."},
-      {"text": "Replace n by m in the left-hand side. Both sides become m + p.", "code": "rewrite H.\nreflexivity."}
-    ]
+      {
+        "text": "Fix n, m, and p and suppose n = m.",
+        "code": "intros n m p H."
+      },
+      {
+        "text": "Replace n by m in the left-hand side. Both sides become m + p.",
+        "code": "rewrite H.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_congruence",
+    "metadata": {
+      "authored_steps_sha256": "cd208bec52681d82348e40e0b0f0b08d0ab22a72fa52cd2970c5410af35e94fc",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "3d3b46520ec36c0e1433b572360c631e6201de06ec6f6992affc17d355ec831b",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n, m, and p and suppose n = m. Replace n by m in the left-hand side. Both sides become m + p.",
+    "proof_body": "intros n m p H.\nrewrite H.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_011",
@@ -128,9 +459,41 @@
     "formal_statement": "forall n m p : nat, n = m -> p + n = p + m",
     "informal_statement": "For natural numbers n, m, and p, n = m implies p + n = p + m.",
     "steps": [
-      {"text": "Let n, m, and p be natural numbers with n = m.", "code": "intros n m p H."},
-      {"text": "Use the assumed equality to replace n by m under addition. The resulting two sums are identical.", "code": "rewrite H.\nreflexivity."}
-    ]
+      {
+        "text": "Let n, m, and p be natural numbers with n = m.",
+        "code": "intros n m p H."
+      },
+      {
+        "text": "Use the assumed equality to replace n by m under addition. The resulting two sums are identical.",
+        "code": "rewrite H.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_congruence",
+    "metadata": {
+      "authored_steps_sha256": "5d63322fed7084cbde14452bcd7e5f356d2c727532b98e865f8ff4679ea05bc3",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "d165aba7b24e6ac0f5eadff6756b9fd6595cf60375301e6298e9dd8570160009",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Let n, m, and p be natural numbers with n = m. Use the assumed equality to replace n by m under addition. The resulting two sums are identical.",
+    "proof_body": "intros n m p H.\nrewrite H.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_012",
@@ -140,9 +503,41 @@
     "formal_statement": "forall n m : nat, n = m -> n + n = m + m",
     "informal_statement": "If natural numbers n and m are equal, then n + n = m + m.",
     "steps": [
-      {"text": "Fix n and m and assume n = m.", "code": "intros n m H."},
-      {"text": "Read the assumption from right to left and replace both occurrences of m by n. The conclusion becomes n + n = n + n.", "code": "rewrite <- H.\nreflexivity."}
-    ]
+      {
+        "text": "Fix n and m and assume n = m.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "Read the assumption from right to left and replace both occurrences of m by n. The conclusion becomes n + n = n + n.",
+        "code": "rewrite <- H.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_congruence",
+    "metadata": {
+      "authored_steps_sha256": "71a74b73f2b4cf92d4631e01fff8573878f4e6bd068e3a81c37844f9c058a472",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "dd17563c8d10a3bc055c05799fdc1679d0a1e7f98b38d217b78dcc9bab43c1f6",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m and assume n = m. Read the assumption from right to left and replace both occurrences of m by n. The conclusion becomes n + n = n + n.",
+    "proof_body": "intros n m H.\nrewrite <- H.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_013",
@@ -152,9 +547,41 @@
     "formal_statement": "forall n m : nat, n = m -> n + m = m + n",
     "informal_statement": "If n and m are equal natural numbers, then n + m = m + n.",
     "steps": [
-      {"text": "Take n and m with n = m.", "code": "intros n m H."},
-      {"text": "Replace n by m throughout the conclusion. Both sides then equal m + m.", "code": "rewrite H.\nreflexivity."}
-    ]
+      {
+        "text": "Take n and m with n = m.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "Replace n by m throughout the conclusion. Both sides then equal m + m.",
+        "code": "rewrite H.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_congruence",
+    "metadata": {
+      "authored_steps_sha256": "ca044adc36dbffb421efdd7982242729479c18904a1a11fb815739f7729828c5",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "1b16942ad3c3c61a275ebb90b7f3f4e83eceefa7506cab383ffa92acf85a86c6",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Take n and m with n = m. Replace n by m throughout the conclusion. Both sides then equal m + m.",
+    "proof_body": "intros n m H.\nrewrite H.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_014",
@@ -164,10 +591,45 @@
     "formal_statement": "forall n m : nat, n = 0 -> n + m = m",
     "informal_statement": "For natural numbers n and m, if n = 0 then n + m = m.",
     "steps": [
-      {"text": "Fix n and m, and assume n is zero.", "code": "intros n m H."},
-      {"text": "Substitute zero for n. The goal is now 0 + m = m.", "code": "rewrite H."},
-      {"text": "The defining zero clause of addition reduces the left-hand side to m, proving the claim.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Fix n and m, and assume n is zero.",
+        "code": "intros n m H."
+      },
+      {
+        "text": "Substitute zero for n. The goal is now 0 + m = m.",
+        "code": "rewrite H."
+      },
+      {
+        "text": "The defining zero clause of addition reduces the left-hand side to m, proving the claim.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_definitional_substitution",
+    "metadata": {
+      "authored_steps_sha256": "e3f64d06a6aea3a22ec1c23d2919831734beb93ef331480cc512919fc21522ff",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "7258a730b22eda63a3700fdb504e9c9843469bc4fd9aeb09e931b01e7d7a6c3e",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m, and assume n is zero. Substitute zero for n. The goal is now 0 + m = m. The defining zero clause of addition reduces the left-hand side to m, proving the claim.",
+    "proof_body": "intros n m H.\nrewrite H.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_015",
@@ -177,10 +639,45 @@
     "formal_statement": "forall n m p : nat, n = S m -> n + p = S (m + p)",
     "informal_statement": "For natural numbers n, m, and p, if n is the successor of m then n + p = S (m + p).",
     "steps": [
-      {"text": "Take n, m, and p, and suppose n = S m.", "code": "intros n m p H."},
-      {"text": "Replace n by S m in the desired equality.", "code": "rewrite H."},
-      {"text": "By the successor clause of addition, S m + p reduces to S (m + p), as required.", "code": "simpl.\nreflexivity."}
-    ]
+      {
+        "text": "Take n, m, and p, and suppose n = S m.",
+        "code": "intros n m p H."
+      },
+      {
+        "text": "Replace n by S m in the desired equality.",
+        "code": "rewrite H."
+      },
+      {
+        "text": "By the successor clause of addition, S m + p reduces to S (m + p), as required.",
+        "code": "simpl.\nreflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "premise_definitional_substitution",
+    "metadata": {
+      "authored_steps_sha256": "cca23f941c76037452e2442df587aca2a61b11641feedd6bec961fc5cfeae537",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "81a7e21fb9e0bf8e264c2648280ea04340679372347d5d284bce040aa59c00de",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Take n, m, and p, and suppose n = S m. Replace n by S m in the desired equality. By the successor clause of addition, S m + p reduces to S (m + p), as required.",
+    "proof_body": "intros n m p H.\nrewrite H.\nsimpl.\nreflexivity.",
+    "argument_features": {
+      "uses_induction": false,
+      "induction_variable": null,
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_016",
@@ -188,56 +685,199 @@
     "split_group": "right_identity_induction",
     "method": "induction",
     "induction_variable": "n",
-    "related_existing_example": "examples/add_zero_right.json",
     "formal_statement": "forall n : nat, n + 0 = n",
     "informal_statement": "For every natural number n, n + 0 = n.",
     "steps": [
-      {"text": "Let n be arbitrary and proceed by induction on n.", "code": "intros n.\ninduction n as [| k IH]."},
-      {"text": "For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition.", "code": "- simpl.\n  reflexivity."},
-      {"text": "For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Let n be arbitrary and proceed by induction on n.",
+        "code": "intros n.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "right_zero_variants",
+    "metadata": {
+      "authored_steps_sha256": "280f4af4ecc93b8ea678dda68722f87351d2d5324861007ec0b0f29ba1d7e829",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "94f281e1cba52c1ac3c41128dc8ce4950a796faeecb6b91f43a8e6c387b17031",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "related_existing_example": "examples/add_zero_right.json"
+    },
+    "informal_proof": "Let n be arbitrary and proceed by induction on n. For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition. For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.",
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_017",
     "title": "Adding one on the right",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n : nat, n + 1 = S n",
     "informal_statement": "For every natural number n, n + 1 is the successor of n.",
     "steps": [
-      {"text": "Fix n and use induction on it.", "code": "intros n.\ninduction n as [| k IH]."},
-      {"text": "When n is zero, both 0 + 1 and S 0 reduce to 1.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume k + 1 = S k. For S k, simplifying leaves S (k + 1) = S (S k). Equality of the arguments suffices, and it is exactly the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
-    ]
+      {
+        "text": "Fix n and use induction on it.",
+        "code": "intros n.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "When n is zero, both 0 + 1 and S 0 reduce to 1.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume k + 1 = S k. For S k, simplifying leaves S (k + 1) = S (S k). Equality of the arguments suffices, and it is exactly the induction hypothesis.",
+        "code": "- simpl.\n  f_equal.\n  exact IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "b2a7cda1be0cf734451c082d81678c733b347f26d8c21faf51c0a2f1bccad4be",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "ce147914b653527df783ae9820fd273ee9b8c28cfddf16ced6ebb37d61393f96",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and use induction on it. When n is zero, both 0 + 1 and S 0 reduce to 1. Assume k + 1 = S k. For S k, simplifying leaves S (k + 1) = S (S k). Equality of the arguments suffices, and it is exactly the induction hypothesis.",
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_018",
     "title": "Moving a successor out of the right summand",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m : nat, n + S m = S (n + m)",
     "informal_statement": "For all natural numbers n and m, n + S m = S (n + m).",
     "steps": [
-      {"text": "Fix n and m. Induct on n while keeping m fixed.", "code": "intros n m.\ninduction n as [| k IH]."},
-      {"text": "At zero, both sides simplify to S m.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume k + S m = S (k + m). The successor goal simplifies to S (k + S m) = S (S (k + m)). Use the hypothesis from left to right inside the outer successor, obtaining identical sides.", "code": "- simpl.\n  rewrite -> IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix n and m. Induct on n while keeping m fixed.",
+        "code": "intros n m.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "At zero, both sides simplify to S m.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume k + S m = S (k + m). The successor goal simplifies to S (k + S m) = S (S (k + m)). Use the hypothesis from left to right inside the outer successor, obtaining identical sides.",
+        "code": "- simpl.\n  rewrite -> IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "86c683dceb8354e44fa7ca26de54b08efae7ed19b3a1a4a021efa1a88e44465b",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "0f40366366f867d7aa7f507912ac3b1d256b1f9b5f26b3c2010aece1d9b39c73",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and m. Induct on n while keeping m fixed. At zero, both sides simplify to S m. Assume k + S m = S (k + m). The successor goal simplifies to S (k + S m) = S (S (k + m)). Use the hypothesis from left to right inside the outer successor, obtaining identical sides.",
+    "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite -> IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_019",
     "title": "Associativity of addition",
-    "split_group": "associativity_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "a",
     "formal_statement": "forall a b c : nat, (a + b) + c = a + (b + c)",
     "informal_statement": "For all natural numbers a, b, and c, (a + b) + c = a + (b + c).",
     "steps": [
-      {"text": "Fix a, b, and c, and induct on a.", "code": "intros a b c.\ninduction a as [| k IH]."},
-      {"text": "If a = 0, both sides reduce to b + c.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume (k + b) + c = k + (b + c). For a = S k, the recursive definition reduces the goal to S ((k + b) + c) = S (k + (b + c)). Rewriting with the induction hypothesis proves this equality.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix a, b, and c, and induct on a.",
+        "code": "intros a b c.\ninduction a as [| k IH]."
+      },
+      {
+        "text": "If a = 0, both sides reduce to b + c.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume (k + b) + c = k + (b + c). For a = S k, the recursive definition reduces the goal to S ((k + b) + c) = S (k + (b + c)). Rewriting with the induction hypothesis proves this equality.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "3f63deb365c8ee4f21b04e1ac11592db12416a02d0d7444ccabbb8c4741b1679",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "a4832e3020e0551a294b8709434abfe2b5b2fcf02f8fdc5ee26e12d554c54d29",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "associativity_induction"
+    },
+    "informal_proof": "Fix a, b, and c, and induct on a. If a = 0, both sides reduce to b + c. Assume (k + b) + c = k + (b + c). For a = S k, the recursive definition reduces the goal to S ((k + b) + c) = S (k + (b + c)). Rewriting with the induction hypothesis proves this equality.",
+    "proof_body": "intros a b c.\ninduction a as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "a",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_020",
@@ -248,10 +888,45 @@
     "formal_statement": "forall n : nat, (n + 0) + 0 = n",
     "informal_statement": "Adding zero twice on the right leaves any natural number n unchanged: (n + 0) + 0 = n.",
     "steps": [
-      {"text": "Take an arbitrary n and induct on n.", "code": "intros n.\ninduction n as [| k IH]."},
-      {"text": "For zero, the left-hand side reduces to zero, so the claim holds.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Suppose (k + 0) + 0 = k. At S k, simplification gives S ((k + 0) + 0) = S k. Substitute the induction hypothesis inside the successor to finish.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Take an arbitrary n and induct on n.",
+        "code": "intros n.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For zero, the left-hand side reduces to zero, so the claim holds.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Suppose (k + 0) + 0 = k. At S k, simplification gives S ((k + 0) + 0) = S k. Substitute the induction hypothesis inside the successor to finish.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "right_zero_variants",
+    "metadata": {
+      "authored_steps_sha256": "4e8f9c49cb51038f64d7f4f25ed0e3c168a75c72d059f2029f2bcd27f38b1e72",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "7532f33417c64f0d3a3f4fb10e0f0e7a38c7a465bc55f0f776191fb7e1425be7",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Take an arbitrary n and induct on n. For zero, the left-hand side reduces to zero, so the claim holds. Suppose (k + 0) + 0 = k. At S k, simplification gives S ((k + 0) + 0) = S k. Substitute the induction hypothesis inside the successor to finish.",
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_021",
@@ -262,81 +937,302 @@
     "formal_statement": "forall n m : nat, (n + 0) + m = n + m",
     "informal_statement": "For natural numbers n and m, (n + 0) + m = n + m.",
     "steps": [
-      {"text": "Fix n and m and perform induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
-      {"text": "The zero case simplifies to m = m.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume (k + 0) + m = k + m. Simplifying the successor case produces S ((k + 0) + m) = S (k + m). It suffices to equate the arguments, which is the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
-    ]
+      {
+        "text": "Fix n and m and perform induction on n.",
+        "code": "intros n m.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "The zero case simplifies to m = m.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume (k + 0) + m = k + m. Simplifying the successor case produces S ((k + 0) + m) = S (k + m). It suffices to equate the arguments, which is the induction hypothesis.",
+        "code": "- simpl.\n  f_equal.\n  exact IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "right_zero_variants",
+    "metadata": {
+      "authored_steps_sha256": "87fa9a165b9de68e0fb5a7ed12f50cab8c648dfc3158549dedf4cca259b62e0c",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "aa88dd82b895383c57a405621f28bde30b7b01c26d72050e4974d6c0b5405556",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m and perform induction on n. The zero case simplifies to m = m. Assume (k + 0) + m = k + m. Simplifying the successor case produces S ((k + 0) + m) = S (k + m). It suffices to equate the arguments, which is the induction hypothesis.",
+    "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_022",
     "title": "Commuting addition with one",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n : nat, n + 1 = 1 + n",
     "informal_statement": "For every natural number n, n + 1 = 1 + n.",
     "steps": [
-      {"text": "Let n be a natural number and induct on it.", "code": "intros n.\ninduction n as [| k IH]."},
-      {"text": "For n = 0, both sums reduce to 1.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume k + 1 = 1 + k. At S k, simplification gives S (k + 1) = S (S k). It suffices to prove k + 1 = S k. This is the hypothesis, since 1 + k reduces to S k.", "code": "- simpl.\n  f_equal.\n  apply IH."}
-    ]
+      {
+        "text": "Let n be a natural number and induct on it.",
+        "code": "intros n.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For n = 0, both sums reduce to 1.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume k + 1 = 1 + k. At S k, simplification gives S (k + 1) = S (S k). It suffices to prove k + 1 = S k. This is the hypothesis, since 1 + k reduces to S k.",
+        "code": "- simpl.\n  f_equal.\n  apply IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "1267c6357edaf602d03134fe909f2bae8ed002fe373ca8a731593c14f9b4ab6b",
+      "proof_normalizations": [
+        {
+          "proof_line": 7,
+          "from": "  apply IH.",
+          "to": "  exact IH.",
+          "reason": "The remaining goal matches this local hypothesis, modulo definitional reduction; check both authored and canonical bodies with Rocq."
+        }
+      ],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "db8fea9a35a63afe65dcbd5fd8dcaacbc6acc45b6eba4223311046bef52ef68d",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Let n be a natural number and induct on it. For n = 0, both sums reduce to 1. Assume k + 1 = 1 + k. At S k, simplification gives S (k + 1) = S (S k). It suffices to prove k + 1 = S k. This is the hypothesis, since 1 + k reduces to S k.",
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_023",
     "title": "Moving two successors out of the right summand",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m : nat, n + S (S m) = S (S (n + m))",
     "informal_statement": "For natural numbers n and m, n + S (S m) = S (S (n + m)).",
     "steps": [
-      {"text": "Fix n and m, and use induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
-      {"text": "When n = 0, both sides reduce to S (S m).",
-       "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume k + S (S m) = S (S (k + m)). In the successor case, simplify the addition and remove the common outer successor. The remaining equality is the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
-    ]
+      {
+        "text": "Fix n and m, and use induction on n.",
+        "code": "intros n m.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "When n = 0, both sides reduce to S (S m).",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume k + S (S m) = S (S (k + m)). In the successor case, simplify the addition and remove the common outer successor. The remaining equality is the induction hypothesis.",
+        "code": "- simpl.\n  f_equal.\n  exact IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "c9142b020c4897b2e7eed6bb1964b2ba09e0a8bb70edf452ddfffd77bad8d01e",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "b20793c1eecf7c3d6c80b57fa642f81007a72bd242bca6ea3acc406a3d44cd5a",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and m, and use induction on n. When n = 0, both sides reduce to S (S m). Assume k + S (S m) = S (S (k + m)). In the successor case, simplify the addition and remove the common outer successor. The remaining equality is the induction hypothesis.",
+    "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_024",
     "title": "Two successive increments on the right",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n : nat, (n + 1) + 1 = S (S n)",
     "informal_statement": "For every natural number n, adding one twice gives its second successor: (n + 1) + 1 = S (S n).",
     "steps": [
-      {"text": "Fix n and prove the statement by induction on n.", "code": "intros n.\ninduction n as [| k IH]."},
-      {"text": "For zero, each side computes to 2.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume (k + 1) + 1 = S (S k). The successor case reduces to S ((k + 1) + 1) = S (S (S k)). Rewrite the inner sum with the hypothesis, after which both sides coincide.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix n and prove the statement by induction on n.",
+        "code": "intros n.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For zero, each side computes to 2.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume (k + 1) + 1 = S (S k). The successor case reduces to S ((k + 1) + 1) = S (S (S k)). Rewrite the inner sum with the hypothesis, after which both sides coincide.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "6c840a2bda76372ee8656fac44d9201b987e6ba565c65e92b48dfd76ea632c05",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "24a91194a456f498322fb332b276d9769c751139757cbf9132dfe13c9c4906ff",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and prove the statement by induction on n. For zero, each side computes to 2. Assume (k + 1) + 1 = S (S k). The successor case reduces to S ((k + 1) + 1) = S (S (S k)). Rewrite the inner sum with the hypothesis, after which both sides coincide.",
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_025",
     "title": "An increment inside the first summand",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m : nat, (n + 1) + m = S (n + m)",
     "informal_statement": "For all natural numbers n and m, (n + 1) + m = S (n + m).",
     "steps": [
-      {"text": "Take n and m and induct on n with m fixed.", "code": "intros n m.\ninduction n as [| k IH]."},
-      {"text": "At n = 0, both sides simplify to S m.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Suppose (k + 1) + m = S (k + m). Simplification at S k gives S ((k + 1) + m) = S (S (k + m)). Equality of the arguments is sufficient and follows directly from the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  exact IH."}
-    ]
+      {
+        "text": "Take n and m and induct on n with m fixed.",
+        "code": "intros n m.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "At n = 0, both sides simplify to S m.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Suppose (k + 1) + m = S (k + m). Simplification at S k gives S ((k + 1) + m) = S (S (k + m)). Equality of the arguments is sufficient and follows directly from the induction hypothesis.",
+        "code": "- simpl.\n  f_equal.\n  exact IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "c08bfdc4bb80c79d65f0251df0ee59840a138445976472d106adbe86130b2e4f",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "bd65ad3c4e676e9d2012b8e4d9c70c005b52dc87e26b858b3b845c1fb342c6be",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Take n and m and induct on n with m fixed. At n = 0, both sides simplify to S m. Suppose (k + 1) + m = S (k + m). Simplification at S k gives S ((k + 1) + m) = S (S (k + m)). Equality of the arguments is sufficient and follows directly from the induction hypothesis.",
+    "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_026",
     "title": "Moving a leading one across an outer summand",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m : nat, n + (1 + m) = 1 + (n + m)",
     "informal_statement": "For natural numbers n and m, n + (1 + m) = 1 + (n + m).",
     "steps": [
-      {"text": "Fix n and m and proceed by induction on n.", "code": "intros n m.\ninduction n as [| k IH]."},
-      {"text": "The base case has S m on both sides after simplification.", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume k + (1 + m) = 1 + (k + m). The successor case simplifies to S (k + S m) = S (S (k + m)). Equality of the arguments suffices. It follows from the hypothesis by reducing the additions whose first argument is 1.", "code": "- simpl.\n  f_equal.\n  exact IH."}
-    ]
+      {
+        "text": "Fix n and m and proceed by induction on n.",
+        "code": "intros n m.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "The base case has S m on both sides after simplification.",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume k + (1 + m) = 1 + (k + m). The successor case simplifies to S (k + S m) = S (S (k + m)). Equality of the arguments suffices. It follows from the hypothesis by reducing the additions whose first argument is 1.",
+        "code": "- simpl.\n  f_equal.\n  exact IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "f09c3ff703f44bd2f693010d0964157e1f4ab0aeec322ae28354c944c865c815",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "120ed15c49d61bb586d785808963de45fdb20659da8a546f0f5896e54714b9e1",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and m and proceed by induction on n. The base case has S m on both sides after simplification. Assume k + (1 + m) = 1 + (k + m). The successor case simplifies to S (k + S m) = S (S (k + m)). Equality of the arguments suffices. It follows from the hypothesis by reducing the additions whose first argument is 1.",
+    "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_027",
@@ -347,24 +1243,102 @@
     "formal_statement": "forall n m : nat, m + 0 = m -> (n + m) + 0 = n + m",
     "informal_statement": "Let n and m be natural numbers. Assuming m + 0 = m, prove (n + m) + 0 = n + m.",
     "steps": [
-      {"text": "Fix n and m, retain the assumption m + 0 = m, and induct on n.", "code": "intros n m H.\ninduction n as [| k IH]."},
-      {"text": "For n = 0, simplification leaves m + 0 = m, which is the given assumption.", "code": "- simpl.\n  exact H."},
-      {"text": "Assume (k + m) + 0 = k + m. At S k the goal reduces to S ((k + m) + 0) = S (k + m). It suffices to show equality of the arguments, supplied by the induction hypothesis.", "code": "- simpl.\n  f_equal.\n  apply IH."}
-    ]
+      {
+        "text": "Fix n and m, retain the assumption m + 0 = m, and induct on n.",
+        "code": "intros n m H.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For n = 0, simplification leaves m + 0 = m, which is the given assumption.",
+        "code": "- simpl.\n  exact H."
+      },
+      {
+        "text": "Assume (k + m) + 0 = k + m. At S k the goal reduces to S ((k + m) + 0) = S (k + m). It suffices to show equality of the arguments, supplied by the induction hypothesis.",
+        "code": "- simpl.\n  f_equal.\n  apply IH."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "right_zero_variants",
+    "metadata": {
+      "authored_steps_sha256": "3d2766eab5e7f8c0c726872a0b8bf06350910f95d851de6223c6091a2d4b1d6a",
+      "proof_normalizations": [
+        {
+          "proof_line": 7,
+          "from": "  apply IH.",
+          "to": "  exact IH.",
+          "reason": "The remaining goal matches this local hypothesis, modulo definitional reduction; check both authored and canonical bodies with Rocq."
+        }
+      ],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "f1098f82b7c3905c933803466aa9c3d8e0d41146d9c4f8825be1003267f15130",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n and m, retain the assumption m + 0 = m, and induct on n. For n = 0, simplification leaves m + 0 = m, which is the given assumption. Assume (k + m) + 0 = k + m. At S k the goal reduces to S ((k + m) + 0) = S (k + m). It suffices to show equality of the arguments, supplied by the induction hypothesis.",
+    "proof_body": "intros n m H.\ninduction n as [| k IH].\n- simpl.\n  exact H.\n- simpl.\n  f_equal.\n  exact IH.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": true,
+      "uses_rewrite": false,
+      "uses_f_equal": true,
+      "uses_reflexivity": false
+    }
   },
   {
     "id": "seed_028",
     "title": "Extending a right-one equality along a prefix",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m : nat, m + 1 = S m -> (n + m) + 1 = S (n + m)",
     "informal_statement": "For natural numbers n and m, assume m + 1 = S m. Then (n + m) + 1 = S (n + m).",
     "steps": [
-      {"text": "Fix n and m and assume m + 1 = S m. Induct on n.", "code": "intros n m H.\ninduction n as [| k IH]."},
-      {"text": "At zero, the goal reduces to the supplied equality m + 1 = S m.", "code": "- simpl.\n  exact H."},
-      {"text": "Assume (k + m) + 1 = S (k + m). For S k, simplification gives S ((k + m) + 1) = S (S (k + m)). Rewriting the argument on the left with the induction hypothesis proves the goal.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix n and m and assume m + 1 = S m. Induct on n.",
+        "code": "intros n m H.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "At zero, the goal reduces to the supplied equality m + 1 = S m.",
+        "code": "- simpl.\n  exact H."
+      },
+      {
+        "text": "Assume (k + m) + 1 = S (k + m). For S k, simplification gives S ((k + m) + 1) = S (S (k + m)). Rewriting the argument on the left with the induction hypothesis proves the goal.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "ff6f018eae5c0b8a52d43cb10b2531202f3d5c9a96a01cf1f1fc2d7b180d8bd4",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "c2f0f416f008fdc5d7618a52189a04124a0504f4354b9a982cab85b25fa25f26",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n and m and assume m + 1 = S m. Induct on n. At zero, the goal reduces to the supplied equality m + 1 = S m. Assume (k + m) + 1 = S (k + m). For S k, simplification gives S ((k + m) + 1) = S (S (k + m)). Rewriting the argument on the left with the induction hypothesis proves the goal.",
+    "proof_body": "intros n m H.\ninduction n as [| k IH].\n- simpl.\n  exact H.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_029",
@@ -375,23 +1349,94 @@
     "formal_statement": "forall n m p : nat, m + p = p + m -> (n + m) + p = (n + p) + m",
     "informal_statement": "Let n, m, and p be natural numbers. If m + p = p + m, then (n + m) + p = (n + p) + m.",
     "steps": [
-      {"text": "Fix n, m, and p and assume m + p = p + m. Induct on n.", "code": "intros n m p H.\ninduction n as [| k IH]."},
-      {"text": "For n = 0, the required equality simplifies to m + p = p + m, exactly the assumption.", "code": "- simpl.\n  exact H."},
-      {"text": "Assume (k + m) + p = (k + p) + m. For S k the goal simplifies to S ((k + m) + p) = S ((k + p) + m). Replacing the left argument using the induction hypothesis makes the successors equal.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix n, m, and p and assume m + p = p + m. Induct on n.",
+        "code": "intros n m p H.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "For n = 0, the required equality simplifies to m + p = p + m, exactly the assumption.",
+        "code": "- simpl.\n  exact H."
+      },
+      {
+        "text": "Assume (k + m) + p = (k + p) + m. For S k the goal simplifies to S ((k + m) + p) = S ((k + p) + m). Replacing the left argument using the induction hypothesis makes the successors equal.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "conditional_permutation",
+    "metadata": {
+      "authored_steps_sha256": "64197bce508dc06c9f7548e68f6f113c0de35f6c01ef7b46346a4e2a3c38e8bd",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "48f6e67c6a3baced99512c688ff0cf07510b06659b6a69e34d68f6d9c1760202",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      }
+    },
+    "informal_proof": "Fix n, m, and p and assume m + p = p + m. Induct on n. For n = 0, the required equality simplifies to m + p = p + m, exactly the assumption. Assume (k + m) + p = (k + p) + m. For S k the goal simplifies to S ((k + m) + p) = S ((k + p) + m). Replacing the left argument using the induction hypothesis makes the successors equal.",
+    "proof_body": "intros n m p H.\ninduction n as [| k IH].\n- simpl.\n  exact H.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": true,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   },
   {
     "id": "seed_030",
     "title": "Reassociating a sum with an inner successor",
-    "split_group": "successor_addition_induction",
+    "split_group": "addition_structure_induction",
     "method": "induction",
     "induction_variable": "n",
     "formal_statement": "forall n m p : nat, (n + S m) + p = S (n + (m + p))",
     "informal_statement": "For natural numbers n, m, and p, (n + S m) + p = S (n + (m + p)).",
     "steps": [
-      {"text": "Fix n, m, and p and induct on n.", "code": "intros n m p.\ninduction n as [| k IH]."},
-      {"text": "At zero, both sides simplify to S (m + p).", "code": "- simpl.\n  reflexivity."},
-      {"text": "Assume (k + S m) + p = S (k + (m + p)). Simplifying the successor case gives S ((k + S m) + p) = S (S (k + (m + p))). Rewrite the inner expression with the induction hypothesis; the sides are now identical.", "code": "- simpl.\n  rewrite IH.\n  reflexivity."}
-    ]
+      {
+        "text": "Fix n, m, and p and induct on n.",
+        "code": "intros n m p.\ninduction n as [| k IH]."
+      },
+      {
+        "text": "At zero, both sides simplify to S (m + p).",
+        "code": "- simpl.\n  reflexivity."
+      },
+      {
+        "text": "Assume (k + S m) + p = S (k + (m + p)). Simplifying the successor case gives S ((k + S m) + p) = S (S (k + (m + p))). Rewrite the inner expression with the induction hypothesis; the sides are now identical.",
+        "code": "- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ],
+    "schema_version": "seed-0.2",
+    "generation_family": "successor_reassociation_variants",
+    "metadata": {
+      "authored_steps_sha256": "2d468b6f434c903851b726b9e425ecb6fe921f3ff6f3fad3e817aa59d1c30375",
+      "proof_normalizations": [],
+      "provenance": {
+        "informal_proof_source": "assistant-curated",
+        "formal_proof_source": "assistant-curated",
+        "human_reviewed": false,
+        "rocq_verified": true,
+        "rocq_source_sha256": "1a03f569a1ddcdc86edd25235ef3f0d1ff11808bebc6f62e3480ac4578ee61f7",
+        "source_file": "data/seeds/curated.json",
+        "informal_alignment_status": "assistant-reviewed; not kernel-certified",
+        "curation": "Individually selected and authored; no enumeration or paraphrase expansion."
+      },
+      "previous_split_group": "successor_addition_induction"
+    },
+    "informal_proof": "Fix n, m, and p and induct on n. At zero, both sides simplify to S (m + p). Assume (k + S m) + p = S (k + (m + p)). Simplifying the successor case gives S ((k + S m) + p) = S (S (k + (m + p))). Rewrite the inner expression with the induction hypothesis; the sides are now identical.",
+    "proof_body": "intros n m p.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "argument_features": {
+      "uses_induction": true,
+      "induction_variable": "n",
+      "uses_premise": false,
+      "uses_rewrite": true,
+      "uses_f_equal": false,
+      "uses_reflexivity": true
+    }
   }
 ]

@@ -6,15 +6,18 @@ These are **assistant-curated examples, not independently human-authored proofs*
 
 | File | Purpose |
 | --- | --- |
-| `curated.json` | Editable source: individually written statements and informal/formal step pairs |
+| `curated.json` | Source: statements, proof paragraphs, unchanged steps, canonical bodies, features, families, and metadata |
 | `pairs.jsonl` | 30 complete records, one JSON object per line, compatible with the example's `input` / `target` structure |
 | `verification_report.json` | Actual results, per-method/group counts, compiler version, and checksums |
+| `families.json` | Explicit family membership and rationale for keeping related variants together |
+| `SCHEMA.md` | Full `seed-0.2` field definitions, derivations, provenance, and grouping policy |
 | `../../scripts/verify_seeds.py` | Build records or check their integrity and rerun Rocq |
 
 From the repository root:
 
 ```sh
 python3 scripts/setup_rocq.py --check
+python3 scripts/verify_seeds.py --audit
 python3 scripts/verify_seeds.py --check
 python3 -m unittest discover -s tests -v
 ```
@@ -25,11 +28,13 @@ To refresh exported pairs after an intentional source edit:
 python3 scripts/verify_seeds.py --write
 ```
 
-`--write` runs all 30 proofs and stores actual outcomes, including failures if any occur. It exits nonzero unless every proof passes. `--check` verifies the stored artifacts against current inputs before rechecking each proof; it does not overwrite timestamps or results. Changing the source, environment lock, verifier, or build script requires refreshing the evidence. Each compilation has the existing verifier's default ten-second timeout.
+`--write` runs all 30 canonical proofs and the three original bodies whose canonical versions were normalized. It stores actual outcomes, including failures if any occur, and updates source provenance from the canonical results. It exits nonzero unless all canonical and original checks pass. `--check` verifies stored artifacts against current inputs before running the same compilations; it does not overwrite timestamps or results. `--audit` runs schema, duplicate, and family checks without compilation or writes. Changing the source, environment lock, verifier, build/schema scripts, or family manifest requires refreshing the evidence. Each compilation has the existing verifier's default ten-second timeout.
 
-Each exported record contains the informal statement/proof, fixed formal statement, proof body, full rendered Rocq source, allowed tactics/helpers, method, induction variable when applicable, step-to-line alignment, provenance, grouping, and compiler evidence. The full source in `target.rocq_source` is exactly the source identified by the verification hash. Its local variables use the verifier's canonical names. Alignment line numbers refer instead to `target.proof_body`, which retains the curated names. Each candidate is verified in isolation, so an earlier seed cannot supply a helper to a later one.
+Schema `seed-0.2` exposes `informal_statement` (the theorem), `informal_proof` (the joined proof paragraph), `steps` (unchanged text/code alignment), and `proof_body` (the canonical candidate) directly in both source and exported records. It adds `argument_features`, `generation_family`, and explicit `metadata.provenance`. See [SCHEMA.md](SCHEMA.md) for every field and its validation rules. The existing `input`/`target` fields remain as compatibility copies.
 
-All records have `split: unassigned`. The seven `split_group` values are conservative grouping hints for related exercises, not established train/test partitions or a guarantee against every form of leakage. Seed 016 is the canonical right-zero example already present in `examples/add_zero_right.json`; its provenance records that link. Do not count that existing example as an additional independent held-out problem. No other statements duplicate one another merely through renaming quantified variables.
+Only three canonical bodies changed: seeds 009, 022, and 027 use `exact` for a directly matching local hypothesis. Their original `apply` lines remain in `steps`, and `metadata.proof_normalizations` records each replacement. All 30 original statements and step objects are unchanged. Alignment line numbers refer to the canonical `proof_body`; normalization preserves the lines. The full source in `target.rocq_source` is exactly the source identified by the verification hash and uses the verifier's renamed local variables. Each candidate is verified in isolation, so an earlier seed cannot supply a helper to a later one.
+
+All records have `split: unassigned`. Seven `generation_family` values refine five conservative `split_group` boundaries. The original reflexivity/definition groups and successor/associativity groups were merged where variants overlap; prior labels are kept in metadata. Always keep the entire split group together in future partitions. The family manifest preserves connected variants instead of splitting them by tactic choice. There are 30 distinct statements modulo binder renaming, but only 26 distinct definitional forms: 001/002, 005/006, 017/022, and 018/026 are equivalent pairs and share families. Seed 016 is the right-zero example already present in `examples/add_zero_right.json`; `metadata.related_existing_example` records that link. Do not count it as another independent held-out problem.
 
 In the table below all variables range over natural numbers, `S` denotes successor, and the equality before `->`, when present, is an explicit assumption. Every entry passed.
 
@@ -66,4 +71,4 @@ In the table below all variables range over natural numbers, `S` denotes success
 | seed_029 | `m + p = p + m -> (n + m) + p = (n + p) + m` | Induction + premise |
 | seed_030 | `(n + S m) + p = S (n + (m + p))` | Induction on n |
 
-`training_eligible: true` means that the curated formal pair passed the current verifier. It is not a claim of human review, an assigned training split, or evidence that any training has taken place. The seed tests also reject duplicate statements modulo binder names, mismatched induction annotations, changed proof bodies with reused PASS labels, and stale generated-source hashes.
+`training_eligible: true` means that the curated formal pair passed the current verifier. It is not a claim of human review, an assigned training split, or evidence that any training has taken place. Tests cover derived-field consistency, original-step preservation, normalization restrictions, premise-versus-induction features, duplicate/family checks, provenance, stale evidence rejection, and actual compilation of both canonical and preserved original bodies.
