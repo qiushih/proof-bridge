@@ -1,0 +1,153 @@
+{
+  "schema_version": "argument-review-0.1",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "results_sha256": "b8efe271b35cb59b6b3cad3ac286c8835f8e681eb11b383362a58c696476628a",
+  "rubric": "Review the essential mathematical argument, allowing equivalent local equality-transport encodings such as rewrite versus f_equal/exact or symmetry. FAITHFUL requires a verified proof preserving the main strategy, supplied-premise use, and any specified induction variable/cases. PARTIAL represents meaningful reference steps but has missing or incorrect steps. DIVERGENT follows a different main strategy or invents premises, whether or not the theorem is verified. UNASSESSABLE has no interpretable formal argument. This semantic review is broader than the deterministic exact-structure proxy and is an assistant judgment, not independent human review. Theorem-only outputs are compared to the same hidden reference; a match does not demonstrate use of its English input.",
+  "reviews": [
+    {
+      "key": "short_3shot:eval_001:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "DIVERGENT",
+      "rationale": "Invents a premise H and attempts rewriting. The theorem has no premise, and the supplied argument uses definitional reduction."
+    },
+    {
+      "key": "short_3shot:eval_001:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "DIVERGENT",
+      "rationale": "Attempts to introduce and rewrite a nonexistent premise instead of reducing the two successor clauses."
+    },
+    {
+      "key": "short_3shot:eval_002:theorem_and_informal",
+      "proof_body_sha256": "2e9b15e636e25189411002b8b5850fbd64293363f66b022ff75ee9835ac91044",
+      "status": "DIVERGENT",
+      "rationale": "Rewrites an undeclared H. It does not implement the supplied definitional computation of 3 + n."
+    },
+    {
+      "key": "short_3shot:eval_002:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "DIVERGENT",
+      "rationale": "Attempts induction with a failed rewrite rather than the reference definitional reduction. No induction is required or supplied in the reference."
+    },
+    {
+      "key": "short_3shot:eval_003:theorem_and_informal",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "DIVERGENT",
+      "rationale": "Invents an equality premise H instead of reducing the two left-zero additions."
+    },
+    {
+      "key": "short_3shot:eval_003:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "DIVERGENT",
+      "rationale": "Invents H and rewrites it; this does not implement the reference definitional argument."
+    },
+    {
+      "key": "short_3shot:eval_004:theorem_and_informal",
+      "proof_body_sha256": "a87a67531611269488bd22fe4fb305bc6c4ec5f09efebe9513fc15435d0566aa",
+      "status": "PARTIAL",
+      "rationale": "Uses the supplied equality and symmetry, but leaves the reflexive goal open. It does not complete the reference premise-reuse argument."
+    },
+    {
+      "key": "short_3shot:eval_004:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "rationale": "Verified reverse equality from the same supplied premise. Rewriting S n to m and closing m = m is an equivalent local equality-transport encoding of the reference symmetry argument; the exact tactic sequence differs."
+    },
+    {
+      "key": "short_3shot:eval_005:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "rationale": "Verified transport of n = m through both successor contexts. A direct rewrite replaces the two explicit f_equal steps; it preserves the same local congruence argument at the semantic granularity of this review."
+    },
+    {
+      "key": "short_3shot:eval_005:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "rationale": "Verified use of the premise under two successors. Direct rewriting is an equivalent local congruence encoding, although the stricter structural proxy differs."
+    },
+    {
+      "key": "short_3shot:eval_006:theorem_and_informal",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "rationale": "Introduces the variables and premise, rewrites the assumed sum from left to right beneath successor, and closes by reflexivity, matching the supplied argument."
+    },
+    {
+      "key": "short_3shot:eval_006:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "rationale": "Uses exactly the reference left-to-right premise rewrite and reflexive closing step; the reference informal argument was hidden in this condition."
+    },
+    {
+      "key": "short_3shot:eval_007:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "PARTIAL",
+      "rationale": "Introduces the right premise but rewrites it in the wrong direction. The supplied argument explicitly requires replacing n by zero, and the generated proof fails."
+    },
+    {
+      "key": "short_3shot:eval_007:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "PARTIAL",
+      "rationale": "Attempts premise-based rewriting but uses 0 -> n instead of n -> 0, so it cannot perform the reference reduction and fails verification."
+    },
+    {
+      "key": "short_3shot:eval_008:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "rationale": "Verified induction on n with the same base case and induction hypothesis. Rewriting IH inside the successor instead of f_equal followed by exact IH is an equivalent implementation of the same successor-step congruence."
+    },
+    {
+      "key": "short_3shot:eval_008:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "rationale": "Verified induction on the same variable with the reference base and successor cases. The local IH use is encoded as rewriting rather than f_equal/exact."
+    },
+    {
+      "key": "short_3shot:eval_009:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "rationale": "Matches the reference induction on n, zero simplification, and successor rewrite with IH. Rocq verifies the proof."
+    },
+    {
+      "key": "short_3shot:eval_009:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "DIVERGENT",
+      "rationale": "Attempts simplification and reflexivity with no induction. This omits the essential reference induction and fails on symbolic right-zero additions."
+    },
+    {
+      "key": "short_3shot:eval_010:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "PARTIAL",
+      "rationale": "Attempts induction on n, but omits introductions for m and the premise and uses reflexivity instead of the supplied premise in the base case. The intended argument is only partially represented."
+    },
+    {
+      "key": "short_3shot:eval_010:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "DIVERGENT",
+      "rationale": "A valid direct-rewrite proof, but it omits the induction explicitly required by the reference argument. Correctness does not imply fidelity here."
+    },
+    {
+      "key": "short_3shot:eval_011:theorem_and_informal",
+      "proof_body_sha256": "4c52d1a2a960e8488f9f022c30a3ab477991260f151e438f8c543e69edf7bde2",
+      "status": "PARTIAL",
+      "rationale": "Copies an induction skeleton but intros b actually names the first quantified variable a; the other binders and premise are omitted. It does not implement induction on the intended second binder or premise-based base case."
+    },
+    {
+      "key": "short_3shot:eval_011:theorem_only",
+      "proof_body_sha256": "fd24eb152bfc8ba14857a6d704247e21efc8f6d11d8240bd82f8c31ffd5f7eca",
+      "status": "DIVERGENT",
+      "rationale": "Attempts a direct premise rewrite that does not match a subterm, omitting the required induction on b and failing verification."
+    },
+    {
+      "key": "short_3shot:eval_012:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "PARTIAL",
+      "rationale": "Attempts the intended induction on n with an IH rewrite, but leaves m and p unintroduced. The script violates the fixed induction contract and does not complete a valid formalization."
+    },
+    {
+      "key": "short_3shot:eval_012:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "DIVERGENT",
+      "rationale": "Invents an extra premise H and tries rewriting instead of the supplied induction/reassociation argument."
+    }
+  ]
+}

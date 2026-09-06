@@ -1,0 +1,151 @@
+{
+  "selected_prompt": "short_3shot",
+  "demonstration_ids": [
+    "seed_002",
+    "seed_010",
+    "seed_016"
+  ],
+  "prompt_frozen_at_utc": "2026-09-06T23:05:42.588484+00:00",
+  "evaluation_started_at_utc": "2026-09-06T23:07:04.074587+00:00",
+  "prompt_freeze_sha256": "d120bf013fb4f8732deca2ac2443a2869ec9560497dba507c4225fcc64246aa8",
+  "development_only_selection": true,
+  "evaluation_generation_attempts": 24,
+  "repair_attempts": 0,
+  "fine_tuning_performed": false,
+  "same_model_and_generation_settings_as_v1": true,
+  "v2": {
+    "theorem_and_informal": {
+      "outputs": 12,
+      "format_compliant": 6,
+      "format_compliance_rate": 0.5,
+      "rocq_verified": 4,
+      "pass_at_1": 0.3333333333333333,
+      "structure_matches": 2,
+      "verified_structure_matches": 2,
+      "verified_structure_match_rate": 0.16666666666666666,
+      "fidelity_statuses": {
+        "UNASSESSABLE": 6,
+        "STRUCTURE_MISMATCH": 4,
+        "STRUCTURE_MATCH": 2
+      },
+      "failure_categories": {
+        "SYNTAX_ERROR": 5,
+        "FORBIDDEN_HELPER": 1,
+        "INCOMPLETE_PROOF": 1,
+        "PROOF_ERROR": 1
+      },
+      "verification_stages": {
+        "policy": 6,
+        "rocq": 6
+      },
+      "generation_errors": 0,
+      "length_limited": 0,
+      "prompt_tokens": 6196,
+      "completion_tokens": 230,
+      "median_generation_latency_seconds": 1.5820262919878587
+    },
+    "theorem_only": {
+      "outputs": 12,
+      "format_compliant": 9,
+      "format_compliance_rate": 0.75,
+      "rocq_verified": 5,
+      "pass_at_1": 0.4166666666666667,
+      "structure_matches": 1,
+      "verified_structure_matches": 1,
+      "verified_structure_match_rate": 0.08333333333333333,
+      "fidelity_statuses": {
+        "UNASSESSABLE": 3,
+        "STRUCTURE_MISMATCH": 8,
+        "STRUCTURE_MATCH": 1
+      },
+      "failure_categories": {
+        "SYNTAX_ERROR": 3,
+        "PROOF_ERROR": 4
+      },
+      "verification_stages": {
+        "policy": 3,
+        "rocq": 9
+      },
+      "generation_errors": 0,
+      "length_limited": 0,
+      "prompt_tokens": 5415,
+      "completion_tokens": 188,
+      "median_generation_latency_seconds": 1.382161624962464
+    }
+  },
+  "v1": {
+    "theorem_and_informal": {
+      "outputs": 12,
+      "format_compliant": 0,
+      "format_compliance_rate": 0.0,
+      "rocq_verified": 0,
+      "pass_at_1": 0.0,
+      "structure_matches": 0,
+      "verified_structure_matches": 0,
+      "verified_structure_match_rate": 0.0,
+      "fidelity_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "failure_categories": {
+        "FORBIDDEN_COMMAND": 11,
+        "SYNTAX_ERROR": 1
+      },
+      "verification_stages": {
+        "policy": 12
+      },
+      "generation_errors": 0,
+      "length_limited": 0,
+      "prompt_tokens": 4264,
+      "completion_tokens": 743,
+      "median_generation_latency_seconds": 3.7415756044210866
+    },
+    "theorem_only": {
+      "outputs": 12,
+      "format_compliant": 0,
+      "format_compliance_rate": 0.0,
+      "rocq_verified": 0,
+      "pass_at_1": 0.0,
+      "structure_matches": 0,
+      "verified_structure_matches": 0,
+      "verified_structure_match_rate": 0.0,
+      "fidelity_statuses": {
+        "UNASSESSABLE": 12
+      },
+      "failure_categories": {
+        "FORBIDDEN_COMMAND": 12
+      },
+      "verification_stages": {
+        "policy": 12
+      },
+      "generation_errors": 0,
+      "length_limited": 8,
+      "prompt_tokens": 3478,
+      "completion_tokens": 2284,
+      "median_generation_latency_seconds": 14.509664625045843
+    }
+  },
+  "assistant_reviews_complete": true,
+  "assistant_fidelity": {
+    "theorem_and_informal": {
+      "DIVERGENT": 3,
+      "PARTIAL": 5,
+      "FAITHFUL": 4
+    },
+    "theorem_only": {
+      "DIVERGENT": 7,
+      "FAITHFUL": 4,
+      "PARTIAL": 1
+    }
+  },
+  "files_sha256": {
+    "results.jsonl": "b8efe271b35cb59b6b3cad3ac286c8835f8e681eb11b383362a58c696476628a",
+    "prompt_v2/report.py": "3d32a9597a6ee129e023231dfe7929b437a828e6dc14cd97469723e79c36f338",
+    "argument_reviews.json": "85f4b90f5c37a5ca0e67511be983817dec9d905be7ca3fa7c6af04665e80370b"
+  },
+  "paired_outcomes": {
+    "both_pass": 3,
+    "informal_only_pass": 1,
+    "theorem_only_pass": 2,
+    "neither_pass": 6
+  }
+}

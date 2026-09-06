@@ -1,0 +1,48 @@
+{"key": "short_3shot:eval_001:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:04.078262+00:00"}
+{"key": "short_3shot:eval_001:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_001:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:05.781797+00:00"}
+{"key": "short_3shot:eval_001:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_002:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:07.051519+00:00"}
+{"key": "short_3shot:eval_002:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_002:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:08.266335+00:00"}
+{"key": "short_3shot:eval_002:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_003:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:10.577434+00:00"}
+{"key": "short_3shot:eval_003:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:11.944551+00:00"}
+{"key": "short_3shot:eval_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_004:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:13.293475+00:00"}
+{"key": "short_3shot:eval_004:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:14.678379+00:00"}
+{"key": "short_3shot:eval_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_005:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:16.476414+00:00"}
+{"key": "short_3shot:eval_005:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:18.076685+00:00"}
+{"key": "short_3shot:eval_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_006:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:19.526570+00:00"}
+{"key": "short_3shot:eval_006:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:21.120647+00:00"}
+{"key": "short_3shot:eval_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_007:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:22.697437+00:00"}
+{"key": "short_3shot:eval_007:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:24.216761+00:00"}
+{"key": "short_3shot:eval_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_008:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:25.715300+00:00"}
+{"key": "short_3shot:eval_008:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_008:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:28.307709+00:00"}
+{"key": "short_3shot:eval_008:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_009:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:30.598176+00:00"}
+{"key": "short_3shot:eval_009:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_009:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:33.081387+00:00"}
+{"key": "short_3shot:eval_009:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_010:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:34.466058+00:00"}
+{"key": "short_3shot:eval_010:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_010:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:36.851743+00:00"}
+{"key": "short_3shot:eval_010:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_011:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:38.428314+00:00"}
+{"key": "short_3shot:eval_011:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:40.938160+00:00"}
+{"key": "short_3shot:eval_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_012:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:42.455467+00:00"}
+{"key": "short_3shot:eval_012:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:eval_012:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:07:44.806011+00:00"}
+{"key": "short_3shot:eval_012:theorem_only", "event": "finished", "attempt": 1}
