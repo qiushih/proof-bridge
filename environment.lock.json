@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "environment_id": "mini_nat_addition_v0",
+  "platform": "darwin-arm64",
+  "tested_macos_version": "15.7.3",
+  "homebrew_prefix": "/opt/homebrew",
+  "bottle_tag": "arm64_sequoia",
+  "rocq_package_version": "9.2.0",
+  "stdlib_version": "9.1.0",
+  "stdlib_source_sha256": "2d66421c52ed32719a15cb039c368e063c4d85f670e3d142f5eb7415fb427985",
+  "compiler_version_output": "9.2 5.5.0",
+  "python_requirement": ">=3.11",
+  "tested_python_version": "3.13.7",
+  "prelude_sha256": "541a3c38e35dec7d827c2ba73fb287cb7b7bd04e61ae9391c705be42ceea2fbe",
+  "runtime_fingerprints": {
+    "bin/rocq": "cbdb02cc6dc3f6f8c9194c7b0cdb8e3dcef53889f6b2d0cc0f5e53b156b54487",
+    "lib/ocaml/rocq-runtime/rocqworker": "93cb16049c3d3bd64880dd7fa382e41c653f2717d638b643674482e211415290",
+    "lib/ocaml/coq/theories/Init/Prelude.vo": "aa13c28a2d94646ea9ca30cecf22581c3026f8e41ca5edbd45db8869ee3fd1d9",
+    "lib/ocaml/coq/theories/Init/Logic.vo": "ed455a17092065a11801391aeb53e97105eddeab9fadca7508603036ae927fc0",
+    "lib/ocaml/coq/theories/Init/Nat.vo": "d136c8c2acee69ef7782990c2a98a093c74c8b7194e8181513fe9b2953fd40e8",
+    "lib/ocaml/coq/user-contrib/Stdlib/Arith/PeanoNat.vo": "56adf7d91005bc9098004fff5a4ff1da190a54207869ab84a913f012621d8585"
+  },
+  "packages": [
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "filename": "gmp--6.3.0.arm64_sequoia.bottle.1.tar.gz",
+      "url": "https://ghcr.io/v2/homebrew/core/gmp/blobs/sha256:b30bf31c50c294e0981d2a7cb4c149e9c43f50f3cf4f7f552c3dcf9da66b95b5",
+      "sha256": "b30bf31c50c294e0981d2a7cb4c149e9c43f50f3cf4f7f552c3dcf9da66b95b5",
+      "dependencies": []
+    },
+    {
+      "name": "ocaml",
+      "version": "5.5.0",
+      "filename": "ocaml--5.5.0.arm64_sequoia.bottle.tar.gz",
+      "url": "https://ghcr.io/v2/homebrew/core/ocaml/blobs/sha256:f52b904227f30bc0e67d333f15cd3e6d85e8620c8313ec6d5c435607e9aeb01c",
+      "sha256": "f52b904227f30bc0e67d333f15cd3e6d85e8620c8313ec6d5c435607e9aeb01c",
+      "dependencies": []
+    },
+    {
+      "name": "ocaml-findlib",
+      "version": "1.9.8_4",
+      "filename": "ocaml-findlib--1.9.8_4.arm64_sequoia.bottle.tar.gz",
+      "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:f7a6a3d6cd034e2d01c267763e332356895cec34098cdb4bcf17627b34ebc53f",
+      "sha256": "f7a6a3d6cd034e2d01c267763e332356895cec34098cdb4bcf17627b34ebc53f",
+      "dependencies": [
+        "ocaml"
+      ]
+    },
+    {
+      "name": "ocaml-zarith",
+      "version": "1.14_5",
+      "filename": "ocaml-zarith--1.14_5.arm64_sequoia.bottle.tar.gz",
+      "url": "https://ghcr.io/v2/homebrew/core/ocaml-zarith/blobs/sha256:9842f3a1e28611bb3f3434aa496fc42819b074a75c419d6c8776670e5247bad4",
+      "sha256": "9842f3a1e28611bb3f3434aa496fc42819b074a75c419d6c8776670e5247bad4",
+      "dependencies": [
+        "gmp",
+        "ocaml"
+      ]
+    },
+    {
+      "name": "rocq",
+      "version": "9.2.0",
+      "filename": "rocq--9.2.0.arm64_sequoia.bottle.tar.gz",
+      "url": "https://ghcr.io/v2/homebrew/core/rocq/blobs/sha256:4e5910bd59bf71c5b891591d1f7b039029cbef5415e73dc0bb4448923c403a8b",
+      "sha256": "4e5910bd59bf71c5b891591d1f7b039029cbef5415e73dc0bb4448923c403a8b",
+      "dependencies": [
+        "gmp",
+        "ocaml",
+        "ocaml-findlib",
+        "ocaml-zarith"
+      ]
+    }
+  ]
+}

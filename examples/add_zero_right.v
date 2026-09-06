@@ -1,6 +1,5 @@
-(* Illustrative target for the initial Proof Bridge plan.
-   Reviewed against documented Rocq induction patterns, but not yet
-   compiled in this workspace. See RESEARCH_PLAN.md for verification status. *)
+(* Proof Bridge milestone 1: compiled with Rocq 9.2.0 / Stdlib 9.1.0.
+   Re-run scripts/verify_example.py to refresh the JSON verification record. *)
 
 From Stdlib Require Import Arith.PeanoNat.
 

@@ -1,6 +1,6 @@
 # Proof Bridge: initial research and pilot plan
 
-Prepared 2026-09-06. Status: research and design; no model has been trained and no Rocq runtime has been installed. Training hardware is undecided.
+Prepared 2026-09-06. This document records the initial research proposal. Milestone 1 now has a pinned Rocq 9.2.0 / Stdlib 9.1.0 environment, a compiled example, and a restricted Python verifier with tests. See README.md for the implemented scope and reproduction commands. No model has been trained; training hardware is undecided.
 
 The proposed first experiment is a small pretrained language model that translates typed English proofs about natural-number equalities into short Rocq scripts. Start with addition and one structural induction; add multiplication once that pipeline works. Evaluate preservation of the user's argument as well as formal correctness. This is a bounded research hypothesis, not an established accuracy claim.
 
@@ -29,7 +29,7 @@ Qed.
 Print Assumptions add_zero_right.
 ```
 
-This script is also saved in `examples/add_zero_right.v`. It was reviewed against documented induction patterns but has **not been compiled locally**: neither `rocq` nor `coqc` was found on PATH during this research pass. Software Foundations presents this same mathematical example and induction pattern. [Software Foundations: Induction](https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html)
+This script is also saved in `examples/add_zero_right.v`. It has now compiled successfully under the pinned Rocq 9.2.0 environment; `Print Assumptions` reported that it is closed under the global context. The JSON example records the actual checks. Software Foundations presents this same mathematical example and induction pattern. [Software Foundations: Induction](https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html)
 
 | Informal step | Formal role |
 | --- | --- |
@@ -125,7 +125,7 @@ Reverse translation from formal mathematics to natural language is supported as 
 
 Collect 50–100 independently written human inputs for a separate evaluation set. Include concise arguments, verbose arguments, renamed variables, LaTeX notation, formatting noise, and a separate set of incomplete or invalid arguments. Label a false claim, an unsupported task, an ambiguous statement, a proof gap, and a generation failure differently. A failed proof search is not evidence that the theorem is false. Synthetic English alone will overstate readiness for user writing.
 
-Every record should contain the raw input, normalized input, gold statement, environment identifier, permitted helpers/tactics, formal proof body, proof-method annotation, source/provenance, verification status, and split-group identifier. Store actual proof states later when an interactive backend is in place. The example JSON supplied with this plan is an illustrative schema record and deliberately marks verification as pending.
+Every record should contain the raw input, normalized input, gold statement, environment identifier, permitted helpers/tactics, formal proof body, proof-method annotation, source/provenance, verification status, and split-group identifier. Store actual proof states later when an interactive backend is in place. The example JSON supplied with this plan is an illustrative schema record; its verification fields have now been updated from actual compiler and verifier runs.
 
 Keep metadata and targets out of the input prompt unless they will genuinely be available at inference time. The theorem-only baseline gets the same formal target and environment but no informal proof. Gold alignment annotations belong in labels/evaluation, not in its prompt.
 
@@ -179,4 +179,4 @@ Compare a template-based translator, a prompted pretrained model, the fine-tuned
 | 4. First fine-tune | One small-model LoRA run and learning curves | Evaluate against the same baselines on locked splits, including argument fidelity |
 | 5. Targeted extension | Structured output or bounded repair, chosen from observed failures | Improvement is measured at a declared budget; multiplication expands only after addition performance is understood |
 
-The next concrete task is Milestone 1: implement and test the formal environment and verifier, then author the first checked proof pairs. Training, larger corpora, and hardware spending should follow that small working benchmark.
+The initial next task was Milestone 1. The implemented increment now covers the environment, verifier, one checked example, and regression tests; the larger proposed seed set and all training remain deferred. README.md describes the current implementation.

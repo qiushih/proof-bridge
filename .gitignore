@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+.cache/
+*.vo
+*.vos
+*.vok
+*.glob
+.*.aux
+
