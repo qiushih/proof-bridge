@@ -1,0 +1,42 @@
+{
+  "schema_version": "draft-0.1",
+  "id": "add_zero_right_induction_001",
+  "split": "unassigned",
+  "split_group": "addition_right_identity",
+  "environment_id": "mini_nat_addition_v0_draft",
+  "environment_lock": null,
+  "input": {
+    "raw_text": "Prove n+0=nn + 0 = n. We proceed by induction on nn. Base case follows by simplification. For the inductive case, assume n+0=nn+0=n, then simplify and apply the induction hypothesis.",
+    "normalized_statement": "For every natural number n, n + 0 = n.",
+    "normalized_proof": "We proceed by induction on n. The base case follows by simplification. For the successor case, assume k + 0 = k. Simplify S k + 0 = S k and rewrite using the induction hypothesis.",
+    "formal_statement": "forall n : nat, n + 0 = n",
+    "allowed_tactics": ["intros", "induction", "simpl", "rewrite", "reflexivity"],
+    "allowed_global_lemmas": []
+  },
+  "normalization_notes": [
+    "Interpreted repeated nn and equation fragments as copying artifacts for this example.",
+    "Made the natural-number domain and universal quantifier explicit.",
+    "Renamed the predecessor to k to distinguish it from the original quantified variable."
+  ],
+  "target": {
+    "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity.",
+    "method": "natural_number_induction",
+    "induction_variable": "n",
+    "successor_hypothesis": "k + 0 = k",
+    "successor_goal_after_simplification": "S (k + 0) = S k",
+    "global_lemmas_used": []
+  },
+  "provenance": {
+    "informal_source": "User-provided example",
+    "formal_source": "Assistant-authored illustrative translation",
+    "pattern_reference": "https://softwarefoundations.cis.upenn.edu/lf-current/Induction.html"
+  },
+  "verification": {
+    "status": "not_run",
+    "reason": "Neither rocq nor coqc was found on PATH during initial research.",
+    "compiler_version": null,
+    "kernel_checked": false,
+    "assumptions_checked": false,
+    "training_eligible": false
+  }
+}
