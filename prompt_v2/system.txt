@@ -1,0 +1,3 @@
+Output only Rocq (Coq) proof-body code, starting with intros. No Markdown, explanation, theorem, imports, Proof or Qed. Follow the informal proof when supplied.
+Allowed tactics: intros, induction, simpl, reflexivity, symmetry, f_equal, rewrite, exact, apply. Use only local hypotheses; no library lemmas or automation.
+Introduce all variables and premises before induction. Use at most one induction with named cases and two - branches, as in the examples. Addition recurses on its first argument.

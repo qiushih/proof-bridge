@@ -1,0 +1,618 @@
+{
+  "phase": "development",
+  "total_generation_attempts": 180,
+  "repair_attempts": 0,
+  "fine_tuning_performed": false,
+  "prompts": {
+    "short_2shot": {
+      "all_examples": {
+        "theorem_and_informal": {
+          "outputs": 30,
+          "format_compliant": 11,
+          "format_compliance_rate": 0.36666666666666664,
+          "rocq_verified": 9,
+          "pass_at_1": 0.3,
+          "structure_matches": 7,
+          "verified_structure_matches": 7,
+          "verified_structure_match_rate": 0.23333333333333334,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 7,
+            "STRUCTURE_MISMATCH": 4,
+            "UNASSESSABLE": 19
+          },
+          "failure_categories": {
+            "PROOF_ERROR": 2,
+            "SYNTAX_ERROR": 16,
+            "FORBIDDEN_TACTIC": 1,
+            "FORBIDDEN_HELPER": 2
+          },
+          "verification_stages": {
+            "rocq": 11,
+            "policy": 19
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 12755,
+          "completion_tokens": 713,
+          "median_generation_latency_seconds": 2.1731093539856374
+        },
+        "theorem_only": {
+          "outputs": 30,
+          "format_compliant": 22,
+          "format_compliance_rate": 0.7333333333333333,
+          "rocq_verified": 8,
+          "pass_at_1": 0.26666666666666666,
+          "structure_matches": 6,
+          "verified_structure_matches": 6,
+          "verified_structure_match_rate": 0.2,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 6,
+            "STRUCTURE_MISMATCH": 16,
+            "UNASSESSABLE": 8
+          },
+          "failure_categories": {
+            "PROOF_ERROR": 14,
+            "SYNTAX_ERROR": 6,
+            "FORBIDDEN_HELPER": 2
+          },
+          "verification_stages": {
+            "rocq": 22,
+            "policy": 8
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 10905,
+          "completion_tokens": 554,
+          "median_generation_latency_seconds": 1.160414562560618
+        }
+      },
+      "selection_subset": {
+        "outputs": 50,
+        "format_compliant": 25,
+        "format_compliance_rate": 0.5,
+        "rocq_verified": 12,
+        "pass_at_1": 0.24,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 8,
+          "UNASSESSABLE": 25
+        },
+        "failure_categories": {
+          "PROOF_ERROR": 13,
+          "SYNTAX_ERROR": 21,
+          "FORBIDDEN_TACTIC": 1,
+          "FORBIDDEN_HELPER": 3
+        },
+        "verification_stages": {
+          "rocq": 25,
+          "policy": 25
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 19769,
+        "completion_tokens": 1118,
+        "median_generation_latency_seconds": 2.075461646076292
+      },
+      "selection_by_condition": {
+        "theorem_and_informal": {
+          "outputs": 25,
+          "format_compliant": 8,
+          "format_compliance_rate": 0.32,
+          "rocq_verified": 6,
+          "pass_at_1": 0.24,
+          "structure_matches": 4,
+          "verified_structure_matches": 4,
+          "verified_structure_match_rate": 0.16,
+          "fidelity_statuses": {
+            "STRUCTURE_MISMATCH": 4,
+            "STRUCTURE_MATCH": 4,
+            "UNASSESSABLE": 17
+          },
+          "failure_categories": {
+            "PROOF_ERROR": 2,
+            "SYNTAX_ERROR": 15,
+            "FORBIDDEN_TACTIC": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "verification_stages": {
+            "rocq": 8,
+            "policy": 17
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 10667,
+          "completion_tokens": 622,
+          "median_generation_latency_seconds": 2.1804551670793444
+        },
+        "theorem_only": {
+          "outputs": 25,
+          "format_compliant": 17,
+          "format_compliance_rate": 0.68,
+          "rocq_verified": 6,
+          "pass_at_1": 0.24,
+          "structure_matches": 4,
+          "verified_structure_matches": 4,
+          "verified_structure_match_rate": 0.16,
+          "fidelity_statuses": {
+            "STRUCTURE_MISMATCH": 13,
+            "STRUCTURE_MATCH": 4,
+            "UNASSESSABLE": 8
+          },
+          "failure_categories": {
+            "PROOF_ERROR": 11,
+            "SYNTAX_ERROR": 6,
+            "FORBIDDEN_HELPER": 2
+          },
+          "verification_stages": {
+            "rocq": 17,
+            "policy": 8
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 9102,
+          "completion_tokens": 496,
+          "median_generation_latency_seconds": 1.6613441668450832
+        }
+      }
+    },
+    "short_3shot": {
+      "all_examples": {
+        "theorem_and_informal": {
+          "outputs": 30,
+          "format_compliant": 17,
+          "format_compliance_rate": 0.5666666666666667,
+          "rocq_verified": 16,
+          "pass_at_1": 0.5333333333333333,
+          "structure_matches": 11,
+          "verified_structure_matches": 11,
+          "verified_structure_match_rate": 0.36666666666666664,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 11,
+            "UNASSESSABLE": 13,
+            "STRUCTURE_MISMATCH": 6
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 12,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "verification_stages": {
+            "rocq": 17,
+            "policy": 13
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 15245,
+          "completion_tokens": 607,
+          "median_generation_latency_seconds": 2.1473460629349574
+        },
+        "theorem_only": {
+          "outputs": 30,
+          "format_compliant": 20,
+          "format_compliance_rate": 0.6666666666666666,
+          "rocq_verified": 12,
+          "pass_at_1": 0.4,
+          "structure_matches": 7,
+          "verified_structure_matches": 7,
+          "verified_structure_match_rate": 0.23333333333333334,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 7,
+            "UNASSESSABLE": 10,
+            "STRUCTURE_MISMATCH": 13
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 10,
+            "PROOF_ERROR": 8
+          },
+          "verification_stages": {
+            "rocq": 20,
+            "policy": 10
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 13395,
+          "completion_tokens": 448,
+          "median_generation_latency_seconds": 1.4005713540827855
+        }
+      },
+      "selection_subset": {
+        "outputs": 50,
+        "format_compliant": 28,
+        "format_compliance_rate": 0.56,
+        "rocq_verified": 21,
+        "pass_at_1": 0.42,
+        "structure_matches": 11,
+        "verified_structure_matches": 11,
+        "verified_structure_match_rate": 0.22,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 22,
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 11
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 21,
+          "PROOF_ERROR": 6,
+          "INCOMPLETE_PROOF": 1,
+          "FORBIDDEN_HELPER": 1
+        },
+        "verification_stages": {
+          "policy": 22,
+          "rocq": 28
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 23919,
+        "completion_tokens": 906,
+        "median_generation_latency_seconds": 1.61256860406138
+      },
+      "selection_by_condition": {
+        "theorem_and_informal": {
+          "outputs": 25,
+          "format_compliant": 13,
+          "format_compliance_rate": 0.52,
+          "rocq_verified": 12,
+          "pass_at_1": 0.48,
+          "structure_matches": 7,
+          "verified_structure_matches": 7,
+          "verified_structure_match_rate": 0.28,
+          "fidelity_statuses": {
+            "UNASSESSABLE": 12,
+            "STRUCTURE_MATCH": 7,
+            "STRUCTURE_MISMATCH": 6
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 11,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "verification_stages": {
+            "policy": 12,
+            "rocq": 13
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 12742,
+          "completion_tokens": 518,
+          "median_generation_latency_seconds": 2.26915195886977
+        },
+        "theorem_only": {
+          "outputs": 25,
+          "format_compliant": 15,
+          "format_compliance_rate": 0.6,
+          "rocq_verified": 9,
+          "pass_at_1": 0.36,
+          "structure_matches": 4,
+          "verified_structure_matches": 4,
+          "verified_structure_match_rate": 0.16,
+          "fidelity_statuses": {
+            "UNASSESSABLE": 10,
+            "STRUCTURE_MISMATCH": 11,
+            "STRUCTURE_MATCH": 4
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 10,
+            "PROOF_ERROR": 6
+          },
+          "verification_stages": {
+            "policy": 10,
+            "rocq": 15
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 11177,
+          "completion_tokens": 388,
+          "median_generation_latency_seconds": 1.4018878331407905
+        }
+      }
+    },
+    "short_4shot": {
+      "all_examples": {
+        "theorem_and_informal": {
+          "outputs": 30,
+          "format_compliant": 14,
+          "format_compliance_rate": 0.4666666666666667,
+          "rocq_verified": 10,
+          "pass_at_1": 0.3333333333333333,
+          "structure_matches": 9,
+          "verified_structure_matches": 9,
+          "verified_structure_match_rate": 0.3,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 9,
+            "UNASSESSABLE": 16,
+            "STRUCTURE_MISMATCH": 5
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 16,
+            "PROOF_ERROR": 3,
+            "INCOMPLETE_PROOF": 1
+          },
+          "verification_stages": {
+            "rocq": 14,
+            "policy": 16
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 20495,
+          "completion_tokens": 736,
+          "median_generation_latency_seconds": 2.7623339579440653
+        },
+        "theorem_only": {
+          "outputs": 30,
+          "format_compliant": 17,
+          "format_compliance_rate": 0.5666666666666667,
+          "rocq_verified": 6,
+          "pass_at_1": 0.2,
+          "structure_matches": 6,
+          "verified_structure_matches": 6,
+          "verified_structure_match_rate": 0.2,
+          "fidelity_statuses": {
+            "STRUCTURE_MATCH": 6,
+            "UNASSESSABLE": 13,
+            "STRUCTURE_MISMATCH": 11
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 13,
+            "PROOF_ERROR": 11
+          },
+          "verification_stages": {
+            "rocq": 17,
+            "policy": 13
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 18645,
+          "completion_tokens": 837,
+          "median_generation_latency_seconds": 2.7284913959447294
+        }
+      },
+      "selection_subset": {
+        "outputs": 50,
+        "format_compliant": 22,
+        "format_compliance_rate": 0.44,
+        "rocq_verified": 9,
+        "pass_at_1": 0.18,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 28,
+          "STRUCTURE_MATCH": 8,
+          "STRUCTURE_MISMATCH": 14
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 28,
+          "PROOF_ERROR": 12,
+          "INCOMPLETE_PROOF": 1
+        },
+        "verification_stages": {
+          "policy": 28,
+          "rocq": 22
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 32669,
+        "completion_tokens": 1381,
+        "median_generation_latency_seconds": 2.7590652289800346
+      },
+      "selection_by_condition": {
+        "theorem_and_informal": {
+          "outputs": 25,
+          "format_compliant": 10,
+          "format_compliance_rate": 0.4,
+          "rocq_verified": 6,
+          "pass_at_1": 0.24,
+          "structure_matches": 5,
+          "verified_structure_matches": 5,
+          "verified_structure_match_rate": 0.2,
+          "fidelity_statuses": {
+            "UNASSESSABLE": 15,
+            "STRUCTURE_MATCH": 5,
+            "STRUCTURE_MISMATCH": 5
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 15,
+            "PROOF_ERROR": 3,
+            "INCOMPLETE_PROOF": 1
+          },
+          "verification_stages": {
+            "policy": 15,
+            "rocq": 10
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 17117,
+          "completion_tokens": 641,
+          "median_generation_latency_seconds": 2.7646108330227435
+        },
+        "theorem_only": {
+          "outputs": 25,
+          "format_compliant": 12,
+          "format_compliance_rate": 0.48,
+          "rocq_verified": 3,
+          "pass_at_1": 0.12,
+          "structure_matches": 3,
+          "verified_structure_matches": 3,
+          "verified_structure_match_rate": 0.12,
+          "fidelity_statuses": {
+            "UNASSESSABLE": 13,
+            "STRUCTURE_MATCH": 3,
+            "STRUCTURE_MISMATCH": 9
+          },
+          "failure_categories": {
+            "SYNTAX_ERROR": 13,
+            "PROOF_ERROR": 9
+          },
+          "verification_stages": {
+            "policy": 13,
+            "rocq": 12
+          },
+          "generation_errors": 0,
+          "length_limited": 0,
+          "prompt_tokens": 15552,
+          "completion_tokens": 740,
+          "median_generation_latency_seconds": 2.7440662081353366
+        }
+      }
+    }
+  },
+  "ranking": [
+    {
+      "candidate_id": "short_3shot",
+      "rank": [
+        28,
+        21,
+        11,
+        -3,
+        -1
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 28,
+        "format_compliance_rate": 0.56,
+        "rocq_verified": 21,
+        "pass_at_1": 0.42,
+        "structure_matches": 11,
+        "verified_structure_matches": 11,
+        "verified_structure_match_rate": 0.22,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 22,
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 11
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 21,
+          "PROOF_ERROR": 6,
+          "INCOMPLETE_PROOF": 1,
+          "FORBIDDEN_HELPER": 1
+        },
+        "verification_stages": {
+          "policy": 22,
+          "rocq": 28
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 23919,
+        "completion_tokens": 906,
+        "median_generation_latency_seconds": 1.61256860406138
+      }
+    },
+    {
+      "candidate_id": "short_2shot",
+      "rank": [
+        25,
+        12,
+        8,
+        -2,
+        0
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 25,
+        "format_compliance_rate": 0.5,
+        "rocq_verified": 12,
+        "pass_at_1": 0.24,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 8,
+          "UNASSESSABLE": 25
+        },
+        "failure_categories": {
+          "PROOF_ERROR": 13,
+          "SYNTAX_ERROR": 21,
+          "FORBIDDEN_TACTIC": 1,
+          "FORBIDDEN_HELPER": 3
+        },
+        "verification_stages": {
+          "rocq": 25,
+          "policy": 25
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 19769,
+        "completion_tokens": 1118,
+        "median_generation_latency_seconds": 2.075461646076292
+      }
+    },
+    {
+      "candidate_id": "short_4shot",
+      "rank": [
+        22,
+        9,
+        8,
+        -4,
+        -2
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 22,
+        "format_compliance_rate": 0.44,
+        "rocq_verified": 9,
+        "pass_at_1": 0.18,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 28,
+          "STRUCTURE_MATCH": 8,
+          "STRUCTURE_MISMATCH": 14
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 28,
+          "PROOF_ERROR": 12,
+          "INCOMPLETE_PROOF": 1
+        },
+        "verification_stages": {
+          "policy": 28,
+          "rocq": 22
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 32669,
+        "completion_tokens": 1381,
+        "median_generation_latency_seconds": 2.7590652289800346
+      }
+    }
+  ],
+  "selection_partition": {
+    "selection_ids": [
+      "seed_003",
+      "seed_004",
+      "seed_005",
+      "seed_006",
+      "seed_007",
+      "seed_008",
+      "seed_009",
+      "seed_011",
+      "seed_012",
+      "seed_013",
+      "seed_014",
+      "seed_015",
+      "seed_017",
+      "seed_018",
+      "seed_019",
+      "seed_020",
+      "seed_021",
+      "seed_022",
+      "seed_023",
+      "seed_024",
+      "seed_025",
+      "seed_026",
+      "seed_028",
+      "seed_029",
+      "seed_030"
+    ],
+    "excluded_demonstration_or_equivalent_ids": [
+      "seed_001",
+      "seed_002",
+      "seed_010",
+      "seed_016",
+      "seed_027"
+    ]
+  }
+}

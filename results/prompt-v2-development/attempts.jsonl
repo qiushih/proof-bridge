@@ -1,0 +1,360 @@
+{"key": "short_2shot:seed_001:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:57:59.650676+00:00"}
+{"key": "short_2shot:seed_001:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_001:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:01.211512+00:00"}
+{"key": "short_2shot:seed_001:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_002:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:02.407439+00:00"}
+{"key": "short_2shot:seed_002:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_002:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:03.696429+00:00"}
+{"key": "short_2shot:seed_002:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_003:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:04.929984+00:00"}
+{"key": "short_2shot:seed_003:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:07.240857+00:00"}
+{"key": "short_2shot:seed_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_004:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:09.805146+00:00"}
+{"key": "short_2shot:seed_004:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:11.024002+00:00"}
+{"key": "short_2shot:seed_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_005:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:13.209961+00:00"}
+{"key": "short_2shot:seed_005:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:15.389377+00:00"}
+{"key": "short_2shot:seed_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_006:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:16.581290+00:00"}
+{"key": "short_2shot:seed_006:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:17.830278+00:00"}
+{"key": "short_2shot:seed_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_007:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:19.051954+00:00"}
+{"key": "short_2shot:seed_007:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:20.066174+00:00"}
+{"key": "short_2shot:seed_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_008:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:21.325717+00:00"}
+{"key": "short_2shot:seed_008:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_008:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:22.620942+00:00"}
+{"key": "short_2shot:seed_008:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_009:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:23.805035+00:00"}
+{"key": "short_2shot:seed_009:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_009:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:25.086892+00:00"}
+{"key": "short_2shot:seed_009:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_010:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:27.179729+00:00"}
+{"key": "short_2shot:seed_010:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_010:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:28.508190+00:00"}
+{"key": "short_2shot:seed_010:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_011:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:29.742015+00:00"}
+{"key": "short_2shot:seed_011:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:31.143669+00:00"}
+{"key": "short_2shot:seed_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_012:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:33.199479+00:00"}
+{"key": "short_2shot:seed_012:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_012:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:35.544368+00:00"}
+{"key": "short_2shot:seed_012:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_013:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:36.741794+00:00"}
+{"key": "short_2shot:seed_013:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_013:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:39.009677+00:00"}
+{"key": "short_2shot:seed_013:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_014:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:40.198616+00:00"}
+{"key": "short_2shot:seed_014:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_014:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:42.283591+00:00"}
+{"key": "short_2shot:seed_014:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_015:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:43.501688+00:00"}
+{"key": "short_2shot:seed_015:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_015:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:45.833887+00:00"}
+{"key": "short_2shot:seed_015:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_016:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:47.918205+00:00"}
+{"key": "short_2shot:seed_016:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_016:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:50.225934+00:00"}
+{"key": "short_2shot:seed_016:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_017:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:51.411680+00:00"}
+{"key": "short_2shot:seed_017:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_017:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:53.787623+00:00"}
+{"key": "short_2shot:seed_017:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_018:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:55.964574+00:00"}
+{"key": "short_2shot:seed_018:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_018:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:58:58.184737+00:00"}
+{"key": "short_2shot:seed_018:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_019:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:00.336809+00:00"}
+{"key": "short_2shot:seed_019:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_019:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:02.525555+00:00"}
+{"key": "short_2shot:seed_019:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_020:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:04.209845+00:00"}
+{"key": "short_2shot:seed_020:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_020:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:06.577278+00:00"}
+{"key": "short_2shot:seed_020:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_021:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:07.720711+00:00"}
+{"key": "short_2shot:seed_021:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_021:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:09.886914+00:00"}
+{"key": "short_2shot:seed_021:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_022:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:11.122691+00:00"}
+{"key": "short_2shot:seed_022:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_022:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:13.420031+00:00"}
+{"key": "short_2shot:seed_022:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_023:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:14.613308+00:00"}
+{"key": "short_2shot:seed_023:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_023:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:16.785197+00:00"}
+{"key": "short_2shot:seed_023:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_024:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:18.986451+00:00"}
+{"key": "short_2shot:seed_024:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_024:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:21.277246+00:00"}
+{"key": "short_2shot:seed_024:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_025:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:23.807082+00:00"}
+{"key": "short_2shot:seed_025:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_025:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:26.190369+00:00"}
+{"key": "short_2shot:seed_025:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_026:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:27.510740+00:00"}
+{"key": "short_2shot:seed_026:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_026:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:29.757907+00:00"}
+{"key": "short_2shot:seed_026:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_027:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:31.218606+00:00"}
+{"key": "short_2shot:seed_027:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_027:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:33.412493+00:00"}
+{"key": "short_2shot:seed_027:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_028:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:34.698201+00:00"}
+{"key": "short_2shot:seed_028:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_028:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:36.907993+00:00"}
+{"key": "short_2shot:seed_028:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_029:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:38.996502+00:00"}
+{"key": "short_2shot:seed_029:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_029:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:41.187110+00:00"}
+{"key": "short_2shot:seed_029:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_030:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:43.538604+00:00"}
+{"key": "short_2shot:seed_030:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_2shot:seed_030:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:46.633980+00:00"}
+{"key": "short_2shot:seed_030:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_001:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:48.299341+00:00"}
+{"key": "short_3shot:seed_001:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_001:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:49.973761+00:00"}
+{"key": "short_3shot:seed_001:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_002:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:51.882236+00:00"}
+{"key": "short_3shot:seed_002:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_002:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:53.715986+00:00"}
+{"key": "short_3shot:seed_002:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_003:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:55.477679+00:00"}
+{"key": "short_3shot:seed_003:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T22:59:57.509039+00:00"}
+{"key": "short_3shot:seed_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_004:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:01.257790+00:00"}
+{"key": "short_3shot:seed_004:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:05.068584+00:00"}
+{"key": "short_3shot:seed_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_005:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:09.027460+00:00"}
+{"key": "short_3shot:seed_005:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:10.820251+00:00"}
+{"key": "short_3shot:seed_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_006:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:12.674268+00:00"}
+{"key": "short_3shot:seed_006:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:14.112982+00:00"}
+{"key": "short_3shot:seed_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_007:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:15.416551+00:00"}
+{"key": "short_3shot:seed_007:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:16.909679+00:00"}
+{"key": "short_3shot:seed_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_008:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:18.361305+00:00"}
+{"key": "short_3shot:seed_008:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_008:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:19.755994+00:00"}
+{"key": "short_3shot:seed_008:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_009:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:21.669766+00:00"}
+{"key": "short_3shot:seed_009:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_009:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:23.204406+00:00"}
+{"key": "short_3shot:seed_009:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_010:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:24.709102+00:00"}
+{"key": "short_3shot:seed_010:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_010:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:26.500356+00:00"}
+{"key": "short_3shot:seed_010:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_011:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:28.028256+00:00"}
+{"key": "short_3shot:seed_011:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:29.567297+00:00"}
+{"key": "short_3shot:seed_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_012:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:31.108710+00:00"}
+{"key": "short_3shot:seed_012:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_012:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:32.658067+00:00"}
+{"key": "short_3shot:seed_012:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_013:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:34.180999+00:00"}
+{"key": "short_3shot:seed_013:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_013:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:35.826595+00:00"}
+{"key": "short_3shot:seed_013:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_014:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:38.219254+00:00"}
+{"key": "short_3shot:seed_014:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_014:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:39.555624+00:00"}
+{"key": "short_3shot:seed_014:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_015:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:42.221552+00:00"}
+{"key": "short_3shot:seed_015:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_015:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:43.980427+00:00"}
+{"key": "short_3shot:seed_015:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_016:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:45.515554+00:00"}
+{"key": "short_3shot:seed_016:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_016:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:48.735067+00:00"}
+{"key": "short_3shot:seed_016:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_017:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:50.058164+00:00"}
+{"key": "short_3shot:seed_017:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_017:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:52.917985+00:00"}
+{"key": "short_3shot:seed_017:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_018:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:55.711055+00:00"}
+{"key": "short_3shot:seed_018:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_018:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:00:59.110135+00:00"}
+{"key": "short_3shot:seed_018:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_019:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:01.570407+00:00"}
+{"key": "short_3shot:seed_019:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_019:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:05.143518+00:00"}
+{"key": "short_3shot:seed_019:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_020:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:06.663491+00:00"}
+{"key": "short_3shot:seed_020:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_020:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:09.593859+00:00"}
+{"key": "short_3shot:seed_020:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_021:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:11.120888+00:00"}
+{"key": "short_3shot:seed_021:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_021:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:13.618104+00:00"}
+{"key": "short_3shot:seed_021:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_022:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:15.021902+00:00"}
+{"key": "short_3shot:seed_022:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_022:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:17.761243+00:00"}
+{"key": "short_3shot:seed_022:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_023:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:19.105020+00:00"}
+{"key": "short_3shot:seed_023:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_023:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:21.434633+00:00"}
+{"key": "short_3shot:seed_023:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_024:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:22.717571+00:00"}
+{"key": "short_3shot:seed_024:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_024:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:25.128906+00:00"}
+{"key": "short_3shot:seed_024:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_025:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:28.324735+00:00"}
+{"key": "short_3shot:seed_025:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_025:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:30.948804+00:00"}
+{"key": "short_3shot:seed_025:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_026:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:32.212567+00:00"}
+{"key": "short_3shot:seed_026:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_026:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:33.806621+00:00"}
+{"key": "short_3shot:seed_026:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_027:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:35.217936+00:00"}
+{"key": "short_3shot:seed_027:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_027:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:37.674031+00:00"}
+{"key": "short_3shot:seed_027:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_028:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:39.101224+00:00"}
+{"key": "short_3shot:seed_028:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_028:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:41.455594+00:00"}
+{"key": "short_3shot:seed_028:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_029:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:43.100581+00:00"}
+{"key": "short_3shot:seed_029:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_029:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:45.493854+00:00"}
+{"key": "short_3shot:seed_029:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_030:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:47.012642+00:00"}
+{"key": "short_3shot:seed_030:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_3shot:seed_030:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:49.666898+00:00"}
+{"key": "short_3shot:seed_030:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_001:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:51.056630+00:00"}
+{"key": "short_4shot:seed_001:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_001:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:52.494982+00:00"}
+{"key": "short_4shot:seed_001:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_002:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:54.067008+00:00"}
+{"key": "short_4shot:seed_002:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_002:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:55.658708+00:00"}
+{"key": "short_4shot:seed_002:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_003:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:57.274648+00:00"}
+{"key": "short_4shot:seed_003:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:01:59.850917+00:00"}
+{"key": "short_4shot:seed_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_004:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:02.538920+00:00"}
+{"key": "short_4shot:seed_004:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:04.190483+00:00"}
+{"key": "short_4shot:seed_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_005:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:05.769044+00:00"}
+{"key": "short_4shot:seed_005:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:08.475141+00:00"}
+{"key": "short_4shot:seed_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_006:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:11.218824+00:00"}
+{"key": "short_4shot:seed_006:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:12.897985+00:00"}
+{"key": "short_4shot:seed_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_007:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:15.562847+00:00"}
+{"key": "short_4shot:seed_007:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:18.519778+00:00"}
+{"key": "short_4shot:seed_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_008:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:21.468987+00:00"}
+{"key": "short_4shot:seed_008:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_008:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:23.156805+00:00"}
+{"key": "short_4shot:seed_008:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_009:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:26.062842+00:00"}
+{"key": "short_4shot:seed_009:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_009:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:28.907145+00:00"}
+{"key": "short_4shot:seed_009:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_010:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:31.819313+00:00"}
+{"key": "short_4shot:seed_010:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_010:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:33.633379+00:00"}
+{"key": "short_4shot:seed_010:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_011:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:36.452639+00:00"}
+{"key": "short_4shot:seed_011:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:38.307630+00:00"}
+{"key": "short_4shot:seed_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_012:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:41.151404+00:00"}
+{"key": "short_4shot:seed_012:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_012:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:42.927262+00:00"}
+{"key": "short_4shot:seed_012:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_013:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:45.756278+00:00"}
+{"key": "short_4shot:seed_013:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_013:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:47.472001+00:00"}
+{"key": "short_4shot:seed_013:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_014:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:50.323694+00:00"}
+{"key": "short_4shot:seed_014:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_014:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:53.221338+00:00"}
+{"key": "short_4shot:seed_014:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_015:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:56.024130+00:00"}
+{"key": "short_4shot:seed_015:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_015:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:02:58.111538+00:00"}
+{"key": "short_4shot:seed_015:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_016:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:01.056027+00:00"}
+{"key": "short_4shot:seed_016:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_016:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:03.864880+00:00"}
+{"key": "short_4shot:seed_016:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_017:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:05.532609+00:00"}
+{"key": "short_4shot:seed_017:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_017:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:08.307756+00:00"}
+{"key": "short_4shot:seed_017:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_018:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:10.935633+00:00"}
+{"key": "short_4shot:seed_018:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_018:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:13.757993+00:00"}
+{"key": "short_4shot:seed_018:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_019:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:16.590917+00:00"}
+{"key": "short_4shot:seed_019:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_019:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:19.952643+00:00"}
+{"key": "short_4shot:seed_019:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_020:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:22.701618+00:00"}
+{"key": "short_4shot:seed_020:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_020:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:25.472478+00:00"}
+{"key": "short_4shot:seed_020:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_021:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:28.086430+00:00"}
+{"key": "short_4shot:seed_021:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_021:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:30.956716+00:00"}
+{"key": "short_4shot:seed_021:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_022:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:33.658122+00:00"}
+{"key": "short_4shot:seed_022:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_022:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:36.421698+00:00"}
+{"key": "short_4shot:seed_022:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_023:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:38.125281+00:00"}
+{"key": "short_4shot:seed_023:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_023:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:40.962553+00:00"}
+{"key": "short_4shot:seed_023:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_024:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:43.779411+00:00"}
+{"key": "short_4shot:seed_024:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_024:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:47.059384+00:00"}
+{"key": "short_4shot:seed_024:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_025:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:49.976961+00:00"}
+{"key": "short_4shot:seed_025:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_025:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:53.020646+00:00"}
+{"key": "short_4shot:seed_025:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_026:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:55.841446+00:00"}
+{"key": "short_4shot:seed_026:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_026:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:03:58.775511+00:00"}
+{"key": "short_4shot:seed_026:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_027:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:01.534178+00:00"}
+{"key": "short_4shot:seed_027:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_027:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:04.697430+00:00"}
+{"key": "short_4shot:seed_027:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_028:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:07.757192+00:00"}
+{"key": "short_4shot:seed_028:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_028:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:11.165469+00:00"}
+{"key": "short_4shot:seed_028:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_029:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:14.330119+00:00"}
+{"key": "short_4shot:seed_029:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_029:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:17.404930+00:00"}
+{"key": "short_4shot:seed_029:theorem_only", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_030:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:20.435707+00:00"}
+{"key": "short_4shot:seed_030:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "short_4shot:seed_030:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-06T23:04:23.431315+00:00"}
+{"key": "short_4shot:seed_030:theorem_only", "event": "finished", "attempt": 1}

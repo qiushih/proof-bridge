@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE",
+  "finished_at_utc": "2026-09-06T23:04:26.260335+00:00",
+  "attempts": 180,
+  "files_sha256": {
+    "manifest.json": "4abfe4eb1d548889ccb2883a486d327aba1b9824cb22343c22d0655e253f76e4",
+    "results.jsonl": "c3ed7bd97f89b13f8fabf91c01ed5c228aefeb73861d14bc4aa9b84302df5127",
+    "attempts.jsonl": "dea875f361d6cfb8e8b938d1b94ba8908b89dfc6d07afec5054a9d4d6891a4e8",
+    "summary.json": "6be19f2971c6d8427b9e0318537edf819a9f810404d010c8ac4c5698185b44bc"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "prompt-development-plan-0.1",
+  "experiment_id": "proofbridge-prompt-v2",
+  "development_source": "data/development/pairs.jsonl",
+  "conditions": ["theorem_and_informal", "theorem_only"],
+  "candidates": [
+    {"id": "short_2shot", "demonstration_ids": ["seed_002", "seed_016"]},
+    {"id": "short_3shot", "demonstration_ids": ["seed_002", "seed_010", "seed_016"]},
+    {"id": "short_4shot", "demonstration_ids": ["seed_002", "seed_010", "seed_016", "seed_027"]}
+  ],
+  "demonstration_policy": "Fixed chat examples from the frozen development source. Identical demonstration messages, including their informal arguments, appear in both conditions; only the TARGET informal proof is ablated.",
+  "development_measurement": "All 30 seeds in both conditions, one attempt per candidate/example/condition, no repair.",
+  "selection_exclusion": "Exclude the union of all demonstration IDs and their definitional-equivalent development statements from every candidate's selection score.",
+  "selection_rule": [
+    "Maximize raw-format-compliant outputs on the common selection subset, pooled over both conditions.",
+    "Then maximize Rocq-verified outputs on that subset.",
+    "Then maximize outputs that both verify and match the fixed argument-structure proxy on that subset.",
+    "Then prefer fewer demonstrations; then earlier candidate order."
+  ],
+  "format_definition": "Nonempty raw output, trimmed only at its edges, accepted by the existing restricted proof-body parser. Markdown fences fail this metric even if v1-compatible extraction later permits verification.",
+  "generation_budget_source": "baseline/config.json",
+  "attempts_per_candidate_example_condition": 1,
+  "repair_attempts": 0,
+  "fine_tuning_performed": false,
+  "evaluation_gate": "No evaluation examples are loaded by development or selection. Evaluation requires the selected prompt and development evidence to be frozen and checksum-verified first."
+}

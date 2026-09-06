@@ -1,0 +1,196 @@
+{
+  "schema_version": "prompt-v2-freeze-0.1",
+  "status": "FROZEN",
+  "selected_candidate": "short_3shot",
+  "frozen_at_utc": "2026-09-06T23:05:42.588484+00:00",
+  "development_completed_at_utc": "2026-09-06T23:04:26.260335+00:00",
+  "development_only_selection": true,
+  "evaluation_records_loaded_for_selection": 0,
+  "selection_rule": [
+    "Maximize raw-format-compliant outputs on the common selection subset, pooled over both conditions.",
+    "Then maximize Rocq-verified outputs on that subset.",
+    "Then maximize outputs that both verify and match the fixed argument-structure proxy on that subset.",
+    "Then prefer fewer demonstrations; then earlier candidate order."
+  ],
+  "selection_partition": {
+    "selection_ids": [
+      "seed_003",
+      "seed_004",
+      "seed_005",
+      "seed_006",
+      "seed_007",
+      "seed_008",
+      "seed_009",
+      "seed_011",
+      "seed_012",
+      "seed_013",
+      "seed_014",
+      "seed_015",
+      "seed_017",
+      "seed_018",
+      "seed_019",
+      "seed_020",
+      "seed_021",
+      "seed_022",
+      "seed_023",
+      "seed_024",
+      "seed_025",
+      "seed_026",
+      "seed_028",
+      "seed_029",
+      "seed_030"
+    ],
+    "excluded_demonstration_or_equivalent_ids": [
+      "seed_001",
+      "seed_002",
+      "seed_010",
+      "seed_016",
+      "seed_027"
+    ]
+  },
+  "ranking": [
+    {
+      "candidate_id": "short_3shot",
+      "rank": [
+        28,
+        21,
+        11,
+        -3,
+        -1
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 28,
+        "format_compliance_rate": 0.56,
+        "rocq_verified": 21,
+        "pass_at_1": 0.42,
+        "structure_matches": 11,
+        "verified_structure_matches": 11,
+        "verified_structure_match_rate": 0.22,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 22,
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 11
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 21,
+          "PROOF_ERROR": 6,
+          "INCOMPLETE_PROOF": 1,
+          "FORBIDDEN_HELPER": 1
+        },
+        "verification_stages": {
+          "policy": 22,
+          "rocq": 28
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 23919,
+        "completion_tokens": 906,
+        "median_generation_latency_seconds": 1.61256860406138
+      }
+    },
+    {
+      "candidate_id": "short_2shot",
+      "rank": [
+        25,
+        12,
+        8,
+        -2,
+        0
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 25,
+        "format_compliance_rate": 0.5,
+        "rocq_verified": 12,
+        "pass_at_1": 0.24,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "STRUCTURE_MISMATCH": 17,
+          "STRUCTURE_MATCH": 8,
+          "UNASSESSABLE": 25
+        },
+        "failure_categories": {
+          "PROOF_ERROR": 13,
+          "SYNTAX_ERROR": 21,
+          "FORBIDDEN_TACTIC": 1,
+          "FORBIDDEN_HELPER": 3
+        },
+        "verification_stages": {
+          "rocq": 25,
+          "policy": 25
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 19769,
+        "completion_tokens": 1118,
+        "median_generation_latency_seconds": 2.075461646076292
+      }
+    },
+    {
+      "candidate_id": "short_4shot",
+      "rank": [
+        22,
+        9,
+        8,
+        -4,
+        -2
+      ],
+      "selection_metrics": {
+        "outputs": 50,
+        "format_compliant": 22,
+        "format_compliance_rate": 0.44,
+        "rocq_verified": 9,
+        "pass_at_1": 0.18,
+        "structure_matches": 8,
+        "verified_structure_matches": 8,
+        "verified_structure_match_rate": 0.16,
+        "fidelity_statuses": {
+          "UNASSESSABLE": 28,
+          "STRUCTURE_MATCH": 8,
+          "STRUCTURE_MISMATCH": 14
+        },
+        "failure_categories": {
+          "SYNTAX_ERROR": 28,
+          "PROOF_ERROR": 12,
+          "INCOMPLETE_PROOF": 1
+        },
+        "verification_stages": {
+          "policy": 28,
+          "rocq": 22
+        },
+        "generation_errors": 0,
+        "length_limited": 0,
+        "prompt_tokens": 32669,
+        "completion_tokens": 1381,
+        "median_generation_latency_seconds": 2.7590652289800346
+      }
+    }
+  ],
+  "files_sha256": {
+    "prompt_v2/plan.json": "2d4840408c8e9c25c9d06ce9949f3086b9d6fda0bad8f92e3d9372de53fe0d71",
+    "prompt_v2/system.txt": "ebec9dd735d4680c3727dab8d5ef56b42f7340e5e621c396f62478275553855a",
+    "prompt_v2/protocol.py": "6eac21ddf2cfdd0ba702d0b3d33b22e160e6c78b9ecb46e0e2f4b0aa02e67c0f",
+    "prompt_v2/experiment.py": "cd5ac8bbd598a1f4e3132aa1bffad41d26e239c35ef29fae694faa3552695a03",
+    "baseline/config.json": "8c240bb48caeeec84c91cbd9c80434f37246c1722486c801868882e35602a08f",
+    "baseline/model.lock.json": "28133a0260c6df57d57ddee505e84d5194bed5735c2ca974ab1959ef5f6d98b7",
+    "baseline/requirements.lock": "b9906804f43d5474c1d8c9317eaa7ddcc75f0a1e479adfcd3afd04d23dba30f5",
+    "baseline/protocol.py": "119b7d3a4fcd826204e40d2fc20e3b2cf44b60c4534c9f67b869fdda2eb0b065",
+    "baseline/run.py": "78e0965c404ca09cd86c7966c13c8da7d18fa92f8b4d1214bb4feb70ebcfc262",
+    "baseline/dataset.py": "4460fc47530878bea23714ea0202d07f6ef4bf24f80c8308fe6e66f21192078a",
+    "baseline/setup_model.py": "c1ce5843930530a159808f9d5f8313898f51b7c2eaa47c4318d275196f0ed5ca",
+    "scripts/seed_schema.py": "e4ebee8da7fee57630e399e129cd5e07ef55eb8a8a4eb017f22d4ab289fd7889",
+    "verifier.py": "2f71aabd2ebc9cf3dd6cd88af2bc1fa12be379788f7c42d3d22d31bf80c23688",
+    "environment.lock.json": "72ed3a2f55a140f00c4460b89cf8bd8f63202b0b89f6f376d85feeef0e03a149",
+    "data/development/pairs.jsonl": "cc931920ba043bd2fc00893ba9470ff59d977f823d2dc432d073ae283a3c2269",
+    "data/development/manifest.json": "45a8907950a55ab04e2da24b80d0d2d01aebbdd8472dd2ceb3c73ef3957b0bbb",
+    "prompt_v2/selected.json": "e2d136886bcd86b3fd953bd0f06c3cfd44f29c1365c56cc02a8148224224b154",
+    "results/prompt-v2-development/manifest.json": "4abfe4eb1d548889ccb2883a486d327aba1b9824cb22343c22d0655e253f76e4",
+    "results/prompt-v2-development/results.jsonl": "c3ed7bd97f89b13f8fabf91c01ed5c228aefeb73861d14bc4aa9b84302df5127",
+    "results/prompt-v2-development/summary.json": "6be19f2971c6d8427b9e0318537edf819a9f810404d010c8ac4c5698185b44bc",
+    "results/prompt-v2-development/attempts.jsonl": "dea875f361d6cfb8e8b938d1b94ba8908b89dfc6d07afec5054a9d4d6891a4e8",
+    "results/prompt-v2-development/completion.json": "960d8b252a243dfd1e8d47570224ced333b5cf8476eb90e0b42997287c903da2"
+  }
+}

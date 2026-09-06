@@ -1,0 +1,38 @@
+{
+  "id": "short_3shot",
+  "demonstration_ids": [
+    "seed_002",
+    "seed_010",
+    "seed_016"
+  ],
+  "prefix_messages": [
+    {
+      "role": "system",
+      "content": "Output only Rocq (Coq) proof-body code, starting with intros. No Markdown, explanation, theorem, imports, Proof or Qed. Follow the informal proof when supplied.\nAllowed tactics: intros, induction, simpl, reflexivity, symmetry, f_equal, rewrite, exact, apply. Use only local hypotheses; no library lemmas or automation.\nIntroduce all variables and premises before induction. Use at most one induction with named cases and two - branches, as in the examples. Addition recurses on its first argument."
+    },
+    {
+      "role": "user",
+      "content": "Theorem: forall n : nat, 0 + n = n\nInformal proof: Fix a natural number n. By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.\nOutput code only."
+    },
+    {
+      "role": "assistant",
+      "content": "intros n.\nsimpl.\nreflexivity."
+    },
+    {
+      "role": "user",
+      "content": "Theorem: forall n m p : nat, n = m -> n + p = m + p\nInformal proof: Fix n, m, and p and suppose n = m. Replace n by m in the left-hand side. Both sides become m + p.\nOutput code only."
+    },
+    {
+      "role": "assistant",
+      "content": "intros n m p H.\nrewrite H.\nreflexivity."
+    },
+    {
+      "role": "user",
+      "content": "Theorem: forall n : nat, n + 0 = n\nInformal proof: Let n be arbitrary and proceed by induction on n. For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition. For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.\nOutput code only."
+    },
+    {
+      "role": "assistant",
+      "content": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity."
+    }
+  ]
+}
