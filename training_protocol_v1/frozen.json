@@ -1,0 +1,24 @@
+{
+  "status": "FROZEN_BEFORE_BASELINE_AND_TRAINING",
+  "frozen_at_utc": "2026-09-07T02:15:50.174030+00:00",
+  "protocol_id": "proofbridge-training-protocol-v1",
+  "input_fingerprints": {
+    "tests/test_pretraining_v1_results.py": "f95149cceb7d5f3eb7cfb3ab4deb7e7cfe961dd43f604928586e27639d8710ef",
+    "tests/test_training_protocol_v1.py": "ca4439795b342bcc341d47ba0dbde7b5bef56fe0329032fd3163fd13df0f9f1c",
+    "training_protocol_v1/TRAINING_PROTOCOL.md": "609958e7d4acee43e9a36027a54c914b1c8ec74e6c6118b4129efc6489b88c1e",
+    "training_protocol_v1/__init__.py": "9ba05c6d979313ff965422d38fdf0fb6b44e1273e49695644032b74727283eb5",
+    "training_protocol_v1/adaptation.py": "e887e220697ec415c1a5d569e6e73eba75175797ae2760aef136cbc792921813",
+    "training_protocol_v1/config.json": "5c851abdadc7aa8cac87a437a9dfe8ecc4edc4f4dc1e1e3b2da9a9f6650ba641",
+    "training_protocol_v1/data.py": "a9cd89a754e8e8a2c8c3ccf2525a216aed241d92963d35bf64bf3d4a92500f30",
+    "training_protocol_v1/experiment.py": "6c5ef2da36f6a12fb0108da03f087fe445f4d868468d353502615bb8f891d81d",
+    "training_protocol_v1/hardware.json": "26f062bafc7211f9800ba2493eaaa5cad27c396b4c9c44942c58b740f2a76ed5",
+    "training_protocol_v1/protected_baselines.json": "090c8e2a0d3a5bf10aae2d6bacfac34fb3c488adae3888447768c6b03db1d9b3",
+    "training_protocol_v1/report.py": "3df042359196423093351555aa355fb59a307b0de2eec02f3aa60391735cf025",
+    "training_protocol_v1/scoring.py": "4a693e2284a16e48181eaddb403a35e6231c54af7e82bb820ed6211a929b0075"
+  },
+  "preparation_sha256": "105b05bf0751fdc99c9ff411a872cb53468b3b95b88f77ebbf8c31f93d808f6d",
+  "expected_baseline_attempts": 9,
+  "model_weights_changed": false,
+  "training_runs": 0,
+  "holdout_content_reads": 0
+}

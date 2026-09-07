@@ -1,0 +1,31 @@
+{
+  "capture_date": "2026-09-07",
+  "host_type": "local MacBook Air",
+  "model_identifier": "Mac14,2",
+  "cpu": "Apple M2",
+  "physical_cpu_cores": 8,
+  "logical_cpu_cores": 8,
+  "memory_bytes": 8589934592,
+  "memory_gib": 8,
+  "architecture": "arm64",
+  "os": "macOS",
+  "os_version": "15.7.3",
+  "os_build": "24G419",
+  "python": "3.13.7",
+  "torch": "2.9.0",
+  "transformers": "4.57.1",
+  "torch_mps_built": true,
+  "torch_mps_available_in_task_environment": false,
+  "selected_training_device": "cpu",
+  "selected_training_dtype": "float32",
+  "evidence_commands": [
+    "sysctl -n hw.model hw.memsize hw.physicalcpu hw.logicalcpu machdep.cpu.brand_string",
+    "sw_vers",
+    ".venv/bin/python -c 'import platform, torch; print(platform.python_version()); print(torch.backends.mps.is_built(), torch.backends.mps.is_available())'"
+  ],
+  "evidence_outputs": {
+    "sysctl_in_listed_order": ["Mac14,2", "8589934592", "8", "8", "Apple M2"],
+    "sw_vers": ["macOS", "15.7.3", "24G419"]
+  },
+  "limitation": "CPU is deliberately fixed for this local pilot. No full-model training forward/backward or memory-throughput benchmark has been run; resource failure must stop the future run rather than silently change this protocol."
+}

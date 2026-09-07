@@ -1,0 +1,33 @@
+{
+  "status": "FROZEN",
+  "release_id": "proofbridge-pretraining-dev-v1",
+  "frozen_at_utc": "2026-09-07T15:52:02.733180+00:00",
+  "generations": 9,
+  "training_runs": 0,
+  "holdout_content_reads": 0,
+  "files_sha256": {
+    "results/pretraining-dev-v1/PRETRAINING_DEV_BASELINE.md": "042572453b8024fa2109c6e532e86ec235e7760b6b2167f6953a2dc6eeb34fe4",
+    "results/pretraining-dev-v1/assessed_results.jsonl": "bb62aa39a809f6cbaa027c5b0a2e34b0e1cadd3657a7c394841c678c886ad10e",
+    "results/pretraining-dev-v1/attempts.jsonl": "e507f282145751f57332dc968e0a661de9ca4e456024cd53753df25d6acba981",
+    "results/pretraining-dev-v1/completion.json": "f46777f8a65e54c864b7a0034594678bc869a9345afa8d4c6eddf8dddfe31103",
+    "results/pretraining-dev-v1/manifest.json": "d893eaa2bc6e22939b88e7725b3523d8e8a1b6e22aff344d8b02c8f3e4856f79",
+    "results/pretraining-dev-v1/manual_reviews.json": "5589040d67b3589b31ead44830d33bac375527a6cd058d1b90679aab2ef7b194",
+    "results/pretraining-dev-v1/raw_generations.jsonl": "771d352e82162bf4142e52ae1c10b4ffb1f5385ecb28c04f9f5248ecedac2f16",
+    "results/pretraining-dev-v1/summary.json": "7c6e43d0cb4386a251749f310a9e26daf1b6ba90aef754c382784077080899f8",
+    "results/pretraining-dev-v1/validation.json": "c012777e8e99fa4171c462560fe9d3fdbd8f56f891d7239c6ab1a91a509f6435",
+    "tests/test_pretraining_v1_results.py": "f95149cceb7d5f3eb7cfb3ab4deb7e7cfe961dd43f604928586e27639d8710ef",
+    "tests/test_training_protocol_v1.py": "ca4439795b342bcc341d47ba0dbde7b5bef56fe0329032fd3163fd13df0f9f1c",
+    "training_protocol_v1/TRAINING_PROTOCOL.md": "609958e7d4acee43e9a36027a54c914b1c8ec74e6c6118b4129efc6489b88c1e",
+    "training_protocol_v1/__init__.py": "9ba05c6d979313ff965422d38fdf0fb6b44e1273e49695644032b74727283eb5",
+    "training_protocol_v1/adaptation.py": "e887e220697ec415c1a5d569e6e73eba75175797ae2760aef136cbc792921813",
+    "training_protocol_v1/config.json": "5c851abdadc7aa8cac87a437a9dfe8ecc4edc4f4dc1e1e3b2da9a9f6650ba641",
+    "training_protocol_v1/data.py": "a9cd89a754e8e8a2c8c3ccf2525a216aed241d92963d35bf64bf3d4a92500f30",
+    "training_protocol_v1/experiment.py": "6c5ef2da36f6a12fb0108da03f087fe445f4d868468d353502615bb8f891d81d",
+    "training_protocol_v1/frozen.json": "06f52741698f9676c7b7b63ba36e32c35c35833358ddb58cf58664554db806d2",
+    "training_protocol_v1/hardware.json": "26f062bafc7211f9800ba2493eaaa5cad27c396b4c9c44942c58b740f2a76ed5",
+    "training_protocol_v1/preparation.json": "105b05bf0751fdc99c9ff411a872cb53468b3b95b88f77ebbf8c31f93d808f6d",
+    "training_protocol_v1/protected_baselines.json": "090c8e2a0d3a5bf10aae2d6bacfac34fb3c488adae3888447768c6b03db1d9b3",
+    "training_protocol_v1/report.py": "3df042359196423093351555aa355fb59a307b0de2eec02f3aa60391735cf025",
+    "training_protocol_v1/scoring.py": "4a693e2284a16e48181eaddb403a35e6231c54af7e82bb820ed6211a929b0075"
+  }
+}

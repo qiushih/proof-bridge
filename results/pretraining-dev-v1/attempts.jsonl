@@ -1,0 +1,18 @@
+{"key": "pretraining_v1:pd01:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:31.572854+00:00"}
+{"key": "pretraining_v1:pd01:theorem_only", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd01:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:34.489967+00:00"}
+{"key": "pretraining_v1:pd01:argument_A", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd01:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:39.738638+00:00"}
+{"key": "pretraining_v1:pd01:argument_B", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd02:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:43.404467+00:00"}
+{"key": "pretraining_v1:pd02:theorem_only", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd02:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:49.673770+00:00"}
+{"key": "pretraining_v1:pd02:argument_A", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd02:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:16:57.664134+00:00"}
+{"key": "pretraining_v1:pd02:argument_B", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd03:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:17:01.230234+00:00"}
+{"key": "pretraining_v1:pd03:theorem_only", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd03:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:17:04.869257+00:00"}
+{"key": "pretraining_v1:pd03:argument_A", "event": "finished", "attempt": 1}
+{"key": "pretraining_v1:pd03:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T02:17:18.460435+00:00"}
+{"key": "pretraining_v1:pd03:argument_B", "event": "finished", "attempt": 1}

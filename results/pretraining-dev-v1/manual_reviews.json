@@ -1,0 +1,81 @@
+{
+  "reviewed_at_utc": "2026-09-07T15:50:23.472311+00:00",
+  "raw_generations_sha256": "771d352e82162bf4142e52ae1c10b4ffb1f5385ecb28c04f9f5248ecedac2f16",
+  "method": "Manual review of all nine saved proof bodies, their Rocq outcomes, and the six frozen dev arguments. Equivalent tactic implementations are separated from strict step adherence.",
+  "holdout_content_reads": 0,
+  "new_generations": 0,
+  "reviews": [
+    {
+      "key": "pretraining_v1:pd01:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "NOT_APPLICABLE",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "No informal argument was supplied. The attempted direct simplification leaves n + 3 = S (S (S n)), so reflexivity fails; this is a verification failure, not an argument-fidelity judgment."
+    },
+    {
+      "key": "pretraining_v1:pd01:argument_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "The proof inducts on n, computes the zero case and rewrites the successor goal with the IH from left to right. It verifies and follows both the mathematical induction and the requested A steps."
+    },
+    {
+      "key": "pretraining_v1:pd01:argument_B",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "The proof uses the same induction and base case as the supplied argument. Rewriting with the IH transports equality through successor, which is mathematically equivalent to the requested congruence argument. It verifies, but uses rewrite instead of f_equal/exact IH, so the B step contract is missed."
+    },
+    {
+      "key": "pretraining_v1:pd02:theorem_only",
+      "proof_body_sha256": "ae67ed24de7b9f57c22523bbae78007072bb743a347dab4f323af8105d4a019e",
+      "status": "NOT_APPLICABLE",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "No informal argument was supplied. Simplification cannot establish associativity for arbitrary n, m and p; the attempted reflexivity proof fails."
+    },
+    {
+      "key": "pretraining_v1:pd02:argument_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Induction is on n with m and p fixed. The zero equality is computed, and the IH is rewritten under successor after simplification. This is the supplied mathematical argument and the requested A step sequence."
+    },
+    {
+      "key": "pretraining_v1:pd02:argument_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "The verified proof performs the prescribed induction on n and solves the successor case using the same IH. IH rewriting is an equivalent implementation of successor congruence, so mathematical fidelity is preserved while the explicit B f_equal/exact step sequence is not followed."
+    },
+    {
+      "key": "pretraining_v1:pd03:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "NOT_APPLICABLE",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "No informal argument was supplied. The remaining equality relating (n + 3) + m to the third successor of n + m is not definitional; reflexivity fails."
+    },
+    {
+      "key": "pretraining_v1:pd03:argument_A",
+      "proof_body_sha256": "533f0ed9347ee6400b5e20fd958bbde2936a4a8a86e389069eb1c72a5b721790",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "The second theorem binder m is named k locally, and the successor variable and IH are named kIH and kIH2. These are valid local renamings. The proof fixes that second binder, inducts on n, computes the base case and rewrites with its actual IH; it verifies and matches the A steps after name/intros normalization."
+    },
+    {
+      "key": "pretraining_v1:pd03:argument_B",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "The proof fixes m and inducts on n, with the correct computed base and IH-based successor step. Rewriting the IH under successor is mathematically equivalent to the supplied congruence reasoning. It verifies but misses B's requested f_equal/exact realization. Its difference from the A output is only naming and introduction grouping, not a different mathematical argument."
+    }
+  ]
+}
