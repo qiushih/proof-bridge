@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-07T00:37:31.433497+00:00",
+  "fingerprints": {
+    "argument_switch_v1/plan.json": "37cc95aaa00964bd162b59b77a90bd5e0d9e0de7bf5ed5ea02cf892f8e028fa4",
+    "argument_switch_v1/variants.json": "2989103fb972c3f86d0bf4ce9227ff7e59ba64654cc299b48729fa2dc83a5dd2",
+    "checkpoints/constrained-v1.json": "c477feb4d340ec259666a58692b65f5888fdb21b6475aaa45c85662c5dbd4241",
+    "argument_switch_v1/protocol.py": "1648616d44fa39088c009a629f7482b78192e9e8c519862e617a44894b5faa03",
+    "argument_switch_v1/experiment.py": "b6b324818a475c17124da48eecb2c41203c936bea8796c1cbbcec971e668652a",
+    "tests/test_argument_switch_v1.py": "e995656fc242bd8d7f9751d3ef64cbcf0f810edaab980538d8c466a27e9b1fe1",
+    "argument_switch_v1/references/seed_003_A.v": "7c8a914e4708a2d488c80a413b61ce81591bd71af667d3de38fb7194d91d1c57",
+    "argument_switch_v1/references/seed_003_B.v": "a16f2893777604701c333b19275dbe6946859ce566e98d1953d015bea11ea570",
+    "argument_switch_v1/references/seed_004_A.v": "f6336052ba7e3cecaaec2630c6eea0febcafc5a960eb5732008d7d538560e88f",
+    "argument_switch_v1/references/seed_004_B.v": "98a03583dd3df752d5662b3ea991c7ddfa254497bc7c3fb4f3001a1609a994a5",
+    "argument_switch_v1/references/seed_005_A.v": "3c84a6b07627ff9685f1255901d3a957e497e9bf3cce6167c252ec75381bea47",
+    "argument_switch_v1/references/seed_005_B.v": "300708dafce715d997fc00f177814c83df1dc95145631a2a3ab064719e35ec9b",
+    "argument_switch_v1/references/seed_006_A.v": "0ab2060388987d8f537e1dd8013c8f05f5b3e9155de3ea31726aac4ee1fe627a",
+    "argument_switch_v1/references/seed_006_B.v": "25197aa01ad1cd8796e7a1231df8fb84e58669a1e8ac5142f2f3a530186e5fb0",
+    "argument_switch_v1/references/seed_007_A.v": "e019530226e6faec3f524d3e8b66decccc05da28cb3f4bfb5574a0a81aeb966c",
+    "argument_switch_v1/references/seed_007_B.v": "80afac6b2618ce26591ed02703e97e91fbbd023de96df049bdd3ffb15616fdea",
+    "argument_switch_v1/references/seed_011_A.v": "d165aba7b24e6ac0f5eadff6756b9fd6595cf60375301e6298e9dd8570160009",
+    "argument_switch_v1/references/seed_011_B.v": "0b313ecf0296ba42c7c250b5ccdaed044e463552d1e573ef1ae381afb8e16cb5"
+  },
+  "unit_tests": 9,
+  "test_log": "test_correct_references_switch_with_all_six_in_denominator (test_argument_switch_v1.ArgumentSwitchTests.test_correct_references_switch_with_all_six_in_denominator) ... ok\ntest_equivalent_premise_tactics_are_accepted (test_argument_switch_v1.ArgumentSwitchTests.test_equivalent_premise_tactics_are_accepted) ... ok\ntest_frozen_prefix_and_formatter_no_reference_code_leak (test_argument_switch_v1.ArgumentSwitchTests.test_frozen_prefix_and_formatter_no_reference_code_leak) ... ok\ntest_matching_strategy_without_verification_does_not_count_as_success (test_argument_switch_v1.ArgumentSwitchTests.test_matching_strategy_without_verification_does_not_count_as_success) ... ok\ntest_missing_or_duplicate_output_cannot_improve_denominator (test_argument_switch_v1.ArgumentSwitchTests.test_missing_or_duplicate_output_cannot_improve_denominator) ... ok\ntest_no_inference_or_diagnostic_load_during_protocol_checks (test_argument_switch_v1.ArgumentSwitchTests.test_no_inference_or_diagnostic_load_during_protocol_checks) ... ok\ntest_six_existing_common_subset_theorems_and_12_allowed_references (test_argument_switch_v1.ArgumentSwitchTests.test_six_existing_common_subset_theorems_and_12_allowed_references) ... ok\ntest_third_binder_induction_and_required_IH_are_not_just_keyword_matches (test_argument_switch_v1.ArgumentSwitchTests.test_third_binder_induction_and_required_IH_are_not_just_keyword_matches) ... ok\ntest_verified_proof_ignoring_B_strategy_is_a_switch_failure (test_argument_switch_v1.ArgumentSwitchTests.test_verified_proof_ignoring_B_strategy_is_a_switch_failure) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.096s\n\nOK\n",
+  "references": [
+    {
+      "example_id": "seed_003",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_003_A.v",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 11,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.2189,
+        "source_sha256": "7c8a914e4708a2d488c80a413b61ce81591bd71af667d3de38fb7194d91d1c57",
+        "stdout": "proof_bridge_target : forall n m : nat, S n + m = S (n + m)\n     : forall n m : nat, S n + m = S (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_003",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_003_B.v",
+      "proof_body_sha256": "ac9823dd655e3fca7e1a0fdcfbf467e2b284642b459850c7b99dc8e062c09a41",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 25,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1189,
+        "source_sha256": "a16f2893777604701c333b19275dbe6946859ce566e98d1953d015bea11ea570",
+        "stdout": "proof_bridge_target : forall n m : nat, S n + m = S (n + m)\n     : forall n m : nat, S n + m = S (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_004",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_004_A.v",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 10,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1182,
+        "source_sha256": "f6336052ba7e3cecaaec2630c6eea0febcafc5a960eb5732008d7d538560e88f",
+        "stdout": "proof_bridge_target : forall n : nat, 1 + n = S n\n     : forall n : nat, 1 + n = S n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_004",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_004_B.v",
+      "proof_body_sha256": "10c0a5e2dc0ec9fbdff828072d902868b25aa40f29ee966b15fe74aaced7d279",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 25,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1166,
+        "source_sha256": "98a03583dd3df752d5662b3ea991c7ddfa254497bc7c3fb4f3001a1609a994a5",
+        "stdout": "proof_bridge_target : forall n : nat, 1 + n = S n\n     : forall n : nat, 1 + n = S n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_005",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_005_A.v",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 11,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1135,
+        "source_sha256": "3c84a6b07627ff9685f1255901d3a957e497e9bf3cce6167c252ec75381bea47",
+        "stdout": "proof_bridge_target : forall n m : nat, n + (0 + m) = n + m\n     : forall n m : nat, n + (0 + m) = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_005",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_005_B.v",
+      "proof_body_sha256": "f7e0127b21711bd198572d24d2de1c86749826b61075bf25aa89ce5f6d8aa721",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 29,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1137,
+        "source_sha256": "300708dafce715d997fc00f177814c83df1dc95145631a2a3ab064719e35ec9b",
+        "stdout": "proof_bridge_target : forall n m : nat, n + (0 + m) = n + m\n     : forall n m : nat, n + (0 + m) = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_006",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_006_A.v",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 11,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.112,
+        "source_sha256": "0ab2060388987d8f537e1dd8013c8f05f5b3e9155de3ea31726aac4ee1fe627a",
+        "stdout": "proof_bridge_target : forall n m : nat, 0 + n + m = n + m\n     : forall n m : nat, 0 + n + m = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_006",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_006_B.v",
+      "proof_body_sha256": "f7e0127b21711bd198572d24d2de1c86749826b61075bf25aa89ce5f6d8aa721",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 29,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1131,
+        "source_sha256": "25197aa01ad1cd8796e7a1231df8fb84e58669a1e8ac5142f2f3a530186e5fb0",
+        "stdout": "proof_bridge_target : forall n m : nat, 0 + n + m = n + m\n     : forall n m : nat, 0 + n + m = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_007",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_007_A.v",
+      "proof_body_sha256": "e39f7b6697d61fad78426fe7cef32e5c442b51de55b3b7056588d345191baad7",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 8,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1154,
+        "source_sha256": "e019530226e6faec3f524d3e8b66decccc05da28cb3f4bfb5574a0a81aeb966c",
+        "stdout": "proof_bridge_target : forall n m : nat, n = m -> n = m\n     : forall n m : nat, n = m -> n = m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_007",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_007_B.v",
+      "proof_body_sha256": "4a9d03cebe02ffbd4f4dd92a6ff1c3698fc806e722c599ea5b3e93ff60a99ccb",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 27,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1213,
+        "source_sha256": "80afac6b2618ce26591ed02703e97e91fbbd023de96df049bdd3ffb15616fdea",
+        "stdout": "proof_bridge_target : forall n m : nat, n = m -> n = m\n     : forall n m : nat, n = m -> n = m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_011",
+      "argument": "A",
+      "reference_file": "argument_switch_v1/references/seed_011_A.v",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 13,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1187,
+        "source_sha256": "d165aba7b24e6ac0f5eadff6756b9fd6595cf60375301e6298e9dd8570160009",
+        "stdout": "proof_bridge_target : forall n m p : nat, n = m -> p + n = p + m\n     : forall n m p : nat, n = m -> p + n = p + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "seed_011",
+      "argument": "B",
+      "reference_file": "argument_switch_v1/references/seed_011_B.v",
+      "proof_body_sha256": "1318786eb483d952b644a4ceba8e637bea3cf82a8ee5954665dcb2ca89698f11",
+      "all_tokens_and_EOS_allowed": true,
+      "tokens": 32,
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1166,
+        "source_sha256": "0b313ecf0296ba42c7c250b5ccdaed044e463552d1e573ef1ae381afb8e16cb5",
+        "stdout": "proof_bridge_target : forall n m p : nat, n = m -> p + n = p + m\n     : forall n m p : nat, n = m -> p + n = p + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    }
+  ],
+  "inference_attempts": 0,
+  "diagnostic_examples_used": 0
+}

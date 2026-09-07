@@ -1,0 +1,22 @@
+{
+  "experiment_id": "proofbridge-argument-switch-v1",
+  "selected_ids": ["seed_003", "seed_004", "seed_005", "seed_006", "seed_007", "seed_011"],
+  "selection_rationale": "Use the four eligible definitional examples 003-006, the first eligible direct-premise example 007, and the eligible addition-context substitution 011 whose third binder supports induction. All are existing common-subset development theorems, not demonstrations or their excluded equivalents. Selection is fixed before any probe generation; no new theorem or diagnostic example is used.",
+  "conditions": ["theorem_only", "argument_A", "argument_B"],
+  "expected_attempts": 18,
+  "attempts_per_example_condition": 1,
+  "repair_attempts": 0,
+  "prompt_policy": "Use the exact frozen Prompt v2 prefix and target formatter. Only the target informal argument varies; A/B labels, strategy labels, reference code, and scoring rules are never placed in the prompt.",
+  "inference": "Call the frozen constrained_v1.experiment.generate with the unchanged model and baseline/config.json generation settings, including greedy decoding and 256 new tokens.",
+  "reference_policy": "Write A and B separately from frozen seeds; verify all 12 with Rocq and allow every reference token path plus EOS through the frozen decoder before inference. Freeze references, protocol, and settings in a preflight hash manifest.",
+  "strategy_rubric": {
+    "direct_definition": "No induction or premise use; computation/reflexivity and equivalent congruence are allowed.",
+    "direct_premise": "No induction, with actual use of the supplied equality; exact/apply and equivalent rewriting count equally.",
+    "direct_rewrite": "No induction, with actual use of the supplied equality under addition; equivalent equality transport is allowed.",
+    "induction": "Induction on the specified binder with both explicit branches. Where requested, use IH in the successor branch and the premise in the stated branches. Equivalent local tactics are allowed. These observable strategy criteria do not imply kernel correctness."
+  },
+  "primary_switching_accuracy": "Of all six theorems, the fraction for which A and B BOTH verify and BOTH match their respective strategy requirements. A verified proof that ignores a requested strategy is a failure. Never exclude unverified outputs from this denominator.",
+  "secondary_metrics": ["verification accuracy out of 18, and out of 6 per condition", "attempted strategy matching for A and B separately, independent of verification", "verified strategy-following out of 12 argument-conditioned outputs", "attempted A/B strategy switch out of 6 independent of verification", "theorem-only observed strategy against both references, with no requested strategy"],
+  "review": "Manual assistant review of all 18 outputs, retained alongside predeclared structural strategy scores; not independent human review. Do not change the rubric based on model outputs.",
+  "limitations": ["Small reused-development diagnostic, not held-out generalization", "Some inductions are deliberately unnecessary; the task is strategy compliance, not proof efficiency", "Induction presence alone is insufficient when the supplied argument requires IH or a premise", "No repair, model training, theorem-set expansion, or diagnostic evaluation use"]
+}

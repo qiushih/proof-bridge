@@ -1,0 +1,171 @@
+{
+  "schema_version": "argument-switch-manual-review-1.0",
+  "results_sha256": "79dfd3d3bcebb0b06cf1daa5d9f548ff2a042f0ad99781200f241bb6e77e55c7",
+  "method": "Manual reading of all 18 outputs against the fixed A/B informal and formal references. Attempted strategy matches are not complete semantic fidelity or proof correctness. Reviews do not change predeclared scores.",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "reviews": [
+    {
+      "key": "argument_switch_v1:seed_003:theorem_only",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target argument, the output tries the familiar induction pattern. Its forward IH rewrite fails after simplification. There is no requested strategy to follow in this control.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_003:argument_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "DIVERGENT",
+      "rationale": "A asks for definitional computation. The output instead uses induction, and its successor rewrite also fails. Changing the informal paragraph did not recover the requested direct strategy here.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_003:argument_B",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output chooses induction on the correct binder and refers to IH in the successor branch, matching the coarse strategy requirements. However, it simplifies before rewriting; the reference first rewrites the inner S k + m. The original IH pattern is no longer found, so this is not a successful implementation or switch.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_004:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target argument, the output tries the familiar induction pattern. Its forward IH rewrite fails after simplification. There is no requested strategy to follow in this control.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_004:argument_A",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "FAITHFUL",
+      "rationale": "The output verifies and uses A's direct mathematical argument without induction. Simplification and reflexivity implement the stated definitional reductions.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_004:argument_B",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output switches to induction on n and uses IH, matching the coarse strategy requirements. The supplied B argument explicitly needs the IH from right to left; the output uses forward rewrite IH after simplification. Rocq finds no matching subterm. The attempted strategy switch does not verify and earns no switching credit.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_005:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target informal argument, the output gives a valid direct proof matching A. This is correctness evidence, not evidence of following a supplied argument.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_005:argument_A",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "rationale": "The output verifies and uses A's direct mathematical argument without induction. Simplification and reflexivity implement the stated definitional reductions.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_005:argument_B",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output switches to induction on n and uses IH, matching the coarse strategy requirements. The supplied B argument explicitly needs the IH from right to left; the output uses forward rewrite IH after simplification. Rocq finds no matching subterm. The attempted strategy switch does not verify and earns no switching credit.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_006:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target informal argument, the output gives a valid direct proof matching A. This is correctness evidence, not evidence of following a supplied argument.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_006:argument_A",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "rationale": "The output verifies and uses A's direct mathematical argument without induction. Simplification and reflexivity implement the stated definitional reductions.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_006:argument_B",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output switches to induction on n and uses IH, matching the coarse strategy requirements. The supplied B argument explicitly needs the IH from right to left; the output uses forward rewrite IH after simplification. Rocq finds no matching subterm. The attempted strategy switch does not verify and earns no switching credit.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_007:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target informal argument, the output gives a valid direct proof matching A. This is correctness evidence, not evidence of following a supplied argument.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_007:argument_A",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "rationale": "The output verifies and uses A's direct mathematical argument without induction. rewrite H followed by reflexivity is equivalent to the supplied direct use of the equality premise.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_007:argument_B",
+      "proof_body_sha256": "3bc1b7fa3684b7f3d85155e1a46e25f26d54a44ac88d87f711118b8e84e2a321",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output inducts on the requested n, but ignores the current equality premise in both branches. Its zero case tries reflexivity for 0 = m instead of using nH, the valid local premise. The familiar induction template therefore fails both the required premise-use criteria and Rocq verification.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_011:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "CONTROL_NO_REQUESTED_STRATEGY",
+      "rationale": "With no target informal argument, the output gives a valid direct proof matching A. This is correctness evidence, not evidence of following a supplied argument.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_011:argument_A",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "rationale": "The output verifies and uses A's direct mathematical argument without induction. It substitutes the actual premise under addition, as requested.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    },
+    {
+      "key": "argument_switch_v1:seed_011:argument_B",
+      "proof_body_sha256": "79e6bb378ab2d8b6e3ef35e6f2747a72ae4e31370473181d454505831232315d",
+      "status": "PARTIAL_NOT_VERIFIED",
+      "rationale": "The output correctly chooses p, the third binder, showing a response to the supplied argument. It first rewrites H before induction, then tries reflexivity in the base case and a now-useless IH rewrite in the successor. B instead uses H in the base case and successor congruence with IH. This blended argument fails the branch-specific premise requirement and Rocq verification.",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "agrees_with_predeclared_verified_strategy_score": true
+    }
+  ]
+}

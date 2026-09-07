@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-09-07T00:45:28.491703+00:00",
+  "checkpoint_tag": "proofbridge-constrained-v1",
+  "checkpoint_commit": "b20e388",
+  "checkpoint_hashes_unchanged": 50,
+  "reference_proofs_verified": 12,
+  "reference_token_paths_allowed": 12,
+  "reference_preflight_preceded_inference": true,
+  "probe_unit_tests_before_inference": 9,
+  "full_regression_tests": 110,
+  "failed_tests": 0,
+  "skipped_tests": 0,
+  "new_model_generations": 18,
+  "attempts_per_condition_per_theorem": 1,
+  "model_output_repairs": 0,
+  "token_and_verifier_replay": {
+    "outputs": 18,
+    "all_tokens_allowed": true,
+    "verifier_results_identical": true,
+    "new_generations": 0
+  },
+  "generation_errors": 0,
+  "length_limited_outputs": 0,
+  "diagnostic_policy": "No diagnostic example or result used in probe selection, generation, or scoring. The existing full regression suite separately rechecks old diagnostic artifacts without new model generation.",
+  "commands": [
+    ".venv/bin/python -m argument_switch_v1.experiment validate",
+    ".venv/bin/python -m argument_switch_v1.experiment run",
+    ".venv/bin/python -m argument_switch_v1.experiment check --replay-tokens --reverify",
+    "python3 -m argument_switch_v1.report",
+    "python3 -m unittest discover -s tests -v",
+    "python3 -m checkpoints.freeze_constrained_v1 check"
+  ],
+  "files_sha256": {
+    "manifest.json": "9cac1a0af093be315269b5b811562a21351542416830d3f55e7c279874eab05b",
+    "results.jsonl": "79dfd3d3bcebb0b06cf1daa5d9f548ff2a042f0ad99781200f241bb6e77e55c7",
+    "attempts.jsonl": "afc6d0977462e193ed1a758aa0fcc52090486f6d92e9b1a3c1558fa02302b789",
+    "summary.json": "b50d1b5c623f8fda732ab8a26052ec2790b158364d7e4eb53d856c76161761f2",
+    "completion.json": "cedbda6bd3fdd736ce756f272859ae3a3545ca37d908fc9d14a2b3076fb2bbc5",
+    "manual_reviews.json": "6b2da5265bdadb53a02b68d25f8108d8b346508084d292458f35bb7ee16b907a",
+    "assessed_results.jsonl": "839eb246fbd69f98da06e25222071d3585eb477b92eb07166642c00389c6abbc",
+    "report_summary.json": "641f40f5f036c461a718f26fae94dc8bc82a10a784719878eb2f21be27f3c630",
+    "ARGUMENT_SWITCH_REPORT.md": "d8f90ca30881354371b53d102b27ab551dc00dd76fecc6c9cabfc77092308b5c"
+  }
+}

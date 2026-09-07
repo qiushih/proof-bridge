@@ -1,0 +1,36 @@
+{"key": "argument_switch_v1:seed_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:30.455252+00:00"}
+{"key": "argument_switch_v1:seed_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_003:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:37.120865+00:00"}
+{"key": "argument_switch_v1:seed_003:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_003:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:39.593611+00:00"}
+{"key": "argument_switch_v1:seed_003:argument_B", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:45.187822+00:00"}
+{"key": "argument_switch_v1:seed_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_004:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:50.262151+00:00"}
+{"key": "argument_switch_v1:seed_004:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_004:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:51.770477+00:00"}
+{"key": "argument_switch_v1:seed_004:argument_B", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:54.196111+00:00"}
+{"key": "argument_switch_v1:seed_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_005:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:55.549163+00:00"}
+{"key": "argument_switch_v1:seed_005:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_005:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:56.956849+00:00"}
+{"key": "argument_switch_v1:seed_005:argument_B", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:39:59.440277+00:00"}
+{"key": "argument_switch_v1:seed_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_006:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:00.804811+00:00"}
+{"key": "argument_switch_v1:seed_006:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_006:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:02.175628+00:00"}
+{"key": "argument_switch_v1:seed_006:argument_B", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:04.889089+00:00"}
+{"key": "argument_switch_v1:seed_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_007:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:09.286480+00:00"}
+{"key": "argument_switch_v1:seed_007:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_007:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:10.782345+00:00"}
+{"key": "argument_switch_v1:seed_007:argument_B", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:18.658537+00:00"}
+{"key": "argument_switch_v1:seed_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_011:argument_A", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:23.611015+00:00"}
+{"key": "argument_switch_v1:seed_011:argument_A", "event": "finished", "attempt": 1}
+{"key": "argument_switch_v1:seed_011:argument_B", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:40:25.412157+00:00"}
+{"key": "argument_switch_v1:seed_011:argument_B", "event": "finished", "attempt": 1}

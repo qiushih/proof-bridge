@@ -1,0 +1,279 @@
+{
+  "experiment_id": "proofbridge-argument-switch-v1",
+  "phase": "development_argument_switch",
+  "started_at_utc": "2026-09-07T00:39:30.450247+00:00",
+  "preflight_completed_at_utc": "2026-09-07T00:37:31.433497+00:00",
+  "preflight_sha256": "963ae83b816caa2f605846fddfc3b0e890160c154c75451aa85b44d6d5fd7e06",
+  "checkpoint_sha256": "c477feb4d340ec259666a58692b65f5888fdb21b6475aaa45c85662c5dbd4241",
+  "fingerprints": {
+    "argument_switch_v1/plan.json": "37cc95aaa00964bd162b59b77a90bd5e0d9e0de7bf5ed5ea02cf892f8e028fa4",
+    "argument_switch_v1/variants.json": "2989103fb972c3f86d0bf4ce9227ff7e59ba64654cc299b48729fa2dc83a5dd2",
+    "checkpoints/constrained-v1.json": "c477feb4d340ec259666a58692b65f5888fdb21b6475aaa45c85662c5dbd4241",
+    "argument_switch_v1/protocol.py": "1648616d44fa39088c009a629f7482b78192e9e8c519862e617a44894b5faa03",
+    "argument_switch_v1/experiment.py": "b6b324818a475c17124da48eecb2c41203c936bea8796c1cbbcec971e668652a",
+    "tests/test_argument_switch_v1.py": "e995656fc242bd8d7f9751d3ef64cbcf0f810edaab980538d8c466a27e9b1fe1",
+    "argument_switch_v1/references/seed_003_A.v": "7c8a914e4708a2d488c80a413b61ce81591bd71af667d3de38fb7194d91d1c57",
+    "argument_switch_v1/references/seed_003_B.v": "a16f2893777604701c333b19275dbe6946859ce566e98d1953d015bea11ea570",
+    "argument_switch_v1/references/seed_004_A.v": "f6336052ba7e3cecaaec2630c6eea0febcafc5a960eb5732008d7d538560e88f",
+    "argument_switch_v1/references/seed_004_B.v": "98a03583dd3df752d5662b3ea991c7ddfa254497bc7c3fb4f3001a1609a994a5",
+    "argument_switch_v1/references/seed_005_A.v": "3c84a6b07627ff9685f1255901d3a957e497e9bf3cce6167c252ec75381bea47",
+    "argument_switch_v1/references/seed_005_B.v": "300708dafce715d997fc00f177814c83df1dc95145631a2a3ab064719e35ec9b",
+    "argument_switch_v1/references/seed_006_A.v": "0ab2060388987d8f537e1dd8013c8f05f5b3e9155de3ea31726aac4ee1fe627a",
+    "argument_switch_v1/references/seed_006_B.v": "25197aa01ad1cd8796e7a1231df8fb84e58669a1e8ac5142f2f3a530186e5fb0",
+    "argument_switch_v1/references/seed_007_A.v": "e019530226e6faec3f524d3e8b66decccc05da28cb3f4bfb5574a0a81aeb966c",
+    "argument_switch_v1/references/seed_007_B.v": "80afac6b2618ce26591ed02703e97e91fbbd023de96df049bdd3ffb15616fdea",
+    "argument_switch_v1/references/seed_011_A.v": "d165aba7b24e6ac0f5eadff6756b9fd6595cf60375301e6298e9dd8570160009",
+    "argument_switch_v1/references/seed_011_B.v": "0b313ecf0296ba42c7c250b5ccdaed044e463552d1e573ef1ae381afb8e16cb5"
+  },
+  "plan": {
+    "experiment_id": "proofbridge-argument-switch-v1",
+    "selected_ids": [
+      "seed_003",
+      "seed_004",
+      "seed_005",
+      "seed_006",
+      "seed_007",
+      "seed_011"
+    ],
+    "selection_rationale": "Use the four eligible definitional examples 003-006, the first eligible direct-premise example 007, and the eligible addition-context substitution 011 whose third binder supports induction. All are existing common-subset development theorems, not demonstrations or their excluded equivalents. Selection is fixed before any probe generation; no new theorem or diagnostic example is used.",
+    "conditions": [
+      "theorem_only",
+      "argument_A",
+      "argument_B"
+    ],
+    "expected_attempts": 18,
+    "attempts_per_example_condition": 1,
+    "repair_attempts": 0,
+    "prompt_policy": "Use the exact frozen Prompt v2 prefix and target formatter. Only the target informal argument varies; A/B labels, strategy labels, reference code, and scoring rules are never placed in the prompt.",
+    "inference": "Call the frozen constrained_v1.experiment.generate with the unchanged model and baseline/config.json generation settings, including greedy decoding and 256 new tokens.",
+    "reference_policy": "Write A and B separately from frozen seeds; verify all 12 with Rocq and allow every reference token path plus EOS through the frozen decoder before inference. Freeze references, protocol, and settings in a preflight hash manifest.",
+    "strategy_rubric": {
+      "direct_definition": "No induction or premise use; computation/reflexivity and equivalent congruence are allowed.",
+      "direct_premise": "No induction, with actual use of the supplied equality; exact/apply and equivalent rewriting count equally.",
+      "direct_rewrite": "No induction, with actual use of the supplied equality under addition; equivalent equality transport is allowed.",
+      "induction": "Induction on the specified binder with both explicit branches. Where requested, use IH in the successor branch and the premise in the stated branches. Equivalent local tactics are allowed. These observable strategy criteria do not imply kernel correctness."
+    },
+    "primary_switching_accuracy": "Of all six theorems, the fraction for which A and B BOTH verify and BOTH match their respective strategy requirements. A verified proof that ignores a requested strategy is a failure. Never exclude unverified outputs from this denominator.",
+    "secondary_metrics": [
+      "verification accuracy out of 18, and out of 6 per condition",
+      "attempted strategy matching for A and B separately, independent of verification",
+      "verified strategy-following out of 12 argument-conditioned outputs",
+      "attempted A/B strategy switch out of 6 independent of verification",
+      "theorem-only observed strategy against both references, with no requested strategy"
+    ],
+    "review": "Manual assistant review of all 18 outputs, retained alongside predeclared structural strategy scores; not independent human review. Do not change the rubric based on model outputs.",
+    "limitations": [
+      "Small reused-development diagnostic, not held-out generalization",
+      "Some inductions are deliberately unnecessary; the task is strategy compliance, not proof efficiency",
+      "Induction presence alone is insufficient when the supplied argument requires IH or a premise",
+      "No repair, model training, theorem-set expansion, or diagnostic evaluation use"
+    ]
+  },
+  "prompt": {
+    "id": "short_3shot",
+    "demonstration_ids": [
+      "seed_002",
+      "seed_010",
+      "seed_016"
+    ],
+    "prefix_messages": [
+      {
+        "role": "system",
+        "content": "Output only Rocq (Coq) proof-body code, starting with intros. No Markdown, explanation, theorem, imports, Proof or Qed. Follow the informal proof when supplied.\nAllowed tactics: intros, induction, simpl, reflexivity, symmetry, f_equal, rewrite, exact, apply. Use only local hypotheses; no library lemmas or automation.\nIntroduce all variables and premises before induction. Use at most one induction with named cases and two - branches, as in the examples. Addition recurses on its first argument."
+      },
+      {
+        "role": "user",
+        "content": "Theorem: forall n : nat, 0 + n = n\nInformal proof: Fix a natural number n. By the definition of addition, 0 + n reduces to n. The two sides are therefore equal.\nOutput code only."
+      },
+      {
+        "role": "assistant",
+        "content": "intros n.\nsimpl.\nreflexivity."
+      },
+      {
+        "role": "user",
+        "content": "Theorem: forall n m p : nat, n = m -> n + p = m + p\nInformal proof: Fix n, m, and p and suppose n = m. Replace n by m in the left-hand side. Both sides become m + p.\nOutput code only."
+      },
+      {
+        "role": "assistant",
+        "content": "intros n m p H.\nrewrite H.\nreflexivity."
+      },
+      {
+        "role": "user",
+        "content": "Theorem: forall n : nat, n + 0 = n\nInformal proof: Let n be arbitrary and proceed by induction on n. For n = 0, the equality 0 + 0 = 0 follows by simplifying the definition of addition. For the successor case, assume k + 0 = k. The goal S k + 0 = S k simplifies to S (k + 0) = S k. Replacing k + 0 by k using the induction hypothesis makes the sides identical.\nOutput code only."
+      },
+      {
+        "role": "assistant",
+        "content": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite IH.\n  reflexivity."
+      }
+    ]
+  },
+  "example_ids": [
+    "seed_003",
+    "seed_004",
+    "seed_005",
+    "seed_006",
+    "seed_007",
+    "seed_011"
+  ],
+  "conditions": [
+    "theorem_only",
+    "argument_A",
+    "argument_B"
+  ],
+  "model": {
+    "schema_version": "model-lock-0.1",
+    "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+    "model_card": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "description": "Released pretrained and instruction-tuned code model; no ProofBridge fine-tuning.",
+    "license": "Apache-2.0",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "config.json",
+      "generation_config.json",
+      "merges.txt",
+      "model.safetensors",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.json"
+    ],
+    "files_sha256": {
+      "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "README.md": "50cd33dcab1f7b9d206d4691df527a419cfddadd0c4648b8d9bffd5a1b7a032d",
+      "config.json": "b1e58593cd31852f7da5c2fc31ddf6135b9c066c0fd9177a4bbe95717083adff",
+      "generation_config.json": "fdaccbcb02f3e1e7914ccb0f69ebe899071ffd27cf825166d823163e156870f2",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "f9523886352217ded3aeeef552b381af79d568c6d49a4b9e423288cea56b0a44",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "packages": {
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.5.1",
+      "filelock": "3.32.5",
+      "fsspec": "2026.7.0",
+      "hf-xet": "1.6.0",
+      "huggingface_hub": "0.36.2",
+      "idna": "3.19",
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.3",
+      "mpmath": "1.3.0",
+      "networkx": "3.6.1",
+      "numpy": "2.3.4",
+      "packaging": "26.3",
+      "PyYAML": "6.0.3",
+      "regex": "2026.9.3",
+      "requests": "2.34.2",
+      "safetensors": "0.8.0",
+      "setuptools": "84.0.0",
+      "sympy": "1.14.0",
+      "tokenizers": "0.22.2",
+      "torch": "2.9.0",
+      "tqdm": "4.70.0",
+      "transformers": "4.57.1",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.7.0"
+    },
+    "model_load_seconds": 3.111021166900173,
+    "model_parameter_count": 494032768,
+    "model_dtype": "torch.float32",
+    "model_device": "cpu",
+    "torch_build": "PyTorch built with:\n  - GCC 4.2\n  - C++ Version: 201703\n  - clang 15.0.0\n  - OpenMP 201811\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: DEFAULT\n  - Build settings: BLAS_INFO=accelerate, BUILD_TYPE=Release, COMMIT_SHA=0fabc3ba44823f257e70ce397d989c8de5e362c1, CXX_COMPILER=/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_PYTORCH_QNNPACK -DAT_BUILD_ARM_VEC256_WITH_SLEEF -DUSE_XNNPACK -DUSE_PYTORCH_METAL_EXPORT -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DUSE_COREML_DELEGATE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=braced-scalar-init -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wvla-extension -Wsuggest-override -Wnewline-eof -Winconsistent-missing-override -Winconsistent-missing-destructor-override -Wno-pass-failed -Wno-error=old-style-cast -Wconstant-conversion -Qunused-arguments -faligned-new -fno-math-errno -fno-trapping-math -Werror=format -DUSE_MPS -Wno-missing-braces, LAPACK_INFO=accelerate, TORCH_VERSION=2.9.0, USE_CUDA=OFF, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_EIGEN_FOR_BLAS=ON, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=OFF, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n"
+  },
+  "generation_settings": {
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 256,
+    "use_cache": true,
+    "seed": 1729,
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "deterministic_algorithms": true,
+    "attention_implementation": "eager"
+  },
+  "effective_generation_config": {
+    "max_length": 20,
+    "max_new_tokens": 256,
+    "min_length": 0,
+    "min_new_tokens": null,
+    "early_stopping": false,
+    "max_time": null,
+    "stop_strings": null,
+    "do_sample": false,
+    "num_beams": 1,
+    "use_cache": true,
+    "cache_implementation": null,
+    "cache_config": null,
+    "return_legacy_cache": null,
+    "prefill_chunk_size": null,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "min_p": null,
+    "typical_p": 1.0,
+    "epsilon_cutoff": 0.0,
+    "eta_cutoff": 0.0,
+    "repetition_penalty": 1.0,
+    "encoder_repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "bad_words_ids": null,
+    "renormalize_logits": false,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": false,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "sequence_bias": null,
+    "token_healing": false,
+    "guidance_scale": null,
+    "watermarking_config": null,
+    "num_return_sequences": 1,
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "output_scores": false,
+    "output_logits": null,
+    "return_dict_in_generate": false,
+    "pad_token_id": 151645,
+    "bos_token_id": null,
+    "eos_token_id": 151645,
+    "encoder_no_repeat_ngram_size": 0,
+    "decoder_start_token_id": null,
+    "is_assistant": false,
+    "num_assistant_tokens": 20,
+    "num_assistant_tokens_schedule": "constant",
+    "assistant_confidence_threshold": 0.4,
+    "prompt_lookup_num_tokens": null,
+    "max_matching_ngram_size": null,
+    "assistant_early_exit": null,
+    "assistant_lookbehind": 10,
+    "target_lookbehind": 10,
+    "disable_compile": false,
+    "low_memory": null,
+    "penalty_alpha": null,
+    "dola_layers": null,
+    "diversity_penalty": 0.0,
+    "num_beam_groups": 1,
+    "constraints": null,
+    "force_words_ids": null,
+    "_from_model_config": false,
+    "transformers_version": "4.57.1"
+  },
+  "expected_attempts": 18,
+  "repair_attempts": 0,
+  "fine_tuning": false,
+  "diagnostic_examples_used": 0,
+  "verifier_timeout_seconds": 10.0,
+  "decoder": "Unmodified constrained_v1.experiment.generate",
+  "cache_policy": "Fresh vocabulary/cache at inference; no reference paths prewarm it."
+}

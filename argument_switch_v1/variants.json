@@ -1,0 +1,241 @@
+[
+  {
+    "example_id": "seed_003",
+    "formal_statement": "forall n m : nat, S n + m = S (n + m)",
+    "generation_family": "definitional_reflexivity",
+    "arguments": {
+      "A": {
+        "informal_proof": "Take arbitrary natural numbers n and m. The recursive clause defining addition rewrites S n + m as S (n + m), which is exactly the right-hand side.",
+        "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+        "strategy": "direct_definition",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": false
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_003_A.v"
+      },
+      "B": {
+        "informal_proof": "Fix m and proceed by induction on n. At zero, both sides reduce to S m. Assume S k + m = S (k + m). For n = S k, the right-hand side is S (S k + m). Replace its inner sum S k + m using the induction hypothesis. Both sides then reduce to S (S (k + m)), proving the successor case.",
+        "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- rewrite IH.\n  reflexivity.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 0,
+          "requires_IH_in_successor": true,
+          "premise_branches": []
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_003_B.v"
+      }
+    }
+  },
+  {
+    "example_id": "seed_004",
+    "formal_statement": "forall n : nat, 1 + n = S n",
+    "generation_family": "definitional_reflexivity",
+    "arguments": {
+      "A": {
+        "informal_proof": "Let n be a natural number. Since 1 is S 0, the definition of addition reduces 1 + n to S (0 + n), and then to S n. This proves the equality.",
+        "proof_body": "intros n.\nsimpl.\nreflexivity.",
+        "strategy": "direct_definition",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": false
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_004_A.v"
+      },
+      "B": {
+        "informal_proof": "Proceed by induction on n. At zero, 1 + 0 and S 0 coincide. Assume 1 + k = S k. In the successor goal 1 + S k = S (S k), use the induction hypothesis from right to left to replace S k by 1 + k. The resulting equality 1 + (1 + k) = S (1 + k) follows from the definition of addition. This proves the successor case.",
+        "proof_body": "intros n.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- rewrite <- IH.\n  reflexivity.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 0,
+          "requires_IH_in_successor": true,
+          "premise_branches": []
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_004_B.v"
+      }
+    }
+  },
+  {
+    "example_id": "seed_005",
+    "formal_statement": "forall n m : nat, n + (0 + m) = n + m",
+    "generation_family": "definitional_reflexivity",
+    "arguments": {
+      "A": {
+        "informal_proof": "Fix n and m. The inner expression 0 + m reduces to m by definition. Substituting this reduction leaves the same expression on both sides.",
+        "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+        "strategy": "direct_definition",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": false
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_005_A.v"
+      },
+      "B": {
+        "informal_proof": "Fix m and induct on n. At zero, the equality reduces to m = m. Assume k + (0 + m) = k + m. At S k, simplify both sides to S (k + m). Read the induction hypothesis from right to left and replace the inner k + m by k + (0 + m) on both sides. The two expressions are identical, proving the successor case.",
+        "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite <- IH.\n  reflexivity.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 0,
+          "requires_IH_in_successor": true,
+          "premise_branches": []
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_005_B.v"
+      }
+    }
+  },
+  {
+    "example_id": "seed_006",
+    "formal_statement": "forall n m : nat, (0 + n) + m = n + m",
+    "generation_family": "definitional_reflexivity",
+    "arguments": {
+      "A": {
+        "informal_proof": "Choose arbitrary natural numbers n and m. First reduce 0 + n to n. Both sides now read n + m, so they are equal.",
+        "proof_body": "intros n m.\nsimpl.\nreflexivity.",
+        "strategy": "direct_definition",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": false
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_006_A.v"
+      },
+      "B": {
+        "informal_proof": "Fix m and induct on n. At zero, both sums reduce to m. Assume (0 + k) + m = k + m. At S k, simplify the goal to S (k + m) = S (k + m). Use the induction hypothesis from right to left to replace the inner k + m by (0 + k) + m on both sides. Reflexivity then proves the successor case.",
+        "proof_body": "intros n m.\ninduction n as [| k IH].\n- simpl.\n  reflexivity.\n- simpl.\n  rewrite <- IH.\n  reflexivity.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 0,
+          "requires_IH_in_successor": true,
+          "premise_branches": []
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_006_B.v"
+      }
+    }
+  },
+  {
+    "example_id": "seed_007",
+    "formal_statement": "forall n m : nat, n = m -> n = m",
+    "generation_family": "premise_reuse",
+    "arguments": {
+      "A": {
+        "informal_proof": "Fix n and m, and assume that n = m. The desired equality is precisely the assumption.",
+        "proof_body": "intros n m H.\nexact H.",
+        "strategy": "direct_premise",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": true
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_007_A.v"
+      },
+      "B": {
+        "informal_proof": "Fix m and use induction on n, retaining the equality premise in each case. In the zero case, the premise 0 = m is exactly the required conclusion. In the successor case, the premise S k = m is again exactly the required conclusion. Both cases therefore follow from their current premise; the induction hypothesis is unnecessary for this argument.",
+        "proof_body": "intros n m H.\ninduction n as [| k IH].\n- simpl.\n  exact H.\n- simpl.\n  exact H.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 0,
+          "requires_IH_in_successor": false,
+          "premise_branches": [
+            1,
+            2
+          ]
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_007_B.v"
+      }
+    }
+  },
+  {
+    "example_id": "seed_011",
+    "formal_statement": "forall n m p : nat, n = m -> p + n = p + m",
+    "generation_family": "premise_congruence",
+    "arguments": {
+      "A": {
+        "informal_proof": "Let n, m, and p be natural numbers with n = m. Use the assumed equality to replace n by m under addition. The resulting two sums are identical.",
+        "proof_body": "intros n m p H.\nrewrite H.\nreflexivity.",
+        "strategy": "direct_rewrite",
+        "requirements": {
+          "uses_induction": false,
+          "uses_premise": true
+        },
+        "provenance": {
+          "informal_source": "frozen-development-seed",
+          "formal_source": "frozen-development-seed",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_011_A.v"
+      },
+      "B": {
+        "informal_proof": "Fix n and m and assume n = m. Prove the equality of sums by induction on p. At p = 0, simplifying the sums leaves n = m, which is the premise. Assume k + n = k + m. For p = S k, simplify to S (k + n) = S (k + m). Successor congruence reduces this to the induction hypothesis.",
+        "proof_body": "intros n m p H.\ninduction p as [| k IH].\n- simpl.\n  exact H.\n- simpl.\n  f_equal.\n  exact IH.",
+        "strategy": "induction",
+        "requirements": {
+          "uses_induction": true,
+          "induction_binder_index": 2,
+          "requires_IH_in_successor": true,
+          "premise_branches": [
+            1
+          ]
+        },
+        "provenance": {
+          "informal_source": "assistant-curated",
+          "formal_source": "assistant-curated",
+          "human_reviewed": false
+        },
+        "reference_file": "argument_switch_v1/references/seed_011_B.v"
+      }
+    }
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "all_outputs": {
+      "outputs": 18,
+      "verified": 9,
+      "verification_accuracy": 0.5,
+      "argument_conditioned_outputs": 12,
+      "requested_strategy_matched": 9,
+      "attempted_strategy_accuracy": 0.75,
+      "verified_strategy_followed": 5,
+      "verified_strategy_accuracy": 0.4166666666666667
+    },
+    "by_condition": {
+      "theorem_only": {
+        "outputs": 6,
+        "verified": 4,
+        "verification_accuracy": 0.6666666666666666,
+        "argument_conditioned_outputs": 0,
+        "requested_strategy_matched": null,
+        "attempted_strategy_accuracy": null,
+        "verified_strategy_followed": null,
+        "verified_strategy_accuracy": null
+      },
+      "argument_A": {
+        "outputs": 6,
+        "verified": 5,
+        "verification_accuracy": 0.8333333333333334,
+        "argument_conditioned_outputs": 6,
+        "requested_strategy_matched": 5,
+        "attempted_strategy_accuracy": 0.8333333333333334,
+        "verified_strategy_followed": 5,
+        "verified_strategy_accuracy": 0.8333333333333334
+      },
+      "argument_B": {
+        "outputs": 6,
+        "verified": 0,
+        "verification_accuracy": 0.0,
+        "argument_conditioned_outputs": 6,
+        "requested_strategy_matched": 4,
+        "attempted_strategy_accuracy": 0.6666666666666666,
+        "verified_strategy_followed": 0,
+        "verified_strategy_accuracy": 0.0
+      }
+    },
+    "switching": {
+      "successful_theorems": 0,
+      "theorems": 6,
+      "switching_accuracy": 0.0,
+      "attempted_switches": 3,
+      "attempted_switching_accuracy": 0.5,
+      "criterion": "A and B must both verify and match their respective fixed strategy requirements; denominator is all six theorems"
+    },
+    "per_theorem": [
+      {
+        "example_id": "seed_003",
+        "A_key": "argument_switch_v1:seed_003:argument_A",
+        "B_key": "argument_switch_v1:seed_003:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_003:theorem_only",
+        "attempted_strategy_switch": false,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "B"
+        ]
+      },
+      {
+        "example_id": "seed_004",
+        "A_key": "argument_switch_v1:seed_004:argument_A",
+        "B_key": "argument_switch_v1:seed_004:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_004:theorem_only",
+        "attempted_strategy_switch": true,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "B"
+        ]
+      },
+      {
+        "example_id": "seed_005",
+        "A_key": "argument_switch_v1:seed_005:argument_A",
+        "B_key": "argument_switch_v1:seed_005:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_005:theorem_only",
+        "attempted_strategy_switch": true,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "A"
+        ]
+      },
+      {
+        "example_id": "seed_006",
+        "A_key": "argument_switch_v1:seed_006:argument_A",
+        "B_key": "argument_switch_v1:seed_006:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_006:theorem_only",
+        "attempted_strategy_switch": true,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "A"
+        ]
+      },
+      {
+        "example_id": "seed_007",
+        "A_key": "argument_switch_v1:seed_007:argument_A",
+        "B_key": "argument_switch_v1:seed_007:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_007:theorem_only",
+        "attempted_strategy_switch": false,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "A"
+        ]
+      },
+      {
+        "example_id": "seed_011",
+        "A_key": "argument_switch_v1:seed_011:argument_A",
+        "B_key": "argument_switch_v1:seed_011:argument_B",
+        "theorem_only_key": "argument_switch_v1:seed_011:theorem_only",
+        "attempted_strategy_switch": false,
+        "verified_strategy_switch": false,
+        "generated_body_changed": true,
+        "both_A_B_verified": false,
+        "theorem_only_matching_arguments": [
+          "A"
+        ]
+      }
+    ]
+  },
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "files_sha256": {
+    "results.jsonl": "79dfd3d3bcebb0b06cf1daa5d9f548ff2a042f0ad99781200f241bb6e77e55c7",
+    "summary.json": "b50d1b5c623f8fda732ab8a26052ec2790b158364d7e4eb53d856c76161761f2",
+    "manual_reviews.json": "6b2da5265bdadb53a02b68d25f8108d8b346508084d292458f35bb7ee16b907a"
+  },
+  "latency_by_condition": {
+    "theorem_only": {
+      "median_seconds": 4.529870687518269,
+      "completion_tokens": 108
+    },
+    "argument_A": {
+      "median_seconds": 1.3707631040597335,
+      "completion_tokens": 91
+    },
+    "argument_B": {
+      "median_seconds": 3.664709312375635,
+      "completion_tokens": 196
+    }
+  }
+}
