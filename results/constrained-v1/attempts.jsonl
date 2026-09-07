@@ -1,0 +1,120 @@
+{"key": "constrained_v1:seed_001:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:40.019392+00:00"}
+{"key": "constrained_v1:seed_001:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_001:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:42.709464+00:00"}
+{"key": "constrained_v1:seed_001:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_002:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:43.976717+00:00"}
+{"key": "constrained_v1:seed_002:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_002:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:45.271253+00:00"}
+{"key": "constrained_v1:seed_002:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_003:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:46.513937+00:00"}
+{"key": "constrained_v1:seed_003:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_003:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:52.468132+00:00"}
+{"key": "constrained_v1:seed_003:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_004:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:54.736435+00:00"}
+{"key": "constrained_v1:seed_004:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_004:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:10:56.034654+00:00"}
+{"key": "constrained_v1:seed_004:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_005:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:00.177119+00:00"}
+{"key": "constrained_v1:seed_005:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_005:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:01.541032+00:00"}
+{"key": "constrained_v1:seed_005:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_006:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:02.852967+00:00"}
+{"key": "constrained_v1:seed_006:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_006:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:04.221531+00:00"}
+{"key": "constrained_v1:seed_006:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_007:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:05.565716+00:00"}
+{"key": "constrained_v1:seed_007:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_007:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:09.547763+00:00"}
+{"key": "constrained_v1:seed_007:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_008:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:10.965674+00:00"}
+{"key": "constrained_v1:seed_008:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_008:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:12.336643+00:00"}
+{"key": "constrained_v1:seed_008:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_009:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:13.705781+00:00"}
+{"key": "constrained_v1:seed_009:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_009:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:15.142117+00:00"}
+{"key": "constrained_v1:seed_009:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_010:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:16.595173+00:00"}
+{"key": "constrained_v1:seed_010:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_010:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:21.685496+00:00"}
+{"key": "constrained_v1:seed_010:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_011:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:23.132871+00:00"}
+{"key": "constrained_v1:seed_011:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_011:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:24.651472+00:00"}
+{"key": "constrained_v1:seed_011:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_012:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:26.158709+00:00"}
+{"key": "constrained_v1:seed_012:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_012:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:27.631274+00:00"}
+{"key": "constrained_v1:seed_012:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_013:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:29.137207+00:00"}
+{"key": "constrained_v1:seed_013:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_013:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:30.543466+00:00"}
+{"key": "constrained_v1:seed_013:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_014:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:31.912246+00:00"}
+{"key": "constrained_v1:seed_014:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_014:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:36.313931+00:00"}
+{"key": "constrained_v1:seed_014:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_015:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:37.696410+00:00"}
+{"key": "constrained_v1:seed_015:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_015:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:39.382308+00:00"}
+{"key": "constrained_v1:seed_015:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_016:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:40.845111+00:00"}
+{"key": "constrained_v1:seed_016:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_016:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:43.203449+00:00"}
+{"key": "constrained_v1:seed_016:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_017:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:44.434736+00:00"}
+{"key": "constrained_v1:seed_017:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_017:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:46.769332+00:00"}
+{"key": "constrained_v1:seed_017:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_018:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:48.976140+00:00"}
+{"key": "constrained_v1:seed_018:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_018:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:54.501454+00:00"}
+{"key": "constrained_v1:seed_018:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_019:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:11:56.930389+00:00"}
+{"key": "constrained_v1:seed_019:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_019:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:04.129209+00:00"}
+{"key": "constrained_v1:seed_019:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_020:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:05.556556+00:00"}
+{"key": "constrained_v1:seed_020:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_020:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:08.079640+00:00"}
+{"key": "constrained_v1:seed_020:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_021:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:09.310388+00:00"}
+{"key": "constrained_v1:seed_021:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_021:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:11.973726+00:00"}
+{"key": "constrained_v1:seed_021:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_022:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:13.290699+00:00"}
+{"key": "constrained_v1:seed_022:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_022:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:15.641197+00:00"}
+{"key": "constrained_v1:seed_022:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_023:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:16.874735+00:00"}
+{"key": "constrained_v1:seed_023:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_023:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:19.507352+00:00"}
+{"key": "constrained_v1:seed_023:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_024:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:21.804337+00:00"}
+{"key": "constrained_v1:seed_024:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_024:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:24.159618+00:00"}
+{"key": "constrained_v1:seed_024:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_025:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:26.370314+00:00"}
+{"key": "constrained_v1:seed_025:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_025:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:28.806738+00:00"}
+{"key": "constrained_v1:seed_025:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_026:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:31.091389+00:00"}
+{"key": "constrained_v1:seed_026:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_026:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:33.537135+00:00"}
+{"key": "constrained_v1:seed_026:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_027:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:34.851898+00:00"}
+{"key": "constrained_v1:seed_027:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_027:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:51.915516+00:00"}
+{"key": "constrained_v1:seed_027:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_028:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:12:53.346109+00:00"}
+{"key": "constrained_v1:seed_028:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_028:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:13:14.817269+00:00"}
+{"key": "constrained_v1:seed_028:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_029:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:13:16.232153+00:00"}
+{"key": "constrained_v1:seed_029:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_029:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:13:39.750653+00:00"}
+{"key": "constrained_v1:seed_029:theorem_only", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_030:theorem_and_informal", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:13:41.289018+00:00"}
+{"key": "constrained_v1:seed_030:theorem_and_informal", "event": "finished", "attempt": 1}
+{"key": "constrained_v1:seed_030:theorem_only", "event": "started", "attempt": 1, "at_utc": "2026-09-07T00:13:48.285784+00:00"}
+{"key": "constrained_v1:seed_030:theorem_only", "event": "finished", "attempt": 1}

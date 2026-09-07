@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-09-07T00:19:05.534772+00:00",
+  "regression_tests": {
+    "run": 96,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python3 -m unittest discover -s tests -v"
+  },
+  "token_and_verifier_replay": {
+    "outputs": 60,
+    "all_tokens_allowed": true,
+    "verifier_outcomes_identical": true,
+    "new_generations": 0,
+    "command": ".venv/bin/python -m constrained_v1.experiment check --replay-tokens --reverify"
+  },
+  "preflight": {
+    "reference_token_paths_allowed": 30,
+    "reference_proofs_rocq_pass": 30,
+    "grammar_scope_tests": 9,
+    "completed_before_inference": true
+  },
+  "experiment_attempts": 60,
+  "repairs": 0,
+  "fine_tuning": false,
+  "frozen_prompt_and_prior_artifacts_checks": "PASS; original regression freeze checks and prior development-audit check passed",
+  "diagnostic_data_note": "The experiment, comparison, and review used development data only. The full existing regression suite separately rechecks prior diagnostic artifacts without new model generation.",
+  "files_sha256": {
+    "manifest.json": "9cae230749e64d8385a9f74db8d2859ce597c248cb6537b6acf68eccfdddb262",
+    "results.jsonl": "1f6510211220e392dfa600280a3a24d559faab5cb55dfcb8e20bb35630cd272c",
+    "attempts.jsonl": "2e486504fa8fcebda287ce1ad3c002f8e910698ce248589f4002f55d0c20c30b",
+    "completion.json": "a6bdf73a2c0950393ad96f748d755f667c6ef942e29280cf1cd2195483b61b51",
+    "argument_reviews.json": "7e6a3faea7bccd5a29c2020753d663c84f28722c1164f7d71b27c7f4197daea4",
+    "assessed_results.jsonl": "5967e5226446c53d1eba82c0382872c53429ac64b858dab8f0f65a53d99e9353",
+    "summary.json": "f77f8460e37a1f8bb1ac2a40c85f87ca9067b13d032a66b3dc15aacd56b30ea1",
+    "REPORT.md": "50001f8ec46bcf370c1380b63511c4801f1e96fb6d889254b14d56debaf21274"
+  }
+}

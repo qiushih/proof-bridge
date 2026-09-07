@@ -1,0 +1,20 @@
+{
+  "experiment_id": "proofbridge-constrained-v1",
+  "base_prompt": "frozen prompt_v2/selected.json",
+  "data": "30 frozen development examples only",
+  "conditions": ["theorem_and_informal", "theorem_only"],
+  "attempts_per_example_condition": 1,
+  "expected_attempts": 60,
+  "repair_attempts": 0,
+  "generation_settings_source": "baseline/config.json",
+  "constraints": ["restricted ASCII tactic grammar", "all theorem binders introduced before proof tactics", "unique local names, at most 32 characters", "natural-number induction targets", "only local equality premises/IH as proof references", "IH and successor variable exist only in successor branch", "no old induction-target variable in either branch", "exactly two nonempty induction branches", "40-command verifier limit", "EOS only after a complete grammatical body"],
+  "constraint_inputs": "theorem binder counts and generated prefix only; no reference proof, informal argument, seed ID, family, goal state, or compiler feedback",
+  "strategy": "The model chooses whether/where to induct, tactics, rewrite direction, local naming, and termination; constraints do not check goals or force successful proof steps.",
+  "inference_gate": "Before inference, require all 30 reference bodies and their tokenizer paths to be allowed, adversarial syntax/scope checks to pass, and pinned source hashes to match the saved preflight.",
+  "comparison": "Saved short_3shot development outputs; full 30 seeds and frozen common 25-seed subset, both conditions separately and pooled.",
+  "fidelity": "Same mathematical-argument rubric as the development audit; manual assistant reviews, not independent human review. Keep the existing structure proxy separate.",
+  "success": "More verified faithful proofs on the common 25-seed subset (pooled two conditions); report each condition separately. Fewer parser errors without this improvement is not success.",
+  "evaluation_examples_used": 0,
+  "fine_tuning": false,
+  "failure_policy": "No retry, fallback, or completion repair. Record exceptions and budget-truncated outputs as attempts and send their available text through the unchanged verifier."
+}

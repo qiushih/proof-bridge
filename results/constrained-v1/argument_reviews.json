@@ -1,0 +1,548 @@
+{
+  "schema_version": "constrained-manual-fidelity-1.0",
+  "results_sha256": "1f6510211220e392dfa600280a3a24d559faab5cb55dfcb8e20bb35630cd272c",
+  "rubric": "Same as the frozen development audit: FAITHFUL means verified and same mathematical strategy/essential premise use, accepting equivalent local equality tactics; PARTIAL means recognizable argument with failed/missing steps; DIVERGENT means a changed or omitted main strategy. The theorem-only output is compared to the same hidden reference. Assistant review, not independent human review.",
+  "new_generations_during_review": 0,
+  "reviews": [
+    {
+      "key": "constrained_v1:seed_001:theorem_and_informal",
+      "proof_body_sha256": "663dc48e7139517f84ac8392e8bbc0ec729fbf35ee7b9ee5081a44962d5a8184",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_001:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_002:theorem_and_informal",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_002:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_003:theorem_and_informal",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "DIVERGENT",
+      "strategy_relation": "different_strategy",
+      "rationale": "Adds induction to a theorem whose supplied argument is definitional computation. The successor rewrite IH has no matching subterm after simplification. This is a different attempted strategy and does not verify.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_003:theorem_only",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "DIVERGENT",
+      "strategy_relation": "different_strategy",
+      "rationale": "Adds induction to a theorem whose supplied argument is definitional computation. The successor rewrite IH has no matching subterm after simplification. This is a different attempted strategy and does not verify.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_004:theorem_and_informal",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_004:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "DIVERGENT",
+      "strategy_relation": "different_strategy",
+      "rationale": "Adds induction to a theorem whose supplied argument is definitional computation. The successor rewrite IH has no matching subterm after simplification. This is a different attempted strategy and does not verify.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_005:theorem_and_informal",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_005:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_006:theorem_and_informal",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_006:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same definitional computation/reflexivity argument. Explicit simplification may be redundant or handled by conversion.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_007:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the given equality by rewrite/reflexivity, equivalent to exact H.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_007:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the given equality by rewrite/reflexivity, equivalent to exact H.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_008:theorem_and_informal",
+      "proof_body_sha256": "a87a67531611269488bd22fe4fb305bc6c4ec5f09efebe9513fc15435d0566aa",
+      "status": "PARTIAL",
+      "strategy_relation": "unfinished_local_equality_argument",
+      "rationale": "Rewriting the real premise and applying symmetry are local equality steps, but the resulting reflexive goal is left open. This is recognizable partial alignment, not a complete faithful proof.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_008:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Rewriting the given equality establishes its symmetric instance, equivalent to symmetry/exact H.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_009:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Rewriting H under S implements the same successor congruence as f_equal/exact H.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_009:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Rewriting H under S implements the same successor congruence as f_equal/exact H.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_010:theorem_and_informal",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_010:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_011:theorem_and_informal",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_011:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_012:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Substitutes n by m rather than m by n. This preserves the same equality-substitution argument, with a step-direction deviation explicitly retained.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_012:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Substitutes n by m rather than m by n. This preserves the same equality-substitution argument, with a step-direction deviation explicitly retained.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_013:theorem_and_informal",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_013:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_014:theorem_and_informal",
+      "proof_body_sha256": "2ba81911520023f8ed9d5bf92968c82fffc3188b5eb4056a41f12dae496b3bdd",
+      "status": "PARTIAL",
+      "strategy_relation": "premise_rewrite_after_failed_step",
+      "rationale": "IH is the name introduced for the actual theorem premise, not an invented induction hypothesis. All binders are present. The candidate tries reflexivity before using that equality and fails; the subsequent intended substitution is never reached.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_014:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_015:theorem_and_informal",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_015:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the actual equality premise in the same substitution argument; final definitional computation is discharged by reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_016:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_016:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_017:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same induction and successor congruence; rewrite IH/reflexivity is equivalent to f_equal/exact IH.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_017:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same induction and successor congruence; rewrite IH/reflexivity is equivalent to f_equal/exact IH.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_018:theorem_and_informal",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_018:theorem_only",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_019:theorem_and_informal",
+      "proof_body_sha256": "e999cbcb5e5b30768378a8cbf3ab85606c6e7c6a5529cff533ceb4808b3d32b2",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_019:theorem_only",
+      "proof_body_sha256": "4e42423f1cd91ed81a3001b3773a31c60eae40a0883e0f6cd039ca94edc037fc",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_020:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_020:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_021:theorem_and_informal",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces n and m, inducts on n, and proves the same successor congruence using rewrite IH/reflexivity instead of f_equal/exact IH.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_021:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_022:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same induction and definitional conversion of 1+k; IH rewriting is equivalent to the stated successor congruence.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_022:theorem_only",
+      "proof_body_sha256": "7285dae7dec5ad65be8eb69a2334c0ef4b3d60db4491cef22e2ca869b7b73923",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_023:theorem_and_informal",
+      "proof_body_sha256": "866b508f1d8dfd2eb7e105a7964486a4c421576aa5e8c76c1e7bee22a41f76b5",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses induction on n with the same base case and IH equality under S; rewrite IH/reflexivity implements the reference congruence.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_023:theorem_only",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses induction on n with the same base case and IH equality under S; rewrite IH/reflexivity implements the reference congruence.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_024:theorem_and_informal",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_024:theorem_only",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_025:theorem_and_informal",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same induction with m fixed and the same IH under the common successor. Local rewriting implements the reference f_equal/exact IH step.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_025:theorem_only",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Uses the same induction with m fixed and the same IH under the common successor. Local rewriting implements the reference f_equal/exact IH step.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_026:theorem_and_informal",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "PARTIAL",
+      "strategy_relation": "induction_with_inapplicable_rewrite",
+      "rationale": "Inducts on the intended n and solves the base case. The successor goal is simplified but IH retains additions starting with 1, so rewrite IH finds no matching subterm. The reference uses definitional conversion with f_equal/exact IH. This is the same intended induction with an incorrect implementation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_026:theorem_only",
+      "proof_body_sha256": "5b3c2bd97d987f62d655f3c6e285c0bc0f5c1f446f096609470a67ba6581855a",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_027:theorem_and_informal",
+      "proof_body_sha256": "e392f7ef4ccbf5c163df0a9c7270f8fecf07d259d00d72e5340e6254db834610",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation. The local premise is valid but its left-hand side does not occur in the unsimplified target. In the informal condition, k names that premise and is repeatedly rewritten; it is not a nat reference.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_027:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation. The local premise is valid but its left-hand side does not occur in the unsimplified target. In the informal condition, k names that premise and is repeatedly rewritten; it is not a nat reference.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_028:theorem_and_informal",
+      "proof_body_sha256": "16822b33e5a95d66b4af8469229508d8f2d6d314ff445370c9dcbb8867b347a7",
+      "status": "PARTIAL",
+      "strategy_relation": "induction_ignores_base_premise_and_repeats",
+      "rationale": "Inducts on the intended first binder, but uses reflexivity instead of the supplied equality in the base case. It then repeats successor IH rewrites to the token limit. Names are unconventional but correctly scoped; the missing mathematical premise use is the first Rocq failure. intros n, k, m binds n and k as naturals and m as the equality premise; kIH is the successor natural and kIH2 is IH.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_028:theorem_only",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_029:theorem_and_informal",
+      "proof_body_sha256": "ef4f2baa3ba9e3aea17559ece2a05cf00d0d50c99f02582709076e450b1e53c7",
+      "status": "PARTIAL",
+      "strategy_relation": "induction_ignores_base_premise_and_repeats",
+      "rationale": "Inducts on the intended first binder, but uses reflexivity instead of the supplied equality in the base case. It then repeats successor IH rewrites to the token limit. Names are unconventional but correctly scoped; the missing mathematical premise use is the first Rocq failure. intros n, k, m, p binds three naturals and p as the equality premise; the base case needs p, not reflexivity.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_029:theorem_only",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_030:theorem_and_informal",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "strategy_relation": "same_mathematical_argument",
+      "rationale": "Introduces all parameters and uses induction on the same first natural-number binder, the same base justification, and the same successor IH rewrite.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "constrained_v1:seed_030:theorem_only",
+      "proof_body_sha256": "ae67ed24de7b9f57c22523bbae78007072bb743a347dab4f323af8105d4a019e",
+      "status": "DIVERGENT",
+      "strategy_relation": "omitted_induction",
+      "rationale": "Omits the supplied induction and its base/successor reasoning. Simplification or a top-level rewrite of the local premise cannot establish the target equation.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    }
+  ]
+}

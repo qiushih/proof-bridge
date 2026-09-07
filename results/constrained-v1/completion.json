@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "finished_at_utc": "2026-09-07T00:13:49.702417+00:00",
+  "attempts": 60,
+  "files_sha256": {
+    "manifest.json": "9cae230749e64d8385a9f74db8d2859ce597c248cb6537b6acf68eccfdddb262",
+    "results.jsonl": "1f6510211220e392dfa600280a3a24d559faab5cb55dfcb8e20bb35630cd272c",
+    "attempts.jsonl": "2e486504fa8fcebda287ce1ad3c002f8e910698ce248589f4002f55d0c20c30b"
+  }
+}

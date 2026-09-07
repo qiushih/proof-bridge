@@ -1,0 +1,867 @@
+{
+  "experiment_id": "proofbridge-constrained-v1",
+  "comparison": {
+    "all_30": {
+      "unconstrained_v2": {
+        "theorem_and_informal": {
+          "outputs": 30,
+          "format_compliant": 17,
+          "format_compliance_pct": 56.67,
+          "invalid_reference_failures": 5,
+          "invalid_reference_failure_pct": 16.67,
+          "missing_introduction_failures": 7,
+          "missing_introduction_failure_pct": 23.33,
+          "rocq_verified": 16,
+          "rocq_verification_pct": 53.33,
+          "verified_faithful": 16,
+          "verified_faithful_pct": 53.33,
+          "verified_structure_matches": 11,
+          "median_generation_latency_seconds": 2.1473460629349574,
+          "mean_generation_latency_seconds": 2.137675794493407,
+          "total_generation_latency_seconds": 64.13027383480221,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 12,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 16,
+            "DIVERGENT": 5,
+            "PARTIAL": 9
+          },
+          "completion_tokens": 607
+        },
+        "theorem_only": {
+          "outputs": 30,
+          "format_compliant": 20,
+          "format_compliance_pct": 66.67,
+          "invalid_reference_failures": 9,
+          "invalid_reference_failure_pct": 30.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 12,
+          "rocq_verification_pct": 40.0,
+          "verified_faithful": 12,
+          "verified_faithful_pct": 40.0,
+          "verified_structure_matches": 7,
+          "median_generation_latency_seconds": 1.4005713540827855,
+          "mean_generation_latency_seconds": 1.7668340555702646,
+          "total_generation_latency_seconds": 53.00502166710794,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 10,
+            "PROOF_ERROR": 8
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 12,
+            "DIVERGENT": 18
+          },
+          "completion_tokens": 448
+        },
+        "pooled": {
+          "outputs": 60,
+          "format_compliant": 37,
+          "format_compliance_pct": 61.67,
+          "invalid_reference_failures": 14,
+          "invalid_reference_failure_pct": 23.33,
+          "missing_introduction_failures": 7,
+          "missing_introduction_failure_pct": 11.67,
+          "rocq_verified": 28,
+          "rocq_verification_pct": 46.67,
+          "verified_faithful": 28,
+          "verified_faithful_pct": 46.67,
+          "verified_structure_matches": 18,
+          "median_generation_latency_seconds": 1.61256860406138,
+          "mean_generation_latency_seconds": 1.9522549250318357,
+          "total_generation_latency_seconds": 117.13529550191015,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 22,
+            "PROOF_ERROR": 8,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 28,
+            "DIVERGENT": 23,
+            "PARTIAL": 9
+          },
+          "completion_tokens": 1055
+        }
+      },
+      "constrained_v1": {
+        "theorem_and_informal": {
+          "outputs": 30,
+          "format_compliant": 30,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 23,
+          "rocq_verification_pct": 76.67,
+          "verified_faithful": 23,
+          "verified_faithful_pct": 76.67,
+          "verified_structure_matches": 15,
+          "median_generation_latency_seconds": 2.3122232290916145,
+          "mean_generation_latency_seconds": 4.534714136125209,
+          "total_generation_latency_seconds": 136.04142408375628,
+          "generation_errors": 0,
+          "length_limited": 3,
+          "failure_categories": {
+            "PROOF_ERROR": 6,
+            "INCOMPLETE_PROOF": 1
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 23,
+            "DIVERGENT": 2,
+            "PARTIAL": 5
+          },
+          "completion_tokens": 1339
+        },
+        "theorem_only": {
+          "outputs": 30,
+          "format_compliant": 30,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 18,
+          "rocq_verification_pct": 60.0,
+          "verified_faithful": 18,
+          "verified_faithful_pct": 60.0,
+          "verified_structure_matches": 11,
+          "median_generation_latency_seconds": 1.2952283748891205,
+          "mean_generation_latency_seconds": 1.5225558430499708,
+          "total_generation_latency_seconds": 45.67667529149912,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "PROOF_ERROR": 12
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 18,
+            "DIVERGENT": 12
+          },
+          "completion_tokens": 489
+        },
+        "pooled": {
+          "outputs": 60,
+          "format_compliant": 60,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 41,
+          "rocq_verification_pct": 68.33,
+          "verified_faithful": 41,
+          "verified_faithful_pct": 68.33,
+          "verified_structure_matches": 26,
+          "median_generation_latency_seconds": 1.3844574794638902,
+          "mean_generation_latency_seconds": 3.02863498958759,
+          "total_generation_latency_seconds": 181.7180993752554,
+          "generation_errors": 0,
+          "length_limited": 3,
+          "failure_categories": {
+            "PROOF_ERROR": 18,
+            "INCOMPLETE_PROOF": 1
+          },
+          "manual_fidelity_statuses": {
+            "FAITHFUL": 41,
+            "DIVERGENT": 14,
+            "PARTIAL": 5
+          },
+          "completion_tokens": 1828
+        }
+      }
+    },
+    "common_25": {
+      "unconstrained_v2": {
+        "theorem_and_informal": {
+          "outputs": 25,
+          "format_compliant": 13,
+          "format_compliance_pct": 52.0,
+          "invalid_reference_failures": 5,
+          "invalid_reference_failure_pct": 20.0,
+          "missing_introduction_failures": 6,
+          "missing_introduction_failure_pct": 24.0,
+          "rocq_verified": 12,
+          "rocq_verification_pct": 48.0,
+          "verified_faithful": 12,
+          "verified_faithful_pct": 48.0,
+          "verified_structure_matches": 7,
+          "median_generation_latency_seconds": 2.26915195886977,
+          "mean_generation_latency_seconds": 2.1512146701104937,
+          "total_generation_latency_seconds": 53.78036675276235,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 11,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 5,
+            "PARTIAL": 8,
+            "FAITHFUL": 12
+          },
+          "completion_tokens": 518
+        },
+        "theorem_only": {
+          "outputs": 25,
+          "format_compliant": 15,
+          "format_compliance_pct": 60.0,
+          "invalid_reference_failures": 9,
+          "invalid_reference_failure_pct": 36.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 9,
+          "rocq_verification_pct": 36.0,
+          "verified_faithful": 9,
+          "verified_faithful_pct": 36.0,
+          "verified_structure_matches": 4,
+          "median_generation_latency_seconds": 1.4018878331407905,
+          "mean_generation_latency_seconds": 1.8329059133678676,
+          "total_generation_latency_seconds": 45.82264783419669,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 10,
+            "PROOF_ERROR": 6
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 16,
+            "FAITHFUL": 9
+          },
+          "completion_tokens": 388
+        },
+        "pooled": {
+          "outputs": 50,
+          "format_compliant": 28,
+          "format_compliance_pct": 56.0,
+          "invalid_reference_failures": 14,
+          "invalid_reference_failure_pct": 28.0,
+          "missing_introduction_failures": 6,
+          "missing_introduction_failure_pct": 12.0,
+          "rocq_verified": 21,
+          "rocq_verification_pct": 42.0,
+          "verified_faithful": 21,
+          "verified_faithful_pct": 42.0,
+          "verified_structure_matches": 11,
+          "median_generation_latency_seconds": 1.61256860406138,
+          "mean_generation_latency_seconds": 1.9920602917391808,
+          "total_generation_latency_seconds": 99.60301458695903,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "SYNTAX_ERROR": 21,
+            "PROOF_ERROR": 6,
+            "INCOMPLETE_PROOF": 1,
+            "FORBIDDEN_HELPER": 1
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 21,
+            "PARTIAL": 8,
+            "FAITHFUL": 21
+          },
+          "completion_tokens": 906
+        }
+      },
+      "constrained_v1": {
+        "theorem_and_informal": {
+          "outputs": 25,
+          "format_compliant": 25,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 19,
+          "rocq_verification_pct": 76.0,
+          "verified_faithful": 19,
+          "verified_faithful_pct": 76.0,
+          "verified_structure_matches": 11,
+          "median_generation_latency_seconds": 2.308427083073184,
+          "mean_generation_latency_seconds": 4.334489013347775,
+          "total_generation_latency_seconds": 108.36222533369437,
+          "generation_errors": 0,
+          "length_limited": 2,
+          "failure_categories": {
+            "PROOF_ERROR": 5,
+            "INCOMPLETE_PROOF": 1
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 1,
+            "FAITHFUL": 19,
+            "PARTIAL": 5
+          },
+          "completion_tokens": 1022
+        },
+        "theorem_only": {
+          "outputs": 25,
+          "format_compliant": 25,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 15,
+          "rocq_verification_pct": 60.0,
+          "verified_faithful": 15,
+          "verified_faithful_pct": 60.0,
+          "verified_structure_matches": 8,
+          "median_generation_latency_seconds": 1.3006035001017153,
+          "mean_generation_latency_seconds": 1.5877628266718238,
+          "total_generation_latency_seconds": 39.6940706667956,
+          "generation_errors": 0,
+          "length_limited": 0,
+          "failure_categories": {
+            "PROOF_ERROR": 10
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 10,
+            "FAITHFUL": 15
+          },
+          "completion_tokens": 429
+        },
+        "pooled": {
+          "outputs": 50,
+          "format_compliant": 50,
+          "format_compliance_pct": 100.0,
+          "invalid_reference_failures": 0,
+          "invalid_reference_failure_pct": 0.0,
+          "missing_introduction_failures": 0,
+          "missing_introduction_failure_pct": 0.0,
+          "rocq_verified": 34,
+          "rocq_verification_pct": 68.0,
+          "verified_faithful": 34,
+          "verified_faithful_pct": 68.0,
+          "verified_structure_matches": 19,
+          "median_generation_latency_seconds": 1.3913358125137165,
+          "mean_generation_latency_seconds": 2.9611259200097995,
+          "total_generation_latency_seconds": 148.05629600048997,
+          "generation_errors": 0,
+          "length_limited": 2,
+          "failure_categories": {
+            "PROOF_ERROR": 15,
+            "INCOMPLETE_PROOF": 1
+          },
+          "manual_fidelity_statuses": {
+            "DIVERGENT": 11,
+            "FAITHFUL": 34,
+            "PARTIAL": 5
+          },
+          "completion_tokens": 1451
+        }
+      }
+    }
+  },
+  "success": {
+    "criterion": "More verified faithful proofs on the common 25 seeds, pooled two conditions",
+    "met": true,
+    "baseline": 21,
+    "constrained": 34,
+    "denominator": 50,
+    "delta": 13
+  },
+  "provenance": {
+    "results_sha256": "1f6510211220e392dfa600280a3a24d559faab5cb55dfcb8e20bb35630cd272c",
+    "manual_reviews_sha256": "7e6a3faea7bccd5a29c2020753d663c84f28722c1164f7d71b27c7f4197daea4",
+    "baseline_audit_sha256": "3f6f6399d1417c79a8be062c81e32383e5f9dec06aaaa74186832f8ed90029ea",
+    "report_script_sha256": "6db3f1a800ade05b636e877cdb48ba1c415551bb4ab229ebb7ab479bed4f3006",
+    "human_reviewed": false
+  },
+  "vocabulary_setup_seconds": 0.6570501250680536,
+  "mask_seconds": 41.50496677518822,
+  "paired": [
+    {
+      "key": "constrained_v1:seed_001:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_001:theorem_and_informal",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_001:theorem_only",
+      "baseline_key": "short_3shot:seed_001:theorem_only",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_002:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_002:theorem_and_informal",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_002:theorem_only",
+      "baseline_key": "short_3shot:seed_002:theorem_only",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_003:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_003:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_003:theorem_only",
+      "baseline_key": "short_3shot:seed_003:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_004:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_004:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_004:theorem_only",
+      "baseline_key": "short_3shot:seed_004:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_005:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_005:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_005:theorem_only",
+      "baseline_key": "short_3shot:seed_005:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_006:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_006:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_006:theorem_only",
+      "baseline_key": "short_3shot:seed_006:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_007:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_007:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_007:theorem_only",
+      "baseline_key": "short_3shot:seed_007:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_008:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_008:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_008:theorem_only",
+      "baseline_key": "short_3shot:seed_008:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_009:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_009:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_009:theorem_only",
+      "baseline_key": "short_3shot:seed_009:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_010:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_010:theorem_and_informal",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_010:theorem_only",
+      "baseline_key": "short_3shot:seed_010:theorem_only",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_011:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_011:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_011:theorem_only",
+      "baseline_key": "short_3shot:seed_011:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_012:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_012:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_012:theorem_only",
+      "baseline_key": "short_3shot:seed_012:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_013:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_013:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_013:theorem_only",
+      "baseline_key": "short_3shot:seed_013:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_014:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_014:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_014:theorem_only",
+      "baseline_key": "short_3shot:seed_014:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_015:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_015:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_015:theorem_only",
+      "baseline_key": "short_3shot:seed_015:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_016:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_016:theorem_and_informal",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_016:theorem_only",
+      "baseline_key": "short_3shot:seed_016:theorem_only",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_017:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_017:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_017:theorem_only",
+      "baseline_key": "short_3shot:seed_017:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_018:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_018:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_018:theorem_only",
+      "baseline_key": "short_3shot:seed_018:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_019:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_019:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_019:theorem_only",
+      "baseline_key": "short_3shot:seed_019:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_020:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_020:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_020:theorem_only",
+      "baseline_key": "short_3shot:seed_020:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_021:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_021:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_021:theorem_only",
+      "baseline_key": "short_3shot:seed_021:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_022:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_022:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_022:theorem_only",
+      "baseline_key": "short_3shot:seed_022:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_023:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_023:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_023:theorem_only",
+      "baseline_key": "short_3shot:seed_023:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_024:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_024:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": true,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_024:theorem_only",
+      "baseline_key": "short_3shot:seed_024:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_025:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_025:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_025:theorem_only",
+      "baseline_key": "short_3shot:seed_025:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_026:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_026:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_026:theorem_only",
+      "baseline_key": "short_3shot:seed_026:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_027:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_027:theorem_and_informal",
+      "selection_eligible": false,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_027:theorem_only",
+      "baseline_key": "short_3shot:seed_027:theorem_only",
+      "selection_eligible": false,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_028:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_028:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_028:theorem_only",
+      "baseline_key": "short_3shot:seed_028:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_029:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_029:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_029:theorem_only",
+      "baseline_key": "short_3shot:seed_029:theorem_only",
+      "selection_eligible": true,
+      "body_changed": false,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    },
+    {
+      "key": "constrained_v1:seed_030:theorem_and_informal",
+      "baseline_key": "short_3shot:seed_030:theorem_and_informal",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": true
+    },
+    {
+      "key": "constrained_v1:seed_030:theorem_only",
+      "baseline_key": "short_3shot:seed_030:theorem_only",
+      "selection_eligible": true,
+      "body_changed": true,
+      "baseline_verified_faithful": false,
+      "constrained_verified_faithful": false
+    }
+  ],
+  "diagnostic_examples_used": 0,
+  "repair_attempts": 0,
+  "fine_tuning": false
+}
