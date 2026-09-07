@@ -1,0 +1,1486 @@
+{
+  "status": "PASS",
+  "rocq_version": "9.2.0",
+  "references_verified": 36,
+  "kernel_and_assumptions_checked": true,
+  "frozen_decoder_token_paths_allowed": 36,
+  "max_reference_tokens_including_eos": 33,
+  "reference_removal_checks": 50,
+  "all_removed_reference_proofs_failed_in_rocq": true,
+  "historical_references_reverified": 12,
+  "by_split": {
+    "train": {
+      "PASS": 24,
+      "FAIL": 0
+    },
+    "dev": {
+      "PASS": 6,
+      "FAIL": 0
+    },
+    "holdout": {
+      "PASS": 6,
+      "FAIL": 0
+    }
+  },
+  "train_dev_records": [
+    {
+      "id": "pt01_A",
+      "split": "train",
+      "proof_body_sha256": "b387cb1f64be18543e953630172d65dba3ff75675898574b9c2e7a7d99eedf60",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1976,
+        "source_sha256": "8d52d1801bb109c22c9f0d1d3c4d36ed43b2549c888b9c79ba806bceb383837c",
+        "stdout": "proof_bridge_target : forall n m : nat, n = m -> S (n + n) = S (m + m)\n     : forall n m : nat, n = m -> S (n + n) = S (m + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 12,
+          "with_eos": 13
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "52bd3b26dec53465793d22eacf779852cf7742fd7eab6a5e7959f98b20d1fc97",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1114,
+              "source_sha256": "5fcf265162f528b14cd784ca3bc69963cf11940f9fb874e1adb2f82db4309cc0",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1 : nat\npb_local_2 : pb_local_0 = pb_local_1\nUnable to unify \"S (pb_local_1 + pb_local_1)\" with\n \"S (pb_local_0 + pb_local_0)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt01_B",
+      "split": "train",
+      "proof_body_sha256": "52a5e020e03c5ec5bc30e6465cfa6b6bd4fb76cb8ebe01a3487fba258bdb2b15",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1117,
+        "source_sha256": "1b44b13d31d5cc46a06e038ee5c79314bc60f88edde5d9fd81a32867f2c17b25",
+        "stdout": "proof_bridge_target : forall n m : nat, n = m -> S (n + n) = S (m + m)\n     : forall n m : nat, n = m -> S (n + n) = S (m + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 13,
+          "with_eos": 14
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "52bd3b26dec53465793d22eacf779852cf7742fd7eab6a5e7959f98b20d1fc97",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1126,
+              "source_sha256": "5fcf265162f528b14cd784ca3bc69963cf11940f9fb874e1adb2f82db4309cc0",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1 : nat\npb_local_2 : pb_local_0 = pb_local_1\nUnable to unify \"S (pb_local_1 + pb_local_1)\" with\n \"S (pb_local_0 + pb_local_0)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt02_A",
+      "split": "train",
+      "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.114,
+        "source_sha256": "435dcc1d05a69f3e30c18db8bcc8a270e1be5f60d146d2a0f2038bd4a2155c3c",
+        "stdout": "proof_bridge_target : forall n m p : nat, S n = m -> S n + p = m + p\n     : forall n m p : nat, S n = m -> S n + p = m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 13,
+          "with_eos": 14
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "10dce62b68abc5adb95a0540d62dab7580f4cb43f9295c2e2a8cd9bf45a7bffe",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1113,
+              "source_sha256": "782153c69e6425d84ef3af168b2c667010b0aec6b237fd815c0636639f9c34a8",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : S pb_local_0 = pb_local_1\nUnable to unify \"pb_local_1 + pb_local_2\" with \"S pb_local_0 + pb_local_2\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt02_B",
+      "split": "train",
+      "proof_body_sha256": "849b943d3b407e551ca951f2716ab727482fec206425961b2dd1d8b06bd81088",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1162,
+        "source_sha256": "e8537c00a53ca3c3c58d08a8df19d5adae591c32e993ddc63c5c813f34403a50",
+        "stdout": "proof_bridge_target : forall n m p : nat, S n = m -> S n + p = m + p\n     : forall n m p : nat, S n = m -> S n + p = m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 17,
+          "with_eos": 18
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "0cce536953f75a02019cb3d447271c7a90c63e8c029e0057dd81146d4fa6224b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.112,
+              "source_sha256": "1b81f565b755f3f7df47066a6d7d81745b4a2d16fd45d168dbd1c15175a5aa87",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : S pb_local_0 = pb_local_1\nUnable to unify \"pb_local_1 + pb_local_2\" with \"S (pb_local_0 + pb_local_2)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt03_A",
+      "split": "train",
+      "proof_body_sha256": "8bbc39a4e3cb995682ed46ace35e862f28596f6b057db0447cbeac3a4582233d",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1127,
+        "source_sha256": "ff24420b11d3287475c82812daa06476f0ede9515605e28ce7544dc00f245574",
+        "stdout": "proof_bridge_target : forall n m p : nat, n = m -> S n + p = S (m + p)\n     : forall n m p : nat, n = m -> S n + p = S (m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 16,
+          "with_eos": 17
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "0cce536953f75a02019cb3d447271c7a90c63e8c029e0057dd81146d4fa6224b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1104,
+              "source_sha256": "595a1c0a89ceb77e5ecc417f15191fc28a9972b21ae480f6bdd5fb99223016f2",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_0 = pb_local_1\nUnable to unify \"S (pb_local_1 + pb_local_2)\" with\n \"S (pb_local_0 + pb_local_2)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt03_B",
+      "split": "train",
+      "proof_body_sha256": "7ab445b5443b9a85639486bbc3f86a4ea7a34f4c63d489a73e8f76934826b44e",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.113,
+        "source_sha256": "2ae17f06193425b0f0a505729fcf4eacab1dd16155c1f0ddb9bfb09df82fc0af",
+        "stdout": "proof_bridge_target : forall n m p : nat, n = m -> S n + p = S (m + p)\n     : forall n m p : nat, n = m -> S n + p = S (m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 16,
+          "with_eos": 17
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "0cce536953f75a02019cb3d447271c7a90c63e8c029e0057dd81146d4fa6224b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1119,
+              "source_sha256": "595a1c0a89ceb77e5ecc417f15191fc28a9972b21ae480f6bdd5fb99223016f2",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_0 = pb_local_1\nUnable to unify \"S (pb_local_1 + pb_local_2)\" with\n \"S (pb_local_0 + pb_local_2)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt04_A",
+      "split": "train",
+      "proof_body_sha256": "d6c2fa2e1b3d6b32e0be50ab884ceff8cce00016dc44936a68ec16fcd68e8fef",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1122,
+        "source_sha256": "7258a730b22eda63a3700fdb504e9c9843469bc4fd9aeb09e931b01e7d7a6c3e",
+        "stdout": "proof_bridge_target : forall n m : nat, n = 0 -> n + m = m\n     : forall n m : nat, n = 0 -> n + m = m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 15,
+          "with_eos": 16
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "c829dd349c777650f01ef17c3492ccfc2c077030656f865242318f798f222ef4",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1114,
+              "source_sha256": "7d1a2ceb2433b97527a73f9e4c8490c7716ad3c69c14122c7c869a85b78cac34",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1 : nat\npb_local_2 : pb_local_0 = 0\nUnable to unify \"pb_local_1\" with \"pb_local_0 + pb_local_1\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt05_A",
+      "split": "train",
+      "proof_body_sha256": "9a80883b92a90bf4bfb057f9f0537acd25aeb7ace31dd8c530a329ba0a4f54ad",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1133,
+        "source_sha256": "fc8004357092f04a035ffdfacbe31b07d6cb6cdd538c84af86e73b59d9dcdddc",
+        "stdout": "proof_bridge_target : forall n m : nat, 0 = n -> n + m = m\n     : forall n m : nat, 0 = n -> n + m = m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 16,
+          "with_eos": 17
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "c829dd349c777650f01ef17c3492ccfc2c077030656f865242318f798f222ef4",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1114,
+              "source_sha256": "600760b80907ac0714a8c3491cca998d8ba6007fea0580748832a54b2ec0ed29",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1 : nat\npb_local_2 : 0 = pb_local_0\nUnable to unify \"pb_local_1\" with \"pb_local_0 + pb_local_1\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt06_A",
+      "split": "train",
+      "proof_body_sha256": "8bbc39a4e3cb995682ed46ace35e862f28596f6b057db0447cbeac3a4582233d",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1157,
+        "source_sha256": "81a7e21fb9e0bf8e264c2648280ea04340679372347d5d284bce040aa59c00de",
+        "stdout": "proof_bridge_target : forall n m p : nat, n = S m -> n + p = S (m + p)\n     : forall n m p : nat, n = S m -> n + p = S (m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 16,
+          "with_eos": 17
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "0cce536953f75a02019cb3d447271c7a90c63e8c029e0057dd81146d4fa6224b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1119,
+              "source_sha256": "d9b59a9a4f02e0afea4c7e1580418bc48b8bb9a3a260d5fce10836a94b2150c2",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_0 = S pb_local_1\nUnable to unify \"S (pb_local_1 + pb_local_2)\" with \n\"pb_local_0 + pb_local_2\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt07_A",
+      "split": "train",
+      "proof_body_sha256": "11be6ba9273655646b1c101b2796e628ddf381f31d5b9501bee2a5e34c8f2621",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1125,
+        "source_sha256": "b40ffb2ac8e100c7e748aae600433d8498698613fbd77c59bbade90322015f7c",
+        "stdout": "proof_bridge_target : forall n m p : nat, S m = n -> n + p = S (m + p)\n     : forall n m p : nat, S m = n -> n + p = S (m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 17,
+          "with_eos": 18
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "0cce536953f75a02019cb3d447271c7a90c63e8c029e0057dd81146d4fa6224b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1104,
+              "source_sha256": "e4af26eeb4650ad5c212ef151cac63e528faede4d34e8df98a436f24dc8859c4",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 6, characters 0-11:\nError:\nIn environment\npb_local_0, pb_local_1, pb_local_2 : nat\npb_local_3 : S pb_local_1 = pb_local_0\nUnable to unify \"S (pb_local_1 + pb_local_2)\" with \n\"pb_local_0 + pb_local_2\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt08_A",
+      "split": "train",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1123,
+        "source_sha256": "94f281e1cba52c1ac3c41128dc8ce4950a796faeecb6b91f43a8e6c387b17031",
+        "stdout": "proof_bridge_target : forall n : nat, n + 0 = n\n     : forall n : nat, n + 0 = n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 27,
+          "with_eos": 28
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "01db47ebdb6b51f92d12d6282d76241cc8f0b57fb38d3ca4072ec2eede82047b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1133,
+              "source_sha256": "cd2be8d5271d27608790c78a70e3dac985fefeeee1b265f33406bbb6ef54681b",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_1 : nat\npb_local_2 : pb_local_1 + 0 = pb_local_1\nUnable to unify \"S pb_local_1\" with \"S (pb_local_1 + 0)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt08_B",
+      "split": "train",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.113,
+        "source_sha256": "d34b62a917786d5633f13264243448abc1dd40436a6c60e72cc3ca1d142cdd6d",
+        "stdout": "proof_bridge_target : forall n : nat, n + 0 = n\n     : forall n : nat, n + 0 = n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "4ef05ace3825fe685394793247c648bb71ea64f8eed38649c5b17ba29a9dc5c6",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.119,
+              "source_sha256": "a1d58012a7897bf6be6fe10b3ef704f7bf9bc6669fc6778d1927cd769e950ef0",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt09_A",
+      "split": "train",
+      "proof_body_sha256": "6a870ababd351893837ad1dde0bb333e358f8752b776f235c3f762281ff1422f",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1159,
+        "source_sha256": "adb3a3d6d6f22c476174aa626ac296b71e5719b38a072b8f2176e5858a4e7218",
+        "stdout": "proof_bridge_target : forall n : nat, n = n + 0\n     : forall n : nat, n = n + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "01db47ebdb6b51f92d12d6282d76241cc8f0b57fb38d3ca4072ec2eede82047b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1157,
+              "source_sha256": "21d3630c460bb79c261bff2a967db71874155fe35a7efc384dfb83f118035f77",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_1 : nat\npb_local_2 : pb_local_1 = pb_local_1 + 0\nUnable to unify \"S (pb_local_1 + 0)\" with \"S pb_local_1\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt09_B",
+      "split": "train",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1142,
+        "source_sha256": "1efe60c60463bd3ba455e3e5d018810616a7c676d07aa910ce94a0ec95b3bcc8",
+        "stdout": "proof_bridge_target : forall n : nat, n = n + 0\n     : forall n : nat, n = n + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "4ef05ace3825fe685394793247c648bb71ea64f8eed38649c5b17ba29a9dc5c6",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1134,
+              "source_sha256": "a7519997e7bfdab6f4f2a88766f10be6f1dee103294c5e072aecdf6a35192209",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt10_A",
+      "split": "train",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1167,
+        "source_sha256": "7532f33417c64f0d3a3f4fb10e0f0e7a38c7a465bc55f0f776191fb7e1425be7",
+        "stdout": "proof_bridge_target : forall n : nat, n + 0 + 0 = n\n     : forall n : nat, n + 0 + 0 = n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 27,
+          "with_eos": 28
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "01db47ebdb6b51f92d12d6282d76241cc8f0b57fb38d3ca4072ec2eede82047b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1106,
+              "source_sha256": "9f0591bdd4e83eed8fa09724178645c3961ab0c18e19ac4f2610bd80b5878324",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_1 : nat\npb_local_2 : pb_local_1 + 0 + 0 = pb_local_1\nUnable to unify \"S pb_local_1\" with \"S (pb_local_1 + 0 + 0)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt10_B",
+      "split": "train",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1145,
+        "source_sha256": "094a7236fef31fed34a932102c6e65796bd808c8e2328f9000eea30153c80e1c",
+        "stdout": "proof_bridge_target : forall n : nat, n + 0 + 0 = n\n     : forall n : nat, n + 0 + 0 = n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "4ef05ace3825fe685394793247c648bb71ea64f8eed38649c5b17ba29a9dc5c6",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1125,
+              "source_sha256": "ea6939a06520af023ff6e0fa6a38a5bd2b0a8e0044ca2973c843c4f43613ae65",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt11_A",
+      "split": "train",
+      "proof_body_sha256": "c84322f5b79c3a546ff4f082631dcc8d573615fe8be213bd3466e46c41f3e2b5",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1137,
+        "source_sha256": "eb427a9c46e8c0937ed6b926bf52c09b408ade72e7a3e7e22b04ecd0a819eab1",
+        "stdout": "proof_bridge_target : forall n m : nat, m + 0 = m -> n + m + 0 = n + m\n     : forall n m : nat, m + 0 = m -> n + m + 0 = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 30,
+          "with_eos": 31
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "35d5a20f19f98f8eab3da32f5fe52c9201b2d5e9fa285e042aed30271e97721d",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1119,
+              "source_sha256": "1db4955a3c441ee38d641e27d2ad0fcdbd07e3510f7e965546611394188fe14c",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_3, pb_local_1 : nat\npb_local_2 : pb_local_1 + 0 = pb_local_1\npb_local_4 : pb_local_3 + pb_local_1 + 0 = pb_local_3 + pb_local_1\nUnable to unify \"S (pb_local_3 + pb_local_1)\" with\n \"S (pb_local_3 + pb_local_1 + 0)\".\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "a5b1ede65d7bac886aa6aca38a9f44b0278cdf6814c4ca3c99ca573704098129",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1115,
+              "source_sha256": "1106f97a391b1646b40965563d89b02e2f7e0d29abc83089966acadd4b2b8a45",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt11_B",
+      "split": "train",
+      "proof_body_sha256": "80fb2bbbdc89ed891f9f5125747b8528a016eaf15f8c6c3004c9814e1cde7ca1",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1111,
+        "source_sha256": "f1098f82b7c3905c933803466aa9c3d8e0d41146d9c4f8825be1003267f15130",
+        "stdout": "proof_bridge_target : forall n m : nat, m + 0 = m -> n + m + 0 = n + m\n     : forall n m : nat, m + 0 = m -> n + m + 0 = n + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 31,
+          "with_eos": 32
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "aaeac9b0339b9ec925a4facbbb06b47d5839f535806c800c00d98e497d9478a9",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1111,
+              "source_sha256": "dc43983329265baf86a9fcee1ba7871833ec5422248e93f431f7b6ba51593e44",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "42a28abf311a2b5028c73de7978a56695a186bd2304d674531b79561e333253c",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1099,
+              "source_sha256": "8b61684775c761a953139dc5bbe862316e694a02cd7998c2dd002de315533e73",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt12_A",
+      "split": "train",
+      "proof_body_sha256": "e4dfe10b7a42f21d3a2bbb7a708ac006b84ba5a8e61caaa12523f943fb654c30",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1119,
+        "source_sha256": "eb4ba7eb6c85cd2862b2f0a859c2df9f687ddb44eb9881f487b0608aa0fc0a5d",
+        "stdout": "proof_bridge_target : forall n m : nat, m = m + 0 -> n + m = n + m + 0\n     : forall n m : nat, m = m + 0 -> n + m = n + m + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 31,
+          "with_eos": 32
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "35d5a20f19f98f8eab3da32f5fe52c9201b2d5e9fa285e042aed30271e97721d",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.111,
+              "source_sha256": "5bc985031c6ca5aa8bc6c96b6aeb1e4fbf16149884c6bc51ec5e0dad61cd1acb",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_3, pb_local_1 : nat\npb_local_2 : pb_local_1 = pb_local_1 + 0\npb_local_4 : pb_local_3 + pb_local_1 = pb_local_3 + pb_local_1 + 0\nUnable to unify \"S (pb_local_3 + pb_local_1 + 0)\" with\n \"S (pb_local_3 + pb_local_1)\".\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "5c1277b5c3fe135bb5fa3a4641af3a8d41f756c9d3fc6880a05d6c665ca6a501",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1107,
+              "source_sha256": "2a170cdc4f3106656c63cf3ad6d46387867d29698caf8365df65bf66ba9f45f7",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt12_B",
+      "split": "train",
+      "proof_body_sha256": "80fb2bbbdc89ed891f9f5125747b8528a016eaf15f8c6c3004c9814e1cde7ca1",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1127,
+        "source_sha256": "19ca92a1742eb9c0e3519a22a843cf9c7acea3c913ffa36cdb324d09144162b5",
+        "stdout": "proof_bridge_target : forall n m : nat, m = m + 0 -> n + m = n + m + 0\n     : forall n m : nat, m = m + 0 -> n + m = n + m + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 31,
+          "with_eos": 32
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "aaeac9b0339b9ec925a4facbbb06b47d5839f535806c800c00d98e497d9478a9",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.112,
+              "source_sha256": "e13bc609fba40adc81fa772d270f0ed1a8da712859e3bfa326367f5aeb02ff43",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "42a28abf311a2b5028c73de7978a56695a186bd2304d674531b79561e333253c",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.111,
+              "source_sha256": "2a7da7cdaf9f0ddc70d6c134981b1f0ac6f301083f6770652e3fcb9f1742f2c1",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt13_A",
+      "split": "train",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1112,
+        "source_sha256": "fa5616219dc7d07743fa8a4469096b1844accace3df3604c2c1d0cc357eb2710",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + 0 = p -> n + m + 0 = n + p\n     : forall n m p : nat, m + 0 = p -> n + m + 0 = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 31,
+          "with_eos": 32
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "bea28c5caa4eb3588be5c1e95a50be6fd3786be9998250e25ad198be65d9984f",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1111,
+              "source_sha256": "cb7804b9ab0edf1418adcbc5fae7d47ab03130d47d52315c125df995010873cb",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_4, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + 0 = pb_local_2\npb_local_5 : pb_local_4 + pb_local_1 + 0 = pb_local_4 + pb_local_2\nUnable to unify \"S (pb_local_4 + pb_local_2)\" with\n \"S (pb_local_4 + pb_local_1 + 0)\".\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "aec79010fb1ed1efa9e8bac36a8aff4dd54a89feacd51805a19adc1843cf9ec5",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1098,
+              "source_sha256": "ccb06a4262aad0e02539127d89035bf4e1d932d2938398f0e81f5b779019a8f8",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt13_B",
+      "split": "train",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1127,
+        "source_sha256": "c2bdef75b871e1be97b453157a7efadaed5959faa8f8eedd352ca5b0e9d19105",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + 0 = p -> n + m + 0 = n + p\n     : forall n m p : nat, m + 0 = p -> n + m + 0 = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 32,
+          "with_eos": 33
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "b949ae5bc1cb2489aaa14cdbfed319865cec344ba812661937ce4ba72ab974e7",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1177,
+              "source_sha256": "0b3b0e007bbb049b43878cfce220220a2ba9e57a9ebe444b45c6d4f53a88ef79",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "80ab7645d52749e4b398263d74f222ed6347e5ead11c10e32223db2017f9ffde",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.121,
+              "source_sha256": "c8de9e615439bdfbf17e75c35028f4e2503ef78d9d7b4958bd8a9caff9650f34",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt14_A",
+      "split": "train",
+      "proof_body_sha256": "d570059eea7c269e687471e2afb926960f24f6f97ad0fa4adf267cb6293e58d9",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1139,
+        "source_sha256": "984dfc42ca57c8bd1f41410a3c701be475df226739def8b1d3bb0efb0693322c",
+        "stdout": "proof_bridge_target : forall n m p : nat, p = m + 0 -> n + p = n + m + 0\n     : forall n m p : nat, p = m + 0 -> n + p = n + m + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 32,
+          "with_eos": 33
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "bea28c5caa4eb3588be5c1e95a50be6fd3786be9998250e25ad198be65d9984f",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1128,
+              "source_sha256": "06fe42add062cdfba7c56984f4ff0da31d40030cd893203c9bab4a1720a1cb58",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_4, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_2 = pb_local_1 + 0\npb_local_5 : pb_local_4 + pb_local_2 = pb_local_4 + pb_local_1 + 0\nUnable to unify \"S (pb_local_4 + pb_local_1 + 0)\" with\n \"S (pb_local_4 + pb_local_2)\".\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "99be9fd219499e7f2e020eb3d3cd5280dc55005555cd63891faed177b93d1ec9",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1108,
+              "source_sha256": "88a66a7419ef7a04ef2f06f686c7940c2fdcfe53c2a37fb03768ae360d220299",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pt14_B",
+      "split": "train",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1119,
+        "source_sha256": "ca39eb5bf83760c285ded242b6441e9cbd6c6b2e29057be6725723bd4e46b6dc",
+        "stdout": "proof_bridge_target : forall n m p : nat, p = m + 0 -> n + p = n + m + 0\n     : forall n m p : nat, p = m + 0 -> n + p = n + m + 0\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 32,
+          "with_eos": 33
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "b949ae5bc1cb2489aaa14cdbfed319865cec344ba812661937ce4ba72ab974e7",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1117,
+              "source_sha256": "fb1611cf214d0eabd329598dd6ff6896f0ca3ae54a058c8de06d2cb534bc15bc",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          },
+          {
+            "ablation": "remove_premise_use",
+            "mutated_body_sha256": "80ab7645d52749e4b398263d74f222ed6347e5ead11c10e32223db2017f9ffde",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1104,
+              "source_sha256": "2fdbb4c531ea2d4091f89a610ca39f965f73349d6ad82afdff1f0fc068018c21",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd01_A",
+      "split": "dev",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1136,
+        "source_sha256": "e7f62ebc85354f77984a5137004176ab0a51238f223aed09cab3805cf96a7e92",
+        "stdout": "proof_bridge_target : forall n : nat, n + 3 = 3 + n\n     : forall n : nat, n + 3 = 3 + n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 27,
+          "with_eos": 28
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "01db47ebdb6b51f92d12d6282d76241cc8f0b57fb38d3ca4072ec2eede82047b",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1113,
+              "source_sha256": "fd134ebfc09ec3a853a00504dec0af79e9a2d160b73c3d9ad0ac3231d048b540",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_1 : nat\npb_local_2 : pb_local_1 + 3 = 3 + pb_local_1\nUnable to unify \"S (S (S (S pb_local_1)))\" with \"S (pb_local_1 + 3)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd01_B",
+      "split": "dev",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1171,
+        "source_sha256": "832993163b25d8c1c5355b9aae38f7b9f3304309caf7b511741247890a8fa9ca",
+        "stdout": "proof_bridge_target : forall n : nat, n + 3 = 3 + n\n     : forall n : nat, n + 3 = 3 + n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "4ef05ace3825fe685394793247c648bb71ea64f8eed38649c5b17ba29a9dc5c6",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.114,
+              "source_sha256": "a331bb1822f2ab9941ccb48f65413f868e47026b6d21df19fa44f6598191f704",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd02_A",
+      "split": "dev",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1155,
+        "source_sha256": "555b4afcff788dba4adff0913dc2051691778a87e708371594a07172df6f0048",
+        "stdout": "proof_bridge_target : forall n m p : nat, n + (m + p) = n + m + p\n     : forall n m p : nat, n + (m + p) = n + m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 29,
+          "with_eos": 30
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "fe1a4f267644c61ce239b83997aa163ff94bfb243fad97cb61a9c6e14b29f1fd",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1124,
+              "source_sha256": "1ac84de8052a9191e6dd4248eb07298a745ec60f4af6aeba8540172f53ecdb27",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_3, pb_local_1, pb_local_2 : nat\npb_local_4 :\n  pb_local_3 + (pb_local_1 + pb_local_2) =\n  pb_local_3 + pb_local_1 + pb_local_2\nUnable to unify \"S (pb_local_3 + pb_local_1 + pb_local_2)\" with\n \"S (pb_local_3 + (pb_local_1 + pb_local_2))\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd02_B",
+      "split": "dev",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1153,
+        "source_sha256": "aa5dc4dae7109bd025439789b90099aef85898a1403c305bab483bcdfb42276d",
+        "stdout": "proof_bridge_target : forall n m p : nat, n + (m + p) = n + m + p\n     : forall n m p : nat, n + (m + p) = n + m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 30,
+          "with_eos": 31
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "5f776cdd172c4e367ffdb9fffdddac17c1a4059a1e17018ab0e9b0fcd33415c2",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1111,
+              "source_sha256": "c77a00d0b81a30c9a8355546449421f5f81a157d7a5a575d31344947fe1f100e",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd03_A",
+      "split": "dev",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1118,
+        "source_sha256": "89e8efd5037f0900a8e731fd3b4ae12e1e4873bc31a8588be4a7cb22c1479ae0",
+        "stdout": "proof_bridge_target : forall n m : nat, n + 3 + m = 3 + (n + m)\n     : forall n m : nat, n + 3 + m = 3 + (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 28,
+          "with_eos": 29
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "a08db85842144a09593cfd7a8175fcf44ca66efdf38ccb7a38bf71c1f15e1dcf",
+            "verification": {
+              "status": "FAIL",
+              "category": "PROOF_ERROR",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1113,
+              "source_sha256": "8226fb53649257ae6e12e50dccbe457aae1f83dc41479d47efd5d65e0f648e96",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_2, pb_local_1 : nat\npb_local_3 : pb_local_2 + 3 + pb_local_1 = 3 + (pb_local_2 + pb_local_1)\nUnable to unify \"S (S (S (S (pb_local_2 + pb_local_1))))\" with\n \"S (pb_local_2 + 3 + pb_local_1)\".\n\n"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pd03_B",
+      "split": "dev",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1118,
+        "source_sha256": "bc309a0a1402f48f4ddad622b577e0f0a9fe800363500f896b4909a8a337b783",
+        "stdout": "proof_bridge_target : forall n m : nat, n + 3 + m = 3 + (n + m)\n     : forall n m : nat, n + 3 + m = 3 + (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "quality_checks": {
+        "decoder": {
+          "all_tokens_and_eos_allowed": true,
+          "body_tokens": 29,
+          "with_eos": 30
+        },
+        "reference_removal": [
+          {
+            "ablation": "remove_ih_use",
+            "mutated_body_sha256": "4d391d4f635fd28d6b469ca8af8563e88474d301b679cff8740f1974165b7a1c",
+            "verification": {
+              "status": "FAIL",
+              "category": "INCOMPLETE_PROOF",
+              "message": "Rocq rejected the candidate.",
+              "stage": "rocq",
+              "compiler_version": "9.2.0",
+              "kernel_checked": false,
+              "assumptions_checked": false,
+              "elapsed_seconds": 0.1131,
+              "source_sha256": "6860d820c46741a3eb1769de276f1a9e824a9264404892ed93a7e8e7500939b0",
+              "stdout": "",
+              "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "holdout_details": "reserved/verification_details.json",
+  "model_generations": 0,
+  "training_runs": 0
+}

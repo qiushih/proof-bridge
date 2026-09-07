@@ -1,0 +1,96 @@
+{
+  "status": "SEALED_AFTER_REFERENCE_QA",
+  "sealed_at_utc": "2026-09-07T01:33:19.725259+00:00",
+  "files_sha256": {
+    "data/pilot-v1/coverage.json": "6f613ddd971eed584922a8f846d7c763cbadb16fb16fec72600bb3dbb9c1a21d",
+    "data/pilot-v1/dev.jsonl": "47c3da968761d11170c2037b5d24e731d5abcae6b13864ec4035818862e064e9",
+    "data/pilot-v1/family_audit.json": "aa6327efa04bd3c92c75ab75d79ee2494bbb911f89a10c3f129f18b731c5adef",
+    "data/pilot-v1/historical_reference_review.json": "f021c2f5515d32a11983e4bed53d13207b199140c051f0de164c5ac500e7e594",
+    "data/pilot-v1/reserved/holdout.jsonl": "7a1638939fe929a873f1634c6030f96dcb0a31967d8eab73832c93716358ada2",
+    "data/pilot-v1/reserved/verification_details.json": "840e06bafd49dcd9c0d88829db916a6dc5f2f04f811a9d1bef95578275a54357",
+    "data/pilot-v1/train.jsonl": "d70893cdf590e980ef176158d92b7ea4f363a7c51a4587e59e2fe85202eef6d7",
+    "data/pilot-v1/verification_report.json": "20d9c0335150b553fcaba4bf83884ee905fe65c34f136d7c6a02e142560532a2"
+  },
+  "partitions": {
+    "train": {
+      "path": "train.jsonl",
+      "example_ids": [
+        "pt01_A",
+        "pt01_B",
+        "pt02_A",
+        "pt02_B",
+        "pt03_A",
+        "pt03_B",
+        "pt04_A",
+        "pt05_A",
+        "pt06_A",
+        "pt07_A",
+        "pt08_A",
+        "pt08_B",
+        "pt09_A",
+        "pt09_B",
+        "pt10_A",
+        "pt10_B",
+        "pt11_A",
+        "pt11_B",
+        "pt12_A",
+        "pt12_B",
+        "pt13_A",
+        "pt13_B",
+        "pt14_A",
+        "pt14_B"
+      ],
+      "theorem_ids": [
+        "pt01",
+        "pt02",
+        "pt03",
+        "pt04",
+        "pt05",
+        "pt06",
+        "pt07",
+        "pt08",
+        "pt09",
+        "pt10",
+        "pt11",
+        "pt12",
+        "pt13",
+        "pt14"
+      ]
+    },
+    "dev": {
+      "path": "dev.jsonl",
+      "example_ids": [
+        "pd01_A",
+        "pd01_B",
+        "pd02_A",
+        "pd02_B",
+        "pd03_A",
+        "pd03_B"
+      ],
+      "theorem_ids": [
+        "pd01",
+        "pd02",
+        "pd03"
+      ]
+    },
+    "holdout": {
+      "path": "reserved/holdout.jsonl",
+      "example_ids": [
+        "ph01_A",
+        "ph01_B",
+        "ph02_A",
+        "ph02_B",
+        "ph03_A",
+        "ph03_B"
+      ],
+      "theorem_ids": [
+        "ph01",
+        "ph02",
+        "ph03"
+      ]
+    }
+  },
+  "content_access_policy": "Holdout construction and reference QA complete. Subsequent commands may checksum bytes but must not parse, export, generate on, score, or tune against holdout until after an authorized training run.",
+  "model_generations": 0,
+  "training_runs": 0
+}

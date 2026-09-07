@@ -1,0 +1,305 @@
+{
+  "within_pilot": {
+    "status": "PASS",
+    "examples": 36,
+    "theorems": 20,
+    "paired_theorems": 16,
+    "equivalence_classes": 13,
+    "cross_split_equivalents": 0,
+    "cross_split_families": 0,
+    "duplicate_statement_body_pairs": 0
+  },
+  "historical_overlap": {
+    "per_example": [
+      {
+        "id": "pt01_A",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt01_B",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt02_A",
+        "split": "train",
+        "development": [
+          "seed_015"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt02_B",
+        "split": "train",
+        "development": [
+          "seed_015"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt03_A",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt03_B",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt04_A",
+        "split": "train",
+        "development": [
+          "seed_014"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt05_A",
+        "split": "train",
+        "development": [
+          "seed_014"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt06_A",
+        "split": "train",
+        "development": [
+          "seed_015"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt07_A",
+        "split": "train",
+        "development": [
+          "seed_015"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt08_A",
+        "split": "train",
+        "development": [
+          "seed_016"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt08_B",
+        "split": "train",
+        "development": [
+          "seed_016"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt09_A",
+        "split": "train",
+        "development": [
+          "seed_016"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt09_B",
+        "split": "train",
+        "development": [
+          "seed_016"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt10_A",
+        "split": "train",
+        "development": [
+          "seed_020"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt10_B",
+        "split": "train",
+        "development": [
+          "seed_020"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt11_A",
+        "split": "train",
+        "development": [
+          "seed_027"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt11_B",
+        "split": "train",
+        "development": [
+          "seed_027"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt12_A",
+        "split": "train",
+        "development": [
+          "seed_027"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt12_B",
+        "split": "train",
+        "development": [
+          "seed_027"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pt13_A",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt13_B",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt14_A",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pt14_B",
+        "split": "train",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pd01_A",
+        "split": "dev",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pd01_B",
+        "split": "dev",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pd02_A",
+        "split": "dev",
+        "development": [
+          "seed_019"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pd02_B",
+        "split": "dev",
+        "development": [
+          "seed_019"
+        ],
+        "diagnostic": []
+      },
+      {
+        "id": "pd03_A",
+        "split": "dev",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "pd03_B",
+        "split": "dev",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph01_A",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph01_B",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph02_A",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph02_B",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph03_A",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      },
+      {
+        "id": "ph03_B",
+        "split": "holdout",
+        "development": [],
+        "diagnostic": []
+      }
+    ],
+    "historical_development_family_exposure": {
+      "equality_transport": [
+        "seed_007",
+        "seed_008",
+        "seed_009",
+        "seed_010",
+        "seed_011",
+        "seed_012",
+        "seed_013",
+        "seed_014",
+        "seed_015"
+      ],
+      "right_zero_variants": [
+        "seed_016",
+        "seed_020",
+        "seed_021",
+        "seed_027"
+      ],
+      "successor_reassociation_variants": [
+        "seed_017",
+        "seed_018",
+        "seed_019",
+        "seed_022",
+        "seed_023",
+        "seed_024",
+        "seed_025",
+        "seed_026",
+        "seed_028",
+        "seed_030"
+      ],
+      "conditional_permutation": [
+        "seed_029"
+      ]
+    },
+    "holdout_historical_statement_duplicates": 0,
+    "method": "Automated definitional reduction, arbitrary binder renaming/permutation, and equality orientation. No result-driven diagnostic selection.",
+    "caveat": "The holdout has fresh statements, not historically unseen mathematical families. The conditional-permutation family was already exposed through seed_029. All old seeds remain historical artifacts, outside pilot loaders."
+  }
+}

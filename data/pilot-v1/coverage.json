@@ -1,0 +1,57 @@
+{
+  "train": {
+    "examples": 24,
+    "theorems": 14,
+    "families": {
+      "equality_transport": 10,
+      "right_zero_variants": 14
+    },
+    "patterns": {
+      "forward_rewrite": 10,
+      "reverse_rewrite": 7,
+      "rewrite_before_simpl": 5,
+      "rewrite_after_simpl": 9,
+      "premise_in_base_case": 8,
+      "ih_via_rewrite": 7,
+      "ih_via_congruence": 7,
+      "premise_and_induction": 8
+    },
+    "same_theorem_pairs": 10
+  },
+  "dev": {
+    "examples": 6,
+    "theorems": 3,
+    "families": {
+      "successor_reassociation_variants": 6
+    },
+    "patterns": {
+      "forward_rewrite": 3,
+      "reverse_rewrite": 0,
+      "rewrite_before_simpl": 0,
+      "rewrite_after_simpl": 3,
+      "premise_in_base_case": 0,
+      "ih_via_rewrite": 3,
+      "ih_via_congruence": 3,
+      "premise_and_induction": 0
+    },
+    "same_theorem_pairs": 3
+  },
+  "holdout": {
+    "examples": 6,
+    "theorems": 3,
+    "families": {
+      "conditional_permutation": 6
+    },
+    "patterns": {
+      "forward_rewrite": 3,
+      "reverse_rewrite": 0,
+      "rewrite_before_simpl": 0,
+      "rewrite_after_simpl": 3,
+      "premise_in_base_case": 6,
+      "ih_via_rewrite": 3,
+      "ih_via_congruence": 3,
+      "premise_and_induction": 6
+    },
+    "same_theorem_pairs": 3
+  }
+}

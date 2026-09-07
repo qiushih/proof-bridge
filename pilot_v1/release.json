@@ -1,0 +1,33 @@
+{
+  "status": "FROZEN",
+  "release_id": "proofbridge-pilot-data-v1",
+  "frozen_at_utc": "2026-09-07T01:40:25.464165+00:00",
+  "files_sha256": {
+    "data/pilot-v1/PILOT_DATA_SPEC.md": "925b9974dc9d87ab24c6448b5862d9f0279921af2c7997fb02ffa165325b6b8b",
+    "data/pilot-v1/README.md": "2e6aefdb2d015bbd509542c04103b6bde0034b1e0cb2fdc7aa680a02f96731b4",
+    "data/pilot-v1/VERIFICATION_REPORT.md": "97946327c55ffdea05740aa0094f918a96c46aa586302e53e4f023f93a30a62c",
+    "data/pilot-v1/coverage.json": "6f613ddd971eed584922a8f846d7c763cbadb16fb16fec72600bb3dbb9c1a21d",
+    "data/pilot-v1/dev.jsonl": "47c3da968761d11170c2037b5d24e731d5abcae6b13864ec4035818862e064e9",
+    "data/pilot-v1/family_audit.json": "aa6327efa04bd3c92c75ab75d79ee2494bbb911f89a10c3f129f18b731c5adef",
+    "data/pilot-v1/historical_reference_review.json": "f021c2f5515d32a11983e4bed53d13207b199140c051f0de164c5ac500e7e594",
+    "data/pilot-v1/preparation.json": "092be4a3d7eec5172f90afec41691dd3470a1b4a7c75417c31063a55db66b353",
+    "data/pilot-v1/reserved/README.md": "e63dad1b7c1ff27ceef791b94d7055ce76b8297749aeb92dc7b06613bbfac5f8",
+    "data/pilot-v1/reserved/holdout.jsonl": "7a1638939fe929a873f1634c6030f96dcb0a31967d8eab73832c93716358ada2",
+    "data/pilot-v1/reserved/verification_details.json": "840e06bafd49dcd9c0d88829db916a6dc5f2f04f811a9d1bef95578275a54357",
+    "data/pilot-v1/split_manifest.json": "df128a0dd00515f1354f002ea1ef86d9a026559a027ee4fe29a5a0cf1a1a5ae8",
+    "data/pilot-v1/train.jsonl": "d70893cdf590e980ef176158d92b7ea4f363a7c51a4587e59e2fe85202eef6d7",
+    "data/pilot-v1/validation.json": "7c47e7ccf5e260ff8159b1a069548e5f7e495eabafab12ee95e3051f5c29da6f",
+    "data/pilot-v1/verification_report.json": "20d9c0335150b553fcaba4bf83884ee905fe65c34f136d7c6a02e142560532a2",
+    "pilot_v1/__init__.py": "d0d3c8f419de5e834484c8881aaa1e1614d8147d2c2ed2167390da513c684585",
+    "pilot_v1/dataset.py": "a5658347ce3eac2d98f597c0262588563bdc598fbb9199a479f324be3c5376a6",
+    "pilot_v1/protected_baselines.json": "7327f366c5658aea0ebad9a2dd1d498ee32b5595766e92ecd6ee279d7a659ec8",
+    "pilot_v1/protocol.py": "1d9e9c8ee12eb77effbf5b8ec7260c65d9fe9482d98cdec3620b0dd8d43d565f",
+    "pilot_v1/report.py": "fc40e47deb61c8e2e21e4f103a6534305334be15540199b6f85f069f7ab2d681",
+    "tests/test_pilot_v1.py": "786c81448e87c4465df05d229a333bfbe9e2ac6717020083b9da79ac89be60eb"
+  },
+  "split_manifest": "data/pilot-v1/split_manifest.json",
+  "regression_tests": 125,
+  "training_runs": 0,
+  "model_generations": 0,
+  "policy": "Immutable pilot checkpoint; new data or schema changes require a separate version. No holdout content access before training/checkpoint selection."
+}
