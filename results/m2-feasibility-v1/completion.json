@@ -1,0 +1,23 @@
+{
+  "worker_exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 51.9793458331842,
+  "finished_at_utc": "2026-09-07T21:36:44.807935+00:00",
+  "final_system_swap": {
+    "available": true,
+    "scope": "system-wide",
+    "total_bytes": 5368709120,
+    "used_bytes": 4920180736,
+    "free_bytes": 448528384,
+    "raw": "total = 5120.00M  used = 4692.25M  free = 427.75M  (encrypted)"
+  },
+  "base_model_files_unchanged": true,
+  "historical_files_unchanged": 178,
+  "files_sha256": {
+    "events.jsonl": "da21e28f9f539df31f011b274d7b9ee5f8406800cebd73ba966d4cbc9e498c8c",
+    "manifest.json": "e3b8e2003808d28cc45901031fbe879706cbc4a7382735ef18affd1665e05f2c",
+    "memory_samples.jsonl": "1b04b673b1f07eb46615a3aa688face615f4f4f769ebbee6e8ab8a738d84c881",
+    "worker.log": "08848830d3cdda541384c12168ff90cc30397feb5a31444f2c9c58d3f82b28b3",
+    "worker_result.json": "a09d0a0a4b9fc04a64cacdcd5348a55a8eb5e4531003bb219f5926a7eb99d609"
+  }
+}

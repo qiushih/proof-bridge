@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN",
+  "release_id": "proofbridge-m2-feasibility-v1",
+  "frozen_at_utc": "2026-09-07T21:38:13.739897+00:00",
+  "classification": "feasible",
+  "files_sha256": {
+    "lora_training_v1/README.md": "a7f00afeda5f5599e4eb2e626d5b6fc9148d1396c42eaa2ec7e708246c957d81",
+    "lora_training_v1/__init__.py": "f3cec1e6b80c157798757e26a0c22fc14b79c1cad42c2df72f7496ace20174fc",
+    "lora_training_v1/core.py": "a0847bedca90c1f02b57504ce9fa9ebff40ca1d3f4c60199db24be8e41527d2c",
+    "lora_training_v1/plan.json": "594590d30c26945f7f59fd75a2ad7780b080818a48add5678b2c420c2ce17b85",
+    "lora_training_v1/preflight.py": "2db3bcf67bf766ba1631bdb75af9703a35d6197be8ed9a57773a84fdaac6e1a0",
+    "lora_training_v1/protected_baselines.json": "66c1e27a50415c3f89980ecbe152bd7cba63a1cee5311caddffdb8b1702c4c31",
+    "lora_training_v1/report.py": "98a90c03e57340c084d4af98adfaaf13af3f1f6d94eebaf312bdd34d1f149d8a",
+    "lora_training_v1/telemetry.py": "3711d54f71655b6b08bc6739d340c908ebc17a5ba9b3d3c76177398e7f582359",
+    "lora_training_v1/worker.py": "539ec766b43fb654ad90012003ae66b860e58127ce263bfcc7cf5fc1b0d44649",
+    "results/m2-feasibility-v1/M2_FEASIBILITY_REPORT.md": "8bb20cbb0132f9a11b934e3974524ebbeeee6c7d6277727698576f28adde7c15",
+    "results/m2-feasibility-v1/assessment.json": "fb47ac9bfa2ca5399e385a693bbc189c388eabf401116fe04c73fe38a8b9ff0c",
+    "results/m2-feasibility-v1/completion.json": "0c902ea79384bde7a7c1527efa5b589ca86087aff1db8d660cf7c79d149619ec",
+    "results/m2-feasibility-v1/events.jsonl": "da21e28f9f539df31f011b274d7b9ee5f8406800cebd73ba966d4cbc9e498c8c",
+    "results/m2-feasibility-v1/manifest.json": "e3b8e2003808d28cc45901031fbe879706cbc4a7382735ef18affd1665e05f2c",
+    "results/m2-feasibility-v1/memory_samples.jsonl": "1b04b673b1f07eb46615a3aa688face615f4f4f769ebbee6e8ab8a738d84c881",
+    "results/m2-feasibility-v1/regression.log": "39d0f848f741e0522a570e9782cd14782ad21dec266a6d9cedc5182c9f4cee8a",
+    "results/m2-feasibility-v1/validation.json": "f5377850b106d7b5b21c1c5833363b6a48a3b8bcca3a985ab38af9f260e1e2fb",
+    "results/m2-feasibility-v1/worker.log": "08848830d3cdda541384c12168ff90cc30397feb5a31444f2c9c58d3f82b28b3",
+    "results/m2-feasibility-v1/worker_result.json": "a09d0a0a4b9fc04a64cacdcd5348a55a8eb5e4531003bb219f5926a7eb99d609",
+    "tests/test_lora_training_v1.py": "d79e47a0e435c42ce84a0a2538152b2bd2382d642f3e9d09324956623797f37a"
+  }
+}

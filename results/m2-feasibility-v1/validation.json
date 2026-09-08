@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-09-07T21:38:13.600203+00:00",
+  "full_regression": {
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "tests": 149,
+    "passed": 149,
+    "failed": 0,
+    "skipped": 0,
+    "wall_seconds": 13.315,
+    "log": "regression.log",
+    "log_sha256": "39d0f848f741e0522a570e9782cd14782ad21dec266a6d9cedc5182c9f4cee8a"
+  },
+  "pre_run_unit_tests": {
+    "tests": 9,
+    "passed": 8,
+    "skipped": 1,
+    "skip_reason": "Post-measurement evidence did not exist yet; included and passed in full regression."
+  },
+  "feasibility_command": ".venv/bin/python -m lora_training_v1.preflight run",
+  "report_command": ".venv/bin/python -m lora_training_v1.report",
+  "integrity_command": ".venv/bin/python -m lora_training_v1.preflight check",
+  "measured_event_counts": {
+    "forward_finished": 12,
+    "backward_finished": 12,
+    "optimizer_started": 3,
+    "optimizer_finished": 3
+  },
+  "all_losses_and_gradients_finite": true,
+  "original_base_parameter_tensors_compared": 290,
+  "all_base_parameter_hashes_unchanged": true,
+  "original_model_files_unchanged": true,
+  "protected_historical_files_unchanged": 178,
+  "trained_checkpoints_saved": 0,
+  "adapter_weights_saved": false,
+  "full_pilot_started": false,
+  "holdout_content_inspected": false,
+  "holdout_generated_on": false,
+  "checkpoint_save_test": "Synthetic LoRA layers only, temporary directory; no real feasibility adapters serialized."
+}

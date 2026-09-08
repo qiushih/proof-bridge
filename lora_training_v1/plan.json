@@ -1,0 +1,28 @@
+{
+  "experiment_id": "proofbridge-m2-feasibility-v1",
+  "purpose": "disposable_local_feasibility_only",
+  "training_protocol": "training_protocol_v1/frozen.json",
+  "optimizer_update_limit": 3,
+  "microbatches_per_update": 4,
+  "update_schedule": [
+    {"update": 1, "rows": "longest train row repeated four times", "tensor_length": "native", "purpose": "native maximum-length forward/backward/AdamW"},
+    {"update": 2, "rows": "same longest train row repeated four times", "tensor_length": 768, "purpose": "right-padded maximum tensor-length memory stress; pad attention/loss excluded"},
+    {"update": 3, "rows": "first four rows of frozen epoch-zero order", "tensor_length": "native", "purpose": "representative deterministic accumulated update"}
+  ],
+  "longest_tie_break": "max(sequence_length, example_id)",
+  "sampling_seconds": 2,
+  "wall_timeout_seconds": 1800,
+  "slow_threshold_native_update_seconds": 120,
+  "classification": {
+    "feasible": "All three updates and both native and padded forward/backward checks pass; median of native updates 1 and 3 is at most 120 seconds; base parameters unchanged.",
+    "feasible_but_impractically_slow": "All required operations pass but median native update exceeds 120 seconds (over two hours projected for 60 updates, excluding evaluation); or a runtime deadline is reached after demonstrating both sequence lengths and a successful optimizer update, without memory failure.",
+    "infeasible_due_to_memory": "Explicit allocator/memory failure, or OS termination with corroborating memory-pressure evidence. A generic error or unexplained kill is not a memory verdict."
+  },
+  "checkpoints_enabled": false,
+  "adapter_serialization_enabled": false,
+  "full_pilot_enabled": false,
+  "dev_generations": 0,
+  "holdout_content_access": false,
+  "retry": false,
+  "notes": "The actual 24-row training data and frozen prompt stay unchanged. Padding is an input-tensor allocation stress, not an additional 768-token proof. The throughput estimate is a small, loaded-machine measurement, not a benchmark on an idle host."
+}

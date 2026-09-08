@@ -1,0 +1,191 @@
+{
+  "classification": "feasible",
+  "completed_optimizer_updates": 3,
+  "model_loaded": true,
+  "longest_training_example": {
+    "id": "pt14_B",
+    "native_length": 617,
+    "target_tokens": 33,
+    "stress_tensor_length": 768
+  },
+  "all_forward_backward_optimizer_steps_passed": true,
+  "peak_rss_bytes": 2447425536,
+  "peak_physical_footprint_bytes": 2389891968,
+  "system_swap_start_bytes": 3211987517,
+  "system_swap_peak_bytes": 4928569344,
+  "system_swap_end_bytes": 4920180736,
+  "system_swap_peak_increase_bytes": 1716581827,
+  "native_update_median_seconds": 12.090671145939268,
+  "projected_60_update_seconds": 725.4402687563561,
+  "total_worker_wall_seconds": 50.12079375004396,
+  "base_parameters_unchanged": true,
+  "base_model_files_unchanged": true,
+  "updates": [
+    {
+      "update": 1,
+      "microbatches": 4,
+      "example_ids": [
+        "pt14_B",
+        "pt14_B",
+        "pt14_B",
+        "pt14_B"
+      ],
+      "native_lengths": [
+        617,
+        617,
+        617,
+        617
+      ],
+      "pad_to": null,
+      "mean_completion_loss": 0.9095958471298218,
+      "losses": [
+        0.9095958471298218,
+        0.9095958471298218,
+        0.9095958471298218,
+        0.9095958471298218
+      ],
+      "microbatch_timings": [
+        {
+          "forward_seconds": 1.2001489589456469,
+          "backward_seconds": 2.5573002921883017
+        },
+        {
+          "forward_seconds": 1.2757665000390261,
+          "backward_seconds": 2.2155124580021948
+        },
+        {
+          "forward_seconds": 1.156590832863003,
+          "backward_seconds": 1.8844017498195171
+        },
+        {
+          "forward_seconds": 0.9616592910606414,
+          "backward_seconds": 1.8098979170899838
+        }
+      ],
+      "gradient_norm_before_clip": 3.1478402614593506,
+      "optimizer_seconds": 0.02117716707289219,
+      "update_wall_seconds": 13.168395624961704,
+      "adapter_tensors_changed": 48,
+      "learning_rate": 0.0002,
+      "trainable_audit": {
+        "adapter_modules": 48,
+        "trainable_tensors": 96,
+        "trainable_parameters": 540672,
+        "base_trainable_parameters": 0,
+        "base_gradient_tensors": 0
+      }
+    },
+    {
+      "update": 2,
+      "microbatches": 4,
+      "example_ids": [
+        "pt14_B",
+        "pt14_B",
+        "pt14_B",
+        "pt14_B"
+      ],
+      "native_lengths": [
+        617,
+        617,
+        617,
+        617
+      ],
+      "pad_to": 768,
+      "mean_completion_loss": 0.7995726466178894,
+      "losses": [
+        0.7995726466178894,
+        0.7995726466178894,
+        0.7995726466178894,
+        0.7995726466178894
+      ],
+      "microbatch_timings": [
+        {
+          "forward_seconds": 1.4298978329170495,
+          "backward_seconds": 2.8527527910191566
+        },
+        {
+          "forward_seconds": 1.6441667499020696,
+          "backward_seconds": 2.3128861668519676
+        },
+        {
+          "forward_seconds": 1.194536249851808,
+          "backward_seconds": 2.2961998749524355
+        },
+        {
+          "forward_seconds": 1.3093233748804778,
+          "backward_seconds": 2.266947249881923
+        }
+      ],
+      "gradient_norm_before_clip": 2.7894039154052734,
+      "optimizer_seconds": 0.005232583964243531,
+      "update_wall_seconds": 15.336590749910101,
+      "adapter_tensors_changed": 96,
+      "learning_rate": 0.0002,
+      "trainable_audit": {
+        "adapter_modules": 48,
+        "trainable_tensors": 96,
+        "trainable_parameters": 540672,
+        "base_trainable_parameters": 0,
+        "base_gradient_tensors": 0
+      }
+    },
+    {
+      "update": 3,
+      "microbatches": 4,
+      "example_ids": [
+        "pt10_B",
+        "pt04_A",
+        "pt11_B",
+        "pt13_B"
+      ],
+      "native_lengths": [
+        589,
+        497,
+        613,
+        617
+      ],
+      "pad_to": null,
+      "mean_completion_loss": 0.5686323195695877,
+      "losses": [
+        0.5430727601051331,
+        0.3250805139541626,
+        0.7161163687705994,
+        0.6902596354484558
+      ],
+      "microbatch_timings": [
+        {
+          "forward_seconds": 0.9224519578274339,
+          "backward_seconds": 1.7116002920083702
+        },
+        {
+          "forward_seconds": 0.8337270000483841,
+          "backward_seconds": 1.5078758341260254
+        },
+        {
+          "forward_seconds": 1.10612737480551,
+          "backward_seconds": 1.8451903339009732
+        },
+        {
+          "forward_seconds": 0.9827886659186333,
+          "backward_seconds": 2.0733452499844134
+        }
+      ],
+      "gradient_norm_before_clip": 1.8238953351974487,
+      "optimizer_seconds": 0.007892499910667539,
+      "update_wall_seconds": 11.012946666916832,
+      "adapter_tensors_changed": 96,
+      "learning_rate": 0.0002,
+      "trainable_audit": {
+        "adapter_modules": 48,
+        "trainable_tensors": 96,
+        "trainable_parameters": 540672,
+        "base_trainable_parameters": 0,
+        "base_gradient_tensors": 0
+      }
+    }
+  ],
+  "trained_checkpoints_saved": 0,
+  "holdout_content_reads": 0,
+  "full_pilot_started": false,
+  "limitation": "Small CPU feasibility run on a loaded shared-memory host; global swap cannot be attributed solely to this worker. Right padding tests tensor allocation, not a new proof or 768 active content tokens."
+}
