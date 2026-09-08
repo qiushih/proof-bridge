@@ -1,0 +1,8 @@
+{
+  "status": "FROZEN_BEFORE_MODEL_LABEL_DISCLOSURE",
+  "frozen_at_utc": "2026-09-08T04:44:36.667713+00:00",
+  "packet_sha256": "88cafc90984fea4d3135cadcf614440cb81b2a7e346fc919f9804827fa5179d5",
+  "mapping_sha256": "3beaa5fb7ee9df30b9b6f5b357a58014b52517039e1b3628571edb311373bd1f",
+  "reviews_sha256": "5ed351f1f411deb782ac632d79e7b7ea8012265fe6b475fe8c6eb29ee5894ca6",
+  "reviews": 12
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-09-08T04:47:01.630179+00:00",
+  "model_generations": 12,
+  "token_replays": 12,
+  "rocq_replays": 12,
+  "all_replayed_outcomes_agreed": true,
+  "reference_reverifications": 6,
+  "generated_proofs_verified": 3,
+  "generated_proofs_rejected": 9,
+  "label_masked_mathematical_reviews": 12,
+  "reviews_frozen_before_report_label_disclosure": true,
+  "regression_tests": {
+    "total": 163,
+    "passed": 163,
+    "failed": 0,
+    "skipped": 0,
+    "wall_seconds": 14.004,
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "log_sha256": "598da34f7ecaf89fac0c65d233b115d5c0ed975164a676da8040dc7b384fc803"
+  },
+  "original_holdout_content_openings": 1,
+  "holdout_status": "CONSUMED",
+  "historical_files_unchanged": 293,
+  "base_and_adapter_parameters_unchanged": true,
+  "optimizer_updates": 0,
+  "additional_checkpoints_evaluated": 0,
+  "selected_step_preserved": 18,
+  "new_theorem_only_generations": 0,
+  "repair_attempts": 0,
+  "automatic_retries": 0,
+  "scope_note": "User-approved 12 argument-conditioned outputs; older theorem-only proposal not executed; no frozen historical policy edited.",
+  "reproduction_commands": [
+    ".venv/bin/python -m pilot_holdout_v1.experiment check --replay-tokens --reverify",
+    ".venv/bin/python -m pilot_holdout_v1.assessment report",
+    ".venv/bin/python -m unittest discover -s tests -v"
+  ]
+}

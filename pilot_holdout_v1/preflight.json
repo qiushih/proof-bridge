@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-08T04:39:53.887281+00:00",
+  "tests_run": 8,
+  "tests_passed": 7,
+  "tests_skipped": 1,
+  "skip_reason": "Post-evaluation report does not exist before holdout opening.",
+  "test_log": "test_exact_adapter_loading_rejects_wrong_shape_without_partial_copy (test_pilot_holdout_v1.HoldoutTests.test_exact_adapter_loading_rejects_wrong_shape_without_partial_copy) ... ok\ntest_existing_run_rejected_before_opening_or_model_load (test_pilot_holdout_v1.HoldoutTests.test_existing_run_rejected_before_opening_or_model_load) ... ok\ntest_failed_or_unbound_reviews_cannot_be_faithful (test_pilot_holdout_v1.HoldoutTests.test_failed_or_unbound_reviews_cannot_be_faithful) ... ok\ntest_gold_code_never_enters_target_prompt (test_pilot_holdout_v1.HoldoutTests.test_gold_code_never_enters_target_prompt) ... ok\ntest_masked_packet_has_no_model_or_step_score_fields (test_pilot_holdout_v1.HoldoutTests.test_masked_packet_has_no_model_or_step_score_fields) ... ok\ntest_original_content_stays_unread_in_input_checks (test_pilot_holdout_v1.HoldoutTests.test_original_content_stays_unread_in_input_checks) ... ok\ntest_saved_report_reproduces_without_original_content_reopening (test_pilot_holdout_v1.HoldoutTests.test_saved_report_reproduces_without_original_content_reopening) ... skipped 'Holdout report not yet created'\ntest_single_opening_records_custody_before_content_and_rejects_second (test_pilot_holdout_v1.HoldoutTests.test_single_opening_records_custody_before_content_and_rejects_second) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.107s\n\nOK (skipped=1)\n",
+  "protected_historical_files_unchanged": 293,
+  "holdout_content_reads": 0,
+  "model_generations": 0,
+  "optimizer_updates": 0,
+  "test_tensor_scope": "Synthetic LoRA layer only; no Qwen model loaded."
+}

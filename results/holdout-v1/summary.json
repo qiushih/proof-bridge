@@ -1,0 +1,95 @@
+{
+  "experiment_id": "proofbridge-holdout-v1",
+  "checkpoint_step": 18,
+  "model_revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+  "selected_adapter_sha256": "004eac24b10840832b2babc290e535f91a5a887d68db5977f58e812c8e57e6f0",
+  "by_model": {
+    "base": {
+      "rows": 6,
+      "verified": 0,
+      "verified_mathematically_faithful": 0,
+      "attempted_step_matches": 0,
+      "verified_requested_steps": 0,
+      "format_compliant": 6,
+      "mean_latency_seconds": 11.888184708504317,
+      "completion_tokens": 655
+    },
+    "step18": {
+      "rows": 6,
+      "verified": 3,
+      "verified_mathematically_faithful": 3,
+      "attempted_step_matches": 3,
+      "verified_requested_steps": 3,
+      "format_compliant": 6,
+      "mean_latency_seconds": 3.931739701462599,
+      "completion_tokens": 192
+    }
+  },
+  "trained_minus_base_counts": {
+    "verified": 3,
+    "verified_mathematically_faithful": 3,
+    "verified_requested_steps": 3
+  },
+  "proof_step_improvement_preserving_verification_and_fidelity": true,
+  "theorem_pairs": [
+    {
+      "theorem_id": "ph01",
+      "base": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": false
+      },
+      "step18": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": true
+      }
+    },
+    {
+      "theorem_id": "ph02",
+      "base": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": true
+      },
+      "step18": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": true
+      }
+    },
+    {
+      "theorem_id": "ph03",
+      "base": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": true
+      },
+      "step18": {
+        "both_verified": false,
+        "both_verified_faithful": false,
+        "both_verified_step_adherent": false,
+        "bodies_differ": true
+      }
+    }
+  ],
+  "generations": 12,
+  "optimizer_updates": 0,
+  "original_holdout_content_openings": 1,
+  "holdout_status": "CONSUMED",
+  "checkpoint_selection_changed": false,
+  "protocol_scope": "argument-conditioned only; 12-output user-approved scope",
+  "review_method": "label-masked assistant judgments frozen before report label disclosure; not independent human review",
+  "wall_seconds": 120.6133595420979,
+  "limitations": [
+    "Six rows are three correlated theorem pairs in one historically exposed family.",
+    "Fresh-instance transfer under this pipeline; no claim of wholly unseen mathematics or absence of pretraining contamination.",
+    "No theorem-only control, so this comparison alone cannot establish causal informal-proof dependence.",
+    "No further tuning or checkpoint selection may reuse this as an untouched holdout."
+  ]
+}

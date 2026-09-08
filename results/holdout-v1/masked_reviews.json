@@ -1,0 +1,82 @@
+{
+  "reviewed_at_utc": "2026-09-08T04:44:36.448400+00:00",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "packet_sha256": "88cafc90984fea4d3135cadcf614440cb81b2a7e346fc919f9804827fa5179d5",
+  "model_labels_disclosed_to_reviewer": false,
+  "method": "Manual reading of all twelve shuffled proof bodies, informal arguments, frozen references and Rocq diagnostics without opening the model mapping or labeled outputs. Successful proofs preserve the mathematical induction; failed proofs are NOT_ESTABLISHED.",
+  "reviews": [
+    {
+      "review_id": "R01",
+      "proof_body_sha256": "ee23a1670cdbd8596bbe6382d1b1bcb24fcadf912d10720eb965f393de7edd9e",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate inducts on n, but tries reflexivity in the zero case instead of using the supplied equality premise. That equality is not definitional, and Rocq rejects the base case. The unusual local names are valid; the premise is named S_k and the IH is S_kIH. Repeated IH rewrites in the later branch are unreached, and do not establish a complete faithful argument."
+    },
+    {
+      "review_id": "R02",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "With m, p and H fixed, induction is on the supplied prefix variable n. The zero goal is exactly the premise and is closed by exact H. After successor simplification, f_equal reduces to the IH and exact IH finishes. This is the supplied mathematical induction and congruence argument, and Rocq verifies the complete proof."
+    },
+    {
+      "review_id": "R03",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate introduces the premise and inducts on the correct variable n, but its base case uses reflexivity on m + (p + p) = (p + p) + m instead of the premise. Rocq rejects that equality as non-definitional. The later forward IH rewrite resembles the requested successor argument, but there is no complete verified proof."
+    },
+    {
+      "review_id": "R04",
+      "proof_body_sha256": "0e32a0cb9ff3d01fa23ecf03a815da2f68c5561d983913b03ad8883a43700cc6",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate inducts on n but ignores H in the zero case and fails at reflexivity on the permutation equality. Its unreached successor script rewrites the original premise H instead of the induction hypothesis. Rocq stops at the base case, so mathematical fidelity of a complete proof is not established."
+    },
+    {
+      "review_id": "R05",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate attempts rewrite H before induction. The initial goal has the common prefix n and contains no matching S m + p subterm, so Rocq rejects this first rewrite. The supplied argument instead uses the premise after reducing the induction base case. Subsequent induction commands are unreached."
+    },
+    {
+      "review_id": "R06",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. After zero-case simplification, exact H succeeds by definitional conversion from S m + p to S (m + p). The successor case uses f_equal then exact IH, precisely transporting the IH through successor as the informal argument requests. The complete proof verifies."
+    },
+    {
+      "review_id": "R07",
+      "proof_body_sha256": "6c34bc54904c9711b96cdae483e16779f00ceae9630292cff373a856566e9b1c",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate attempts a direct premise rewrite and reflexivity, omitting the supplied induction. The goal contains a common n prefix, so the premise pattern m + (p + p) does not occur as the required subterm and Rocq rejects the rewrite. This attempted direct strategy does not produce a verified complete argument."
+    },
+    {
+      "review_id": "R08",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate inducts on n but tries to prove the zero equality S (m + p) = p + S m by reflexivity. The premise H would close it by conversion, but is not used. Rocq rejects the base case; the later IH rewrite cannot establish a complete proof."
+    },
+    {
+      "review_id": "R09",
+      "proof_body_sha256": "08f4b925c125152feb12c6507bf688acf7b5b01035c30dc0ff12b840a99e34d0",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The candidate performs induction on n with valid local renamings: the second natural-number binder is k and the equality premise is named m. It nevertheless ignores that premise and fails at base-case reflexivity. SIH is a valid IH name, but its repeated later rewrites are unreached. The failure is mathematical premise omission, not an invalid-reference judgment."
+    },
+    {
+      "review_id": "R10",
+      "proof_body_sha256": "075b54e02093e584af8934cf4b9d44b5702d825b3c8d1368ec2976d14b69318f",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof attempts the prescribed induction on n and an IH rewrite in the successor branch, using valid local names k, S_k and S_kIH. The base permutation equality is not reflexive; the equality premise S_k is needed but unused. Rocq rejects this base case, so the intended induction is incomplete."
+    },
+    {
+      "review_id": "R11",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n while keeping m, p and the permutation premise H fixed. It uses exact H for the simplified zero case and applies successor congruence with f_equal followed by exact IH in the successor case. This follows the supplied mathematical argument and verifies."
+    },
+    {
+      "review_id": "R12",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The first rewrite H is attempted before induction and fails because the initial prefixed goal contains no matching S m + p subterm. The supplied argument uses H only in the simplified zero branch, then transports the IH by congruence. The subsequent generated induction and IH rewrite are unreached; no complete faithful proof is established."
+    }
+  ]
+}

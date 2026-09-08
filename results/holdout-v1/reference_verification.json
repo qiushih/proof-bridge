@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "references": [
+    {
+      "example_id": "ph01_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.227,
+        "source_sha256": "84f0cab45bc475d5827c223b8855d517d22c099780427f420478b4d8867ddca9",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, S m + p = p + S m -> n + S m + p = n + p + S m\n     : forall n m p : nat, S m + p = p + S m -> n + S m + p = n + p + S m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "ph01_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1111,
+        "source_sha256": "dc6e39235aa13565407b944aeabf85052a76223c40bdb22e067c5f70e9b8fc73",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, S m + p = p + S m -> n + S m + p = n + p + S m\n     : forall n m p : nat, S m + p = p + S m -> n + S m + p = n + p + S m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "ph02_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1137,
+        "source_sha256": "601555821000baab4dc2562941baf7e0ee3e514a7dad892cac0168bb9997b13b",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat,\nm + (p + p) = p + p + m -> n + m + (p + p) = n + (p + p) + m\n     : forall n m p : nat,\n       m + (p + p) = p + p + m -> n + m + (p + p) = n + (p + p) + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "ph02_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1124,
+        "source_sha256": "04e148ebf01ffa291989a817a711dd0a5775dd0dbdbc7603d43a7e0aaef95f3d",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat,\nm + (p + p) = p + p + m -> n + m + (p + p) = n + (p + p) + m\n     : forall n m p : nat,\n       m + (p + p) = p + p + m -> n + m + (p + p) = n + (p + p) + m\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "ph03_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1132,
+        "source_sha256": "927256025eb809bfd767abb2b1e43f88375844b1eb7c9810bdb1d70af3ddc3cf",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat,\nm + m + p = p + (m + m) -> n + (m + m) + p = n + p + (m + m)\n     : forall n m p : nat,\n       m + m + p = p + (m + m) -> n + (m + m) + p = n + p + (m + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "example_id": "ph03_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1345,
+        "source_sha256": "f7b4f5e5ccfb9d16bd616bb18e03f01ebcdc8791ee32e7da1c8d7fc747e9d1c8",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat,\nm + m + p = p + (m + m) -> n + (m + m) + p = n + p + (m + m)\n     : forall n m p : nat,\n       m + m + p = p + (m + m) -> n + (m + m) + p = n + p + (m + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    }
+  ]
+}
