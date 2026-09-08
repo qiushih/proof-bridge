@@ -1,0 +1,1 @@
+PASS: all ten adapter/state checkpoints have exact LoRA tensors, finite weights/moments, correct steps, epoch orders and saved RNG state.

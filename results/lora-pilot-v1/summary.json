@@ -1,0 +1,252 @@
+{
+  "experiment_id": "proofbridge-lora-pilot-v1",
+  "selected_step": 18,
+  "selected_adapter_path": "results/lora-pilot-v1/training/step-0018/adapter.safetensors",
+  "selected_adapter_sha256": "004eac24b10840832b2babc290e535f91a5a887d68db5977f58e812c8e57e6f0",
+  "selection_score": [
+    6,
+    6,
+    6,
+    -18
+  ],
+  "baseline_selection_score": [
+    6,
+    3,
+    6,
+    0
+  ],
+  "selection_score_improved": true,
+  "proof_step_adherence_improved_without_verification_or_fidelity_loss": true,
+  "baseline": {
+    "rows": 6,
+    "verified": 6,
+    "verified_mathematically_faithful": 6,
+    "attempted_step_matches": 3,
+    "verified_requested_steps": 3,
+    "mean_generation_latency_seconds": 6.533409979155597
+  },
+  "selected": {
+    "rows": 6,
+    "verified": 6,
+    "verified_mathematically_faithful": 6,
+    "attempted_step_matches": 6,
+    "verified_requested_steps": 6,
+    "mean_generation_latency_seconds": 2.672541083341154
+  },
+  "count_changes": {
+    "verified": 0,
+    "verified_mathematically_faithful": 0,
+    "verified_requested_steps": 3
+  },
+  "checkpoints": [
+    {
+      "optimizer_step": 0,
+      "selection_score": [
+        6,
+        3,
+        6,
+        0
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 3,
+      "verified_requested_steps": 3,
+      "mean_generation_latency_seconds": 6.533409979155597
+    },
+    {
+      "optimizer_step": 6,
+      "selection_score": [
+        6,
+        3,
+        6,
+        -6
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 3,
+      "verified_requested_steps": 3,
+      "mean_generation_latency_seconds": 4.390801374839309
+    },
+    {
+      "optimizer_step": 12,
+      "selection_score": [
+        6,
+        5,
+        6,
+        -12
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 5,
+      "verified_requested_steps": 5,
+      "mean_generation_latency_seconds": 2.761551701502564
+    },
+    {
+      "optimizer_step": 18,
+      "selection_score": [
+        6,
+        6,
+        6,
+        -18
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 6,
+      "verified_requested_steps": 6,
+      "mean_generation_latency_seconds": 2.672541083341154
+    },
+    {
+      "optimizer_step": 24,
+      "selection_score": [
+        5,
+        4,
+        5,
+        -24
+      ],
+      "rows": 6,
+      "verified": 5,
+      "verified_mathematically_faithful": 5,
+      "attempted_step_matches": 4,
+      "verified_requested_steps": 4,
+      "mean_generation_latency_seconds": 2.6282179166252413
+    },
+    {
+      "optimizer_step": 30,
+      "selection_score": [
+        6,
+        6,
+        6,
+        -30
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 6,
+      "verified_requested_steps": 6,
+      "mean_generation_latency_seconds": 2.622489291786527
+    },
+    {
+      "optimizer_step": 36,
+      "selection_score": [
+        6,
+        6,
+        6,
+        -36
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 6,
+      "verified_requested_steps": 6,
+      "mean_generation_latency_seconds": 3.2396209652458006
+    },
+    {
+      "optimizer_step": 42,
+      "selection_score": [
+        6,
+        5,
+        6,
+        -42
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 5,
+      "verified_requested_steps": 5,
+      "mean_generation_latency_seconds": 2.748473298813527
+    },
+    {
+      "optimizer_step": 48,
+      "selection_score": [
+        6,
+        5,
+        6,
+        -48
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 5,
+      "verified_requested_steps": 5,
+      "mean_generation_latency_seconds": 2.6676312915127105
+    },
+    {
+      "optimizer_step": 54,
+      "selection_score": [
+        6,
+        5,
+        6,
+        -54
+      ],
+      "rows": 6,
+      "verified": 6,
+      "verified_mathematically_faithful": 6,
+      "attempted_step_matches": 5,
+      "verified_requested_steps": 5,
+      "mean_generation_latency_seconds": 2.6532077292213216
+    },
+    {
+      "optimizer_step": 60,
+      "selection_score": [
+        5,
+        4,
+        5,
+        -60
+      ],
+      "rows": 6,
+      "verified": 5,
+      "verified_mathematically_faithful": 5,
+      "attempted_step_matches": 4,
+      "verified_requested_steps": 4,
+      "mean_generation_latency_seconds": 3.318063020861397
+    }
+  ],
+  "selected_step_pairs": [
+    {
+      "theorem_id": "pd01",
+      "both_verified_and_step_adherent": true,
+      "body_changed": true
+    },
+    {
+      "theorem_id": "pd02",
+      "both_verified_and_step_adherent": true,
+      "body_changed": true
+    },
+    {
+      "theorem_id": "pd03",
+      "both_verified_and_step_adherent": true,
+      "body_changed": true
+    }
+  ],
+  "optimizer_updates": 60,
+  "training_microbatches": 240,
+  "new_dev_generations": 60,
+  "training_wall_seconds": 565.9240369191393,
+  "total_run_wall_seconds": 771.6211796251591,
+  "epoch_mean_training_loss": [
+    0.5156325474381447,
+    0.3336206239958604,
+    0.18999383707220355,
+    0.08718663011677563,
+    0.044810667362374566,
+    0.04486465160152875,
+    0.010955689867842011,
+    0.00904087033510829,
+    0.006419660443498287,
+    0.0038331726003283015
+  ],
+  "base_weights_unchanged": true,
+  "holdout_content_reads": 0,
+  "holdout_evaluated": false,
+  "human_reviewed": false,
+  "limitations": [
+    "Six correlated dev rows, three theorems in one family; selected on these same rows, not an independent estimate.",
+    "A/B distinguish equivalent IH tactic realizations, not different high-level mathematical strategies.",
+    "Assistant fidelity review, not independent human review.",
+    "No new theorem-only or diagnostic generations; no claims about held-out generalization."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-08T04:06:28.578422+00:00",
+  "tests_run": 6,
+  "tests_passed": 5,
+  "tests_skipped": 1,
+  "skip_reason": "Saved full-run report does not exist before training; will run in final regression.",
+  "test_log": "test_callback_six_attempts_real_verifier_and_no_duplicate_checkpoint (test_pilot_training_v1.PilotTrainingTests.test_callback_six_attempts_real_verifier_and_no_duplicate_checkpoint) ... Generating pilot_training_v1:step-0006:pd01_A\npilot_training_v1:step-0006:pd01_A: PASS VERIFIED; steps MATCH\nGenerating pilot_training_v1:step-0006:pd01_B\npilot_training_v1:step-0006:pd01_B: PASS VERIFIED; steps MATCH\nGenerating pilot_training_v1:step-0006:pd02_A\npilot_training_v1:step-0006:pd02_A: PASS VERIFIED; steps MATCH\nGenerating pilot_training_v1:step-0006:pd02_B\npilot_training_v1:step-0006:pd02_B: PASS VERIFIED; steps MATCH\nGenerating pilot_training_v1:step-0006:pd03_A\npilot_training_v1:step-0006:pd03_A: PASS VERIFIED; steps MATCH\nGenerating pilot_training_v1:step-0006:pd03_B\npilot_training_v1:step-0006:pd03_B: PASS VERIFIED; steps MATCH\nok\ntest_evaluation_restores_rng_and_mode_even_on_error (test_pilot_training_v1.PilotTrainingTests.test_evaluation_restores_rng_and_mode_even_on_error) ... ok\ntest_existing_run_rejected_before_model_or_inputs (test_pilot_training_v1.PilotTrainingTests.test_existing_run_rejected_before_model_or_inputs) ... ok\ntest_protected_input_check_never_parses_holdout (test_pilot_training_v1.PilotTrainingTests.test_protected_input_check_never_parses_holdout) ... ok\ntest_saved_pilot_and_selection_reproduce (test_pilot_training_v1.PilotTrainingTests.test_saved_pilot_and_selection_reproduce) ... skipped 'Pilot report not yet complete'\ntest_selection_keeps_step_zero_on_ties_and_fidelity_before_step_match (test_pilot_training_v1.PilotTrainingTests.test_selection_keeps_step_zero_on_ties_and_fidelity_before_step_match) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 2.938s\n\nOK (skipped=1)\n",
+  "effective_generation_configuration_matches_frozen_baseline": true,
+  "protected_historical_files_unchanged": 199,
+  "qwen_optimizer_updates": 0,
+  "qwen_dev_generations": 0,
+  "synthetic_callback_calls": 6,
+  "sealed_holdout_content_reads": 0
+}

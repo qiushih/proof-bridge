@@ -1,0 +1,12 @@
+{"key": "pilot_training_v1:step-0060:pd01_A", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:00.469543+00:00"}
+{"key": "pilot_training_v1:step-0060:pd01_A", "event": "finished", "attempt": 1}
+{"key": "pilot_training_v1:step-0060:pd01_B", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:03.269431+00:00"}
+{"key": "pilot_training_v1:step-0060:pd01_B", "event": "finished", "attempt": 1}
+{"key": "pilot_training_v1:step-0060:pd02_A", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:05.969935+00:00"}
+{"key": "pilot_training_v1:step-0060:pd02_A", "event": "finished", "attempt": 1}
+{"key": "pilot_training_v1:step-0060:pd02_B", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:08.918530+00:00"}
+{"key": "pilot_training_v1:step-0060:pd02_B", "event": "finished", "attempt": 1}
+{"key": "pilot_training_v1:step-0060:pd03_A", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:11.883210+00:00"}
+{"key": "pilot_training_v1:step-0060:pd03_A", "event": "finished", "attempt": 1}
+{"key": "pilot_training_v1:step-0060:pd03_B", "event": "started", "attempt": 1, "at_utc": "2026-09-08T04:19:17.477390+00:00"}
+{"key": "pilot_training_v1:step-0060:pd03_B", "event": "finished", "attempt": 1}

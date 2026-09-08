@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE",
+  "purpose": "full_pilot",
+  "step": 60,
+  "epoch": 9,
+  "adapter_parameters_only": true,
+  "base_weights_saved": false,
+  "fingerprints": {
+    "lora_training_v1/README.md": "a7f00afeda5f5599e4eb2e626d5b6fc9148d1396c42eaa2ec7e708246c957d81",
+    "lora_training_v1/__init__.py": "f3cec1e6b80c157798757e26a0c22fc14b79c1cad42c2df72f7496ace20174fc",
+    "lora_training_v1/core.py": "a0847bedca90c1f02b57504ce9fa9ebff40ca1d3f4c60199db24be8e41527d2c",
+    "lora_training_v1/plan.json": "594590d30c26945f7f59fd75a2ad7780b080818a48add5678b2c420c2ce17b85",
+    "lora_training_v1/preflight.py": "2db3bcf67bf766ba1631bdb75af9703a35d6197be8ed9a57773a84fdaac6e1a0",
+    "lora_training_v1/protected_baselines.json": "66c1e27a50415c3f89980ecbe152bd7cba63a1cee5311caddffdb8b1702c4c31",
+    "lora_training_v1/report.py": "98a90c03e57340c084d4af98adfaaf13af3f1f6d94eebaf312bdd34d1f149d8a",
+    "lora_training_v1/telemetry.py": "3711d54f71655b6b08bc6739d340c908ebc17a5ba9b3d3c76177398e7f582359",
+    "lora_training_v1/worker.py": "539ec766b43fb654ad90012003ae66b860e58127ce263bfcc7cf5fc1b0d44649",
+    "tests/test_lora_training_v1.py": "d79e47a0e435c42ce84a0a2538152b2bd2382d642f3e9d09324956623797f37a"
+  }
+}

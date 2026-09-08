@@ -1,0 +1,57 @@
+{
+  "reviewed_at_utc": "2026-09-08T04:08:51.003137+00:00",
+  "raw_generations_sha256": "5322ab701e1f48273bc9021439fff6707c36295936d224869562e25ce6338a96",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "method": "Manual reading of every saved proof, the six frozen dev arguments, and Rocq evidence; equivalent IH implementations remain mathematically faithful.",
+  "reviews": [
+    {
+      "key": "pilot_training_v1:step-0006:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n computes the zero case 3 = 3 and rewrites the IH under successor after simplification. This is both the supplied mathematical argument and the A step contract.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0006:pd01_B",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n computes the same zero case and transports the IH through successor using rewrite. This is mathematically equivalent to the requested congruence, but omits B's explicit f_equal and exact IH steps.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0006:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and p, inducts on n, computes the zero associativity equality, and rewrites its IH under successor. Both the mathematical induction and the ordered A steps are preserved.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0006:pd02_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and p and performs the requested induction on n. Rewriting the IH under successor proves the same equality as congruence, preserving mathematical fidelity while missing B's f_equal/explicit IH realization.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0006:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "With m fixed, induction on n computes the three-successor base equality and rewrites the IH in the simplified successor case. This follows the supplied mathematics and A steps.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0006:pd03_B",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "With m fixed, the proof uses the requested induction and computed base equality. IH rewriting in the successor case is equivalent to successor congruence, so the complete verified argument is faithful, although the B step contract is missed.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    }
+  ]
+}

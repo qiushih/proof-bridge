@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "validated_at_utc": "2026-09-08T04:22:00.710499+00:00",
+  "optimizer_updates": 60,
+  "training_microbatches": 240,
+  "saved_adapter_checkpoints": 10,
+  "dev_generations": 60,
+  "dev_token_replays": 60,
+  "dev_rocq_replays": 60,
+  "dev_verification_passes": 58,
+  "dev_verification_failures": 2,
+  "all_replayed_outcomes_agreed": true,
+  "mathematical_fidelity_reviews": 60,
+  "regression_tests": {
+    "total": 155,
+    "passed": 155,
+    "failures": 0,
+    "skipped": 0,
+    "wall_seconds": 13.461,
+    "command": ".venv/bin/python -m unittest discover -s tests -v",
+    "log_sha256": "3670bcacc5caa2380b5e4422a060d1b376722d578bd1bf513e6123a591024511"
+  },
+  "checkpoint_tensor_state_validation": "checkpoint_validation.json",
+  "protected_historical_files_unchanged": 199,
+  "full_run_completed": true,
+  "base_weights_unchanged": true,
+  "feasibility_updates_reused": false,
+  "holdout_content_reads": 0,
+  "holdout_generations": 0,
+  "new_theorem_only_generations": 0,
+  "repair_attempts": 0,
+  "automatic_retries": 0,
+  "reproduction_commands": [
+    ".venv/bin/python -m pilot_training_v1.experiment check --replay-tokens --reverify",
+    ".venv/bin/python -m pilot_training_v1.report",
+    "PYTHONPATH=. .venv/bin/python results/lora-pilot-v1/check_checkpoint_states.py",
+    ".venv/bin/python -m unittest discover -s tests -v"
+  ]
+}

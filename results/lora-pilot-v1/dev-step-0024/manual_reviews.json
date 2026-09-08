@@ -1,0 +1,57 @@
+{
+  "reviewed_at_utc": "2026-09-08T04:12:39.670911+00:00",
+  "raw_generations_sha256": "591cee26a08a79bcabb142da662a554c480120b7ee5268bca326f6b082d018e5",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "method": "Manual review of all six displayed proof bodies and Rocq diagnostics against the supplied frozen dev arguments; equivalent successful reverse rewriting is separated from a failed rewrite and from strict step adherence.",
+  "reviews": [
+    {
+      "key": "pilot_training_v1:step-0024:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n computes the zero equality and uses a forward IH rewrite under successor after simplification, exactly following the mathematical argument and the A steps.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0024:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "Induction on n computes the zero equality, then f_equal reduces successor equality to the IH and exact IH closes it. This preserves the supplied mathematics and B steps.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0024:pd02_A",
+      "proof_body_sha256": "aa7c31e9763c5ed6038b0643fe9c23325a392cae01a3d88a2e7f7fdaec3a7bc3",
+      "status": "FAITHFUL",
+      "reason": "With m and p fixed, induction on n computes the base equality and transports the same IH under successor. Rewriting from right to left makes both sides coincide and Rocq verifies it. The equality argument is mathematically equivalent, but A explicitly requested left-to-right rewriting, so strict step adherence fails.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0024:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and p, inducts on n, computes the zero equality, and uses f_equal followed by exact IH in the successor case. It preserves the induction and the requested B step realization.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0024:pd03_A",
+      "proof_body_sha256": "f7e0127b21711bd198572d24d2de1c86749826b61075bf25aa89ce5f6d8aa721",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The attempt introduces m, inducts on n, and computes the base case, but the reverse IH rewrite fails after simplification: Rocq finds no subterm matching 3 + (k + m). The attempted induction is compatible with the informal structure, but there is no verified complete proof, and the requested forward rewrite is not followed.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0024:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "With m fixed, the proof inducts on n, computes the three-successor base equality, and uses f_equal then exact IH for the successor case. Both the mathematical argument and B steps are preserved.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    }
+  ]
+}

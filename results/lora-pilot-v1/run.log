@@ -1,0 +1,121 @@
+Generating pilot_training_v1:step-0006:pd01_A
+pilot_training_v1:step-0006:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0006:pd01_B
+pilot_training_v1:step-0006:pd01_B: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0006:pd02_A
+pilot_training_v1:step-0006:pd02_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0006:pd02_B
+pilot_training_v1:step-0006:pd02_B: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0006:pd03_A
+pilot_training_v1:step-0006:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0006:pd03_B
+pilot_training_v1:step-0006:pd03_B: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0012:pd01_A
+pilot_training_v1:step-0012:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0012:pd01_B
+pilot_training_v1:step-0012:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0012:pd02_A
+pilot_training_v1:step-0012:pd02_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0012:pd02_B
+pilot_training_v1:step-0012:pd02_B: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0012:pd03_A
+pilot_training_v1:step-0012:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0012:pd03_B
+pilot_training_v1:step-0012:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd01_A
+pilot_training_v1:step-0018:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd01_B
+pilot_training_v1:step-0018:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd02_A
+pilot_training_v1:step-0018:pd02_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd02_B
+pilot_training_v1:step-0018:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd03_A
+pilot_training_v1:step-0018:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0018:pd03_B
+pilot_training_v1:step-0018:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0024:pd01_A
+pilot_training_v1:step-0024:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0024:pd01_B
+pilot_training_v1:step-0024:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0024:pd02_A
+pilot_training_v1:step-0024:pd02_A: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0024:pd02_B
+pilot_training_v1:step-0024:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0024:pd03_A
+pilot_training_v1:step-0024:pd03_A: FAIL PROOF_ERROR; steps MISMATCH
+Generating pilot_training_v1:step-0024:pd03_B
+pilot_training_v1:step-0024:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd01_A
+pilot_training_v1:step-0030:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd01_B
+pilot_training_v1:step-0030:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd02_A
+pilot_training_v1:step-0030:pd02_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd02_B
+pilot_training_v1:step-0030:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd03_A
+pilot_training_v1:step-0030:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0030:pd03_B
+pilot_training_v1:step-0030:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd01_A
+pilot_training_v1:step-0036:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd01_B
+pilot_training_v1:step-0036:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd02_A
+pilot_training_v1:step-0036:pd02_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd02_B
+pilot_training_v1:step-0036:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd03_A
+pilot_training_v1:step-0036:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0036:pd03_B
+pilot_training_v1:step-0036:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0042:pd01_A
+pilot_training_v1:step-0042:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0042:pd01_B
+pilot_training_v1:step-0042:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0042:pd02_A
+pilot_training_v1:step-0042:pd02_A: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0042:pd02_B
+pilot_training_v1:step-0042:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0042:pd03_A
+pilot_training_v1:step-0042:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0042:pd03_B
+pilot_training_v1:step-0042:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0048:pd01_A
+pilot_training_v1:step-0048:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0048:pd01_B
+pilot_training_v1:step-0048:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0048:pd02_A
+pilot_training_v1:step-0048:pd02_A: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0048:pd02_B
+pilot_training_v1:step-0048:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0048:pd03_A
+pilot_training_v1:step-0048:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0048:pd03_B
+pilot_training_v1:step-0048:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0054:pd01_A
+pilot_training_v1:step-0054:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0054:pd01_B
+pilot_training_v1:step-0054:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0054:pd02_A
+pilot_training_v1:step-0054:pd02_A: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0054:pd02_B
+pilot_training_v1:step-0054:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0054:pd03_A
+pilot_training_v1:step-0054:pd03_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0054:pd03_B
+pilot_training_v1:step-0054:pd03_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0060:pd01_A
+pilot_training_v1:step-0060:pd01_A: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0060:pd01_B
+pilot_training_v1:step-0060:pd01_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0060:pd02_A
+pilot_training_v1:step-0060:pd02_A: PASS VERIFIED; steps MISMATCH
+Generating pilot_training_v1:step-0060:pd02_B
+pilot_training_v1:step-0060:pd02_B: PASS VERIFIED; steps MATCH
+Generating pilot_training_v1:step-0060:pd03_A
+pilot_training_v1:step-0060:pd03_A: FAIL PROOF_ERROR; steps MISMATCH
+Generating pilot_training_v1:step-0060:pd03_B
+pilot_training_v1:step-0060:pd03_B: PASS VERIFIED; steps MATCH
+COMPLETE: 60 updates, 10 checkpoints, 60 dev outputs; selection awaits reviews; holdout sealed

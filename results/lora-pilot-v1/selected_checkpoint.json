@@ -1,0 +1,17 @@
+{
+  "selected_step": 18,
+  "selected_adapter_path": "results/lora-pilot-v1/training/step-0018/adapter.safetensors",
+  "selected_adapter_sha256": "004eac24b10840832b2babc290e535f91a5a887d68db5977f58e812c8e57e6f0",
+  "selection_score": [
+    6,
+    6,
+    6,
+    -18
+  ],
+  "baseline_selection_score": [
+    6,
+    3,
+    6,
+    0
+  ]
+}

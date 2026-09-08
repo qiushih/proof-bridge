@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "optimizer_step": 60,
+  "attempts": 6,
+  "adapter_weights_unchanged_by_evaluation": true,
+  "trainable_audit": {
+    "adapter_modules": 48,
+    "trainable_tensors": 96,
+    "trainable_parameters": 540672,
+    "base_trainable_parameters": 0,
+    "base_gradient_tensors": 0
+  },
+  "files_sha256": {
+    "raw_generations.jsonl": "517843cc8abf2bf540ee653a689ac3e3d48b18fe741cfb8ece3aab06d9836009",
+    "attempts.jsonl": "4144aba6aefb2e0761ff907dd4134e2803fcd4d902bbd99d6633e29b8b5c992f"
+  }
+}

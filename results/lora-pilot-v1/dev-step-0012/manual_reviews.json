@@ -1,0 +1,57 @@
+{
+  "reviewed_at_utc": "2026-09-08T04:10:46.628062+00:00",
+  "raw_generations_sha256": "2b38b634bbddcbfdba780bc83f726903bbea801358997e7946705364d214d56c",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "method": "Assistant read every displayed proof and Rocq outcome against the frozen dev arguments. Explicit per-row judgments are bound to the reviewed reference-equivalent bodies; equivalent tactic choices remain mathematically faithful.",
+  "reviews": [
+    {
+      "key": "pilot_training_v1:step-0012:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n, computes the zero case 3 = 3, and establishes the simplified successor equality using its IH. The verified implementation uses IH rewriting followed by reflexivity. The requested step realization is matched.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0012:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n, computes the zero case 3 = 3, and establishes the simplified successor equality using its IH. The verified implementation uses successor congruence via f_equal followed by exact IH. The requested step realization is matched.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0012:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and p and inducts on n; the zero case is computational associativity, and the successor case transports the IH through S. The verified implementation uses IH rewriting followed by reflexivity. The requested step realization is matched.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0012:pd02_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and p and inducts on n; the zero case is computational associativity, and the successor case transports the IH through S. The verified implementation uses IH rewriting followed by reflexivity. This is mathematically equivalent to the supplied argument, but its requested step realization is missed.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0012:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "With m fixed, the proof inducts on n, computes the three-successor zero equality, and transports the IH through the outer successor. The verified implementation uses IH rewriting followed by reflexivity. The requested step realization is matched.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    },
+    {
+      "key": "pilot_training_v1:step-0012:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "With m fixed, the proof inducts on n, computes the three-successor zero equality, and transports the IH through the outer successor. The verified implementation uses successor congruence via f_equal followed by exact IH. The requested step realization is matched.",
+      "reviewer": "assistant",
+      "human_reviewed": false
+    }
+  ]
+}
