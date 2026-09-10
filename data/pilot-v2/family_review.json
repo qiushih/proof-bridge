@@ -1,0 +1,34 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_SCOPE",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "theorem_id": "pd04",
+  "generation_family": "successor_reassociation_variants",
+  "split": "dev",
+  "public_duplicate_check": {
+    "pilot_train": [],
+    "pilot_dev": [],
+    "historical_development": []
+  },
+  "method": "Existing equivalence_key: definitional reduction, binder permutation, equality orientation; plus manual conservative family review.",
+  "public_schema_and_family_audit": {
+    "status": "PASS",
+    "examples": 32,
+    "theorems": 18,
+    "paired_theorems": 14,
+    "equivalence_classes": 12,
+    "cross_split_equivalents": 0,
+    "cross_split_families": 0,
+    "duplicate_statement_body_pairs": 0
+  },
+  "family_reason": "The premise is the right-successor addition identity from seed_018. The conclusion propagates it under a common left prefix; seed_028 is its p=0 specialization up to definitional reduction. Both seeds are already assigned to successor_reassociation_variants. All A/B, renamed, reversed and definitional variants must remain in this dev family.",
+  "training_family_exclusion": "There is no right-zero residual and the supplied equation is a composite right-successor identity, not a direct variable-substitution target. Existing train-family proof templates share induction mechanics, but the frozen family ledger separates right-zero and successor/reassociation identities.",
+  "consumed_holdout_family_exclusion": "The declared conditional_permutation family swaps addends under a common prefix. This theorem transports a successor identity without permuting addends. Exclusion is a manual structural check against the existing family definition, not an exact comparison with hidden statements.",
+  "holdout_content_read": false,
+  "diagnostic_content_read": false,
+  "limitations": [
+    "No exact duplicate scan against holdout or diagnostic contents was performed; those files were not opened.",
+    "This is an exposed development-family extension, not a new independent holdout or unseen mathematics.",
+    "Family relationships are conservative manual annotations, not a proof of all semantic separation."
+  ]
+}

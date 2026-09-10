@@ -1,0 +1,516 @@
+{
+  "status": "PASS",
+  "rocq_version": "9.2.0",
+  "dev_references_verified": 8,
+  "new_references_verified": 2,
+  "token_paths_and_eos_allowed": 8,
+  "new_negative_controls_failed": 6,
+  "records": [
+    {
+      "id": "pd01_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1907,
+        "source_sha256": "e7f62ebc85354f77984a5137004176ab0a51238f223aed09cab3805cf96a7e92",
+        "stdout": "proof_bridge_target : forall n : nat, n + 3 = 3 + n\n     : forall n : nat, n + 3 = 3 + n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 27,
+        "with_eos": 28
+      },
+      "serialization": {
+        "prompt_length": 547,
+        "target_length": 28,
+        "sequence_length": 575
+      }
+    },
+    {
+      "id": "pd01_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.114,
+        "source_sha256": "832993163b25d8c1c5355b9aae38f7b9f3304309caf7b511741247890a8fa9ca",
+        "stdout": "proof_bridge_target : forall n : nat, n + 3 = 3 + n\n     : forall n : nat, n + 3 = 3 + n\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 28,
+        "with_eos": 29
+      },
+      "serialization": {
+        "prompt_length": 558,
+        "target_length": 29,
+        "sequence_length": 587
+      }
+    },
+    {
+      "id": "pd02_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1123,
+        "source_sha256": "555b4afcff788dba4adff0913dc2051691778a87e708371594a07172df6f0048",
+        "stdout": "proof_bridge_target : forall n m p : nat, n + (m + p) = n + m + p\n     : forall n m p : nat, n + (m + p) = n + m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 29,
+        "with_eos": 30
+      },
+      "serialization": {
+        "prompt_length": 569,
+        "target_length": 30,
+        "sequence_length": 599
+      }
+    },
+    {
+      "id": "pd02_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1143,
+        "source_sha256": "aa5dc4dae7109bd025439789b90099aef85898a1403c305bab483bcdfb42276d",
+        "stdout": "proof_bridge_target : forall n m p : nat, n + (m + p) = n + m + p\n     : forall n m p : nat, n + (m + p) = n + m + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 30,
+        "with_eos": 31
+      },
+      "serialization": {
+        "prompt_length": 580,
+        "target_length": 31,
+        "sequence_length": 611
+      }
+    },
+    {
+      "id": "pd03_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1118,
+        "source_sha256": "89e8efd5037f0900a8e731fd3b4ae12e1e4873bc31a8588be4a7cb22c1479ae0",
+        "stdout": "proof_bridge_target : forall n m : nat, n + 3 + m = 3 + (n + m)\n     : forall n m : nat, n + 3 + m = 3 + (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 28,
+        "with_eos": 29
+      },
+      "serialization": {
+        "prompt_length": 583,
+        "target_length": 29,
+        "sequence_length": 612
+      }
+    },
+    {
+      "id": "pd03_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.112,
+        "source_sha256": "bc309a0a1402f48f4ddad622b577e0f0a9fe800363500f896b4909a8a337b783",
+        "stdout": "proof_bridge_target : forall n m : nat, n + 3 + m = 3 + (n + m)\n     : forall n m : nat, n + 3 + m = 3 + (n + m)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 29,
+        "with_eos": 30
+      },
+      "serialization": {
+        "prompt_length": 594,
+        "target_length": 30,
+        "sequence_length": 624
+      }
+    },
+    {
+      "id": "pd04_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1128,
+        "source_sha256": "9aa0a697b5220c8fa7d991cba6c9c0a750f8ce225441392b1916f90e15102f21",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + S p = S (m + p) -> n + m + S p = S (n + m + p)\n     : forall n m p : nat, m + S p = S (m + p) -> n + m + S p = S (n + m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 31,
+        "with_eos": 32
+      },
+      "serialization": {
+        "prompt_length": 636,
+        "target_length": 32,
+        "sequence_length": 668
+      }
+    },
+    {
+      "id": "pd04_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1139,
+        "source_sha256": "aa330e5854fec85d130c76d3b7dbb829d10655cc5f591fdef36ba64ff6f066e9",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + S p = S (m + p) -> n + m + S p = S (n + m + p)\n     : forall n m p : nat, m + S p = S (m + p) -> n + m + S p = S (n + m + p)\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 32,
+        "with_eos": 33
+      },
+      "serialization": {
+        "prompt_length": 631,
+        "target_length": 33,
+        "sequence_length": 664
+      }
+    }
+  ],
+  "step_vs_fidelity_contract_checks": [
+    {
+      "requested": "pd04_A",
+      "reference_body": "pd04_A",
+      "steps": {
+        "status": "MATCH",
+        "matched": true,
+        "actual_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "rewrite",
+            "IH",
+            "forward"
+          ],
+          [
+            2,
+            "reflexivity"
+          ]
+        ],
+        "reference_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "rewrite",
+            "IH",
+            "forward"
+          ],
+          [
+            2,
+            "reflexivity"
+          ]
+        ],
+        "method": "ordered branch/tactic trace; ignore local names and intros grouping; exact/apply same local equivalent; rewrite/ rewrite -> equivalent",
+        "limitation": "A step mismatch does not imply mathematical unfaithfulness. Matching an unverified script is not success."
+      },
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "reason": "Both verified bodies use the premise base and the same induction. Only the requested successor realization differs."
+    },
+    {
+      "requested": "pd04_A",
+      "reference_body": "pd04_B",
+      "steps": {
+        "status": "MISMATCH",
+        "matched": false,
+        "actual_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "f_equal"
+          ],
+          [
+            2,
+            "use",
+            "IH"
+          ]
+        ],
+        "reference_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "rewrite",
+            "IH",
+            "forward"
+          ],
+          [
+            2,
+            "reflexivity"
+          ]
+        ],
+        "method": "ordered branch/tactic trace; ignore local names and intros grouping; exact/apply same local equivalent; rewrite/ rewrite -> equivalent",
+        "limitation": "A step mismatch does not imply mathematical unfaithfulness. Matching an unverified script is not success."
+      },
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "reason": "Both verified bodies use the premise base and the same induction. Only the requested successor realization differs."
+    },
+    {
+      "requested": "pd04_B",
+      "reference_body": "pd04_A",
+      "steps": {
+        "status": "MISMATCH",
+        "matched": false,
+        "actual_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "rewrite",
+            "IH",
+            "forward"
+          ],
+          [
+            2,
+            "reflexivity"
+          ]
+        ],
+        "reference_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "f_equal"
+          ],
+          [
+            2,
+            "use",
+            "IH"
+          ]
+        ],
+        "method": "ordered branch/tactic trace; ignore local names and intros grouping; exact/apply same local equivalent; rewrite/ rewrite -> equivalent",
+        "limitation": "A step mismatch does not imply mathematical unfaithfulness. Matching an unverified script is not success."
+      },
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "reason": "Both verified bodies use the premise base and the same induction. Only the requested successor realization differs."
+    },
+    {
+      "requested": "pd04_B",
+      "reference_body": "pd04_B",
+      "steps": {
+        "status": "MATCH",
+        "matched": true,
+        "actual_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "f_equal"
+          ],
+          [
+            2,
+            "use",
+            "IH"
+          ]
+        ],
+        "reference_trace": [
+          [
+            0,
+            "induction",
+            0
+          ],
+          [
+            1,
+            "simpl"
+          ],
+          [
+            1,
+            "use",
+            "local:3"
+          ],
+          [
+            2,
+            "simpl"
+          ],
+          [
+            2,
+            "f_equal"
+          ],
+          [
+            2,
+            "use",
+            "IH"
+          ]
+        ],
+        "method": "ordered branch/tactic trace; ignore local names and intros grouping; exact/apply same local equivalent; rewrite/ rewrite -> equivalent",
+        "limitation": "A step mismatch does not imply mathematical unfaithfulness. Matching an unverified script is not success."
+      },
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "reason": "Both verified bodies use the premise base and the same induction. Only the requested successor realization differs."
+    }
+  ],
+  "activity": {
+    "model_generations": 0,
+    "training_updates": 0,
+    "training_examples_added": 0,
+    "dev_examples_added": 2,
+    "holdout_proof_files_opened": 0,
+    "diagnostic_examples_opened": 0
+  }
+}

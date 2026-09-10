@@ -1,0 +1,103 @@
+{
+  "schema_version": "pilot-dev-manifest-2.0",
+  "release_id": "pilot-v2-dev-extension-1",
+  "status": "FROZEN_DEV_EXTENSION_ONLY",
+  "frozen_at_utc": "2026-09-10T22:12:41.328352+00:00",
+  "builder_sha256": "5acbcd4c04c6c06cd0281694ad8285b42c29b710ade98c7c8e011af56989f549",
+  "source_files_sha256": {
+    "baseline/model.lock.json": "28133a0260c6df57d57ddee505e84d5194bed5735c2ca974ab1959ef5f6d98b7",
+    "constrained_v1/README.md": "d5e8d55f1446ed3a4e04bd5dfc1db927fd413b300687f8c34c8ee4e8d754fc0b",
+    "constrained_v1/__init__.py": "42ee17f14a23fecdcb060100305a327494170921dc07247c8179d3f4e75e3b3b",
+    "constrained_v1/experiment.py": "73519eda61d8e83d9faec7bf6f8ac591bdaa120bf36599e399273cf8dfe20a0f",
+    "constrained_v1/grammar.py": "ab39e207fedb8c9ae4cb16f7bb4fa026da376fa212267f8241c5da0daa331ed3",
+    "constrained_v1/plan.json": "c2e6e0d8707f86f4ef43323e7e282a529fd7e12bbaa7acdca367f9cc7b81ba06",
+    "constrained_v1/preflight.json": "8d5b81dc72699975605ff08c6e93516ca04820875a0144594868d4cbe283c4e4",
+    "constrained_v1/report.py": "6db3f1a800ade05b636e877cdb48ba1c415551bb4ab229ebb7ab479bed4f3006",
+    "constrained_v1/tokens.py": "21d79ebfe5d6cc22c2a33dad4b2ae6b0b5c2811e6afdf2c31dad2448a0b93df4",
+    "data/development/manifest.json": "45a8907950a55ab04e2da24b80d0d2d01aebbdd8472dd2ceb3c73ef3957b0bbb",
+    "data/development/pairs.jsonl": "cc931920ba043bd2fc00893ba9470ff59d977f823d2dc432d073ae283a3c2269",
+    "data/pilot-v1/dev.jsonl": "47c3da968761d11170c2037b5d24e731d5abcae6b13864ec4035818862e064e9",
+    "data/pilot-v1/split_manifest.json": "df128a0dd00515f1354f002ea1ef86d9a026559a027ee4fe29a5a0cf1a1a5ae8",
+    "data/pilot-v1/train.jsonl": "d70893cdf590e980ef176158d92b7ea4f363a7c51a4587e59e2fe85202eef6d7",
+    "environment.lock.json": "72ed3a2f55a140f00c4460b89cf8bd8f63202b0b89f6f376d85feeef0e03a149",
+    "pilot_v1/dataset.py": "a5658347ce3eac2d98f597c0262588563bdc598fbb9199a479f324be3c5376a6",
+    "pilot_v1/protocol.py": "1d9e9c8ee12eb77effbf5b8ec7260c65d9fe9482d98cdec3620b0dd8d43d565f",
+    "prompt_v2/README.md": "628f16cdee1e57cfdc1707d879782703a606e7135641dadd9aa7f7c6a37f93c0",
+    "prompt_v2/__init__.py": "4a17a67224fcd897113ab61673943bee07bf81631396ea66d0fff2b09a0186f3",
+    "prompt_v2/experiment.py": "cd5ac8bbd598a1f4e3132aa1bffad41d26e239c35ef29fae694faa3552695a03",
+    "prompt_v2/frozen.json": "d120bf013fb4f8732deca2ac2443a2869ec9560497dba507c4225fcc64246aa8",
+    "prompt_v2/plan.json": "2d4840408c8e9c25c9d06ce9949f3086b9d6fda0bad8f92e3d9372de53fe0d71",
+    "prompt_v2/protocol.py": "6eac21ddf2cfdd0ba702d0b3d33b22e160e6c78b9ecb46e0e2f4b0aa02e67c0f",
+    "prompt_v2/report.py": "3d32a9597a6ee129e023231dfe7929b437a828e6dc14cd97469723e79c36f338",
+    "prompt_v2/selected.json": "e2d136886bcd86b3fd953bd0f06c3cfd44f29c1365c56cc02a8148224224b154",
+    "scripts/seed_schema.py": "e4ebee8da7fee57630e399e129cd5e07ef55eb8a8a4eb017f22d4ab289fd7889",
+    "training_protocol_v1/TRAINING_PROTOCOL.md": "609958e7d4acee43e9a36027a54c914b1c8ec74e6c6118b4129efc6489b88c1e",
+    "training_protocol_v1/config.json": "5c851abdadc7aa8cac87a437a9dfe8ecc4edc4f4dc1e1e3b2da9a9f6650ba641",
+    "training_protocol_v1/data.py": "a9cd89a754e8e8a2c8c3ccf2525a216aed241d92963d35bf64bf3d4a92500f30",
+    "training_protocol_v1/scoring.py": "4a693e2284a16e48181eaddb403a35e6231c54af7e82bb820ed6211a929b0075",
+    "verifier.py": "2f71aabd2ebc9cf3dd6cd88af2bc1fa12be379788f7c42d3d22d31bf80c23688",
+    ".cache/baseline/model/config.json": "b1e58593cd31852f7da5c2fc31ddf6135b9c066c0fd9177a4bbe95717083adff",
+    ".cache/baseline/model/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    ".cache/baseline/model/tokenizer_config.json": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4",
+    ".cache/baseline/model/merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    ".cache/baseline/model/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "files_sha256": {
+    "additions.jsonl": "9c088c3d82c39497de1fea1b43d82cca23eaf10b2f9abede3f80070f390a2602",
+    "dev.jsonl": "d1744019a6a99f4bc380cc8ff581a786970424a1567615a65e36c02f0878548d",
+    "references/pd04_A.v": "9aa0a697b5220c8fa7d991cba6c9c0a750f8ce225441392b1916f90e15102f21",
+    "references/pd04_B.v": "aa330e5854fec85d130c76d3b7dbb829d10655cc5f591fdef36ba64ff6f066e9",
+    "verification_report.json": "fd76f1dbfaa8af98526b8d7bbe052d7a18db77e2edb0824cf93b420c94ac3916",
+    "family_review.json": "46b8369371358a901e594f94931c37161a9e0978da99721f3ff047b1a87881d5",
+    "README.md": "7bff27a5e188c19f81d6b7f9fc9e9a982191327f53d1e4122656aa3af6d5770b",
+    "VERIFICATION_REPORT.md": "3bf7ab52294c131fb610fd9838d68d28281cb9db3ec503b1ac2278929a245622"
+  },
+  "dev_example_ids": [
+    "pd01_A",
+    "pd01_B",
+    "pd02_A",
+    "pd02_B",
+    "pd03_A",
+    "pd03_B",
+    "pd04_A",
+    "pd04_B"
+  ],
+  "new_example_ids": [
+    "pd04_A",
+    "pd04_B"
+  ],
+  "theorem_ids": [
+    "pd01",
+    "pd02",
+    "pd03",
+    "pd04"
+  ],
+  "family_assignment": {
+    "successor_reassociation_variants": "dev"
+  },
+  "coverage": {
+    "computational_base_ih_rewrite": 3,
+    "computational_base_ih_congruence": 3,
+    "premise_base_ih_rewrite": 1,
+    "premise_base_ih_congruence": 1
+  },
+  "train": {
+    "source": "data/pilot-v1/train.jsonl",
+    "rows": 24,
+    "unchanged": true,
+    "sha256": "d70893cdf590e980ef176158d92b7ea4f363a7c51a4587e59e2fe85202eef6d7"
+  },
+  "original_dev": {
+    "source": "data/pilot-v1/dev.jsonl",
+    "rows": 6,
+    "sha256": "47c3da968761d11170c2037b5d24e731d5abcae6b13864ec4035818862e064e9",
+    "byte_prefix_preserved": true
+  },
+  "policy": {
+    "assignment_unit": "generation_family",
+    "training_on_dev_forbidden": true,
+    "checkpoint_selection": "No new selection rule or runner in this release. Frozen v1 scorer still requires its original six rows. A separately frozen v2 training/evaluation protocol is required before using eight rows for selection.",
+    "holdout": "No v2 holdout is created. The consumed v1 holdout remains historical; a fresh independent holdout must be sealed before a later training experiment.",
+    "scope": "Dataset extension only: no CUDA port, inference, training, prompt/decoder/verifier changes."
+  }
+}
