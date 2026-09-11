@@ -1,0 +1,238 @@
+{
+  "base": {
+    "original_six": {
+      "rows": 6,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 3,
+      "verified_requested_steps": 3,
+      "verified_faithful_requested_steps": 3,
+      "percentages": {
+        "verified": 100.0,
+        "verified_faithful": 100.0,
+        "requested_step_matches": 50.0,
+        "verified_requested_steps": 50.0,
+        "verified_faithful_requested_steps": 50.0
+      },
+      "failure_categories": {},
+      "theorem_pairs": {
+        "pd01": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        },
+        "pd02": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        },
+        "pd03": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 0,
+      "pair_count": 3,
+      "pair_success_percent": 0.0,
+      "mean_generation_seconds": 6.533409979155597,
+      "completion_tokens": 187,
+      "prompt_tokens": 3431
+    },
+    "new_two": {
+      "rows": 2,
+      "verified": 0,
+      "verified_faithful": 0,
+      "requested_step_matches": 0,
+      "verified_requested_steps": 0,
+      "verified_faithful_requested_steps": 0,
+      "percentages": {
+        "verified": 0.0,
+        "verified_faithful": 0.0,
+        "requested_step_matches": 0.0,
+        "verified_requested_steps": 0.0,
+        "verified_faithful_requested_steps": 0.0
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 2
+      },
+      "theorem_pairs": {
+        "pd04": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 0,
+      "pair_count": 1,
+      "pair_success_percent": 0.0,
+      "mean_generation_seconds": 5.490596312447451,
+      "completion_tokens": 48,
+      "prompt_tokens": 1267
+    },
+    "all_eight": {
+      "rows": 8,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 3,
+      "verified_requested_steps": 3,
+      "verified_faithful_requested_steps": 3,
+      "percentages": {
+        "verified": 75.0,
+        "verified_faithful": 75.0,
+        "requested_step_matches": 37.5,
+        "verified_requested_steps": 37.5,
+        "verified_faithful_requested_steps": 37.5
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 2
+      },
+      "theorem_pairs": {
+        "pd01": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        },
+        "pd02": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        },
+        "pd03": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": false
+        },
+        "pd04": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 0,
+      "pair_count": 4,
+      "pair_success_percent": 0.0,
+      "mean_generation_seconds": 6.272706562478561,
+      "completion_tokens": 235,
+      "prompt_tokens": 4698
+    }
+  },
+  "step18": {
+    "original_six": {
+      "rows": 6,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 6,
+      "verified_requested_steps": 6,
+      "verified_faithful_requested_steps": 6,
+      "percentages": {
+        "verified": 100.0,
+        "verified_faithful": 100.0,
+        "requested_step_matches": 100.0,
+        "verified_requested_steps": 100.0,
+        "verified_faithful_requested_steps": 100.0
+      },
+      "failure_categories": {},
+      "theorem_pairs": {
+        "pd01": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "pd02": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "pd03": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        }
+      },
+      "successful_pairs": 3,
+      "pair_count": 3,
+      "pair_success_percent": 100.0,
+      "mean_generation_seconds": 2.672541083341154,
+      "completion_tokens": 177,
+      "prompt_tokens": 3431
+    },
+    "new_two": {
+      "rows": 2,
+      "verified": 0,
+      "verified_faithful": 0,
+      "requested_step_matches": 0,
+      "verified_requested_steps": 0,
+      "verified_faithful_requested_steps": 0,
+      "percentages": {
+        "verified": 0.0,
+        "verified_faithful": 0.0,
+        "requested_step_matches": 0.0,
+        "verified_requested_steps": 0.0,
+        "verified_faithful_requested_steps": 0.0
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 2
+      },
+      "theorem_pairs": {
+        "pd04": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 0,
+      "pair_count": 1,
+      "pair_success_percent": 0.0,
+      "mean_generation_seconds": 6.595627979026176,
+      "completion_tokens": 63,
+      "prompt_tokens": 1267
+    },
+    "all_eight": {
+      "rows": 8,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 6,
+      "verified_requested_steps": 6,
+      "verified_faithful_requested_steps": 6,
+      "percentages": {
+        "verified": 75.0,
+        "verified_faithful": 75.0,
+        "requested_step_matches": 75.0,
+        "verified_requested_steps": 75.0,
+        "verified_faithful_requested_steps": 75.0
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 2
+      },
+      "theorem_pairs": {
+        "pd01": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "pd02": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "pd03": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "pd04": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 3,
+      "pair_count": 4,
+      "pair_success_percent": 75.0,
+      "mean_generation_seconds": 3.6533128072624095,
+      "completion_tokens": 240,
+      "prompt_tokens": 4698
+    }
+  }
+}

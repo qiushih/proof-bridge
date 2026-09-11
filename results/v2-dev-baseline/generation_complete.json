@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "new_attempts": 4,
+  "reused_records": 12,
+  "finished_at_utc": "2026-09-10T22:29:53.479844+00:00",
+  "optimizer_updates": 0,
+  "protocol_sha256": "55e82dcc33b2ccd5d9f5033f56eabbcb76a052e9676fca2d8f234ef4654e7858",
+  "files_sha256": {
+    "base/attempts.jsonl": "79fe986ab83099c0d8fc6cf471722e042a8062c64161dccb4ff219cc4b5814fb",
+    "base/completion.json": "a75dc8f487bbda6d51fb3f883e1ca054a48859256118c079ea185489ff30dd29",
+    "base/manifest.json": "0d590ece782a5320a080efc497e8bbb0b1dd736ec3d1963d511f07d7eb53d481",
+    "base/raw_generations.jsonl": "6c27ad19345126c32244e00b0077dff08f33ffe31bb9be6437758d49efc748d4",
+    "step18/attempts.jsonl": "9a825e34a7165639ef978a2b68c0b38b017532109c789f0db12eea59241536b1",
+    "step18/completion.json": "ee613270a3b170260a86c525feb2553dfda1c927add593c4baf5abc65d770ad4",
+    "step18/manifest.json": "9800fdf768365cb2634f2b91172f5c0de23c0dbad668576e879e7bd6523e749d",
+    "step18/raw_generations.jsonl": "d1d39c96ecbd5f68a892ffecfce0e3c9153ffe6003e8545230b7de8d8af25ea4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-09-10T22:32:11.739880+00:00",
+  "files_sha256": {
+    "protocol.json": "55e82dcc33b2ccd5d9f5033f56eabbcb76a052e9676fca2d8f234ef4654e7858",
+    "run_started.json": "e936326d787c165dac476db5340cab73cccdb64d11d1f04496b85a0092b9c1a5",
+    "generation_complete.json": "7ec52a84aad175e5858802e344a97ccc0400df7e75d0fbeb66a77a0aa85b14f7",
+    "new_reviews.json": "cb3e6ca0968037921719a74fc25e8bac181e4df9cc333d655d452e14b15eab23",
+    "assessed_results.jsonl": "4ff490c70a68e5f46abd30340d7f5cd3f52253750edd7ff1904581f7fad94dd8",
+    "summary.json": "2d4b13b96ccbbba62406fa17103f8f5cec0fa55ea084d06727452f1df8fde05e",
+    "verification_replay.json": "3e479fd920d9a05e698fa463d8741edc15f91eec0424040046d827ba7fde93f3",
+    "V2_DEV_BASELINE.md": "c3ff8ed17d3bd7d5db26d5a18dc7e2b010d0bac6471c5e895e1150c7f987dcc0"
+  },
+  "training_updates": 0
+}

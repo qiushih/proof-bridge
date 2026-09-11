@@ -1,0 +1,34 @@
+[
+  {
+    "key": "v2_dev_baseline:base:pd04_A",
+    "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+    "reviewer": "assistant",
+    "human_reviewed": false,
+    "status": "NOT_ESTABLISHED",
+    "reason": "Rocq rejects rewrite H before induction: the whole goal has (n + m) + S p, so the required subterm m + S p is not available there. The supplied argument instead uses H after simplification in the zero branch. The later induction/rewrite-IH outline resembles argument A but cannot establish fidelity for a rejected proof; its base branch also substitutes reflexivity for the requested premise use."
+  },
+  {
+    "key": "v2_dev_baseline:base:pd04_B",
+    "proof_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+    "reviewer": "assistant",
+    "human_reviewed": false,
+    "status": "NOT_ESTABLISHED",
+    "reason": "The output attempts direct rewriting with H and reflexivity, omitting the supplied induction and successor-congruence argument. Rocq rejects rewrite H because the needed subterm m + S p is absent in the initial goal. This is an attempted different strategy and is not a verified alternative proof. Mathematical fidelity is not established."
+  },
+  {
+    "key": "v2_dev_baseline:step18:pd04_A",
+    "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+    "reviewer": "assistant",
+    "human_reviewed": false,
+    "status": "NOT_ESTABLISHED",
+    "reason": "The induction and successor-branch rewrite match the broad argument A outline, but the zero branch uses reflexivity instead of H. After simplification the goal is m + S p = S (m + p), which requires the premise; Rocq rejects reflexivity. Mathematical fidelity is not established despite the matching successor-branch outline."
+  },
+  {
+    "key": "v2_dev_baseline:step18:pd04_B",
+    "proof_body_sha256": "1016023759d2e23ab5e932aa1dc2fc4b8bd51a23c96952b8c7aee5a7835121fd",
+    "reviewer": "assistant",
+    "human_reviewed": false,
+    "status": "NOT_ESTABLISHED",
+    "reason": "The model starts the requested induction but again replaces the essential premise use in the zero branch with reflexivity, where Rocq rejects it. The unexecuted successor-branch text also uses rewrite IH followed by exact H instead of the requested congruence and exact IH. Equivalent successful implementations could be faithful despite a step mismatch, but this rejected proof establishes neither mathematical fidelity nor requested-step success."
+  }
+]

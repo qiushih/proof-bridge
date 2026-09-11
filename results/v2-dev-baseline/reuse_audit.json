@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "reused_records": 12,
+  "records": [
+    {
+      "model_key": "base",
+      "example_id": "pd01_A",
+      "source_key": "pretraining_v1:pd01:argument_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "base",
+      "example_id": "pd01_B",
+      "source_key": "pretraining_v1:pd01:argument_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "base",
+      "example_id": "pd02_A",
+      "source_key": "pretraining_v1:pd02:argument_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "base",
+      "example_id": "pd02_B",
+      "source_key": "pretraining_v1:pd02:argument_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "base",
+      "example_id": "pd03_A",
+      "source_key": "pretraining_v1:pd03:argument_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "base",
+      "example_id": "pd03_B",
+      "source_key": "pretraining_v1:pd03:argument_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd01_A",
+      "source_key": "pilot_training_v1:step-0018:pd01_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd01_B",
+      "source_key": "pilot_training_v1:step-0018:pd01_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd02_A",
+      "source_key": "pilot_training_v1:step-0018:pd02_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd02_B",
+      "source_key": "pilot_training_v1:step-0018:pd02_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd03_A",
+      "source_key": "pilot_training_v1:step-0018:pd03_A",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    },
+    {
+      "model_key": "step18",
+      "example_id": "pd03_B",
+      "source_key": "pilot_training_v1:step-0018:pd03_B",
+      "prompt_messages_rendering_tokens_identical": true,
+      "model_and_settings_identical": true,
+      "original_review_reused": true
+    }
+  ]
+}
