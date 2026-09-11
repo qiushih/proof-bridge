@@ -1,0 +1,181 @@
+{
+  "protocol_id": "proofbridge-training-protocol-v2",
+  "model_id": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "model_revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+  "training": {
+    "method": "causal_LM_SFT_with_unmerged_LoRA",
+    "implementation": "training_protocol_v1.adaptation.LoRALinear",
+    "device": "cpu",
+    "dtype": "float32",
+    "attention_implementation": "eager",
+    "quantization": null,
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "deterministic_algorithms": true,
+    "lora": {
+      "rank": 8,
+      "alpha": 16,
+      "dropout": 0.0,
+      "target_modules": [
+        "self_attn.q_proj",
+        "self_attn.v_proj"
+      ],
+      "layers": 24,
+      "expected_wrapped_modules": 48,
+      "expected_trainable_parameters": 540672,
+      "bias": "frozen",
+      "A_initialization": "kaiming_uniform_a_sqrt_5",
+      "B_initialization": "zeros",
+      "freeze_base": true,
+      "merge_weights": false
+    },
+    "loss": "per_example_mean_cross_entropy_over_target_proof_and_one_EOS_only",
+    "loss_implementation": "training_protocol_v1.data.completion_loss",
+    "max_sequence_length": 768,
+    "packing": false,
+    "truncation": "error",
+    "padding": "right_if_needed",
+    "pad_token": "tokenizer.eos_token_id_with_attention_0_and_label_minus_100",
+    "gradient_checkpointing": true,
+    "gradient_checkpointing_use_reentrant": false,
+    "use_cache_during_training": false,
+    "optimizer": "torch.optim.AdamW",
+    "learning_rate": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.0,
+    "foreach": false,
+    "fused": false,
+    "scheduler": "constant",
+    "warmup_steps": 0,
+    "max_grad_norm": 1.0,
+    "micro_batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 4,
+    "dataloader_workers": 0,
+    "drop_last": false,
+    "max_optimizer_steps": 60,
+    "max_micro_batches": 240,
+    "seed": 1729,
+    "python_seed": 1729,
+    "numpy_seed": 1729,
+    "torch_seed": 1729,
+    "checkpoint_every_optimizer_steps": 6,
+    "checkpoint_steps": [
+      0,
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60
+    ],
+    "checkpoint_contents": [
+      "LoRA_A_B_only",
+      "optimizer_state",
+      "scheduler_state",
+      "RNG_states",
+      "step_epoch",
+      "data_order",
+      "protocol_hashes"
+    ],
+    "automatic_retries": 0,
+    "early_stopping": false,
+    "shuffle": "per-arm sorted IDs; random.Random(1729 + cycle_index); concatenate cycles then take 240 IDs"
+  },
+  "arms": {
+    "control": {
+      "rows": 24,
+      "path": "data/pilot-v2-training/train_control.jsonl"
+    },
+    "intervention": {
+      "rows": 26,
+      "path": "data/pilot-v2-training/train_intervention.jsonl"
+    }
+  },
+  "data": {
+    "train_addition_ids": [
+      "ptv201_A",
+      "ptv201_B"
+    ],
+    "dev_path": "data/pilot-v2/dev.jsonl",
+    "dev_ids": [
+      "pd01_A",
+      "pd01_B",
+      "pd02_A",
+      "pd02_B",
+      "pd03_A",
+      "pd03_B",
+      "pd04_A",
+      "pd04_B"
+    ],
+    "holdout_rows": 6,
+    "holdout_theorems": 3,
+    "holdout_family": "conditional_repeated_sum_contraction",
+    "holdout_policy": "New references reviewed and verified before seal; thereafter bytes may be hashed only until both arms and selections complete. Old holdout/diagnostic contents are not opened."
+  },
+  "selection": {
+    "allowed_rows": [
+      "pd01_A",
+      "pd01_B",
+      "pd02_A",
+      "pd02_B",
+      "pd03_A",
+      "pd03_B",
+      "pd04_A",
+      "pd04_B"
+    ],
+    "conditions": [
+      "argument_A",
+      "argument_B"
+    ],
+    "rank_lexicographic_max": [
+      "verified_and_mathematically_faithful_count",
+      "verified_and_requested_steps_count",
+      "verified_count",
+      "negative_optimizer_step"
+    ],
+    "baseline_checkpoint_step": 0,
+    "manual_review": "hash-bound assistant review of mathematical argument for every candidate checkpoint; human_reviewed false unless a human actually reviews",
+    "failed_or_unresolved_review_counts_as_faithful": false,
+    "exclude_from_selection": [
+      "theorem_only controls",
+      "training metrics",
+      "historical development and diagnostic scores",
+      "holdout"
+    ],
+    "tie_policy": "earliest optimizer step, including step 0; no dev-loss or latency tie-break",
+    "implementation": "training_protocol_v2.scoring.selection_score",
+    "historical_v1_unchanged": true
+  },
+  "evaluation": {
+    "prompt": "frozen Prompt v2",
+    "decoder": "constrained_v1.experiment.generate",
+    "generation_config_source": "baseline/config.json",
+    "max_new_tokens": 256,
+    "attempts_per_row": 1,
+    "repair_attempts": 0,
+    "verifier": "verifier.verify",
+    "timeout_seconds": 10.0,
+    "new_dev_generations_after_training": 160,
+    "step_zero": "reuse eight base outputs in results/v2-dev-baseline",
+    "future_holdout_generations": 18,
+    "future_holdout_models": [
+      "base",
+      "selected_control",
+      "selected_intervention"
+    ]
+  },
+  "current_task": {
+    "training_updates": 0,
+    "model_generations": 0,
+    "model_weight_loads": 0
+  }
+}

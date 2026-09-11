@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-09-11T17:40:57.570202+00:00",
+  "model_identifier": "Mac14,2",
+  "chip": "Apple M2",
+  "memory": "8 GB",
+  "cpu_cores": 8,
+  "architecture": "arm64",
+  "os": "15.7.3",
+  "os_build": "24G419",
+  "python": "3.13.7",
+  "packages": {
+    "torch": "2.9.0",
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.3.4"
+  },
+  "training_device": "cpu",
+  "training_dtype": "float32",
+  "device_serial_identifiers_recorded": false
+}

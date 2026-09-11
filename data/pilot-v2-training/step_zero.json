@@ -1,0 +1,22 @@
+{
+  "source": "results/v2-dev-baseline/assessed_results.jsonl",
+  "source_sha256": "4ff490c70a68e5f46abd30340d7f5cd3f52253750edd7ff1904581f7fad94dd8",
+  "source_keys": [
+    "pretraining_v1:pd01:argument_A",
+    "pretraining_v1:pd01:argument_B",
+    "pretraining_v1:pd02:argument_A",
+    "pretraining_v1:pd02:argument_B",
+    "pretraining_v1:pd03:argument_A",
+    "pretraining_v1:pd03:argument_B",
+    "v2_dev_baseline:base:pd04_A",
+    "v2_dev_baseline:base:pd04_B"
+  ],
+  "selection_score": [
+    6,
+    3,
+    6,
+    0
+  ],
+  "new_generations": 0,
+  "v1_step18_is_not_a_new_arm_checkpoint": true
+}

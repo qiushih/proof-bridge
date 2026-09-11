@@ -1,0 +1,32 @@
+{
+  "status": "PASS_UNDER_DOCUMENTED_MANUAL_LEDGER",
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "allocation": {
+    "equality_transport": "train",
+    "right_zero_variants": "train",
+    "successor_reassociation_variants": "dev",
+    "conditional_repeated_sum_contraction": "holdout"
+  },
+  "construction_audit": {
+    "status": "PASS",
+    "rows": 40,
+    "theorems": 22,
+    "equivalence_classes": 16,
+    "cross_split_equivalents": 0,
+    "cross_split_families": 0,
+    "duplicate_statement_body_pairs": 0
+  },
+  "new_public_duplicates": 0,
+  "comparison_rows": 62,
+  "equivalence_method": "Existing definitional reduction, binder permutation and equality orientation plus manual family review.",
+  "training_addition_reason": "The right-zero residual is inside a larger sum with a variable suffix, unlike the original premise-base rows ending in + 0. Induction follows its recursive left operand; the base premise and IH are useful in the script. Substituting the premise alone leaves a right-zero obligation. This remains one existing training family, related to historical seed_021, not an independent new family.",
+  "holdout_family_reason": "A supplied repeated-sum value is contracted after propagation under a prefix. Keep every repeated-context, association, orientation and A/B variant together. No explicit right-zero law, successor identity or permutation premise is used. This is a newly allocated conditional contraction group under the existing manually structural family convention.",
+  "limitations": [
+    "Shared prefix-induction templates cross splits intentionally.",
+    "Associativity connects the new contraction family to dev mathematics. This is not mathematical independence or unseen algebra.",
+    "Fresh holdout pairs are correlated members of one family, including repeated-context and association siblings.",
+    "Old holdout and diagnostic files were not opened; exact duplicate exclusion against their hidden statements is untested.",
+    "Family assignments and English alignment are assistant judgments, not independent human review."
+  ]
+}

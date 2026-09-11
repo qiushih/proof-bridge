@@ -1,0 +1,699 @@
+{
+  "reference_evidence": [
+    {
+      "id": "phv201_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1101,
+        "source_sha256": "65fb2ed1cfc3fa56bc6316b3b28e04788ee344d4eb11f0afe4e5f71ad3b12597",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + m = p -> n + m + m = n + p\n     : forall n m p : nat, m + m = p -> n + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 31,
+        "with_eos": 32
+      },
+      "serialization": {
+        "prompt_length": 575,
+        "target_length": 32,
+        "sequence_length": 607
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "bea28c5caa4eb3588be5c1e95a50be6fd3786be9998250e25ad198be65d9984f",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1099,
+            "source_sha256": "543d1b98570d111074608b2733cf2ffe5c18f00588ef755c9775e8bc7748a128",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_4, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 = pb_local_2\npb_local_5 : pb_local_4 + pb_local_1 + pb_local_1 = pb_local_4 + pb_local_2\nUnable to unify \"S (pb_local_4 + pb_local_2)\" with\n \"S (pb_local_4 + pb_local_1 + pb_local_1)\".\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "aec79010fb1ed1efa9e8bac36a8aff4dd54a89feacd51805a19adc1843cf9ec5",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1098,
+            "source_sha256": "84547ed35a84dca0b06f7abc4f7f5bb41fca431d0a9efd1f9a58915d5e10aa30",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1094,
+            "source_sha256": "9f4597c856c0a6e740d10c5080b13b0ecec8a8bbc274a88e9d15520a655e6991",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + pb_local_1\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1095,
+            "source_sha256": "5dc9fb4c9fcb1a16c94611d5ec24135def3312d1ede4cb32b74cb962600c5a08",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phv201_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1111,
+        "source_sha256": "cc635db881c8398f450462ddf6cdce23d6d5bfc1f344b6458146381b1003c708",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + m = p -> n + m + m = n + p\n     : forall n m p : nat, m + m = p -> n + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 32,
+        "with_eos": 33
+      },
+      "serialization": {
+        "prompt_length": 579,
+        "target_length": 33,
+        "sequence_length": 612
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "b949ae5bc1cb2489aaa14cdbfed319865cec344ba812661937ce4ba72ab974e7",
+          "verification": {
+            "status": "FAIL",
+            "category": "INCOMPLETE_PROOF",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1089,
+            "source_sha256": "094f1fdca6f140581f4fe01934f2d041a7a7ee3d178352f810301e57a86d17b1",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "80ab7645d52749e4b398263d74f222ed6347e5ead11c10e32223db2017f9ffde",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.109,
+            "source_sha256": "20ec25d40921dea28061471778a56b2deed1a654535fddeb4ca58f65b76000d2",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "7e70b197cf3ba3ef9a193f65edd9cd98b904b2bc2055e6dce282cedcda54c356",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1098,
+            "source_sha256": "94814f1a8aba538e3ae442de4bc9a3d16d90f9370febf7ff1b39c871f6383b30",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + pb_local_1\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1088,
+            "source_sha256": "5dc9fb4c9fcb1a16c94611d5ec24135def3312d1ede4cb32b74cb962600c5a08",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phv202_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1144,
+        "source_sha256": "a0c843e1f521e75ae371fdb800bd18765211856ff325dea7ef02385a3971ca85",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 31,
+        "with_eos": 32
+      },
+      "serialization": {
+        "prompt_length": 598,
+        "target_length": 32,
+        "sequence_length": 630
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "bea28c5caa4eb3588be5c1e95a50be6fd3786be9998250e25ad198be65d9984f",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1343,
+            "source_sha256": "2cb3c6ceee4516ddd7d90532488155d22530f32886f9f91371b3b23632710a4b",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_4, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + (pb_local_1 + pb_local_1) = pb_local_2\npb_local_5 :\n  pb_local_4 + pb_local_1 + (pb_local_1 + pb_local_1) =\n  pb_local_4 + pb_local_2\nUnable to unify \"S (pb_local_4 + pb_local_2)\" with\n \"S (pb_local_4 + pb_local_1 + (pb_local_1 + pb_local_1))\".\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "aec79010fb1ed1efa9e8bac36a8aff4dd54a89feacd51805a19adc1843cf9ec5",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1315,
+            "source_sha256": "7eccc3c43609f29da05c0224247c6965816454b5e2344eb84b8279d6b1179bc9",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1277,
+            "source_sha256": "14f06aa21757488bc4db9c95b315fef9fee16aee5e37763a58a6c3f3775bbc29",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + (pb_local_1 + pb_local_1) = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + (pb_local_1 + pb_local_1)\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1199,
+            "source_sha256": "5671a8afcb409cd75487f6548c4cd49b6444be269c5dc2268bb45f65a89ccd16",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + (pb_local_1 + pb_local_1)\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phv202_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1152,
+        "source_sha256": "8fdf8ce42cb19418792f2d0c2d9ccefc4837519af68d5424ef2f7699d430e95b",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 32,
+        "with_eos": 33
+      },
+      "serialization": {
+        "prompt_length": 602,
+        "target_length": 33,
+        "sequence_length": 635
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "b949ae5bc1cb2489aaa14cdbfed319865cec344ba812661937ce4ba72ab974e7",
+          "verification": {
+            "status": "FAIL",
+            "category": "INCOMPLETE_PROOF",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1111,
+            "source_sha256": "4fa330790cdd54a27de4be06b020c1befac00198b9014089a3bdf4c02c60885a",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "80ab7645d52749e4b398263d74f222ed6347e5ead11c10e32223db2017f9ffde",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1095,
+            "source_sha256": "75451e3d9a37cdd311a6fa82d11541a20e49a6189705b5b93ec2ee6196b6a38b",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "7e70b197cf3ba3ef9a193f65edd9cd98b904b2bc2055e6dce282cedcda54c356",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1097,
+            "source_sha256": "d947b68c20382a92ab3723dc500b774e0156b1146b7eb9af8d17e25b5563d567",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + (pb_local_1 + pb_local_1) = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + (pb_local_1 + pb_local_1)\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1093,
+            "source_sha256": "5671a8afcb409cd75487f6548c4cd49b6444be269c5dc2268bb45f65a89ccd16",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + (pb_local_1 + pb_local_1)\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phv203_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1129,
+        "source_sha256": "4f38c0ec707d3761c604d8dc4940fbb0415d6c67349c3774d23c32331e2844f4",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 31,
+        "with_eos": 32
+      },
+      "serialization": {
+        "prompt_length": 596,
+        "target_length": 32,
+        "sequence_length": 628
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "bea28c5caa4eb3588be5c1e95a50be6fd3786be9998250e25ad198be65d9984f",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1103,
+            "source_sha256": "4c3db3e325da9378cebe0e7f002f73f0f7e73c5bc8a9f610bcb70f75696a39a6",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 11, characters 0-11:\nError:\nIn environment\npb_local_4, pb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 + pb_local_1 = pb_local_2\npb_local_5 :\n  pb_local_4 + pb_local_1 + pb_local_1 + pb_local_1 = pb_local_4 + pb_local_2\nUnable to unify \"S (pb_local_4 + pb_local_2)\" with\n \"S (pb_local_4 + pb_local_1 + pb_local_1 + pb_local_1)\".\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "aec79010fb1ed1efa9e8bac36a8aff4dd54a89feacd51805a19adc1843cf9ec5",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1202,
+            "source_sha256": "42fdc46edfc3b793627b0e9eb920f7f98a05538198297497fd3c759f81be36ea",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1319,
+            "source_sha256": "5e5b0f2b6e25c2d4eb2d2008a11a292f8730b93158c580d612bf6c7e6b25cd73",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 + pb_local_1 = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + pb_local_1 + pb_local_1\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1169,
+            "source_sha256": "977e6cd936fa062dc9e1850c53ecd7fdfbc45b9018cc900626fbae635a20fcbf",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phv203_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1144,
+        "source_sha256": "5cb2a8df77803437a0da880972205d2b43f630555fc5d67e563d39f85557aef3",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      },
+      "decoder": {
+        "all_tokens_and_eos_allowed": true,
+        "body_tokens": 32,
+        "with_eos": 33
+      },
+      "serialization": {
+        "prompt_length": 600,
+        "target_length": 33,
+        "sequence_length": 633
+      },
+      "target_only_mask_valid": true,
+      "negative_controls": [
+        {
+          "ablation": "remove_ih_use",
+          "mutated_body_sha256": "b949ae5bc1cb2489aaa14cdbfed319865cec344ba812661937ce4ba72ab974e7",
+          "verification": {
+            "status": "FAIL",
+            "category": "INCOMPLETE_PROOF",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1092,
+            "source_sha256": "a981543a48498214755c71af7fae40e8d642fe518a0e3759c41466754d43c16f",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 12, characters 0-4:\nError:  (in proof proof_bridge_target): Attempt to save an incomplete proof\n(there are remaining open goals).\n\n"
+          }
+        },
+        {
+          "ablation": "remove_premise_use",
+          "mutated_body_sha256": "80ab7645d52749e4b398263d74f222ed6347e5ead11c10e32223db2017f9ffde",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1094,
+            "source_sha256": "6ff97770fda94429fdb076deb95ecee4216c42f7fffd8011ac87c263a44440c1",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-1:\nError: [Focus] Wrong bullet -: Current bullet - is not finished.\n\n"
+          }
+        },
+        {
+          "ablation": "replace_base_premise_with_reflexivity",
+          "mutated_body_sha256": "7e70b197cf3ba3ef9a193f65edd9cd98b904b2bc2055e6dce282cedcda54c356",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1085,
+            "source_sha256": "e72b578e2b0d02d1646d005d233d946bef454cec803f4e09b04f81585f406f72",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 + pb_local_1 = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + pb_local_1 + pb_local_1\".\n\n"
+          }
+        },
+        {
+          "ablation": "direct_substitution_without_induction",
+          "mutated_body_sha256": "95db4fae803f8a1fd877ed48abc50f8965f6e87cec697ce786b85c4be1689cf4",
+          "verification": {
+            "status": "FAIL",
+            "category": "PROOF_ERROR",
+            "message": "Rocq rejected the candidate.",
+            "stage": "rocq",
+            "compiler_version": "9.2.0",
+            "kernel_checked": false,
+            "assumptions_checked": false,
+            "elapsed_seconds": 0.1082,
+            "source_sha256": "977e6cd936fa062dc9e1850c53ecd7fdfbc45b9018cc900626fbae635a20fcbf",
+            "stdout": "",
+            "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+          }
+        }
+      ]
+    }
+  ],
+  "step_vs_fidelity_reviews": [
+    {
+      "requested": "phv201_A",
+      "supplied_reference": "phv201_A",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv201_A",
+      "supplied_reference": "phv201_B",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv201_B",
+      "supplied_reference": "phv201_A",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv201_B",
+      "supplied_reference": "phv201_B",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv202_A",
+      "supplied_reference": "phv202_A",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv202_A",
+      "supplied_reference": "phv202_B",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv202_B",
+      "supplied_reference": "phv202_A",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv202_B",
+      "supplied_reference": "phv202_B",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv203_A",
+      "supplied_reference": "phv203_A",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv203_A",
+      "supplied_reference": "phv203_B",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv203_B",
+      "supplied_reference": "phv203_A",
+      "requested_steps": "MISMATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    },
+    {
+      "requested": "phv203_B",
+      "supplied_reference": "phv203_B",
+      "requested_steps": "MATCH",
+      "mathematical_fidelity": "FAITHFUL",
+      "reviewer": "assistant",
+      "human_reviewed": false,
+      "reason": "Both references use the same premise-base induction; rewrite and congruence are equivalent valid successor realizations."
+    }
+  ],
+  "constructed_after_design": true,
+  "reviewer": "assistant",
+  "human_reviewed": false
+}

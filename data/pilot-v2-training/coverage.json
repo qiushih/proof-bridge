@@ -1,0 +1,94 @@
+{
+  "control": {
+    "rows": 24,
+    "theorems": 14,
+    "families": {
+      "equality_transport": 10,
+      "right_zero_variants": 14
+    },
+    "equivalence_classes": 8,
+    "patterns": {
+      "forward_rewrite": 10,
+      "reverse_rewrite": 7,
+      "rewrite_after_simpl": 9,
+      "rewrite_before_simpl": 5,
+      "ih_via_rewrite": 7,
+      "ih_via_congruence": 7,
+      "premise_in_base_case": 8,
+      "premise_and_induction": 8
+    },
+    "induction_matrix": {
+      "computation/rewrite": 3,
+      "computation/congruence": 3,
+      "premise/rewrite": 4,
+      "premise/congruence": 4
+    }
+  },
+  "intervention": {
+    "rows": 26,
+    "theorems": 15,
+    "families": {
+      "equality_transport": 10,
+      "right_zero_variants": 16
+    },
+    "equivalence_classes": 9,
+    "patterns": {
+      "forward_rewrite": 11,
+      "reverse_rewrite": 7,
+      "rewrite_after_simpl": 10,
+      "rewrite_before_simpl": 5,
+      "ih_via_rewrite": 8,
+      "ih_via_congruence": 8,
+      "premise_in_base_case": 10,
+      "premise_and_induction": 10
+    },
+    "induction_matrix": {
+      "computation/rewrite": 3,
+      "computation/congruence": 3,
+      "premise/rewrite": 5,
+      "premise/congruence": 5
+    }
+  },
+  "dev": {
+    "rows": 8,
+    "theorems": 4,
+    "families": {
+      "successor_reassociation_variants": 8
+    },
+    "equivalence_classes": 4,
+    "patterns": {
+      "forward_rewrite": 4,
+      "rewrite_after_simpl": 4,
+      "ih_via_rewrite": 4,
+      "ih_via_congruence": 4,
+      "premise_in_base_case": 2,
+      "premise_and_induction": 2
+    },
+    "induction_matrix": {
+      "computation/rewrite": 3,
+      "computation/congruence": 3,
+      "premise/rewrite": 1,
+      "premise/congruence": 1
+    }
+  },
+  "holdout": {
+    "rows": 6,
+    "theorems": 3,
+    "families": {
+      "conditional_repeated_sum_contraction": 6
+    },
+    "equivalence_classes": 3,
+    "patterns": {
+      "forward_rewrite": 3,
+      "rewrite_after_simpl": 3,
+      "premise_in_base_case": 6,
+      "ih_via_rewrite": 3,
+      "premise_and_induction": 6,
+      "ih_via_congruence": 3
+    },
+    "induction_matrix": {
+      "premise/rewrite": 3,
+      "premise/congruence": 3
+    }
+  }
+}

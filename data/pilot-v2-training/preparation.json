@@ -1,0 +1,14 @@
+{
+  "prepared_at_utc": "2026-09-11T17:48:15.733669+00:00",
+  "design_sha256": "bdaa5bcd1a59458658b1ce1fa69af7fc027c5ab641435c52ea3bd8de2e75c4fd",
+  "draft_created_at_utc": "2026-09-11T17:41:29.850184+00:00",
+  "draft_sha256": "0e05bf81a0378214626d23babcb1b903bb1599e8fbc632b128bc23cf0183554b",
+  "construction_holdout_content_review": "assistant review and automated QA before sealing only",
+  "model_generations": 0,
+  "model_weight_loads": 0,
+  "optimizer_updates": 0,
+  "old_holdout_content_reads": 0,
+  "diagnostic_content_reads": 0,
+  "command": "python -B -m training_protocol_v2.preparation prepare --output <fresh-output> --holdout-draft <unsealed-draft>",
+  "post_seal_reproduction": "check; optionally --reverify-public; never reconstruct from the sealed holdout"
+}

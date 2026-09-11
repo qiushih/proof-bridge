@@ -1,0 +1,15 @@
+{
+  "status": "PRECOMMITTED_BEFORE_FRESH_HOLDOUT_CONSTRUCTION",
+  "precommitted_at_utc": "2026-09-11T17:40:57.586978+00:00",
+  "files_sha256": {
+    "V2_TRAINING_PROTOCOL.md": "2d432acbca523113d4dfcf9d1f14414fde2ae034c753eb81da399556c824ebef",
+    "config.json": "5c677a89f126cb71d9dcf5b8214f26a8b778f92d5876e6d926037064d2fcb274",
+    "hardware.json": "819863d1a342ee9a4f126197668ab7275a287fbce3105d3e36b848233fbde125",
+    "curation.py": "b50886550f4c97b435dea7b773468242a9201cd0b5293412f2a08948b6b97835",
+    "scoring.py": "a3284760d098f9e1dabd6385eb84aa6fbf8b5f8ea449b45e5aff608b9ecb69f0"
+  },
+  "new_train_rows": 2,
+  "planned_holdout_rows": 6,
+  "training_updates": 0,
+  "model_generations": 0
+}
