@@ -1,0 +1,12 @@
+{"key": "holdout_v2:intervention:phv201_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:21.588582+00:00"}
+{"key": "holdout_v2:intervention:phv201_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:30.692880+00:00"}
+{"key": "holdout_v2:intervention:phv201_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:30.693099+00:00"}
+{"key": "holdout_v2:intervention:phv201_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:33.985706+00:00"}
+{"key": "holdout_v2:intervention:phv202_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:33.985749+00:00"}
+{"key": "holdout_v2:intervention:phv202_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:37.270037+00:00"}
+{"key": "holdout_v2:intervention:phv202_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:37.270150+00:00"}
+{"key": "holdout_v2:intervention:phv202_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:40.762831+00:00"}
+{"key": "holdout_v2:intervention:phv203_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:40.762896+00:00"}
+{"key": "holdout_v2:intervention:phv203_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:43.998163+00:00"}
+{"key": "holdout_v2:intervention:phv203_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:43.998242+00:00"}
+{"key": "holdout_v2:intervention:phv203_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:47.205929+00:00"}

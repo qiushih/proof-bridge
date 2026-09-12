@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_FINAL_HOLDOUT_RESULTS",
+  "frozen_at_utc": "2026-09-12T20:11:06.713599+00:00",
+  "files_sha256": {
+    "HOLDOUT_V2_REPORT.md": "e3354be0c9c7edbd02d6aa2a07cd6087f8848dc193a053edc71a55c59a424909",
+    "assessed_results.jsonl": "b805609718ef5c82a09c5f787cde48c703813018d051391909394176f8f988a3",
+    "base/attempts.jsonl": "1a7dbb9a5f5b888fc082d66977a4485c1b5f3b4f247b15ecf84bb373b14edcaf",
+    "base/completion.json": "ba6e0c2b5ed029290d58871167725fd37ed7d2ea59f9284c28f23c0402f263f9",
+    "base/manifest.json": "0ba540aec0ab636590253fdb6eac50a49bfc6124c71e2803a466f6e246b040fd",
+    "base/raw_generations.jsonl": "93a01a80cac050c04bffbd9aaad3abd344885871980ffb6af5535e095661459a",
+    "control/attempts.jsonl": "16b6842259bf6b3bbe402508d441678d2f76e1d58535f35486fbd9f124e8c917",
+    "control/completion.json": "07fa891817a40be03d0ad1054ef74ed5765f49087fa64c5f938a440581be4a04",
+    "control/manifest.json": "dcd43539d97f1fb7fa22800f40d1717c2987214c3e4294284cf6ef2cf562ae83",
+    "control/raw_generations.jsonl": "b909f368812c4627efaa75c02fe7004295df1b5c363bbeb5a43709dc76ac7e52",
+    "custody.json": "1acf444859dcc22a93d60dd761e8abb9bfd972b86516793be8f3f5bded89cd59",
+    "generation_complete.json": "80525f1ae86a5808f5a88328a6845fc8ffadb9ab34e43bc0dd6a277b0089aec8",
+    "intervention/attempts.jsonl": "6a98d8a54b6ff0070fcab83cc62f12be5230286fca37c3266e4dced69389f628",
+    "intervention/completion.json": "8943d1be6445cd36d44db0ce7d8eb735f0e5b8ae8a5e7797ba4b379cd4802647",
+    "intervention/manifest.json": "494f37662e1d40587f64d695685de9b356ffe145bb391bfdc0b876b144c4cdbe",
+    "intervention/raw_generations.jsonl": "9e812073a323681a3c1b8347fc1fab98cf5950ae853e6a3656b723dade339a78",
+    "manual_reviews.json": "b94ada437a2158233099ecc86d521bb443320fea7788871099b2b0368a45c23f",
+    "opened_holdout.jsonl": "90a43e9c97bb353440cdec4d30b6425a228994e110a81c61ab6e76cea1893583",
+    "reference_verification.json": "5ac496a6a4423200602974a272ffadd181a8a6513d9afa28cda87b8d031c77d0",
+    "run_started.json": "4e591cc541ecc1aabb8faa382dcf0354d99cdc846ac9ad597aa3fca1b5a2bc91",
+    "summary.json": "b5ba4a1cb1609ad5d05face4d92fc7cf214341ff508533513e39b03bd940c77d",
+    "validation.json": "e3fee618a878ff18bdfaa5367f44b0c1b7a47515a2ea6fe324f5472232ade257"
+  },
+  "optimizer_updates": 0,
+  "reselection": false,
+  "future_tuning_requires_new_holdout": true
+}

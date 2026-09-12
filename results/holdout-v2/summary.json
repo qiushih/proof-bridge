@@ -1,0 +1,137 @@
+{
+  "experiment_id": "proofbridge-holdout-v2",
+  "new_generations": 18,
+  "models": {
+    "base": {
+      "rows": 6,
+      "verified": 0,
+      "verified_faithful": 0,
+      "requested_step_matches": 0,
+      "verified_requested_steps": 0,
+      "verified_faithful_requested_steps": 0,
+      "percentages": {
+        "verified": 0.0,
+        "verified_faithful": 0.0,
+        "requested_step_matches": 0.0,
+        "verified_requested_steps": 0.0,
+        "verified_faithful_requested_steps": 0.0
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 6
+      },
+      "theorem_pairs": {
+        "phv201": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        },
+        "phv202": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        },
+        "phv203": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        }
+      },
+      "successful_pairs": 0,
+      "pair_count": 3,
+      "pair_success_percent": 0.0,
+      "mean_generation_seconds": 4.137213999833382,
+      "completion_tokens": 204,
+      "prompt_tokens": 3550
+    },
+    "control": {
+      "rows": 6,
+      "verified": 5,
+      "verified_faithful": 5,
+      "requested_step_matches": 5,
+      "verified_requested_steps": 5,
+      "verified_faithful_requested_steps": 5,
+      "percentages": {
+        "verified": 83.33,
+        "verified_faithful": 83.33,
+        "requested_step_matches": 83.33,
+        "verified_requested_steps": 83.33,
+        "verified_faithful_requested_steps": 83.33
+      },
+      "failure_categories": {
+        "PROOF_ERROR": 1
+      },
+      "theorem_pairs": {
+        "phv201": {
+          "both_verified": false,
+          "both_verified_faithful": false,
+          "both_verified_faithful_step_adherent": false
+        },
+        "phv202": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "phv203": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        }
+      },
+      "successful_pairs": 2,
+      "pair_count": 3,
+      "pair_success_percent": 66.67,
+      "mean_generation_seconds": 3.959940256833344,
+      "completion_tokens": 194,
+      "prompt_tokens": 3550
+    },
+    "intervention": {
+      "rows": 6,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 6,
+      "verified_requested_steps": 6,
+      "verified_faithful_requested_steps": 6,
+      "percentages": {
+        "verified": 100.0,
+        "verified_faithful": 100.0,
+        "requested_step_matches": 100.0,
+        "verified_requested_steps": 100.0,
+        "verified_faithful_requested_steps": 100.0
+      },
+      "failure_categories": {},
+      "theorem_pairs": {
+        "phv201": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "phv202": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        },
+        "phv203": {
+          "both_verified": true,
+          "both_verified_faithful": true,
+          "both_verified_faithful_step_adherent": true
+        }
+      },
+      "successful_pairs": 3,
+      "pair_count": 3,
+      "pair_success_percent": 100.0,
+      "mean_generation_seconds": 4.109314812499974,
+      "completion_tokens": 195,
+      "prompt_tokens": 3550
+    }
+  },
+  "selected_steps": {
+    "base": 0,
+    "control": 36,
+    "intervention": 36
+  },
+  "development_success_unchanged": false,
+  "reselection": false,
+  "optimizer_updates": 0,
+  "human_reviewed": false,
+  "future_tuning_requires_new_holdout": true
+}

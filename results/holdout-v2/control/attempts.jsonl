@@ -1,0 +1,12 @@
+{"key": "holdout_v2:control:phv201_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:07:47.344671+00:00"}
+{"key": "holdout_v2:control:phv201_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:07:56.588995+00:00"}
+{"key": "holdout_v2:control:phv201_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:07:56.589206+00:00"}
+{"key": "holdout_v2:control:phv201_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:07:59.747248+00:00"}
+{"key": "holdout_v2:control:phv202_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:07:59.747306+00:00"}
+{"key": "holdout_v2:control:phv202_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:02.781643+00:00"}
+{"key": "holdout_v2:control:phv202_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:02.781719+00:00"}
+{"key": "holdout_v2:control:phv202_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:05.838814+00:00"}
+{"key": "holdout_v2:control:phv203_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:05.838856+00:00"}
+{"key": "holdout_v2:control:phv203_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:08.875099+00:00"}
+{"key": "holdout_v2:control:phv203_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T20:08:08.875168+00:00"}
+{"key": "holdout_v2:control:phv203_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T20:08:11.989011+00:00"}

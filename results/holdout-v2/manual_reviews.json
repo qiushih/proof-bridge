@@ -1,0 +1,125 @@
+{
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "method": "Manual review of all 18 saved generations against the six frozen A/B informal arguments and formal references, with Rocq diagnostics. All ten distinct theorem/body/outcome combinations were inspected. Mathematical judgments were made separately from the frozen requested-step scorer; the resulting verified proofs happen to follow the requested tactics as well. No prompt, target, code, setting or checkpoint was revised from these outcomes.",
+  "reviewed_theorem_body_outcome_groups": 10,
+  "raw_sha256_by_checkpoint": {
+    "base/raw_generations.jsonl": "93a01a80cac050c04bffbd9aaad3abd344885871980ffb6af5535e095661459a",
+    "control/raw_generations.jsonl": "b909f368812c4627efaa75c02fe7004295df1b5c363bbeb5a43709dc76ac7e52",
+    "intervention/raw_generations.jsonl": "9e812073a323681a3c1b8347fc1fab98cf5950ae853e6a3656b723dade339a78"
+  },
+  "fidelity_counts": {
+    "NOT_ESTABLISHED": 7,
+    "FAITHFUL": 11
+  },
+  "reviews": [
+    {
+      "key": "holdout_v2:base:phv201_A",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but m + m is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:base:phv201_B",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but m + m is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:base:phv202_A",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but m + (m + m) is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:base:phv202_B",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but m + (m + m) is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:base:phv203_A",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but (m + m) + m is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:base:phv203_B",
+      "proof_body_sha256": "f9d7c0f78dfa1cf5bb4102d4bb3695820a77f92c6d62b7098d3f4c5536d0d02b",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The proof tries rewrite H before induction, but (m + m) + m is not a syntactic subterm of the current goal with variable n. Rocq rejects that first rewrite. The supplied argument instead uses H after simplifying the n = 0 branch. Neither the complete induction nor mathematical fidelity is established by this failed script."
+    },
+    {
+      "key": "holdout_v2:control:phv201_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Induction on n is appropriate, but the base goal m + m = p requires the premise H. The generated reflexivity step cannot identify an arbitrary p with m + m, and Rocq rejects it. The later IH rewrite does not remedy the unproved base case; mathematical fidelity remains unestablished."
+    },
+    {
+      "key": "holdout_v2:control:phv201_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + m = p, which exact H correctly closes. The successor goal is the equality (k + m) + m = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    },
+    {
+      "key": "holdout_v2:control:phv202_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + (m + m) = p, which exact H correctly closes. The successor goal is the equality (k + m) + (m + m) = k + p lifted under S. Rewriting IH from left to right inside that successor makes the two sides identical, and reflexivity finishes. This follows the mathematical argument and the requested forward-rewrite step."
+    },
+    {
+      "key": "holdout_v2:control:phv202_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + (m + m) = p, which exact H correctly closes. The successor goal is the equality (k + m) + (m + m) = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    },
+    {
+      "key": "holdout_v2:control:phv203_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives (m + m) + m = p, which exact H correctly closes. The successor goal is the equality ((k + m) + m) + m = k + p lifted under S. Rewriting IH from left to right inside that successor makes the two sides identical, and reflexivity finishes. This follows the mathematical argument and the requested forward-rewrite step."
+    },
+    {
+      "key": "holdout_v2:control:phv203_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives (m + m) + m = p, which exact H correctly closes. The successor goal is the equality ((k + m) + m) + m = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv201_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + m = p, which exact H correctly closes. The successor goal is the equality (k + m) + m = k + p lifted under S. Rewriting IH from left to right inside that successor makes the two sides identical, and reflexivity finishes. This follows the mathematical argument and the requested forward-rewrite step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv201_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + m = p, which exact H correctly closes. The successor goal is the equality (k + m) + m = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv202_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + (m + m) = p, which exact H correctly closes. The successor goal is the equality (k + m) + (m + m) = k + p lifted under S. Rewriting IH from left to right inside that successor makes the two sides identical, and reflexivity finishes. This follows the mathematical argument and the requested forward-rewrite step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv202_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives m + (m + m) = p, which exact H correctly closes. The successor goal is the equality (k + m) + (m + m) = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv203_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives (m + m) + m = p, which exact H correctly closes. The successor goal is the equality ((k + m) + m) + m = k + p lifted under S. Rewriting IH from left to right inside that successor makes the two sides identical, and reflexivity finishes. This follows the mathematical argument and the requested forward-rewrite step."
+    },
+    {
+      "key": "holdout_v2:intervention:phv203_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and the premise, then inducts on n as supplied. At n = 0, simplification gives (m + m) + m = p, which exact H correctly closes. The successor goal is the equality ((k + m) + m) + m = k + p lifted under S. Successor congruence via f_equal reduces it to the exact IH, which exact IH supplies. This follows the mathematical argument and the requested congruence step."
+    }
+  ]
+}

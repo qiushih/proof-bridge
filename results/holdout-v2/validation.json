@@ -1,0 +1,299 @@
+{
+  "status": "PASS",
+  "new_generations": 18,
+  "optimizer_updates": 0,
+  "token_replays": 18,
+  "rocq_replays": 18,
+  "original_content_openings": 1,
+  "diagnostic_and_old_holdout_opened": false,
+  "records": [
+    {
+      "key": "holdout_v2:base:phv201_A",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.2068,
+        "source_sha256": "d809e9d0c92e2a504f51d69affc3a99ae971f0a5878628cee712a2c275d92a98",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:base:phv201_B",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.1185,
+        "source_sha256": "d809e9d0c92e2a504f51d69affc3a99ae971f0a5878628cee712a2c275d92a98",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:base:phv202_A",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.1184,
+        "source_sha256": "7eff3e8d9ae623c41a02a344dbc83681c60724727c427c9197b9193aececae51",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + (pb_local_1 + pb_local_1)\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:base:phv202_B",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.1194,
+        "source_sha256": "7eff3e8d9ae623c41a02a344dbc83681c60724727c427c9197b9193aececae51",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + (pb_local_1 + pb_local_1)\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:base:phv203_A",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.1183,
+        "source_sha256": "3d5e00daaf19e68350196fc88028c56e9bc0e425860338f578cadcba2e634e7d",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:base:phv203_B",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.122,
+        "source_sha256": "3d5e00daaf19e68350196fc88028c56e9bc0e425860338f578cadcba2e634e7d",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 5, characters 0-18:\nError: Found no subterm matching \"pb_local_1 + pb_local_1 + pb_local_1\"\nin the current goal.\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv201_A",
+      "verification": {
+        "status": "FAIL",
+        "category": "PROOF_ERROR",
+        "message": "Rocq rejected the candidate.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": false,
+        "assumptions_checked": false,
+        "elapsed_seconds": 0.1187,
+        "source_sha256": "9f4597c856c0a6e740d10c5080b13b0ecec8a8bbc274a88e9d15520a655e6991",
+        "stdout": "",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\nFile \"./Candidate.v\", line 8, characters 0-11:\nError:\nIn environment\npb_local_1, pb_local_2 : nat\npb_local_3 : pb_local_1 + pb_local_1 = pb_local_2\nUnable to unify \"pb_local_2\" with \"pb_local_1 + pb_local_1\".\n\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv201_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1174,
+        "source_sha256": "cc635db881c8398f450462ddf6cdce23d6d5bfc1f344b6458146381b1003c708",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + m = p -> n + m + m = n + p\n     : forall n m p : nat, m + m = p -> n + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv202_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.12,
+        "source_sha256": "a0c843e1f521e75ae371fdb800bd18765211856ff325dea7ef02385a3971ca85",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv202_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1185,
+        "source_sha256": "8fdf8ce42cb19418792f2d0c2d9ccefc4837519af68d5424ef2f7699d430e95b",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv203_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1165,
+        "source_sha256": "4f38c0ec707d3761c604d8dc4940fbb0415d6c67349c3774d23c32331e2844f4",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:control:phv203_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1183,
+        "source_sha256": "5cb2a8df77803437a0da880972205d2b43f630555fc5d67e563d39f85557aef3",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv201_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1161,
+        "source_sha256": "65fb2ed1cfc3fa56bc6316b3b28e04788ee344d4eb11f0afe4e5f71ad3b12597",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + m = p -> n + m + m = n + p\n     : forall n m p : nat, m + m = p -> n + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv201_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1166,
+        "source_sha256": "cc635db881c8398f450462ddf6cdce23d6d5bfc1f344b6458146381b1003c708",
+        "stdout": "proof_bridge_target : forall n m p : nat, m + m = p -> n + m + m = n + p\n     : forall n m p : nat, m + m = p -> n + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv202_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1173,
+        "source_sha256": "a0c843e1f521e75ae371fdb800bd18765211856ff325dea7ef02385a3971ca85",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv202_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1161,
+        "source_sha256": "8fdf8ce42cb19418792f2d0c2d9ccefc4837519af68d5424ef2f7699d430e95b",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\n     : forall n m p : nat, m + (m + m) = p -> n + m + (m + m) = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv203_A",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1168,
+        "source_sha256": "4f38c0ec707d3761c604d8dc4940fbb0415d6c67349c3774d23c32331e2844f4",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    },
+    {
+      "key": "holdout_v2:intervention:phv203_B",
+      "verification": {
+        "status": "PASS",
+        "category": "VERIFIED",
+        "message": "Rocq checked the fixed theorem without global axioms.",
+        "stage": "rocq",
+        "compiler_version": "9.2.0",
+        "kernel_checked": true,
+        "assumptions_checked": true,
+        "elapsed_seconds": 0.1157,
+        "source_sha256": "5cb2a8df77803437a0da880972205d2b43f630555fc5d67e563d39f85557aef3",
+        "stdout": "proof_bridge_target\n:\nforall n m p : nat, m + m + m = p -> n + m + m + m = n + p\n     : forall n m p : nat, m + m + m = p -> n + m + m + m = n + p\nClosed under the global context\n",
+        "stderr": "Warning: Cannot determine user home directory, using '.' .\n"
+      }
+    }
+  ]
+}

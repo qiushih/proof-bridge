@@ -1,0 +1,8 @@
+{
+  "status": "UNSEALED_CONSUMED",
+  "opened_at_utc": "2026-09-12T20:07:01.805676+00:00",
+  "protocol_sha256": "63fe5d2050e3cb853ef935089fd31eea3707da5fc149fb032b977a4d1af33aaa",
+  "original_sha256": "90a43e9c97bb353440cdec4d30b6425a228994e110a81c61ab6e76cea1893583",
+  "authorized_original_content_openings": 1,
+  "future_tuning_requires_new_holdout": true
+}
