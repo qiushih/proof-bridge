@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-09-11T23:50:07.088108+00:00",
+  "tests_run": 54,
+  "tests_failed": 0,
+  "tests_skipped": 0,
+  "code_sha256": {
+    "README.md": "8eeb8268c27b39d3848e85ed2a4891058f62351cf5d7c0bf561ed21815197ce8",
+    "__init__.py": "9812e1bedd2fba2b2927c5a9bd86cb68e6e007a105cd763cc19ea5440ef7ebb0",
+    "audit.py": "71d2f34a0e5e17e5c177b435589de5ea5c272f5080660f1cccd01684d659090d",
+    "common.py": "a17eb30879c3f265991d905d5d87ff15a8213538bf20279aaec6631ef4015f02",
+    "core.py": "7172634d57d02d9d4be9d05851aa8058040a62ba66a4b78724cffaf3eacd7090",
+    "evaluation.py": "702e447775878d782419c5fb56069f09473cc62d49356056a731435817e097d5",
+    "experiment.py": "821aec72df1e273f725cbb40eddfc3b9afb6fff4863e8ef93f0adab80619bbfe",
+    "preflight.py": "6a6a470096e852315720e0916d78eb7d8e9954372fe4fe363fc19c17ac7b19f9",
+    "report.py": "5157f9a787b8e1502014ccdb41e711be24bfcaba95a4f68c6f9ba22341904e48",
+    "../tests/test_pilot_training_v2.py": "caba9784b630edec9ca50de98412c553c96e21b84cbf555577ef11896e302a5c"
+  },
+  "qwen_weights_loaded": false,
+  "qwen_optimizer_updates": 0,
+  "model_generations": 0,
+  "synthetic_tensor_updates": 120,
+  "temporary_synthetic_checkpoint_roundtrips": 20,
+  "fixed_reference_fixtures_verified_with_rocq": 8,
+  "tests": "26 new runner tests; 8 dev-release, 10 baseline, 10 v2 selection/schedule regressions",
+  "old_holdout_or_diagnostic_content_used": false
+}
