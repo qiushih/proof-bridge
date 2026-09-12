@@ -1,0 +1,16 @@
+{"key": "pilot_training_v2:control:step-0060:pd01_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:38:58.253811+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd01_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:00.931183+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd01_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:00.931251+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd01_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:03.658287+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd02_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:03.658405+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd02_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:06.696085+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd02_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:06.696158+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd02_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:09.865407+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd03_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:09.865523+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd03_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:15.796706+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd03_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:15.796798+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd03_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:18.832273+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd04_A", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:18.832333+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd04_A", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:22.073780+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd04_B", "event": "started", "attempt": 1, "at_utc": "2026-09-12T03:39:22.074004+00:00"}
+{"key": "pilot_training_v2:control:step-0060:pd04_B", "event": "finished", "attempt": 1, "at_utc": "2026-09-12T03:39:25.348126+00:00"}

@@ -1,0 +1,130 @@
+{
+  "control": {
+    "selected_step": 36,
+    "selection_score": [
+      8,
+      8,
+      8,
+      -36
+    ],
+    "selected_adapter_path_relative_to_run": "control/training/step-0036/adapter.safetensors",
+    "selected_adapter_sha256": "93cee6837152b91b75aeba580a36ab9c85c382a5703c4850fe046bf4e1f343af",
+    "selected_metrics": {
+      "original_six": {
+        "rows": 6,
+        "verified": 6,
+        "verified_faithful": 6,
+        "requested_step_matches": 6,
+        "verified_requested_steps": 6,
+        "verified_faithful_requested_steps": 6,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 3,
+        "theorem_pairs": 3
+      },
+      "new_two": {
+        "rows": 2,
+        "verified": 2,
+        "verified_faithful": 2,
+        "requested_step_matches": 2,
+        "verified_requested_steps": 2,
+        "verified_faithful_requested_steps": 2,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 1,
+        "theorem_pairs": 1
+      },
+      "all_eight": {
+        "rows": 8,
+        "verified": 8,
+        "verified_faithful": 8,
+        "requested_step_matches": 8,
+        "verified_requested_steps": 8,
+        "verified_faithful_requested_steps": 8,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 4,
+        "theorem_pairs": 4
+      }
+    }
+  },
+  "intervention": {
+    "selected_step": 36,
+    "selection_score": [
+      8,
+      8,
+      8,
+      -36
+    ],
+    "selected_adapter_path_relative_to_run": "intervention/training/step-0036/adapter.safetensors",
+    "selected_adapter_sha256": "ee7255324835cf0b47d9b5cb92dec930f344b8d1988b9354397fc4bbe9c7329c",
+    "selected_metrics": {
+      "original_six": {
+        "rows": 6,
+        "verified": 6,
+        "verified_faithful": 6,
+        "requested_step_matches": 6,
+        "verified_requested_steps": 6,
+        "verified_faithful_requested_steps": 6,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 3,
+        "theorem_pairs": 3
+      },
+      "new_two": {
+        "rows": 2,
+        "verified": 2,
+        "verified_faithful": 2,
+        "requested_step_matches": 2,
+        "verified_requested_steps": 2,
+        "verified_faithful_requested_steps": 2,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 1,
+        "theorem_pairs": 1
+      },
+      "all_eight": {
+        "rows": 8,
+        "verified": 8,
+        "verified_faithful": 8,
+        "requested_step_matches": 8,
+        "verified_requested_steps": 8,
+        "verified_faithful_requested_steps": 8,
+        "percentages": {
+          "verified": 100.0,
+          "verified_faithful": 100.0,
+          "requested_step_matches": 100.0,
+          "verified_requested_steps": 100.0,
+          "verified_faithful_requested_steps": 100.0
+        },
+        "both_argument_successes": 4,
+        "theorem_pairs": 4
+      }
+    }
+  }
+}

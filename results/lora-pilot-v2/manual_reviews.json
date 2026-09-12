@@ -1,0 +1,1015 @@
+{
+  "reviewer": "assistant",
+  "human_reviewed": false,
+  "method": "Manual mathematical review of all 160 saved dev outputs, grouped by exact theorem, proof body and Rocq outcome into 19 distinct combinations. Each group was inspected against the frozen A/B informal proofs and compiler diagnostics. Judgments are bound individually to every output hash. Frozen step-adherence labels are not used as mathematical-fidelity labels.",
+  "holdout_content_inspected": false,
+  "raw_sha256_by_checkpoint": {
+    "control/dev-step-0006/raw_generations.jsonl": "800922f6f71a5cc9455784d5739f59f07286100d13cbce5b66ca29a5fc3a6347",
+    "control/dev-step-0012/raw_generations.jsonl": "339d39c8426154845793b24352945cdecc9f1551b8a0c9debcd6d9a01acae24d",
+    "control/dev-step-0018/raw_generations.jsonl": "e197a20bff79ec13e31a97b1ed3ff6d7925acd36b70d3baaf2df14920dab025e",
+    "control/dev-step-0024/raw_generations.jsonl": "42cdec88c60a452a7e8fa8e08b17056eeae8cda39fbd92a0d23b01ec68f6ff55",
+    "control/dev-step-0030/raw_generations.jsonl": "93a8305d3a4140b514e3bd98ee4c59a850ad8ae78c38a167c92d27dd2e192168",
+    "control/dev-step-0036/raw_generations.jsonl": "758345eaea766a49c7eb26096976ac9deaf5d3e014cb079a42bb538f6b49811a",
+    "control/dev-step-0042/raw_generations.jsonl": "5f4242765ddbcfc8b6f21c6d24f88bc8f7aa937ea3db965b81e411cb5eb74202",
+    "control/dev-step-0048/raw_generations.jsonl": "1ae56d9483a5bc47b6a4f913a732d55b0da5df7844e1e74fe1b02ec2490d69db",
+    "control/dev-step-0054/raw_generations.jsonl": "fd95b47e50cdbc6b212346056202be25e4fabbff12f4ee3762f2dba195c722af",
+    "control/dev-step-0060/raw_generations.jsonl": "f9ec81109582dc7bb9a9bf45c36ae78693c6a141864b405153406957aab13204",
+    "intervention/dev-step-0006/raw_generations.jsonl": "1d3134268fa26a764f75547d42a482869335dba2b33237d2d4687078f47abf15",
+    "intervention/dev-step-0012/raw_generations.jsonl": "9349f51275668770568cd8773576df00db960a2d9dd9728e9eb80639ea48aece",
+    "intervention/dev-step-0018/raw_generations.jsonl": "ee033b715902ae19fa6d03f880dd557c8f4cf5e9bad9b83c2bd6bb20e3ab7ba8",
+    "intervention/dev-step-0024/raw_generations.jsonl": "f272bd9efabed0f37d2e2516ca9ab97b87a05d88f278d8a83f7a431a427d652b",
+    "intervention/dev-step-0030/raw_generations.jsonl": "eba36084bbf0921d147c949624c5a715b642d3a5f7360f5e906f26616311e192",
+    "intervention/dev-step-0036/raw_generations.jsonl": "900b713dac97934aecdbc947fe099575b8f98c6433b01735750e7e916eee4205",
+    "intervention/dev-step-0042/raw_generations.jsonl": "604cf617e8524f6f62b755735aa82400274aa8903daa9cde6b4ee6821335a5b4",
+    "intervention/dev-step-0048/raw_generations.jsonl": "9a3c71f5922847d6b7a07cf933888d19be99059cc2f1ec0c9529004f5f14b630",
+    "intervention/dev-step-0054/raw_generations.jsonl": "9180e50545cdbcbb0a0fe3a64f7458e910c2cc92a7c6eb790ca89e065c1c8e16",
+    "intervention/dev-step-0060/raw_generations.jsonl": "9a5773bac436952ae518c15a6026fe9b5154ce5efb3ac94b4ab76bf3c6d761e8"
+  },
+  "reviewed_group_counts": {
+    "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd": 22,
+    "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6": 12,
+    "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05": 19,
+    "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02": 11,
+    "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f": 18,
+    "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0": 18,
+    "fc067a78f6b0f1380e5910d70bcd2e1b68de282601f792a9afbd670dcedb419e": 3,
+    "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc": 8,
+    "1016023759d2e23ab5e932aa1dc2fc4b8bd51a23c96952b8c7aee5a7835121fd": 2,
+    "aa7c31e9763c5ed6038b0643fe9c23325a392cae01a3d88a2e7f7fdaec3a7bc3": 2,
+    "f7e0127b21711bd198572d24d2de1c86749826b61075bf25aa89ce5f6d8aa721": 1,
+    "d570059eea7c269e687471e2afb926960f24f6f97ad0fa4adf267cb6293e58d9": 1,
+    "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c": 14,
+    "b0e2a0835d08bbe69c243ce3144871365a82532329e6fca1a02dd77e4ebbb843": 1,
+    "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710": 9,
+    "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86": 8,
+    "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33": 8,
+    "3e9c501a742521f3b380926b7e3b6e1bcc9d1217ca356eedfe1da462cbdc068d": 2,
+    "37380981da835b138d3c13fe68d1ab600f4bf78584c4117bc0fc9179dced6ec5": 1
+  },
+  "fidelity_counts": {
+    "FAITHFUL": 140,
+    "NOT_ESTABLISHED": 20
+  },
+  "reviews": [
+    {
+      "key": "pilot_training_v2:control:step-0006:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd01_B",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd02_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd03_B",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0006:pd04_B",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd02_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd04_A",
+      "proof_body_sha256": "fc067a78f6b0f1380e5910d70bcd2e1b68de282601f792a9afbd670dcedb419e",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The base case correctly uses H, and rewriting IH makes the successor goal reflexive. The following exact H is ill-typed for that reflexive goal, as Rocq reports. Correct partial steps do not establish fidelity of a complete proof."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0012:pd04_B",
+      "proof_body_sha256": "fc067a78f6b0f1380e5910d70bcd2e1b68de282601f792a9afbd670dcedb419e",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The base case correctly uses H, and rewriting IH makes the successor goal reflexive. The following exact H is ill-typed for that reflexive goal, as Rocq reports. Correct partial steps do not establish fidelity of a complete proof."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0018:pd04_B",
+      "proof_body_sha256": "1016023759d2e23ab5e932aa1dc2fc4b8bd51a23c96952b8c7aee5a7835121fd",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq first rejects base-case reflexivity because the premise H is needed. The later exact H would also be inappropriate after IH rewriting, but the recorded first failure is the base case. No complete faithful proof is established."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd02_A",
+      "proof_body_sha256": "aa7c31e9763c5ed6038b0643fe9c23325a392cae01a3d88a2e7f7fdaec3a7bc3",
+      "status": "FAITHFUL",
+      "reason": "The same induction on n, computational base case, and IH transport under S are preserved. The successor proof rewrites the right-hand inner sum backwards instead of rewriting the left-hand sum forwards. This is symmetric use of the same equality, so mathematical fidelity is retained while the explicitly requested rewrite direction is mismatched."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd03_A",
+      "proof_body_sha256": "f7e0127b21711bd198572d24d2de1c86749826b61075bf25aa89ce5f6d8aa721",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The base and induction setup are correct, but simplification unfolds the literal 3 on the successor right-hand side. Rocq finds no subterm matching the reverse IH pattern 3 + (k + m). The rejected rewrite leaves mathematical fidelity unestablished."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd04_A",
+      "proof_body_sha256": "d570059eea7c269e687471e2afb926960f24f6f97ad0fa4adf267cb6293e58d9",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m, p and H fixed; the base case correctly uses H. Rewriting the successor right-hand inner expression backwards by IH closes the same lifted equality. This symmetric IH transport preserves the mathematical argument, but does not follow the explicitly requested forward rewrite."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0024:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0030:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd02_A",
+      "proof_body_sha256": "b0e2a0835d08bbe69c243ce3144871365a82532329e6fca1a02dd77e4ebbb843",
+      "status": "FAITHFUL",
+      "reason": "The third natural-number binder is merely renamed pH; it is not an extra premise. The proof keeps that variable and m fixed, inducts on n, computes the base, and rewrites IH under S. This is the supplied forward-rewrite induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0036:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0042:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0048:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0054:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd03_A",
+      "proof_body_sha256": "3e9c501a742521f3b380926b7e3b6e1bcc9d1217ca356eedfe1da462cbdc068d",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Renaming m to mH is harmless, but after simplification Rocq finds no reverse-IH subterm 3 + (k + mH). The proof fails at that rewrite, so no complete mathematical fidelity is established."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:control:step-0060:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd01_B",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd02_B",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd03_B",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument. Rewriting IH under the common successor is mathematically equivalent to the supplied congruence step, but the separate requested-step judgment remains MISMATCH."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0006:pd04_B",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd04_A",
+      "proof_body_sha256": "fc067a78f6b0f1380e5910d70bcd2e1b68de282601f792a9afbd670dcedb419e",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The base case correctly uses H, and rewriting IH makes the successor goal reflexive. The following exact H is ill-typed for that reflexive goal, as Rocq reports. Correct partial steps do not establish fidelity of a complete proof."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0012:pd04_B",
+      "proof_body_sha256": "37380981da835b138d3c13fe68d1ab600f4bf78584c4117bc0fc9179dced6ec5",
+      "status": "NOT_ESTABLISHED",
+      "reason": "The base correctly uses H and successor congruence is appropriate, but the reduced successor goal needs IH. The first exact H has the wrong type; repeating it cannot supply IH. Rocq rejects the proof and mathematical fidelity remains unestablished."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0018:pd04_B",
+      "proof_body_sha256": "1016023759d2e23ab5e932aa1dc2fc4b8bd51a23c96952b8c7aee5a7835121fd",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq first rejects base-case reflexivity because the premise H is needed. The later exact H would also be inappropriate after IH rewriting, but the recorded first failure is the base case. No complete faithful proof is established."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd02_A",
+      "proof_body_sha256": "aa7c31e9763c5ed6038b0643fe9c23325a392cae01a3d88a2e7f7fdaec3a7bc3",
+      "status": "FAITHFUL",
+      "reason": "The same induction on n, computational base case, and IH transport under S are preserved. The successor proof rewrites the right-hand inner sum backwards instead of rewriting the left-hand sum forwards. This is symmetric use of the same equality, so mathematical fidelity is retained while the explicitly requested rewrite direction is mismatched."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0024:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd04_A",
+      "proof_body_sha256": "6373245ec35ed9f0c8f78555cc72dce03402fa457136509118a1df2807e43e02",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Rocq rejects reflexivity in the base case: m + S p is not definitionally S (m + p) for variable m. The supplied argument requires the premise H there. An incomplete proof cannot establish mathematical fidelity."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0030:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd02_A",
+      "proof_body_sha256": "3aa71203fb8f532d768ba65a1b972fe5846071f7f2eb93dd499fa6ed24b097b6",
+      "status": "FAITHFUL",
+      "reason": "The proof keeps m and p fixed, inducts on n, closes the computational base case, and transports IH under S in the successor case. This is the supplied associativity induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd02_B",
+      "proof_body_sha256": "c14feb6ee9ba47e7c77ded57503476a311923ef29c3eccef2ed7952433ec60cc",
+      "status": "FAITHFUL",
+      "reason": "The proof inducts on n with m and p fixed. Computation closes the base case, then f_equal strips the common successor and exact IH establishes the inner associativity equality. This follows the requested congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0036:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0042:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0048:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd03_A",
+      "proof_body_sha256": "aeb330d82c7743c8187254014a13c1f91610ddd6deedb5941eb87096fcab3c05",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m and inducts on n. The base equality is computational; the successor equality follows by rewriting the inner expression with IH and computing 3 + (k + m). This preserves the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0054:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd01_A",
+      "proof_body_sha256": "360b8c744fd1b8ab7a86931cd1ae1b2e2ec5b0597404e398493117323747bdbd",
+      "status": "FAITHFUL",
+      "reason": "Induction on n has the stated computational base case. In the successor case, rewriting k + 3 using IH under S makes both sides definitionally equal. This preserves the supplied induction argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd01_B",
+      "proof_body_sha256": "ddf1744f41e579bc0808b8f6d24c497b66f7d23d2701f466428fd1792098076f",
+      "status": "FAITHFUL",
+      "reason": "After induction on n and the computational base case, f_equal reduces the successor equality to IH, up to computation of 3 + k. This is the requested successor-congruence argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd02_A",
+      "proof_body_sha256": "992cfbe1e1edf15a5fb436ebdcdbe2bd9f71115dd33a68829e61ca6b42bfff33",
+      "status": "FAITHFUL",
+      "reason": "Renaming p to pH is harmless. The proof retains induction on n, the computational base case, and IH transport under S. It rewrites the right-hand inner expression backwards instead of the requested left-hand forward rewrite. This preserves mathematical fidelity while mismatching rewrite direction."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd02_B",
+      "proof_body_sha256": "394660bb38a8908e0395e8bf4125094f885f33c6bd9bce693debd5e80ee83710",
+      "status": "FAITHFUL",
+      "reason": "The local name pH is a harmless renaming of the third natural-number binder. Induction on n, the computational base case, and successor congruence followed by exact IH match the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd03_A",
+      "proof_body_sha256": "3e9c501a742521f3b380926b7e3b6e1bcc9d1217ca356eedfe1da462cbdc068d",
+      "status": "NOT_ESTABLISHED",
+      "reason": "Renaming m to mH is harmless, but after simplification Rocq finds no reverse-IH subterm 3 + (k + mH). The proof fails at that rewrite, so no complete mathematical fidelity is established."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd03_B",
+      "proof_body_sha256": "1d0f80fc0a2beab98f183b1cab3e6571d64adbe5ba6b31e73581b8bb24daa1d0",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps m fixed and closes the computational base case. Successor congruence reduces the step to IH; the spelling 3 + (k + m) is definitionally the three nested successors. This follows the supplied mathematical argument."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd04_A",
+      "proof_body_sha256": "deb31beefe5939df7e54d04b44dda2cd885e2f34f7a15bb4adc8e7fa21772a86",
+      "status": "FAITHFUL",
+      "reason": "The proof fixes m, p and H and inducts on n. The base case uses precisely H. Simplification exposes the successor expression; rewriting IH forward makes both sides identical. This follows both the mathematical argument and its requested premise/IH roles."
+    },
+    {
+      "key": "pilot_training_v2:intervention:step-0060:pd04_B",
+      "proof_body_sha256": "33cd97ab901566fec0c57f9a30d6cb0f5a49584e6ab8a2bf27cf5d6ad4a0397c",
+      "status": "FAITHFUL",
+      "reason": "Induction on n keeps the other data fixed. The simplified base goal is exactly H; in the successor case f_equal reduces the equality to IH and exact IH finishes. Premise use and successor congruence both follow the supplied argument."
+    }
+  ]
+}

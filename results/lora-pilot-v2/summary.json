@@ -1,0 +1,1578 @@
+{
+  "experiment_id": "proofbridge-lora-pilot-v2",
+  "arms": {
+    "control": {
+      "selected_step": 36,
+      "selection_score": [
+        8,
+        8,
+        8,
+        -36
+      ],
+      "selected_adapter_path_relative_to_run": "control/training/step-0036/adapter.safetensors",
+      "selected_adapter_sha256": "93cee6837152b91b75aeba580a36ab9c85c382a5703c4850fe046bf4e1f343af",
+      "selected_metrics": {
+        "original_six": {
+          "rows": 6,
+          "verified": 6,
+          "verified_faithful": 6,
+          "requested_step_matches": 6,
+          "verified_requested_steps": 6,
+          "verified_faithful_requested_steps": 6,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 3,
+          "theorem_pairs": 3
+        },
+        "new_two": {
+          "rows": 2,
+          "verified": 2,
+          "verified_faithful": 2,
+          "requested_step_matches": 2,
+          "verified_requested_steps": 2,
+          "verified_faithful_requested_steps": 2,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 1,
+          "theorem_pairs": 1
+        },
+        "all_eight": {
+          "rows": 8,
+          "verified": 8,
+          "verified_faithful": 8,
+          "requested_step_matches": 8,
+          "verified_requested_steps": 8,
+          "verified_faithful_requested_steps": 8,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 4,
+          "theorem_pairs": 4
+        }
+      },
+      "checkpoints": [
+        {
+          "step": 0,
+          "score": [
+            6,
+            3,
+            6,
+            0
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 37.5,
+                "verified_requested_steps": 37.5,
+                "verified_faithful_requested_steps": 37.5
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 6,
+          "score": [
+            6,
+            3,
+            6,
+            -6
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 37.5,
+                "verified_requested_steps": 37.5,
+                "verified_faithful_requested_steps": 37.5
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 12,
+          "score": [
+            6,
+            5,
+            6,
+            -12
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 62.5,
+                "verified_requested_steps": 62.5,
+                "verified_faithful_requested_steps": 62.5
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 18,
+          "score": [
+            6,
+            6,
+            6,
+            -18
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 24,
+          "score": [
+            7,
+            5,
+            7,
+            -24
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 5,
+              "verified_faithful": 5,
+              "requested_step_matches": 4,
+              "verified_requested_steps": 4,
+              "verified_faithful_requested_steps": 4,
+              "percentages": {
+                "verified": 83.33333333333333,
+                "verified_faithful": 83.33333333333333,
+                "requested_step_matches": 66.66666666666667,
+                "verified_requested_steps": 66.66666666666667,
+                "verified_faithful_requested_steps": 66.66666666666667
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 62.5,
+                "verified_requested_steps": 62.5,
+                "verified_faithful_requested_steps": 62.5
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 30,
+          "score": [
+            7,
+            7,
+            7,
+            -30
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 1,
+              "verified_faithful": 1,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 50.0,
+                "verified_faithful": 50.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 36,
+          "score": [
+            8,
+            8,
+            8,
+            -36
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 8,
+              "verified_requested_steps": 8,
+              "verified_faithful_requested_steps": 8,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 4,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 42,
+          "score": [
+            8,
+            7,
+            8,
+            -42
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 48,
+          "score": [
+            7,
+            6,
+            7,
+            -48
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 1,
+              "verified_faithful": 1,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 50.0,
+                "verified_faithful": 50.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 54,
+          "score": [
+            7,
+            6,
+            7,
+            -54
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 1,
+              "verified_faithful": 1,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 50.0,
+                "verified_faithful": 50.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 60,
+          "score": [
+            6,
+            5,
+            6,
+            -60
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 5,
+              "verified_faithful": 5,
+              "requested_step_matches": 4,
+              "verified_requested_steps": 4,
+              "verified_faithful_requested_steps": 4,
+              "percentages": {
+                "verified": 83.33333333333333,
+                "verified_faithful": 83.33333333333333,
+                "requested_step_matches": 66.66666666666667,
+                "verified_requested_steps": 66.66666666666667,
+                "verified_faithful_requested_steps": 66.66666666666667
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 1,
+              "verified_faithful": 1,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 50.0,
+                "verified_faithful": 50.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 62.5,
+                "verified_requested_steps": 62.5,
+                "verified_faithful_requested_steps": 62.5
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 4
+            }
+          }
+        }
+      ]
+    },
+    "intervention": {
+      "selected_step": 36,
+      "selection_score": [
+        8,
+        8,
+        8,
+        -36
+      ],
+      "selected_adapter_path_relative_to_run": "intervention/training/step-0036/adapter.safetensors",
+      "selected_adapter_sha256": "ee7255324835cf0b47d9b5cb92dec930f344b8d1988b9354397fc4bbe9c7329c",
+      "selected_metrics": {
+        "original_six": {
+          "rows": 6,
+          "verified": 6,
+          "verified_faithful": 6,
+          "requested_step_matches": 6,
+          "verified_requested_steps": 6,
+          "verified_faithful_requested_steps": 6,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 3,
+          "theorem_pairs": 3
+        },
+        "new_two": {
+          "rows": 2,
+          "verified": 2,
+          "verified_faithful": 2,
+          "requested_step_matches": 2,
+          "verified_requested_steps": 2,
+          "verified_faithful_requested_steps": 2,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 1,
+          "theorem_pairs": 1
+        },
+        "all_eight": {
+          "rows": 8,
+          "verified": 8,
+          "verified_faithful": 8,
+          "requested_step_matches": 8,
+          "verified_requested_steps": 8,
+          "verified_faithful_requested_steps": 8,
+          "percentages": {
+            "verified": 100.0,
+            "verified_faithful": 100.0,
+            "requested_step_matches": 100.0,
+            "verified_requested_steps": 100.0,
+            "verified_faithful_requested_steps": 100.0
+          },
+          "both_argument_successes": 4,
+          "theorem_pairs": 4
+        }
+      },
+      "checkpoints": [
+        {
+          "step": 0,
+          "score": [
+            6,
+            3,
+            6,
+            0
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 37.5,
+                "verified_requested_steps": 37.5,
+                "verified_faithful_requested_steps": 37.5
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 6,
+          "score": [
+            6,
+            3,
+            6,
+            -6
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 3,
+              "verified_requested_steps": 3,
+              "verified_faithful_requested_steps": 3,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 37.5,
+                "verified_requested_steps": 37.5,
+                "verified_faithful_requested_steps": 37.5
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 12,
+          "score": [
+            6,
+            6,
+            6,
+            -12
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 18,
+          "score": [
+            6,
+            6,
+            6,
+            -18
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 0,
+              "verified_faithful": 0,
+              "requested_step_matches": 0,
+              "verified_requested_steps": 0,
+              "verified_faithful_requested_steps": 0,
+              "percentages": {
+                "verified": 0.0,
+                "verified_faithful": 0.0,
+                "requested_step_matches": 0.0,
+                "verified_requested_steps": 0.0,
+                "verified_faithful_requested_steps": 0.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 75.0,
+                "verified_faithful": 75.0,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 24,
+          "score": [
+            8,
+            7,
+            8,
+            -24
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 30,
+          "score": [
+            7,
+            7,
+            7,
+            -30
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 1,
+              "verified_faithful": 1,
+              "requested_step_matches": 1,
+              "verified_requested_steps": 1,
+              "verified_faithful_requested_steps": 1,
+              "percentages": {
+                "verified": 50.0,
+                "verified_faithful": 50.0,
+                "requested_step_matches": 50.0,
+                "verified_requested_steps": 50.0,
+                "verified_faithful_requested_steps": 50.0
+              },
+              "both_argument_successes": 0,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 36,
+          "score": [
+            8,
+            8,
+            8,
+            -36
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 8,
+              "verified_requested_steps": 8,
+              "verified_faithful_requested_steps": 8,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 4,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 42,
+          "score": [
+            8,
+            7,
+            8,
+            -42
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 48,
+          "score": [
+            8,
+            7,
+            8,
+            -48
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 54,
+          "score": [
+            8,
+            7,
+            8,
+            -54
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 6,
+              "verified_faithful": 6,
+              "requested_step_matches": 5,
+              "verified_requested_steps": 5,
+              "verified_faithful_requested_steps": 5,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 83.33333333333333,
+                "verified_requested_steps": 83.33333333333333,
+                "verified_faithful_requested_steps": 83.33333333333333
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 8,
+              "verified_faithful": 8,
+              "requested_step_matches": 7,
+              "verified_requested_steps": 7,
+              "verified_faithful_requested_steps": 7,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 87.5,
+                "verified_requested_steps": 87.5,
+                "verified_faithful_requested_steps": 87.5
+              },
+              "both_argument_successes": 3,
+              "theorem_pairs": 4
+            }
+          }
+        },
+        {
+          "step": 60,
+          "score": [
+            7,
+            6,
+            7,
+            -60
+          ],
+          "metrics": {
+            "original_six": {
+              "rows": 6,
+              "verified": 5,
+              "verified_faithful": 5,
+              "requested_step_matches": 4,
+              "verified_requested_steps": 4,
+              "verified_faithful_requested_steps": 4,
+              "percentages": {
+                "verified": 83.33333333333333,
+                "verified_faithful": 83.33333333333333,
+                "requested_step_matches": 66.66666666666667,
+                "verified_requested_steps": 66.66666666666667,
+                "verified_faithful_requested_steps": 66.66666666666667
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 3
+            },
+            "new_two": {
+              "rows": 2,
+              "verified": 2,
+              "verified_faithful": 2,
+              "requested_step_matches": 2,
+              "verified_requested_steps": 2,
+              "verified_faithful_requested_steps": 2,
+              "percentages": {
+                "verified": 100.0,
+                "verified_faithful": 100.0,
+                "requested_step_matches": 100.0,
+                "verified_requested_steps": 100.0,
+                "verified_faithful_requested_steps": 100.0
+              },
+              "both_argument_successes": 1,
+              "theorem_pairs": 1
+            },
+            "all_eight": {
+              "rows": 8,
+              "verified": 7,
+              "verified_faithful": 7,
+              "requested_step_matches": 6,
+              "verified_requested_steps": 6,
+              "verified_faithful_requested_steps": 6,
+              "percentages": {
+                "verified": 87.5,
+                "verified_faithful": 87.5,
+                "requested_step_matches": 75.0,
+                "verified_requested_steps": 75.0,
+                "verified_faithful_requested_steps": 75.0
+              },
+              "both_argument_successes": 2,
+              "theorem_pairs": 4
+            }
+          }
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "original_six": {
+      "rows": 6,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 3,
+      "verified_requested_steps": 3,
+      "verified_faithful_requested_steps": 3,
+      "percentages": {
+        "verified": 100.0,
+        "verified_faithful": 100.0,
+        "requested_step_matches": 50.0,
+        "verified_requested_steps": 50.0,
+        "verified_faithful_requested_steps": 50.0
+      },
+      "both_argument_successes": 0,
+      "theorem_pairs": 3
+    },
+    "new_two": {
+      "rows": 2,
+      "verified": 0,
+      "verified_faithful": 0,
+      "requested_step_matches": 0,
+      "verified_requested_steps": 0,
+      "verified_faithful_requested_steps": 0,
+      "percentages": {
+        "verified": 0.0,
+        "verified_faithful": 0.0,
+        "requested_step_matches": 0.0,
+        "verified_requested_steps": 0.0,
+        "verified_faithful_requested_steps": 0.0
+      },
+      "both_argument_successes": 0,
+      "theorem_pairs": 1
+    },
+    "all_eight": {
+      "rows": 8,
+      "verified": 6,
+      "verified_faithful": 6,
+      "requested_step_matches": 3,
+      "verified_requested_steps": 3,
+      "verified_faithful_requested_steps": 3,
+      "percentages": {
+        "verified": 75.0,
+        "verified_faithful": 75.0,
+        "requested_step_matches": 37.5,
+        "verified_requested_steps": 37.5,
+        "verified_faithful_requested_steps": 37.5
+      },
+      "both_argument_successes": 0,
+      "theorem_pairs": 4
+    }
+  },
+  "development_success": {
+    "success": false,
+    "gates": {
+      "strictly_more_verified_faithful_requested_steps": false,
+      "verification_not_lower_than_control": true,
+      "mathematical_fidelity_not_lower_than_control": true,
+      "original_six_preserve_verification_and_fidelity": true,
+      "both_new_arguments_verified_faithful_and_step_adherent": true
+    },
+    "interpretation": "Predeclared development decision only; one seed and correlated theorem pairs."
+  },
+  "optimizer_updates": 120,
+  "microbatches": 480,
+  "new_dev_generations": 160,
+  "shared_step_zero_outputs_reused": 8,
+  "holdout_evaluated": false,
+  "human_reviewed": false,
+  "limitations": [
+    "One seed; two additional rows in one existing training family.",
+    "Selection and success assessed on the same eight correlated dev rows.",
+    "Equivalent tactics may preserve mathematical fidelity while failing requested-step adherence.",
+    "Update-matched arms have different row exposures and token totals.",
+    "No independent holdout claim or causal informal-proof dependence claim from these dev results."
+  ]
+}

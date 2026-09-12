@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "optimizer_updates": 120,
+  "microbatches": 480,
+  "new_dev_generations": 160,
+  "dev_token_replays": 160,
+  "dev_rocq_replays": 160,
+  "holdout_content_parsed": false
+}
