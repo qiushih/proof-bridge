@@ -1,0 +1,43 @@
+test_checkpoint_reselection_is_rejected (test_pilot_holdout_v2.BoundaryTests.test_checkpoint_reselection_is_rejected) ... ok
+test_duplicate_row_rejected (test_pilot_holdout_v2.BoundaryTests.test_duplicate_row_rejected) ... ok
+test_exclusive_custody_precedes_single_original_read (test_pilot_holdout_v2.BoundaryTests.test_exclusive_custody_precedes_single_original_read) ... ok
+test_guard_denies_original_text_and_direct_bytes (test_pilot_holdout_v2.BoundaryTests.test_guard_denies_original_text_and_direct_bytes) ... ok
+test_guard_rejects_historical_sets_even_for_hashing (test_pilot_holdout_v2.BoundaryTests.test_guard_rejects_historical_sets_even_for_hashing) ... ok
+test_mismatched_same_theorem_pair_rejected (test_pilot_holdout_v2.BoundaryTests.test_mismatched_same_theorem_pair_rejected) ... ok
+test_missing_row_rejected (test_pilot_holdout_v2.BoundaryTests.test_missing_row_rejected) ... ok
+test_reference_metadata_does_not_enter_prompt (test_pilot_holdout_v2.BoundaryTests.test_reference_metadata_does_not_enter_prompt) ... ok
+test_review_file_hash_binding_required (test_pilot_holdout_v2.BoundaryTests.test_review_file_hash_binding_required) ... ok
+test_run_refuses_existing_directory_before_opening (test_pilot_holdout_v2.BoundaryTests.test_run_refuses_existing_directory_before_opening) ... ok
+test_missing_finished_journal_event_rejected (test_pilot_holdout_v2.GenerationTests.test_missing_finished_journal_event_rejected) ... ok
+test_runtime_error_preserved_and_stops_without_next_attempt (test_pilot_holdout_v2.GenerationTests.test_runtime_error_preserved_and_stops_without_next_attempt) ... Generating holdout_v2:base:phv201_A
+holdout_v2:base:phv201_A: PASS / VERIFIED
+ok
+test_second_attempt_rejected (test_pilot_holdout_v2.GenerationTests.test_second_attempt_rejected) ... ok
+test_six_attempts_and_exact_journal_no_retry (test_pilot_holdout_v2.GenerationTests.test_six_attempts_and_exact_journal_no_retry) ... Generating holdout_v2:base:phv201_A
+holdout_v2:base:phv201_A: FAIL / PROOF_ERROR
+Generating holdout_v2:base:phv201_B
+holdout_v2:base:phv201_B: PASS / VERIFIED
+Generating holdout_v2:base:phv202_A
+holdout_v2:base:phv202_A: PASS / VERIFIED
+Generating holdout_v2:base:phv202_B
+holdout_v2:base:phv202_B: PASS / VERIFIED
+Generating holdout_v2:base:phv203_A
+holdout_v2:base:phv203_A: PASS / VERIFIED
+Generating holdout_v2:base:phv203_B
+holdout_v2:base:phv203_B: PASS / VERIFIED
+ok
+test_verifier_environment_failure_preserved_and_stops (test_pilot_holdout_v2.GenerationTests.test_verifier_environment_failure_preserved_and_stops) ... Generating holdout_v2:base:phv201_A
+holdout_v2:base:phv201_A: FAIL / ENVIRONMENT_ERROR
+ok
+test_wrong_adapter_or_order_rejected (test_pilot_holdout_v2.GenerationTests.test_wrong_adapter_or_order_rejected) ... ok
+test_all_eight_public_references_replay_through_existing_decoder_and_rocq (test_pilot_holdout_v2.PublicTokenAndRocqTests.test_all_eight_public_references_replay_through_existing_decoder_and_rocq) ... ok
+test_equivalent_tactic_faithful_but_step_mismatch (test_pilot_holdout_v2.ReviewTests.test_equivalent_tactic_faithful_but_step_mismatch) ... ok
+test_failed_proof_cannot_count_as_faithful (test_pilot_holdout_v2.ReviewTests.test_failed_proof_cannot_count_as_faithful) ... ok
+test_missing_or_duplicate_reviews_rejected (test_pilot_holdout_v2.ReviewTests.test_missing_or_duplicate_reviews_rejected) ... ok
+test_pair_success_requires_both_step_variants (test_pilot_holdout_v2.ReviewTests.test_pair_success_requires_both_step_variants) ... ok
+test_unresolved_verified_proof_does_not_count_as_faithful (test_pilot_holdout_v2.ReviewTests.test_unresolved_verified_proof_does_not_count_as_faithful) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 23.495s
+
+OK

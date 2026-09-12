@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "completed_at_utc": "2026-09-12T20:05:53.453090+00:00",
+  "tests_run": 22,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "code_sha256": {
+    "pilot_holdout_v2/__init__.py": "eddbcec350d98df939f4b442e1e91326b819a5ed508c7be9849a3c9923261306",
+    "pilot_holdout_v2/assessment.py": "044e0a9b1a4752da3d0093ef5a5ec7515976e6e77dbbd65e494c1ee13e333fd6",
+    "pilot_holdout_v2/experiment.py": "cee720bf752b0d6cb0de9c0839634ce8002991629d17bae7058a8e12feb01935",
+    "pilot_holdout_v2/protocol.py": "1b5ace597c38a85e806b76a73182b2c7483d8026cc67bf8cab143ee9a7375186",
+    "pilot_holdout_v2/README.md": "3e5a251d898e7d38dc76da70a977c517fa52bd8f9fee6a78b91cca96393e3ed2",
+    "tests/test_pilot_holdout_v2.py": "eb7f282e248267d9827856381a1d801eae24f887054b0cdafe2d0bec58d885ca"
+  },
+  "holdout_content_reads": 0,
+  "model_generations": 0,
+  "model_weight_loads": 0,
+  "public_reference_fixtures": 8,
+  "scope": "New runner tests, frozen training audit, public Rocq/token fixtures only"
+}
